@@ -4,6 +4,34 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-01",
+    pick: "Claude Sonnet 5 が6/30にリリース——Opusに迫る性能をSonnet価格で提供。Free/Proの標準モデルが刷新され、エージェント用途でのコスパが大きく改善。",
+    summary: [
+      "AnthropicがClaude Sonnet 5を6/30にリリース。性能はOpus 4.8に匹敵しながら大幅なコスト低減を実現。Free・Proプランの標準モデルに採用。",
+      "同日、科学者向けAIワークベンチ「Claude Science」もベータ公開。最大50プロジェクトに1件最大3万ドルのクレジード提供、申請締切は7/15。",
+      "NTT DATAが消費財メーカー向けAIエージェントサービスを7月から世界展開。製品企画の初期段階を数分で自動化。"
+    ],
+    topics: [
+      { title: "Claude Sonnet 5 リリース（6/30）——Opus級の性能をSonnet価格で", why: "Free/Proの標準モデルが刷新。推論・ツール使用・コーディングが全面強化。エージェント用途でのコスト障壁が大幅に下がる。", idea: "「安くて賢い」が来た——Sonnet 5をどう使い倒すか", tag: "海外" },
+      { title: "Claude Science ベータ公開——研究者向け統合AIワークベンチ", why: "ゲノミクス・プロテオミクスなど60以上のツールを統合。再現可能な成果物生成と自動引用検証が特徴。申請締切7/15。", idea: "AIが研究室に入る日——科学×生成AIの最前線", tag: "海外" },
+      { title: "🔁続報：Fable 5 / Mythos 5 規制一部解除（6/26）", why: "米商務省がMythos 5を100以上の重要インフラ組織向けに再開。Fable 5は引き続き全ユーザー向けオフライン。規制とAI開発の緊張が続く。", idea: "政府がAIを止める日——輸出管理とAIガバナンスの行方", tag: "海外" },
+      { title: "Anthropic、極秘IPO申請から1ヶ月——10月ナスダック上場を目指す", why: "評価額9,650億ドル（約150兆円）。年間売上は$30B（4月時点）。OpenAIとのIPO競争が本格化。", idea: "課金しているAIが「150兆円企業」になる話", tag: "市場" },
+      { title: "（国内）NTT DATA、消費財メーカー向けAIエージェントを7月から世界展開", why: "製品企画の初期段階（アイデア〜社内承認）を数分に短縮。日本発のAIエージェントが国際市場へ。", idea: "日本発AIエージェントが世界へ——NTTデータの本気", tag: "国内" }
+    ],
+    small: [
+      "Claude Sonnet 5 の期間限定価格：入力$2/MTok、出力$10/MTok（〜2026年8月31日）。",
+      "Claude が Microsoft Foundry on Azure で一般公開——AzureのID・課金・ガバナンス管理と統合。"
+    ],
+    sources: [
+      { title: "Introducing Claude Sonnet 5 (Anthropic)", url: "https://www.anthropic.com/news/claude-sonnet-5" },
+      { title: "Anthropic launches Claude Sonnet 5 as a cheaper way to run agents (TechCrunch)", url: "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/" },
+      { title: "Claude Science, an AI workbench for scientists (Anthropic)", url: "https://www.anthropic.com/news/claude-science-ai-workbench" },
+      { title: "GPT-5.6 and Claude Fable 5: Why the Newest AI Models Aren't Available to Everyone (innFactory)", url: "https://innfactory.ai/en/blog/gpt-5-6-fable-5-government-access-restrictions/" },
+      { title: "Anthropic's IPO sets up first big test of AI boom valuations (CNBC)", url: "https://www.cnbc.com/2026/06/05/tech-download-anthropic-ipo-ai-valuations.html" },
+      { title: "NTT DATA launches AI agent service for consumer goods companies (NTT DATA)", url: "https://www.nttdata.com/global/en/news/press-release/2026/june/062200" }
+    ]
+  },
+  {
     date: "2026-06-30",
     pick: "カリフォルニア州がAnthropicと正式提携（6/29）— 州全機関・市区町村にClaudeを50%割引で提供開始。政府スケールのAI本格採用が現実に。",
     summary: [
