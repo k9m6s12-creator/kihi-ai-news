@@ -4,6 +4,33 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-02",
+    pick: "Claude Fable 5 が7/1に全世界解禁——19日間の停止を経て安全対策強化版として復帰。Claude.ai・Claude Code・Coworkで全ユーザーが利用可能に（7/7まで50%制限）。",
+    summary: [
+      "「Claude Fable 5」が7/1より全世界で利用再開。輸出規制解除後にサイバーセキュリティ対策を強化した改訂版として提供。7/7まで利用量50%制限、以後はクレジット制に移行予定。",
+      "Claude Codeが大型アップデート：トークン使用量が約25%削減、サンドボックス認証情報ブロック・組織モデル制限など企業向け機能も追加。",
+      "Claudeの世界市場シェアが9.2%に到達（前年比+855%）。ChatGPTの53.9%、Geminiの27.9%と並ぶ3強構図が確立。"
+    ],
+    topics: [
+      { title: "🔁続報：Claude Fable 5 が7/1に全世界解禁——安全対策強化版として復帰", why: "19日間の停止後、サイバーセキュリティタスクへの対策を強化して帰還。AWS・Google Cloud・Microsoft Foundry経由は順次再開。7/7以降はクレジット制に移行予定。", idea: "「止まったAI」が戻ってきた日——Fable 5停止事件から学ぶAI依存のリスク", tag: "海外" },
+      { title: "Claude Codeが大型アップデート——トークン25%削減・認証情報保護など", why: "コストとセキュリティを同時改善。org単位のモデル制限・フルスクリーンマウス対応など企業導入を後押しする機能が充実。", idea: "Claude Codeをもっと安く・安全に使うための最新アップデート全解説", tag: "海外" },
+      { title: "AnthropicがAWS・Google Cloud向けClaudeアプリゲートウェイを提供開始", why: "企業向けにSSO・ポリシー管理・コスト追跡・支出上限を一元管理するセルフホスト型コントロールプレーン。Claude Codeの法人展開が加速する可能性。", idea: "企業がClaude Codeを安心して使えるようになる仕組みとは", tag: "海外" },
+      { title: "Claude世界シェア9.2%・前年比+855%——ChatGPTとGeminiとの3強構図が確立", why: "GPT依存から複数AI選択の時代へ移行。エージェント用途を中心にClaudeの存在感が急拡大。", idea: "ChatGPT一択から3強時代へ——どのAIを選ぶか迷ったときの判断軸", tag: "市場" },
+      { title: "（国内）PwC調査：日本のAI変革は「生存条件」——6カ国比較で課題浮き彫り", why: "日本企業は導入率・活用深度ともに他国に遅れ。「試している」から「本格運用」への転換が急務と指摘。", idea: "「生存条件」になったAI——日本企業がまだ遅れている本当の理由", tag: "国内" }
+    ],
+    small: [
+      "Fable 5のAWS・Google Cloud・Microsoft Foundry経由アクセスは現在も順次再開中。",
+      "Fable 5は7/7以降、5時間レート制限の代わりに使用量クレジット制に移行予定。"
+    ],
+    sources: [
+      { title: "Claude Fable 5 is making a dramatic return (9to5Google)", url: "https://9to5google.com/2026/07/01/anthropic-fable-5-returns-to-claude/" },
+      { title: "Anthropic brings back Claude Fable 5 globally (Digital Trends)", url: "https://www.digitaltrends.com/computing/youll-be-able-to-use-claude-fable-5-again-starting-july-1/" },
+      { title: "Claude Code Updates - July 2026 (Releasebot)", url: "https://releasebot.io/updates/anthropic/claude-code" },
+      { title: "Top Generative AI Chatbots by Market Share July 2026 (Momentic)", url: "https://momenticmarketing.com/blog/top-ai-chatbots" },
+      { title: "生成AIに関する実態調査2026 春 6カ国比較 (PwC Japan)", url: "https://www.pwc.com/jp/ja/knowledge/thoughtleadership/generative-ai-survey2026.html" }
+    ]
+  },
+  {
     date: "2026-07-01",
     pick: "Claude Sonnet 5 が6/30にリリース——Opusに迫る性能をSonnet価格で提供。Free/Proの標準モデルが刷新され、エージェント用途でのコスパが大きく改善。",
     summary: [
