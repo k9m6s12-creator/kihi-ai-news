@@ -4,6 +4,35 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-03",
+    pick: "Claude Code 2.1.198がリリース——Chrome版が一般公開。ドラフトPR自動作成・バックグラウンド通知など「止まらないエージェント」設計が本格化。",
+    summary: [
+      "Claude Code 2.1.198が公開。Chromeへの一般公開・バックグラウンド通知・ドラフトPR自動コミット＆プッシュ・新スキル「/dataviz」が追加。人間の確認待ちを減らす自律設計が加速。",
+      "国内では経産省が国産フィジカルAI基盤モデルの開発事業を開始。SB IntuitionsもSarashina3シリーズ5モデルを提供開始し、外資依存からの脱却を目指す動きが同日加速。",
+      "Stanford AI Index 2026：AIエージェントの実世界タスク成功率が1年で20%→77.3%に急上昇。Googleは「Gemini 3.5 Pro」を6月から7月に延期し、過剰トークン消費への対処を優先。"
+    ],
+    topics: [
+      { title: "Claude Code 2.1.198——Chrome一般公開・ドラフトPR自動化・/datavizスキル追加", why: "バックグラウンド通知でエージェントが人間の返答待ちなく動き続ける設計に。ドラフトPRの自動コミット・プッシュも追加。/datavizはカラーパレット検証付きチャート設計スキル。", idea: "「止まらないClaude Code」を使いこなす——2.1.198新機能全解説", tag: "海外" },
+      { title: "🔁続報：GPT-5.6 Sol——Cerebrasで最大750トークン/秒、一般公開は7月中目標", why: "6/26の限定プレビューから約1週間。Cerebras連携で超高速推論（750tok/秒）が明らかに。Sol/Terra/Lunaの正式価格（Sol $5/$30 per MTok）も発表。一般公開は7月中を目標。", idea: "フロンティアAIのスピード競争——750トークン/秒が変えること", tag: "海外" },
+      { title: "Google「Gemini 3.5 Pro」7月に延期——大規模エージェントでトークン過剰消費が判明", why: "Google I/O（5/19）でSundar Pichai氏が6月公開を予告していたが延期。エンタープライズテスターから長期エージェントタスクでのコスト超過の指摘。「速い発表」より「使えるリリース」を優先する判断。", idea: "「発表したのに出ない」問題——AI企業のリリース遅延から学ぶこと", tag: "海外" },
+      { title: "AIエージェント成功率、1年で20%→77.3%に急上昇（Stanford AI Index 2026）", why: "実世界タスクの成功率が約4倍。サイバーセキュリティ分野では15%→93%。ツール活用と反復検証の組み合わせが急進化の鍵。「まだ実験段階」という認識が急速に塗り替えられている。", idea: "「AIはまだ使えない」は1年前の話——成功率4倍の進化を数字で理解する", tag: "市場" },
+      { title: "（国内）経産省、国産フィジカルAI基盤モデルの開発事業を開始", why: "NoetraとNAISTを採択、SoftBankらが投資。ロボット・製造向けの日本独自AI基盤を構築。外資AIへの依存リスクを軽減する国家戦略の一環として注目。", idea: "日本が「自前のAI」を持つ日——経産省フィジカルAI開発の意義", tag: "国内" },
+      { title: "（国内）SB Intuitions「Sarashina3シリーズ」提供開始——RAG・安全運用向け国産LLM5モデル", why: "SoftBank傘下SB IntuitionsがRAGおよび安全な業務運用に最適化した国産LLM5種を公開。日本語特化モデルの選択肢がさらに拡大。", idea: "「日本語が得意なAI」はどれを選ぶ——国産LLM最新比較の視点", tag: "国内" }
+    ],
+    small: [
+      "GPT-5.6 Sol/Terra/Lunaの価格：Sol $5/$30・Terra $2.5/$15・Luna $1/$6（入力/出力 per MTok）。",
+      "Stanford AI Index 2026：生成AI普及率が3年で53%に到達。PCやインターネットより速い普及スピード。"
+    ],
+    sources: [
+      { title: "Claude Updates by Anthropic - July 2026 (Releasebot)", url: "https://releasebot.io/updates/anthropic/claude" },
+      { title: "Previewing GPT-5.6 Sol (OpenAI)", url: "https://openai.com/index/previewing-gpt-5-6-sol/" },
+      { title: "OpenAI unveils GPT-5.6 Sol, Terra and Luna models (VentureBeat)", url: "https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov" },
+      { title: "AI Updates Today - July 2026 (LLM Stats)", url: "https://llm-stats.com/llm-updates" },
+      { title: "The 2026 AI Index Report (Stanford HAI)", url: "https://hai.stanford.edu/ai-index/2026-ai-index-report" },
+      { title: "国産フィジカルAI・Sarashina3最新動向 (Ledge.ai)", url: "https://ledge.ai/" }
+    ]
+  },
+  {
     date: "2026-07-02",
     pick: "Claude Fable 5 が7/1に全世界解禁——19日間の停止を経て安全対策強化版として復帰。Claude.ai・Claude Code・Coworkで全ユーザーが利用可能に（7/7まで50%制限）。",
     summary: [
