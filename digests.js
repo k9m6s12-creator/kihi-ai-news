@@ -4,6 +4,34 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-04",
+    pick: "Anthropicがサイバージェイルブレイク深刻度（CJS）フレームワークを7/3に提案——Amazon・Microsoft・Googleも参画し、業界初のジェイルブレイクリスク共通尺度が誕生。Fable 5停止事件を機に生まれた安全基準が業界標準へ向けて動き出す。",
+    summary: [
+      "Anthropicが7/3、ジェイルブレイクの深刻度をCJS-0〜CJS-4の5段階で評価するフレームワークをAmazon・Microsoft・Googleと共同提案。今後は緊急輸出規制に頼らず、構造化されたトリアージで対処できる体制を目指す。",
+      "SmartNewsが7/2にAI Transformation Divisionを新設しClaude Codeを全社員展開。エンジニア以外の全職種が対象で、日本のテック企業による全社規模のClaude Code導入の先行事例に。",
+      "AnthropicがApple Foundation ModelsフレームワークのSwiftパッケージを公開。iOS/macOS 27向けにClaudeをオンデバイスと同じAPIで呼び出せ、アプリ内でのAI切り替えが透過的に行える。"
+    ],
+    topics: [
+      { title: "Anthropic、業界初のサイバージェイルブレイク深刻度（CJS）フレームワークを提案", why: "Fable 5の19日間停止を招いた事態を受け、Amazon・Microsoft・Googleと共同で策定。4軸（能力上乗せ・汎用性・兵器化の容易さ・発見しやすさ）で評価しCJS-0〜CJS-4の5段階に分類。採用されれば『発見→緊急輸出規制』の連鎖を構造化トリアージに置き換えられる。", idea: "「AIを止めないための仕組み」——CJSフレームワークが変えるAI安全基準の未来", tag: "海外" },
+      { title: "（国内）SmartNews、AI Transformation Divisionを新設しClaude Codeを全社員展開", why: "7/2発表。エンジニア以外の全職種がClaude Codeを利用できる環境を整備。開発ツール・認証・コスト管理を統合する共通インフラも並行構築中。日本テック企業による全社規模Claude Code導入の先行事例。", idea: "「全員がAIを使う会社」になるには——SmartNewsのClaude Code全社展開から学ぶこと", tag: "国内" },
+      { title: "Claude、Apple Foundation ModelsフレームワークのSwiftパッケージを公開", why: "iOS/macOS/watchOS 27向けに、Claudeをオンデバイスと同じLanguageModelSession APIで呼び出せる。ストリーミング・ツール呼び出し・誘導生成も対応。Apple開発者がClaudeをアプリに組み込む導線が大きく広がった。", idea: "iPhoneアプリにClaudeを組み込む日——Apple×ClaudeのSwift連携が変えること", tag: "海外" },
+      { title: "AnthropicがGoogleおよびBroadcomと次世代コンピュート向けパートナーシップを拡大", why: "数ギガワット規模の次世代コンピュートインフラを確保。急増する顧客需要への対応と「規律ある拡張」が目的。AIインフラ競争での持続的優位を狙う。", idea: "AIの裏側にある「電力争奪戦」——Anthropicのインフラ戦略を読む", tag: "海外" },
+      { title: "AnthropicのARRが$30Bを突破、OpenAIを上回るペースで急成長", why: "Claude Sonnet 5リリースとFable 5復帰が追い風。エージェント用途の拡大で利用量が急増。Fortuneがこれを受け「OpenAIはGoogleとAnthropicに追われている」と報道。", idea: "「使っているAI」が業界トップの収益を上げている件——Anthropicの急成長を数字で見る", tag: "市場" }
+    ],
+    small: [
+      "CJSスケールは4軸（能力上乗せ・汎用性・兵器化の容易さ・発見しやすさ）で評価。CJS-0（情報提供レベル）〜CJS-4（緊急）の5段階。",
+      "Claude for Foundation ModelsはApache 2.0ライセンスでOSS公開。GitHubリポジトリ: anthropics/ClaudeForFoundationModels。"
+    ],
+    sources: [
+      { title: "Anthropic Unveils Cyber Jailbreak Severity Framework (GBHackers)", url: "https://gbhackers.com/anthropic-unveils-cyber-jailbreak-severity-framework/" },
+      { title: "Anthropic details Claude Fable 5 cybersecurity safeguards and jailbreak framework (CryptoBriefing)", url: "https://cryptobriefing.com/anthropic-claude-fable-5-jailbreak-framework/" },
+      { title: "SmartNews launches AI Transformation Division with Claude Code rollout (IBTimes JP)", url: "https://jp.ibtimes.com/smartnews-launches-ai-transformation-division-claude-code-rollout-102273" },
+      { title: "Claude support for Apple Foundation Models framework (Anthropic Blog)", url: "https://claude.com/blog/claude-for-foundation-models" },
+      { title: "Anthropic expands partnership with Google and Broadcom (Anthropic)", url: "https://www.anthropic.com/news/google-broadcom-partnership-compute" },
+      { title: "Sam Altman seeks new world order as OpenAI loses ground to Anthropic (Fortune)", url: "https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/" }
+    ]
+  },
+  {
     date: "2026-07-03",
     pick: "Claude Code 2.1.198がリリース——Chrome版が一般公開。ドラフトPR自動作成・バックグラウンド通知など「止まらないエージェント」設計が本格化。",
     summary: [
