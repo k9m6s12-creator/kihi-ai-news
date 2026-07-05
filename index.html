@@ -81,7 +81,6 @@
       <div class="topic">
         <h3>${esc(t.title)}${t.tag?`<span class="tag">${esc(t.tag)}</span>`:''}</h3>
         ${t.why?`<div class="meta"><b>なぜ重要</b>：${esc(t.why)}</div>`:''}
-        ${t.idea?`<div class="idea">記事ネタ：${esc(t.idea)}</div>`:''}
       </div>`).join('');
 
     const summary = (d.summary||[]).map(s=>`<li>${esc(s)}</li>`).join('');
