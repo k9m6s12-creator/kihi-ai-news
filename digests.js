@@ -4,6 +4,33 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-05",
+    pick: "🔁続報：日本政府がNoetra（SoftBank・Sony・NEC・Honda）への支援規模を最大$6.2B（約1兆円）と正式確定——国産AI基盤構築が国家プロジェクトとして本格始動。外資依存からの自立を史上最大規模のAI投資として国家戦略に格上げ。",
+    summary: [
+      "日本政府がNoetra支援規模を最大$6.2B（約1兆円）と正式発表。初年度確定は¥387.3B（$2.38B）。SoftBank・Sony・NEC・Hondaが設立し、40社以上の産業横断参画を目指す。",
+      "NVIDIA BioNeMoがClaude Scienceに統合——細胞解析52分→25秒、創薬タスク最大3,000倍高速化。7/2公開ベータ開始。AIが科学実験の「リアルタイム思考拡張」に転換。",
+      "SoftBankが米国で10GW規模AIクラウドサービスを来年度開始予定と発表。同時にOpenAIへの$10B融資交渉を再開し、日本発AIインフラの国際展開が加速。"
+    ],
+    topics: [
+      { title: "🔁続報：日本のNoetra国産AI基盤、政府支援が最大$6.2Bに拡大——SoftBank・Sony・NEC・Honda連合が本格始動", why: "初年度確定額¥387.3B（$2.38B）。フィジカルAI（ロボット・製造）と高度な日本語理解の両軸。9社支援・40社以上の産業横断参加を計画。外資AI一辺倒からの「AI自立」を国家戦略に格上げ。", idea: "「日本のAI独立宣言」——1兆円プロジェクトNoetraが目指すもの", tag: "国内" },
+      { title: "NVIDIA BioNeMo × Claude Science：科学ワークフローが52分→25秒に——生物研究AIが本格稼働", why: "7/2公開ベータで統合。RAPIDS-singlecellで細胞解析が52分→25秒、nvMolKitで創薬タスク最大3,000倍高速化。研究者は自然言語でゲノミクス・プロテオミクス・創薬パイプラインを操作可能に。AIが「バッチ処理ツール」から「リアルタイム思考の拡張」へ。", idea: "AIが研究室に常駐する日——Claude×NVIDIAが変える科学の速度", tag: "海外" },
+      { title: "SoftBank、米国で10GW規模AIクラウドを来年度開始——OpenAI $10B融資交渉も再開", why: "AIコンピュートを米国で10ギガワット規模で調達しクラウドサービスとして提供予定。OpenAIへの$10B融資はOpenAI株を担保とした構造で交渉再開。孫正義氏の「AIは50倍のドットコムバブル」発言と一致する超攻撃的投資戦略。", idea: "孫正義の次の一手——SoftBankが「AIインフラ帝国」を米国で建設する理由", tag: "国内" },
+      { title: "Claude Code 2.1.201：Sonnet 5セッションの異常挙動を修正", why: "ハーネスリマインダーがミッドコンバセーションのシステムロールを汚染しなくなる修正。Sonnet 5を使う長時間エージェントタスクで発生しえた不安定動作に対処。", idea: "「見えない不具合」が長時間エージェントを壊す——Claude Codeのセッション設計を理解する", tag: "海外" }
+    ],
+    small: [
+      "Gemini 3.5 ProはVertex AIの限定プレビュー段階を継続——7月中の一般公開を目標にするが日程未確定。トークン効率・コード品質・長タスク推論の3課題を修正中。",
+      "SoftBankのOpenAI $10B融資交渉はOpenAI株担保構造。コンセッション（条件緩和）を追加して再交渉中。"
+    ],
+    sources: [
+      { title: "Japan backs SoftBank-led AI models with up to $6.2bn (Nikkei Asia)", url: "https://asia.nikkei.com/business/technology/artificial-intelligence/japan-backs-softbank-led-ai-models-with-up-to-6.2bn-in-chasing-us-china" },
+      { title: "Japan launches US$6.2 billion AI initiative (Digitimes)", url: "https://www.digitimes.com/news/a20260701VL202/japan-ai-investment-industrial-infrastructure.html" },
+      { title: "NVIDIA BioNeMo accelerates Anthropic Claude Science (AI News)", url: "https://www.artificialintelligence-news.com/news/nvidia-bionemo-accelerates-anthropic-claude-science/" },
+      { title: "SoftBank plans AI compute in U.S. at 10-gigawatt scale (Japan Times)", url: "https://www.japantimes.co.jp/business/2026/07/03/companies/softbank-ai-cloud-service/" },
+      { title: "SoftBank renews $10B loan talks against OpenAI stake (US News)", url: "https://www.usnews.com/news/top-news/articles/2026-07-01/exclusive-softbank-renews-talks-for-10-billion-loan-against-openai-stake-adds-concessions-sources-say" },
+      { title: "Claude Code Updates by Anthropic - July 2026 (Releasebot)", url: "https://releasebot.io/updates/anthropic/claude-code" }
+    ]
+  },
+  {
     date: "2026-07-04",
     pick: "Anthropicがサイバージェイルブレイク深刻度（CJS）フレームワークを7/3に提案——Amazon・Microsoft・Googleも参画し、業界初のジェイルブレイクリスク共通尺度が誕生。Fable 5停止事件を機に生まれた安全基準が業界標準へ向けて動き出す。",
     summary: [
