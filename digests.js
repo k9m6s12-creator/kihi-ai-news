@@ -4,6 +4,34 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-07",
+    pick: "Claude Fable 5、本日7/7をもってサブスクリプション包含が終了——明日7/8から入力$10・出力$50/百万トークンの使用量課金へ移行。Anthropicは「容量確保次第でサブスク復帰を目指す」と公式声明。永続廃止ではないが、当面はクレジットなしでは利用不可。",
+    summary: [
+      "Fable 5は本日7/7でPro・Max・Team・一部Enterpriseのサブスク包含が終了。7/8以降は使用量クレジット（入力$10・出力$50/MTok）が必要。Anthropicは「一時措置」と強調し容量確保後の復帰を明言。",
+      "Googleが検索エンジン全体をGemini 3.5 Flash搭載のAI生成ページに刷新。クエリに対してAIがカスタム要約をリアルタイム生成する形式に全世界展開。25年ぶりの検索体験の大転換。",
+      "ホワイトハウスがOpenAI・Anthropic・Googleとのフロンティア自主基準を今週にも正式発表へ。30日事前テスト・ベンチマーク・アクセスルールを盛り込んだ枠組みが制度化される見通し。"
+    ],
+    topics: [
+      { title: "Claude Fable 5：7/7でサブスク包含終了——7/8より使用量課金（入力$10・出力$50/MTok）に移行", why: "Pro・Max・Team・一部Enterpriseユーザーが50%制限内で無追加料金利用できていたFable 5が本日で終了。7/8以降は使用量クレジットが必須になる。Anthropicは需要の予測困難を理由に挙げ、「容量が整い次第サブスクに戻す」と公式コメント。恒久廃止ではない点を明確化。", idea: "「最強AIモデル」を使い続けるには課金が必要な時代——Fable 5の価格転換が問うAI依存の代償", tag: "海外" },
+      { title: "🔁続報：ホワイトハウスのフロンティアAI自主基準——今週正式発表へ、30日テスト窓口が制度化", why: "6/2大統領令（EO14409）に続き、OpenAI・Anthropic・Googleとの枠組みが最終合意に近い。リリース前30日間の政府レビュー・ベンチマーク評価・国内外アクセスルールを規定。採用されれば大型モデルのリリースは全て事前審査を経る構造になり、輸出管理の「緊急停止」より予測可能な体制へ移行。", idea: "「AIを世に出す前に政府が審査する」——自主基準と規制の境界線はどこか", tag: "海外" },
+      { title: "Google検索がGemini 3.5 Flash全面採用——25年ぶりの大転換で「リンク一覧」が消える", why: "クエリに対しAIがカスタム要約ページをリアルタイム生成。視覚ツール・シミュレーション付きのインタラクティブ回答も対応。全世界・約200カ国・98言語・無料ユーザーへ展開。検索からのコンテンツ流入やSEOの構造が根本から変わる可能性。", idea: "Googleが「リンクを返す」のをやめた日——生成AI時代の情報発信者が考えるべきこと", tag: "海外" },
+      { title: "（国内）SoftBankがOpenAI連携の「Patching as a Service」展開——重要インフラ向けAIサイバーセキュリティ", why: "SoftBankグループ・SoftBank Corp・SB OAI Japanが6/16に発表し順次拡大中。空港・電力・交通など重要インフラ上位3,000社を対象に、AI脆弱性診断と修正計画を提供。内部テストで1社あたり1万500件超の脆弱性を検出。自動パッチ適用ではなく専門家アドバイザリ型。", idea: "「AIがインフラを守る時代」——SoftBankのPaaSが示す国内サイバーセキュリティの変革", tag: "国内" },
+      { title: "H1 2026 VC投資：全世界$5,100億のうちOpenAI＋Anthropicだけで43%（$2,170億）を独占", why: "世界全体のH1スタートアップ投資が過去最高の$5,100億に達し、そのうちOpenAIとAnthropicの2社だけで$2,170億（43%）を占める異常集中。AI以外セクターへの投資が相対的に圧縮されており、フロンティアAI2強への資本集中が構造化している。", idea: "「AI2強」が世界の投資マネーを吸い尽くす——資本超集中がスタートアップエコシステムに与える影響", tag: "市場" }
+    ],
+    small: [
+      "Anthropicは「Fable 5のサブスク包含は一時休止であり、容量確保次第で復活させる」と公式コメント——恒久廃止ではない点を重ねて強調。",
+      "Elon Musk、Grok 4.5をSpaceXとTeslaで限定プライベートベータ開始と発表（X投稿）。一般公開時期は未定。"
+    ],
+    sources: [
+      { title: "Claude Fable 5 isnt permanently leaving subscriptions Anthropic says (BleepingComputer)", url: "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-isnt-permanently-leaving-subscriptions-anthropic-says/" },
+      { title: "AI News Today July 6 2026: 15 Biggest Stories (BuildFastWithAI)", url: "https://www.buildfastwithai.com/blogs/ai-news-today-july-6-2026" },
+      { title: "White House Nears Voluntary Frontier-Model Deal With Top AI Labs (AI Weekly)", url: "https://aiweekly.co/alerts/white-house-nears-voluntary-frontier-model-deal-with-top-ai-labs" },
+      { title: "White House advances AI model release standards for US labs (Traders Union)", url: "https://tradersunion.com/news/financial-news/show/2550448-white-house-ai-model-standards/" },
+      { title: "Google Search now uses Gemini 3.5 Flash for AI-summarised results (The Agency Journal)", url: "https://theagencyjournal.com/googles-gemini-3-5-flash-search-update-faster-more-useful-ai-answers-in-search/" },
+      { title: "SoftBank Group Announces Patching as a Service (SoftBank Group)", url: "https://group.softbank/en/news/press/20260616" }
+    ]
+  },
+  {
     date: "2026-07-06",
     pick: "Anthropic×TeraWulf：20年・総額190億ドル（約2.9兆円）のデータセンター契約を締結（7/6）——401MWのケンタッキー州施設でAIインフラ投資が「世代規模」に突入。同日、AI学習データの源だったAmazon Mechanical Turkも新規受付終了を発表し、「人間がAIを訓練する」時代の終わりを象徴した。",
     summary: [
