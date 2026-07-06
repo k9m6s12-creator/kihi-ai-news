@@ -4,6 +4,36 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-06",
+    pick: "Anthropic×TeraWulf：20年・総額190億ドル（約2.9兆円）のデータセンター契約を締結（7/6）——401MWのケンタッキー州施設でAIインフラ投資が「世代規模」に突入。同日、AI学習データの源だったAmazon Mechanical Turkも新規受付終了を発表し、「人間がAIを訓練する」時代の終わりを象徴した。",
+    summary: [
+      "AnthropicがTeraWulfとケンタッキー州Hawesvilleに20年・約190億ドルのリース契約を締結。401MW規模で2027年H2に初期稼働予定。AI電力インフラ投資が世代スパンに入った。",
+      "ByteDance（Doubao）とAlibaba（Qwen）が7/15施行の中国「AIコンパニオン規制」に対応し、カスタムAIキャラクター機能を同日一斉停止。世界初の包括的AIコンパニオン法が施行。",
+      "Amazon Mechanical Turkが7/30より新規受付を停止。ワーカーの33〜46%がすでにAIでタスクを完了させていた皮肉——クラウドソーシング型AI学習データ収集が実質的な終焉へ。"
+    ],
+    topics: [
+      { title: "Anthropic×TeraWulf：20年・190億ドル・401MWのデータセンターリースを締結（7/6）", why: "ケンタッキー州のJustified Dataキャンパスで401MWのAIインフラを確保。2027年後半から段階的稼働し、2028年初頭に全量稼働予定。20年間の契約総額は約190億ドルで単一AIインフラ契約として最大規模クラス。AnthropicがGoogle・Broadcomとの提携に続き「数十年単位」でコンピュート確保に動いていることを示す。", idea: "「2.9兆円のデータセンター契約」が示す未来——AIインフラ競争が世代スパンに突入した理由", tag: "海外" },
+      { title: "中国「AIコンパニオン規制」7/15施行——ByteDance・AlibabaがカスタムAIキャラ機能を一斉停止", why: "中国サイバースペース管理局が4月に制定した規制が7/15に施行。2時間超の連続会話に「AIと話しています」の強制表示・14歳未満は本人確認が必須。対応できないユーザー作成エージェントは一括削除。ByteDanceはチャット履歴を10/15まで閲覧のみで保持するが、AlibabaはデータDeletion計画を未公表。AIコンパニオン産業への世界初の包括規制として各国の立法に影響を与えうる。", idea: "「AIと友達になる」を国が規制する日——中国のAIコンパニオン法が示す次の論点", tag: "海外" },
+      { title: "ホワイトハウス、OpenAI・Google・AnthropicとフロンティアAI自主基準を最終調整——近日発表へ", why: "Fable 5停止事件（6月）を契機に策定が加速。ベンチマーク・テスト期間・アクセスルールを定める枠組みで合意が近い。採用されれば輸出規制で突然停止させるのではなく、テストと審査で解除する構造に移行。AI企業と政府の関係が制度化される分水嶺。", idea: "政府がAIに「ルール」を与える日——自主基準と規制のどこが違うのか", tag: "海外" },
+      { title: "Amazon Mechanical Turk、7/30より新規受付停止——クラウドソーシング型AI学習の終焉", why: "2005年開始の「人力AIタスク」プラットフォームが事実上の廃止フェーズへ。調査ではプラットフォームのワーカーの33〜46%がすでにAIを使ってタスクを完了させていた。「人間がAIを訓練する」モデルをAI自身が追い越した象徴的な終幕。SageMaker GroundTruthなど後継へ移行を促す。", idea: "AIが自分の先生を追い越す日——Amazon Mechanical Turkの終わりが意味すること", tag: "海外" },
+      { title: "（国内）Sakana AI「Fugu」公開——マルチエージェント集合知でFable 5・GPT-5.5に匹敵", why: "日本のAIスタートアップSakana AIがFuguを一般公開。ICLR 2026採択論文（TRINITY・Conductor）をベースに複数AIを動的に束ねるオーケストレーションモデル。$20〜$200/月のサブスクで提供。外資モデル依存なしにフロンティア性能を実現した国産アプローチとして注目。7/31までの申し込みで2カ月目無料キャンペーン実施中。", idea: "日本生まれのAIが世界最高峰に挑む——Sakana Fuguのマルチエージェント戦略を理解する", tag: "国内" }
+    ],
+    small: [
+      "中国のZ.ai「GLM-5.2」がAnthropicやOpenAIに匹敵する性能を低コストで実現——中米AI差縮小の象徴として業界の論争を再加熱。",
+      "TeraWulfはAbernathy合弁の過半数持分をFluidStackへ5.3億ドルで同時売却し、Anthropicリース支援のための財務基盤も整備完了。"
+    ],
+    sources: [
+      { title: "Anthropic signs lease for TeraWulf data center in Kentucky (CNBC)", url: "https://www.cnbc.com/2026/07/06/anthropic-terawulf-data-center-ai.html" },
+      { title: "TeraWulf Announces Anthropic Lease at Justified Data Campus (TeraWulf IR)", url: "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack" },
+      { title: "ByteDances Doubao and Alibabas Qwen to shut down AI agent features on July 15 (TechNode)", url: "https://technode.com/2026/07/06/bytedances-doubao-and-alibabas-qwen-to-shut-down-ai-agent-features-on-july-15/" },
+      { title: "ByteDance Alibaba pull AI companions as Beijing tightens rules (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-07-06/bytedance-alibaba-pull-ai-companions-as-beijing-tightens-rules" },
+      { title: "White House Races to Finalize AI Model Rules With OpenAI Google and Anthropic (TipRanks)", url: "https://www.tipranks.com/news/white-house-races-to-finalize-ai-model-rules-with-openai-google-and-anthropic" },
+      { title: "Amazon will stop accepting new customers for Mechanical Turk (TechCrunch)", url: "https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/" },
+      { title: "Sakana Fugu: One Model to Command Them All (Sakana AI)", url: "https://sakana.ai/fugu-release/" },
+      { title: "Japans Sakana Fugu multiagent AI scores well against Fable 5 GPT-5.5 (Nikkei Asia)", url: "https://asia.nikkei.com/business/technology/artificial-intelligence/japan-s-sakana-fugu-multiagent-ai-scores-well-against-fable-5-gpt-5.5" }
+    ]
+  },
+  {
     date: "2026-07-05",
     pick: "🔁続報：日本政府がNoetra（SoftBank・Sony・NEC・Honda）への支援規模を最大$6.2B（約1兆円）と正式確定——国産AI基盤構築が国家プロジェクトとして本格始動。外資依存からの自立を史上最大規模のAI投資として国家戦略に格上げ。",
     summary: [
