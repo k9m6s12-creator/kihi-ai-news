@@ -4,6 +4,59 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-09",
+    pick: "Anthropicの研究者がClaudeの内部『作業スペース（J-space）』を発見——答えとして現れる前に概念を保持・編集する領域の存在が判明し、AIの『思考』理解が一歩前進。一方でClaude Codeに『隠しトラッカー』が見つかり、Anthropicは『3月に始めた不正転売・蒸留対策の実験』と釈明する一幕も。",
+    summary: [
+      "Anthropicの研究で、Claudeが回答前に概念を保持・編集する内部領域『J-space』を持つことが判明。限定的な『グローバル・ワークスペース』に近い構造と説明され、AIの内部思考の解明が進む。",
+      "Claude Codeのバンドルに隠し識別マーカーが発見され、Anthropicは『3月に開始した実験で、不正な再販売と蒸留（模倣モデル作成）を防ぐ目的だった』と説明。",
+      "Claude for GovernmentでClaude Code・Coworkが公開ベータに（FedRAMP High対応）。売上は1月比+75%、Fortune100の70%が有料利用と急成長。"
+    ],
+    topics: [
+      { title: "Anthropic研究、Claudeの内部『作業スペース（J-space）』を発見", why: "回答として言葉になる前に、概念を保持・編集・活用する領域がClaude内部にあると判明。人間の『グローバル・ワークスペース』に近い限定的な構造とされ、AIの『思考』を外から理解する手がかりになる。", idea: "AIは答える前に『考えて』いるのか——J-space発見が示すAIの内側", tag: "海外" },
+      { title: "Claude Codeに『隠しトラッカー』——Anthropicは『実験だった』と釈明", why: "JavaScriptバンドルに埋め込まれた識別マーカーが研究者に発見された。Anthropicは『3月に始めた実験で、不正転売アカウントの検知と蒸留対策が目的』と説明。便利ツールの裏側の透明性が論点に。", idea: "使っているAIツールの『見えない仕組み』——透明性とユーザーの知る権利", tag: "海外" },
+      { title: "Claude Cowork がモバイル/Webに拡張——定期タスク・モバイル承認に対応", why: "セッションとファイルが端末をまたいで同期。バックグラウンド作業・スケジュール実行・モバイルからの承認が可能に。非エンジニアの日常業務にエージェントがさらに入り込む。", idea: "スマホからAIに仕事を承認する日——Coworkモバイル化で変わる働き方", tag: "海外" },
+      { title: "Claude for Government が公開ベータ——FedRAMP High環境で公共部門に開放", why: "政府機関がClaude Code・Coworkでソフト開発やメモ作成・RFPレビューを委任できる。公共分野での本格採用が進む土台に。", idea: "行政がAIエージェントで仕事を任せる時代——公共×Claudeの最前線", tag: "海外" },
+      { title: "（国内）東大・日本マイクロソフト・リコー・レゾナックが『データファースト』を議論", why: "日本の大企業・学術・ベンダーが、AI活用の前提となるデータ整備（データファースト）の重要性を議論。実装事例が相次ぐ中、『使えるAI』の土台としてのデータの扱いが焦点に。", idea: "AI活用の前に来る『データ整備』——日本企業のデータファースト論", tag: "国内" }
+    ],
+    small: [
+      "Anthropicの年換算収益（ARR）は約477億ドル規模に到達との報道——OpenAIを上回るペースで成長。",
+      "DeNAがAI障害調査の所要時間を劇的に短縮、三菱UFJもAI活用構想を公表——国内大企業の実装が加速。"
+    ],
+    sources: [
+      { title: "Anthropic found Claude's hidden workspace (The Neuron)", url: "https://www.theneurondaily.com/p/anthropic-found-claude-s-hidden-workspace" },
+      { title: "Claude Code's hidden tracker was an experiment, says Anthropic (Malwarebytes)", url: "https://www.malwarebytes.com/blog/news/2026/07/claude-codes-hidden-tracker-was-an-experiment-says-anthropic" },
+      { title: "Claude Updates by Anthropic - July 2026 (Releasebot)", url: "https://releasebot.io/updates/anthropic/claude" },
+      { title: "Anthropic AI News Tracker (AI Weekly)", url: "https://aiweekly.co/ai-news-today/anthropic-news" },
+      { title: "AIニュース速報（2026年7月8〜9日）(note)", url: "https://note.com/t_kawa_awak/n/n74f5b3797650" }
+    ]
+  },
+  {
+    date: "2026-07-08",
+    pick: "OpenAIがGPT-5.6（Sol/Terra/Luna）の一般公開を発表——政府の制限が明け、同時に『聞きながら話す』音声モデル『GPT-Live』も披露。SpaceXAIのGrok 4.5も加わり、フロンティア競争は『性能』から『価格性能比』へと主戦場が移った。",
+    summary: [
+      "OpenAIがGPT-5.6を3価格帯（最上位Sol・中位Terra・最安Luna）で一般公開へ。同時に発話と傾聴を並行できる新音声モデル『GPT-Live』も発表。",
+      "SpaceXAI『Grok 4.5』公開。入力$2・出力$6/MTokで『Opus級だが、より速く・トークン効率が高く・低コスト』を標榜。最上位級性能を前提に価格性能比が競争軸へ。",
+      "Anthropicで政府発行IDによる本人確認ポリシーが7/8発効（Fable 5再展開の合意に基づく）。CoworkはWeb/モバイルへ拡張し、Microsoft 365の書き込み操作にも対応。"
+    ],
+    topics: [
+      { title: "OpenAI、GPT-5.6（Sol/Terra/Luna）を一般公開へ＋音声モデル『GPT-Live』発表", why: "政府による限定が明け、3つの価格帯で一般提供。GPT-Liveは聞きながら同時に話せる音声モデルで、リアルタイム対話が一段進む。フロンティア競争が音声・速度へ広がる。", idea: "AIと『同時に話す』時代——GPT-Liveが変えるAI音声対話", tag: "海外" },
+      { title: "SpaceXAI『Grok 4.5』公開——Opus級を$2/$6で、価格性能比が主戦場に", why: "入力$2・出力$6/MTokで最上位級の性能を低価格提供。GPT-5.6の3価格帯と合わせ、競争軸が『性能』から『いかに速く安く出すか』へ移ったことを象徴。", idea: "『安くて賢い』が当たり前になる——価格性能比で選ぶAIの時代", tag: "海外" },
+      { title: "Anthropic、政府発行IDの本人確認ポリシーが7/8発効", why: "Fable 5の再展開に伴う合意の一環。条件を満たさないアカウントは本人確認を求められる。安全対策の強化と引き換えに、利用のハードルとプライバシーの論点も。", idea: "AIを使うのに『身分証』が要る日——安全対策とプライバシーの綱引き", tag: "海外" },
+      { title: "Claude Cowork がWeb/モバイル拡張＋Microsoft 365の書き込み対応", why: "メール送信・カレンダー管理・OneDrive/SharePointの作成更新まで可能に。オフィス業務の実作業をAIに任せられる範囲が広がる。", idea: "AIがメールを送り、予定を組む——Cowork×Office連携の実力", tag: "海外" },
+      { title: "（国内）DeNA・三菱UFJなど大企業のAI実装事例が相次ぐ", why: "DeNAはAI障害調査の所要時間を劇的に短縮、三菱UFJはAI活用構想を公表。日本の大企業でも『試す』から『現場で使う』段階への移行が具体化している。", idea: "日本の大企業は『どこで』AIを使い始めたか——実装事例に学ぶ", tag: "国内" }
+    ],
+    small: [
+      "GPT-5.6の3モデル構成（Sol=最上位／Terra=中位／Luna=最安・高速）。用途に応じた使い分けが前提の設計。",
+      "Google『Gemini 3.5 Pro』は延期が3週目に。トークン効率・コード性能・長タスク推論の課題対応が続く。"
+    ],
+    sources: [
+      { title: "OpenAI to publicly release GPT-5.6, ending government limits (CNBC)", url: "https://www.cnbc.com/2026/07/08/openai-expanding-gpt-5point6-ai-model-release-ending-government-limits.html" },
+      { title: "AI News Today July 8 2026: 15 Biggest Stories (BuildFastWithAI)", url: "https://www.buildfastwithai.com/blogs/ai-news-today-july-8-2026" },
+      { title: "Anthropic Release Notes - July 2026 (Releasebot)", url: "https://releasebot.io/updates/anthropic" },
+      { title: "AIニュース速報（2026年7月8〜9日）GPT-5.6・Grok 4.5・国内実装 (note)", url: "https://note.com/t_kawa_awak/n/n74f5b3797650" }
+    ]
+  },
+  {
     date: "2026-07-07",
     pick: "Claude Fable 5、本日7/7をもってサブスクリプション包含が終了——明日7/8から入力$10・出力$50/百万トークンの使用量課金へ移行。Anthropicは「容量確保次第でサブスク復帰を目指す」と公式声明。永続廃止ではないが、当面はクレジットなしでは利用不可。",
     summary: [
