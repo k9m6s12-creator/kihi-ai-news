@@ -4,6 +4,32 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-11",
+    pick: "この一週間で新モデルが出そろい、コーディングAIの勢力図が落ち着いてきた。エージェント型コーディングの指標SWE-Bench ProではClaude Fable 5が80.3%で首位を維持し、GPT-5.5やGemini 3.1 Proに20ポイント以上の差。一方でGoogleの次期Gemini 3.5 Proは遅延が続き、『安さ』か『長時間の粘り強さ』かで選ぶ時代が鮮明に。",
+    summary: [
+      "GPT-5.6・Grok 4.5・Muse Spark 1.1と新モデルが出そろい、性能マップが安定。エージェント型コーディングのSWE-Bench ProではClaude Fable 5が80.3%で首位、GPT-5.5は58.6%、Gemini 3.1 Proは54.2%と差がついた。",
+      "Googleの次期Gemini 3.5 Proは公開の遅延が続く。トークン効率や長タスク推論の課題対応が理由とされ、先行2社との差が広がる展開に。",
+      "国内では中小企業のAI導入が加速。Claude Proなど月3千円級で始められ、意思決定の速さで大企業を上回るという実務的な指摘が出ている。"
+    ],
+    topics: [
+      { title: "Claude Fable 5、エージェント型コーディングSWE-Bench Proで80.3%と首位維持", why: "実際のバグ修正タスクを解かせる指標で、GPT-5.5（58.6%）やGemini 3.1 Pro（54.2%）に20ポイント以上の差。新モデルが出そろった後も、長時間の自律作業ではFable 5が抜けているという評価が定着しつつある。", idea: "ベンチマークの数字は何を測っているのか——SWE-Bench Proで分かるAIの実力", tag: "海外" },
+      { title: "週明けに見えた『使い分けマップ』——安さのLuna/Grok/Muse、粘り強さのFable 5", why: "GPT-5.6のLunaやGrok 4.5、Muse Spark 1.1は低価格で日常用途向き。対してFable 5は$10/$50と高価だが長時間エージェントに強い。『とにかく安く』と『難しい作業を任せきる』で選ぶ基準が分かれてきた。", idea: "AIは『安い順』では選べない——用途で選ぶ価格性能マップの作り方", tag: "海外" },
+      { title: "Google、次期Gemini 3.5 Proの公開遅延が続く", why: "トークン効率・コード性能・長タスク推論の課題対応が続いているとされる。OpenAI・Anthropicが週内に相次いで手を打つ中、先行2社との差が実感として広がる局面に。", idea: "『出せない』のもニュースになる——Gemini遅延から読むAI開発の難所", tag: "海外" },
+      { title: "（国内）中小企業のAI導入が加速——月3千円級・意思決定の速さが武器", why: "大企業より稟議が短く、Claude Proなど月3千円程度から初期投資ほぼゼロで始められる点が追い風。派手な自社開発でなく、既製のAIを現場に載せる『実装の速さ』で中小が先行する構図が語られ始めた。", idea: "『大企業より中小が速い』は本当か——身の丈AI導入のリアル", tag: "国内" }
+    ],
+    small: [
+      "Anthropicは一部プランで利用枠の倍増を8/5まで継続。フォーカス設定（休憩リマインド・作業インサイト）も拡充中。",
+      "Fable 5はOpus級の上に位置する『Mythos級』モデルで、長時間の自律作業に特化した設計とされる。"
+    ],
+    sources: [
+      { title: "SWE-bench Pro Leaderboard 2026 (CodingFleet)", url: "https://codingfleet.com/blog/swe-bench-pro-leaderboard-2026/" },
+      { title: "Claude Fable 5 Benchmark vs Gemini, GPT and Grok (Eden AI)", url: "https://www.edenai.co/post/claude-fable-5-benchmark-vs-gemini-gpt-and-grok" },
+      { title: "GPT-5.6 Sol Terra Luna vs Fable 5 — July 2026 (ExplainX)", url: "https://explainx.ai/blog/gpt-5-6-vs-claude-fable-5-comparison-2026" },
+      { title: "2026年7月最新 生成AIトレンド完全ガイド (genai-ai.co.jp)", url: "https://genai-ai.co.jp/ai-kanri/blog/cc-generative-ai-trends/" },
+      { title: "Claude Updates by Anthropic - July 2026 (Releasebot)", url: "https://releasebot.io/updates/anthropic/claude" }
+    ]
+  },
+  {
     date: "2026-07-10",
     pick: "OpenAIがGPT-5.6を正式公開しChatGPT Workを投入した同じ日、Anthropicは全ユーザーのレート制限をリセットし、最上位モデルFable 5の無料提供を7/12まで延長、振り返り機能『reflect』も追加——フロンティアAI2社が同日に応酬する異例の一日に。",
     summary: [
