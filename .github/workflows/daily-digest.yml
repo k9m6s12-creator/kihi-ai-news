@@ -1,0 +1,66 @@
+name: Daily AI News Digest
+
+# 毎朝7:00(JST)にサーバー側で自動実行する。PC起動もローカル再ログインも不要。
+# 手動テストは Actions タブの「Run workflow」から実行できる。
+
+on:
+  schedule:
+    - cron: '0 22 * * *'   # 22:00 UTC = 翌日 07:00 JST
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Compute JST date
+        run: echo "TODAY=$(TZ=Asia/Tokyo date +%Y-%m-%d)" >> "$GITHUB_ENV"
+
+      - name: Generate digest
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          PROMPT: |
+            You are updating digests.js in this repository. It powers a Japanese daily AI-news website.
+            First read digests.js to learn the exact object format (see the header comment) and to see which topics already exist.
+            Then use web search to collect today's (${{ env.TODAY }}) latest AI / generative-AI / Claude Code news, and PREPEND exactly ONE new dated entry to digests.js.
+
+            Hard rules:
+            - The new entry's date field must be exactly "${{ env.TODAY }}".
+            - Keep ALL existing entries unchanged. Insert the new entry immediately after `window.DIGESTS = [`, so newest is first.
+            - Match the object shape from the header comment: { date, pick, summary (3 items), topics (each { title, why, idea, tag }), small, sources (each { title, url }) }.
+            - NEVER use a half-width double-quote (") inside any string value. Use Japanese kagikakko 「」 for quotes/emphasis. This is critical: a stray " breaks the whole site.
+            - Do NOT duplicate topics that already appear in the most recent existing entries.
+            - Include at least one Japan-domestic topic and set its tag to 国内. tag must be one of 海外 / 国内 / 市場.
+            - Every topic needs an idea field: a short Japanese article-angle idea.
+            - Write all content in Japanese. Use only real, sourced news. Never fabricate numbers or facts.
+
+            After editing digests.js, stop. Do not run git. Do not commit.
+        run: claude -p "$PROMPT" --model sonnet --permission-mode bypassPermissions
+
+      - name: Validate digests.js
+        run: node --check digests.js
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- digests.js; then
+            echo "No changes to publish."
+            exit 0
+          fi
+          git config user.name "kihi-news-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add digests.js
+          git commit -m "daily digest update (${TODAY})"
+          git push
