@@ -4,6 +4,38 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-10",
+    pick: "OpenAIがGPT-5.6を正式公開しChatGPT Workを投入した同じ日、Anthropicは全ユーザーのレート制限をリセットし、最上位モデルFable 5の無料提供を7/12まで延長、振り返り機能『reflect』も追加——フロンティアAI2社が同日に応酬する異例の一日に。",
+    summary: [
+      "OpenAIが7/9、GPT-5.6（Sol・Terra・Luna）を一般公開し、業務エージェント『ChatGPT Work』も同時始動。第三者ベンチマークではコーディング・エージェント性能でClaude Fable 5を上回る結果も報告された。",
+      "Anthropicは同日、全ユーザーのレート制限をリセットしFable 5の無料期間を7/12まで延長、利用状況を振り返る新機能『reflect』も追加。GPT-5.6公開への対抗と見られている。",
+      "Metaが初の有料AIモデル『Muse Spark 1.1』を公開しコーディング競争に参入。米イリノイ州は全米最も厳格な『AI安全対策法』に知事が署名した。"
+    ],
+    topics: [
+      { title: "OpenAI、GPT-5.6を正式公開＋『ChatGPT Work』始動", why: "Sol・Terra・Lunaの3価格帯モデルが一般提供に。ChatGPT Workは接続済みアプリやファイルを横断し文書・表計算・資料を作成するエージェント。第三者機関Artificial Analysisの計測では、コーディングでSol・Terra双方がClaude Fable 5を上回ったと報告されている。", idea: "3段階価格のAIから何を選ぶか——GPT-5.6の使い分けガイド", tag: "海外" },
+      { title: "Anthropic、GPT-5.6公開と同日に対抗——レート制限リセット・Fable5無料延長・新機能『reflect』", why: "全ユーザーの週次・5時間ごとの利用制限をリセットし、Fable 5の無料提供を7/12まで延長。あわせて過去1〜12ヶ月の利用傾向を振り返る『reflect』機能も追加。競合のOpenAI幹部が挑発的なコメントを寄せるなど、フロンティアAI2社の応酬が可視化された。", idea: "『使いすぎ』を振り返るAI機能——reflectで自分のAI依存度を見直す", tag: "海外" },
+      { title: "Meta、初の有料AIモデル『Muse Spark 1.1』公開——コーディング競争に参入", why: "100万トークンの長文脈とマルチエージェント編成に対応した推論モデル。Meta Model APIで1MTokあたり入力$1.25・出力$4.25と、AnthropicやOpenAIの4分の1程度の価格を提示。Metaがこれまで無料提供してきたAIで初めて課金に踏み切った転換点。", idea: "Metaが『AIを無料で配る』のをやめた日——コーディングAI価格競争の行方", tag: "海外" },
+      { title: "米イリノイ州、全米最も厳格な『AI安全対策法』に知事署名", why: "年商5億ドル超・大規模計算資源で学習したフロンティアAI企業に、破局的リスクへの対応計画の年次公表と第三者による独立監査を義務化。重大な安全上の事故は72時間以内に州へ報告する必要がある。施行は2028年1月からだが、OpenAI・Anthropic双方が法案を支持した点も注目。", idea: "『AIの安全性を国ではなく州が審査する』時代——イリノイ州法から考える日本への示唆", tag: "海外" },
+      { title: "🔁続報：Grok 4.5、第三者ベンチマークで総合4位——独自のトークン効率性を主張", why: "Artificial AnalysisのIntelligence Indexで54点を獲得し、Claude Fable 5（1位）・GPT-5.5（2位）・Claude Opus 4.8（3位）に次ぐ4位。政治的バイアスを巡る論争も同時に浮上。高頻度エージェント用途でのコスト計算を変えるトークン効率性の主張が焦点に。", idea: "ベンチマーク4位のAIをどう評価するか——数字だけでは見えない使い勝手の話", tag: "海外" },
+      { title: "（国内）SoftBank・NVIDIA支援『AI Boost Program』、国内スタートアップ5社が成果発表", why: "名古屋のSTATION AiでNVIDIAとソフトバンクが支援するアクセラレータープログラムのクロージングイベントを7/10に開催。GPU基盤の提供や技術支援を受けた国内スタートアップ5社が事業成果を発表し、大手との事業共創機会を作った。生成AIを活用したデザインの知財リスク低減サービスなども登場した。", idea: "GPUを借りて挑む国内AIスタートアップ——支援プログラムから見る育成の実像", tag: "国内" }
+    ],
+    small: [
+      "Metaは自社設計のAIチップの製造を9月に開始予定で、2027年には計算能力を14ギガワット規模に引き上げる計画。",
+      "Accenture EdgeとGoogle Cloudが、年商3億〜30億ドルの中堅企業向けにあらかじめ構築されたエージェントAI群の提供を開始。"
+    ],
+    sources: [
+      { title: "Claude、利用制限を全リセット 競合GPT-5.6公開と同日 (ITmedia AI+)", url: "https://www.itmedia.co.jp/aiplus/article/2607/10/2000000179/" },
+      { title: "Anthropic、Claudeの使い方を振り返る新機能reflect追加 (ITmedia NEWS)", url: "https://www.itmedia.co.jp/news/articles/2607/10/news086.html" },
+      { title: "OpenAI officially releases GPT-5.6 (GIGAZINE)", url: "https://gigazine.net/gsc_news/en/20260710-gpt-5-6-openai" },
+      { title: "OpenAI、最新GPT-5.6を9日一般公開 米政府が承認 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOGN084IU0Y6A700C2000000/" },
+      { title: "Introducing Muse Spark 1.1 (Meta AI Blog)", url: "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/" },
+      { title: "Meta enters the crowded AI coding battle with Muse Spark 1.1 (TechCrunch)", url: "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/" },
+      { title: "Illinois Gov. Pritzker signs landmark AI Safety Measures Act into law (Transparency Coalition)", url: "https://www.transparencycoalition.ai/news/illinois-gov-pritzker-signs-landmark-ai-safety-measures-act-into-law" },
+      { title: "AI News Today July 10 2026: 15 Biggest Stories (BuildFastWithAI)", url: "https://www.buildfastwithai.com/blogs/ai-news-today-july-10-2026" },
+      { title: "AI Boost Program Demo Dayを7月10日に開催 (PR TIMES / STATION Ai)", url: "https://prtimes.jp/main/html/rd/p/000000120.000095825.html" }
+    ]
+  },
+  {
     date: "2026-07-09",
     pick: "Anthropicの研究者がClaudeの内部『作業スペース（J-space）』を発見——答えとして現れる前に概念を保持・編集する領域の存在が判明し、AIの『思考』理解が一歩前進。一方でClaude Codeに『隠しトラッカー』が見つかり、Anthropicは『3月に始めた不正転売・蒸留対策の実験』と釈明する一幕も。",
     summary: [
