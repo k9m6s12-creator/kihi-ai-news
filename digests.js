@@ -4,6 +4,38 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-12",
+    pick: "AppleがOpenAIを商業秘密窃盗の疑いで提訴（7/10）——「あらゆる階層で組織的に窃盗が行われた」と主張し、退職した元Apple社員400人超の名を列挙。2024年のChatGPT連携という蜜月から一転、フロンティアAI企業同士の対立が法廷闘争に発展した象徴的な一日に。",
+    summary: [
+      "AppleがOpenAIを北カリフォルニア連邦地裁に提訴。ハードウェア責任者Tang Tan氏らが応募者に「実物の部品」持参を求めたなど、組織的な機密窃取を主張している。",
+      "GoogleのGemini 3.5 Proは7/17に延期。既存の2.5 Proアーキテクチャを破棄し、200万トークンのコンテキスト窓を備えた完全刷新版として登場する見通し。",
+      "Claude Fable 5のサブスク包含アクセスは本日7/12が最終日。7/13以降は入力$10・出力$50/百万トークンの使用量クレジット制へ完全移行する。"
+    ],
+    topics: [
+      { title: "Apple、OpenAIを商業秘密窃盗で提訴——元社員400人超の名を列挙", why: "訴状では「技術スタッフからチーフ・ハードウェア・オフィサーまで、あらゆる階層で」機密窃取が行われたと主張。ハードウェア責任者Tang Tan氏（元Apple副社長）が応募者に実物のApple部品持参を求めたこと、退職者にセキュリティ回避方法を指南したことなどが具体的に列挙されている。2024年のChatGPT統合という蜜月からの急転換で、AI企業間の人材争奪戦が法廷闘争に発展した。", idea: "「AI企業の人材引き抜き」はどこまで許されるのか——Apple対OpenAI訴訟から考える", tag: "海外" },
+      { title: "🔁続報：Gemini 3.5 Pro、7/17に延期——2.5 Proの土台を破棄し完全新規構築へ", why: "既存アーキテクチャの改良ではなく、ゼロからの再構築を選んだとされる。200万トークンのコンテキスト窓（現行フロンティア勢の2倍）と拡張推論モード「Deep Think」を搭載予定。DeepSeek V4の正式版公開と同日に重なる見通しで、複数社の主力モデルが7月中旬に集中する展開になっている。", idea: "「作り直す」という決断——Gemini延期から見るAI開発の意思決定", tag: "海外" },
+      { title: "🔁続報：Claude Fable 5、本日7/12がサブスク包含アクセスの最終日", why: "Pro・Max・Team・一部Enterpriseで週次利用上限の50%まで無追加料金だった措置が本日で終了。7/13以降は入力$10・出力$50/百万トークンの使用量クレジットが必須になる。7/7に一度延長された経緯があり、Anthropicは容量確保後のサブスク復帰を目指すとしている。", idea: "無料期間が終わったAIとどう付き合うか——Fable 5クレジット制移行後の使い分け", tag: "海外" },
+      { title: "SambaNova、$1B調達で評価額$11Bに——JPMorganChaseと推論インフラで提携", why: "General Atlantic主導のシリーズFで、BlackRock・Intel Capital・カタール投資庁なども参加。次世代チップSN50はSoftBankを最初の導入パートナーとして2026年後半に出荷予定。AI半導体スタートアップへの資金集中がさらに進んでいる。", idea: "NVIDIA一強ではない——AI半導体スタートアップの資金調達競争を追う", tag: "市場" },
+      { title: "（国内）三菱自動車、東大発Highlandersと人型ロボット量産で基本合意（7/9）", why: "京都製作所京都工場を活用し、2027年に月1000台の製造体制を目指す。三菱自の量産設計・品質保証・機電統合制御の知見を投入し、自社工場での稼働データも蓄積する計画。2027年後半にはエンジン組み立てなど自社工場の一部業務への導入も検討している。自動車メーカーの製造ノウハウをロボット量産に転用する事例として注目。", idea: "車を作る技術でロボットを作る——三菱自動車の量産ノウハウ転用に学ぶ", tag: "国内" },
+      { title: "（国内）企業の7割超が「シャドーAI」対策できず——支援サービスが相次ぎ登場", why: "ガートナージャパンの2026年6月調査で、シャドーAI（未承認の生成AI利用）への有効な対策を取れていない国内企業が7割超に上ると判明。IPA情報セキュリティ10大脅威2026でも3位にランクイン。GRCSが7/2に可視化・統制ツールを組み込んだ支援パッケージの提供を開始するなど、対策サービス市場が動き出している。", idea: "社員が勝手にAIを使う「シャドーAI」——禁止より「安全な選択」を用意する対策の考え方", tag: "国内" }
+    ],
+    small: [
+      "Anthropicのデザインツール「Claude Design」はClaude Codeとの双方向連携とCanva／Adobeへの書き出しを強化済み——プロンプトからプロトタイプやスライドを生成できる。",
+      "Gemini 3.5 ProのGA予定日（7/17）は報道ベースで、Google公式の確定発表はまだ（7/7時点のAPIページはgemini-3.5-flash／gemini-3.1-pro-previewの表記）。"
+    ],
+    sources: [
+      { title: "Apple sues OpenAI alleging trade secret theft, says scheme was at every level (CNBC)", url: "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html" },
+      { title: "Apple sues OpenAI over alleged trade secret theft (TechCrunch)", url: "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/" },
+      { title: "Google Delays Gemini 3.5 Pro Launch to July 17 for Full Architectural Rebuild (BigGo Finance)", url: "https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a" },
+      { title: "Fable 5 Plan Access Extended to July 12: What Changes (Digital Applied)", url: "https://www.digitalapplied.com/blog/anthropic-fable-5-access-extended-july-12-2026" },
+      { title: "SambaNova draws $1B at $11B valuation in Series F first close (TechCrunch)", url: "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/" },
+      { title: "三菱自、東大発ベンチャーと人型ロボット開発で協業 追加出資へ (DG Lab Haus)", url: "https://media.dglab.com/2026/07/10-reuters-02/" },
+      { title: "三菱自動車が「国産人型ロボ」量産へ 2027年に月1000台の製造体制 (ITmedia AI+)", url: "https://www.itmedia.co.jp/aiplus/article/2607/09/2000000177/" },
+      { title: "企業の7割超がシャドーAI対策できず、放置で情報漏洩・法令違反のリスクも (日経クロステック)", url: "https://xtech.nikkei.com/atcl/nxt/column/18/00989/062200211/" },
+      { title: "従業員向けシャドーAI対策トータル支援パッケージをリリース (PR TIMES / GRCS)", url: "https://prtimes.jp/main/html/rd/p/000000122.000035245.html" }
+    ]
+  },
+  {
     date: "2026-07-11",
     pick: "この一週間で新モデルが出そろい、コーディングAIの勢力図が落ち着いてきた。エージェント型コーディングの指標SWE-Bench ProではClaude Fable 5が80.3%で首位を維持し、GPT-5.5やGemini 3.1 Proに20ポイント以上の差。一方でGoogleの次期Gemini 3.5 Proは遅延が続き、『安さ』か『長時間の粘り強さ』かで選ぶ時代が鮮明に。",
     summary: [
