@@ -4,6 +4,38 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-13",
+    pick: "Claude Fable 5の無償アクセスが7/19まで再延長——6/22の当初終了予定から数えて3度目の延期に。Anthropicは需要予測の難しさを理由に挙げるが、フロンティアAI企業がいまだ「使い放題」から抜け出せない現実が浮き彫りに。同日、インドのTCSは最大8,900人規模の「AI導入専門エンジニア」体制を発表——AIを『導入支援』で稼ぐ側に回る動きも本格化している。",
+    summary: [
+      "Claude Fable 5の無償アクセス（週次利用上限の50%まで無追加課金）とClaude Codeの週次利用上限50%増が、そろって7/19まで再延長。当初終了予定の6/22から3度目の延期となった。",
+      "インドのTCSが、全従業員の1〜1.5%にあたる最大8,900人を「AI導入専門エンジニア」に転換する計画を発表。AI・サイバーセキュリティ分野での企業買収も検討中と表明した。",
+      "韓国SKハイニックスが7/10にナスダック上場し265億ドルを調達——外国企業による米国上場として史上最大規模。テスラは日本国内の車両に対話型AI「Grok」を追加し、音声でのナビ操作に対応した。"
+    ],
+    topics: [
+      { title: "🔁続報：Claude Fable 5、無償アクセスを7/19まで再延長——当初終了予定から3度目の延期", why: "Pro・Max・Team・一部Enterpriseで週次利用上限の50%まで無追加料金という措置が、6/22の当初終了予定から数えて3度目の延長となった。Claude Codeの週次利用上限50%増も同じく7/19まで延長。Anthropicは需要の予測が難しいことを理由に挙げているが、使用量クレジット制への完全移行がたびたび先送りされている状況が続く。", idea: "「延長また延長」のAI無料期間——ユーザーはどう向き合うべきか", tag: "海外" },
+      { title: "TCS、最大8,900人規模の「AI導入専門エンジニア」体制へ——AI・サイバーセキュリティ企業の買収も検討", why: "インドの大手ITサービス企業TCSが、全従業員59万人超の1〜1.5%にあたる5,900〜8,900人を、顧客先でAI導入を支援する「フォワード・デプロイド・エンジニア」に転換する計画を発表。既存人材の再教育か外部採用かは未定だが、AIが受託開発の仕事を奪うのではなく新たな収益源になるとの見立てに基づく。ITアウトソーシング業界がAI時代にどう自己変革するかを示す事例。", idea: "ITアウトソーシング大手がAIで稼ぎ方を変える——TCSの「導入専門エンジニア」戦略から学ぶこと", tag: "海外" },
+      { title: "SKハイニックス、ナスダック上場で265億ドル調達——外国企業として史上最大のADR", why: "7/10にナスダックへADR上場し、アリババの2014年上場（250億ドル）を超える外国企業として過去最大の資金調達に。上場初日は13%上昇。NVIDIAへHBM（広帯域メモリ）を供給する主要3社の一角として、AI半導体需要の高まりを背景にした投資家の強い需要が指摘されている。", idea: "AIブームが半導体株の上場を動かす——SKハイニックス上場から見る資金の流れ", tag: "市場" },
+      { title: "（国内）テスラ車内AI「Grok」、日本でも展開開始——音声でナビ操作や情報検索", why: "Tesla Japanが7/10、対話型AI「Grok」を国内車両向けに提供開始したとX公式アカウントで発表。ソフトウェア2026.20以降かつ有料の「プレミアムコネクティビティ」契約が条件で、音声でのルート設定・場所検索・車両状態確認などに対応する（空調やメディア操作は非対応）。米国では2025年7月から搭載が始まっており、日本はそれに続く展開。", idea: "「話しかけて動かす」以前の一歩——車載AIが日本でまずできること・できないこと", tag: "国内" },
+      { title: "（国内）浜松市、中小事業者向け「AIエージェント導入支援補助金」の二次募集を開始", why: "浜松市が、市内中小事業者等のAIエージェント導入費用（ライセンス・カスタマイズ・導入コンサルティング費等）を対象経費の2分の1以内・上限500万円で補助する制度の二次募集を開始。締切は7/31。地方自治体レベルでの中小企業AI導入支援が、具体的な予算措置として広がっている一例。", idea: "「補助金でAIを導入する」を検討する——浜松市の制度から見る中小企業支援の実態", tag: "国内" }
+    ],
+    small: [
+      "国連は7/6〜7、ジュネーブで「AIガバナンスに関するグローバル対話」を開催。破局的リスクへの国際的な懸念を背景に、各国の規制アプローチのすり合わせが議題に上った。",
+      "アクセンチュアは5月にAnthropicとの協業体制「アクセンチュア Anthropicビジネスグループ」の日本活動を本格始動しており、企業変革支援での連携が継続中。"
+    ],
+    sources: [
+      { title: "Claude Fable 5 Free Access Extended Until July 19 (Dataconomy)", url: "https://dataconomy.com/2026/07/13/claude-fable-5-free-access-extended-july-19/" },
+      { title: "Claude Code Increases Weekly Limits by 50% Through July 13 2026 (Pasquale Pillitteri)", url: "https://pasqualepillitteri.it/en/news/2494/claude-code-weekly-limits-50-percent-anti-codex-anthropic-2026" },
+      { title: "TCS Plans Up to 8,900 AI Jobs as It Explores AI Acquisitions (Business Today)", url: "https://www.businesstoday.in/technology/news/story/tcs-plans-up-to-8900-ai-jobs-as-it-explores-ai-acquisitions-all-details-542504-2026-07-13" },
+      { title: "TCS Plans Up to 8,900 Forward-Deployed AI Engineers (AI Weekly)", url: "https://aiweekly.co/alerts/tcs-plans-up-to-8900-ai-deployment-engineers-eyes-ma" },
+      { title: "SK Hynix ADR Stock (SKHYV) Rises After $26.5 Billion US Listing (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-07-10/sk-hynix-indicated-to-climb-17-after-26-5-billion-adr-offering" },
+      { title: "SK Hynix rises 13% in Nasdaq debut. Chairman tells CNBC demand is enormous (CNBC)", url: "https://www.cnbc.com/2026/07/10/sk-hynix-skhy-stock-nasdaq.html" },
+      { title: "テスラ車内で「Grok」と会話、日本でも展開へ (ITmedia NEWS)", url: "https://www.itmedia.co.jp/news/articles/2607/10/news157.html" },
+      { title: "テスラ、日本でEVに対話型AI「Grok」 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOUC077EG0X00C26A7000000/" },
+      { title: "浜松市中小事業者等AIエージェント導入支援事業費補助金の二次募集について (PR TIMES / 浜松市)", url: "https://prtimes.jp/main/html/rd/p/000000540.000049248.html" },
+      { title: "Global push for AI governance amid warnings of catastrophic harm (UN News)", url: "https://news.un.org/en/story/2026/07/1167862" }
+    ]
+  },
+  {
     date: "2026-07-12",
     pick: "AppleがOpenAIを商業秘密窃盗の疑いで提訴（7/10）——「あらゆる階層で組織的に窃盗が行われた」と主張し、退職した元Apple社員400人超の名を列挙。2024年のChatGPT連携という蜜月から一転、フロンティアAI企業同士の対立が法廷闘争に発展した象徴的な一日に。",
     summary: [
