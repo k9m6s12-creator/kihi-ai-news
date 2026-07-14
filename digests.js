@@ -4,6 +4,35 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-14",
+    pick: "ソフトバンクグループの孫正義代表が7/14、「SoftBank World 2026」の基調講演で2040年の世界像を提示——AIエージェント100兆個が24時間稼働し「人間中心からAIエージェント中心の時代へ移行する」と宣言。世界のAIインフラ投資は2040年に年5兆ドル（約800兆円）規模に達すると予測した。同じ7/13〜14には、GMOインターネットグループの熊谷正寿代表が自らグループCAIO（AI変革最高責任者）に就任するなど、国内では経営トップ自らがAI変革の陣頭指揮を執る動きが相次いだ。",
+    summary: [
+      "孫正義氏がSoftBank World 2026の基調講演で、2040年に100兆個のAIエージェントが24時間稼働し人間中心からAIエージェント中心の時代へ移行すると予測。世界のAI関連売上は世界GDP3.7京円の20%・7000兆円規模、AIインフラ投資は年5兆ドル（約800兆円）に達すると説明した。",
+      "GMOインターネットグループの熊谷正寿代表が7/13、自らグループCAIO（AI変革最高責任者）に就任すると発表。7/14には「グループAI推進本部」も新設し、「コーディングはAIの仕事」を前提に組織・業務の抜本的な見直しに着手する。",
+      "台湾TSMCが2026年第2四半期に売上高1.27兆台湾ドル（約396億ドル、前年同期比36%増）の過去最高を記録。AI向け先端チップ需要がけん引し、3nmプロセスと先端パッケージングCoWoSは年末まで受注満了という。"
+    ],
+    topics: [
+      { title: "孫正義氏、SoftBank World 2026で「2040年に100兆個のAIエージェントが稼働」と予測", why: "世界のAIインフラ投資が2040年に年5兆ドル（約800兆円）規模に達し、世界GDP3.7京円のうち20%・7000兆円がAI関連売上になると説明。ヒト型ロボットも10億台稼働するとし、「人間が生命体の頂点の時代は終わる」と述べた。データセンターの電源は当面天然ガス、将来的には核融合発電を有望視するとした。ソフトバンクグループ自身がAIインフラへの超長期投資を正当化する狙いも透ける発言。", idea: "「2040年に100兆個のAIエージェント」は本当か——孫正義予測を数字で検証する", tag: "国内" },
+      { title: "（国内）GMOインターネットグループ、熊谷正寿代表が自らグループCAIO（AI変革最高責任者）に就任", why: "7/13付でグループ代表がAI変革の最高責任者を兼務すると発表。7/14には「グループAI推進本部」を新設し、副社長がAI変革担当・本部長に就任した。「コーディングはAIの仕事」という前提のもと、エンジニアを含む組織・業務体制の見直しに着手し、2027年11月末までに「日本一のハイパー自動化企業グループ」を目指すとしている。経営トップ自らがAI変革を陣頭指揮する事例として注目。", idea: "社長が自らCAIOになる——GMOの経営トップ主導AI変革から学ぶこと", tag: "国内" },
+      { title: "Cursor、Claude CoworkやChatGPT Workに対抗する汎用AIエージェント「Sand」を開発中", why: "コーディング支援で知られるCursorが、メール対応や表計算整理、エンジニアリング作業まで担う汎用エージェント「Sand」を社内展開中と報じられた。開発用の計算資源はSpaceXAIからのリース。ただしCursorは2026年第3四半期に完了予定のSpaceXによる約600億ドル規模の買収を控えており、Sandが実際に一般公開されるかは不透明で、買収が製品ロードマップを書き換える可能性がある。", idea: "コーディングAIが何でも屋になる日——CursorのSandから見るエージェント統合の行方", tag: "海外" },
+      { title: "TSMC、2026年第2四半期に売上高過去最高——AI向け先端チップ需要が牽引", why: "売上高は1.27兆台湾ドル（約396億ドル）で前年同期比36%増、自社ガイダンス上限も上回った。6月単月の売上高は前年比67.9%増で過去最高を記録。NVIDIA向けなどAI半導体需要が旺盛で、3nmプロセスと先端パッケージングCoWoSは年末まで受注が埋まっているという。正式な第2四半期決算は7/16に発表予定。", idea: "AI好況は半導体の数字にどう表れるか——TSMC決算から読む需要の実態", tag: "市場" },
+      { title: "OpenAI、独立型ブラウザ「ChatGPT Atlas」を終了へ——8/9にアクセス停止", why: "2025年10月に鳴り物入りで登場したAtlasだが、9か月足らずで終了が決定。macOS版のみの提供でWindows・iOS・Android版は結局リリースされず、シェアが伸び悩んだとみられる。エージェント的なブラウジング機能はChatGPTデスクトップアプリとChrome拡張機能に再編し継続する。ブックマークや閲覧履歴、保存パスワードなどは自動移行されないため、ユーザーは8/9までに手動でのバックアップが必要。", idea: "鳴り物入りの新製品が9か月で終わる——ChatGPT Atlas終了から学ぶプロダクト撤退の教訓", tag: "海外" }
+    ],
+    small: [
+      "Claude Codeはv2.1.209（7/14）で、バックグラウンドの「claude agents」セッション中に/modelなどのダイアログがブロックされる不具合を修正した。",
+      "Fable 5の無償アクセス延長（7/19まで）は7/13付ですでに報告済みの続報で、7/14時点で新たな動きは確認できず。"
+    ],
+    sources: [
+      { title: "数千兆のAI agentsが常時稼働する世界へ。孫正義 特別講演レポート (ソフトバンク ビジネスブログ)", url: "https://www.softbank.jp/business/content/blog/202507/sbw2025-softbank-son-main-keynote" },
+      { title: "ソフトバンクG孫正義氏 世界のAIインフラ投資「40年に800兆円へ」 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOUC142BO0U6A710C2000000/" },
+      { title: "GMOグループ、AI時代に「エンジニア含む組織体制見直し」 熊谷代表が「AI変革最高責任者」に (ITmedia NEWS)", url: "https://www.itmedia.co.jp/news/articles/2607/13/news093.html" },
+      { title: "Cursor Prepares Workplace AI Agent to Challenge Claude Cowork and ChatGPT Work (PYMNTS)", url: "https://www.pymnts.com/news/artificial-intelligence/2026/cursor-prepares-workplace-ai-agent-to-challenge-claude-cowork-and-chatgpt-work/" },
+      { title: "TSMC sales hit record on AI demand (Taipei Times)", url: "https://www.taipeitimes.com/News/biz/archives/2026/07/14/2003860683" },
+      { title: "OpenAI is shutting down Atlas, but its AI browser ambitions are still growing (TechCrunch)", url: "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/" },
+      { title: "Claude Code Updates by Anthropic - July 2026 (Releasebot)", url: "https://releasebot.io/updates/anthropic/claude-code" }
+    ]
+  },
+  {
     date: "2026-07-13",
     pick: "Claude Fable 5の無償アクセスが7/19まで再延長——6/22の当初終了予定から数えて3度目の延期に。Anthropicは需要予測の難しさを理由に挙げるが、フロンティアAI企業がいまだ「使い放題」から抜け出せない現実が浮き彫りに。同日、インドのTCSは最大8,900人規模の「AI導入専門エンジニア」体制を発表——AIを『導入支援』で稼ぐ側に回る動きも本格化している。",
     summary: [
