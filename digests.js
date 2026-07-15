@@ -4,6 +4,36 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-15",
+    pick: "Google DeepMindのハサビスCEOが7/14、フロンティアAIモデルを事前審査する米国主導の独立「標準化機関」創設を提案——サム・アルトマン氏やサティア・ナデラ氏も支持を表明し、AI企業自身が政府に代わる審査の枠組みを求める動きが本格化した。同日、Anthropicは米国のK-12教員向けに「Claude for Teachers」を無償提供開始——教育現場をめぐる生成AI各社の争奪戦も加速している。",
+    summary: [
+      "Google DeepMindのデミス・ハサビスCEOが、FINRAのような独立の「フロンティアAI標準化機関」創設を提案。発売前最大30日間モデルを審査し、サイバー・生物兵器・「欺瞞」能力などを検証する枠組みで、アルトマン氏・ナデラ氏らも支持を表明した。",
+      "Anthropicが7/14、米国の認定K-12教員向けに「Claude for Teachers」を無償提供開始。Claude Code・Coworkや、全50州の学習指導要領に対応した教育コネクタなどを1年間無料で使える。",
+      "中国の「AI擬人化サービス管理弁法」が本日7/15に施行。ByteDance「豆包」・Alibaba「千問」がユーザー作成型AIキャラクター機能を終了し、Tencentも6月に同様機能を削除済み。"
+    ],
+    topics: [
+      { title: "Google DeepMind、ハサビスCEOが米国主導の独立「フロンティアAI標準化機関」創設を提案", why: "発売前最大30日間、フロンティアラボが任意でモデルを機関に提出し、サイバー・生物・「欺瞞」能力などの危険性を審査する仕組みを提唱。当初は任意提出だが、有効性が確認されれば法制化も視野に入れる。政府主導ではなく業界資金による独立運営とし、チューリング賞受賞者ら有識者中心の理事会を想定。サム・アルトマン氏やサティア・ナデラ氏など他社トップも支持を表明しており、AI企業側から審査の枠組みを主導する動きとして注目される。", idea: "AI企業が自ら審査機関を求める——ハサビス提案から考える規制と自主基準の境界", tag: "海外" },
+      { title: "Anthropic、米国K-12教員向け「Claude for Teachers」を無償提供開始", why: "認定を受けた米国の幼稚園から高校までの教員が、Claude Code・Coworkを含む有料級機能を1年間無料で利用可能に。全50州の学習指導要領に対応した「Learning Commons」コネクタや、学習科学者と共同開発した教育向けスキルも提供。生徒データはモデル学習に使わず、FERPA準拠のK-12向けデータ処理契約で保護するとしている。教育現場を巡るAI各社の争奪戦が一段と本格化。", idea: "学校に無料で入り込むAI——Claude for Teachersは授業をどう変えるか", tag: "海外" },
+      { title: "🔁続報：中国「AI擬人化規制」が本日7/15施行——ByteDance・Alibabaがユーザー作成AIキャラ機能を終了", why: "4月公布の「人工知能擬人化互動服務管理暫行弁法」が本日施行。Alibaba「千問」は7/10から段階停止し15日までに関連サービスを終了、ByteDance「豆包」も本日で終了。Tencentは6月時点で「元宝」の同機能をすでに削除済み。14歳未満の本人確認や「AIと会話しています」旨の明示など、感情的な連続対話サービスへの包括規制が世界に先駆けて実運用段階に入った。", idea: "AIと友達になるを国が線引きする——中国の施行初日から読む次の論点", tag: "海外" },
+      { title: "（国内）NEC、ソフトバンクと組みJoshin全事業所に顔認証勤怠システムを導入", why: "NECの顔認証クラウド「Bio-IDiom Services」とエッジ端末「UBio-N Face Pro」を使い、共有PCへのID・パスワード入力に代わってジェスチャー操作だけで出退勤を記録できる仕組みを全事業所で本格稼働。パスワード失念による対応の遅れや、共有PC利用の衛生面の懸念を解消する狙い。生成AIそのものではないが、AI技術が小売・接客の現場業務に定着している事例として注目。", idea: "ピースサインで出勤——現場に浸透するAI技術の地味だが確実な効果", tag: "国内" },
+      { title: "AI半導体スタートアップ3社が高評価額での大型資金調達を推進——FuriosaAI・Nuvacore・d-Matrix", why: "韓国のFuriosaAIは評価額20億ドル超を前提に5億ドル規模、CPU設計のNuvacoreは2億ドル超、推論チップのd-Matrixは評価額50億ドル（従来20億ドルから倍増）を目指し数億ドル規模の調達を、それぞれ投資家と協議中とThe Informationが報道。NVIDIA一強に挑む半導体スタートアップへの資金集中が続いている。", idea: "NVIDIA一強に挑む半導体スタートアップたち——評価額の跳ね上がりから見る市場の期待", tag: "市場" }
+    ],
+    small: [
+      "Anthropicは韓国Samsungとの独自AI推論チップ協議（2nmプロセス想定）を継続中と報じられている——月12.5億ドル規模とされる計算コストの圧縮が狙い。",
+      "中国Z.aiの創業者Tang Jie氏が「AIはオープンであるべき」とする覚書を公表——海外向けAI利用制限の議論に対する中国側からの反論として注目された。"
+    ],
+    sources: [
+      { title: "DeepMind CEO calls for an independent standards body to regulate frontier AI (TechCrunch)", url: "https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/" },
+      { title: "Google DeepMind chief Demis Hassabis calls for U.S. to spearhead AI standards body (CNBC)", url: "https://www.cnbc.com/2026/07/14/google-deepmind-demis-hassabis-us-led-ai-standards-body.html" },
+      { title: "Anthropic launches Claude for Teachers in AI race to influence America's classrooms (Chalkbeat)", url: "https://www.chalkbeat.org/2026/07/14/anthropic-launches-claude-for-teachers-as-ai-companies-battle-for-classrooms/" },
+      { title: "Anthropic Makes Claude Free for All US K-12 Teachers With Standards-Aligned Agentic AI (Tech Times)", url: "https://www.techtimes.com/articles/320533/20260715/anthropic-makes-claude-free-all-us-k-12-teachers-standards-aligned-agentic-ai.htm" },
+      { title: "中国AI規制が7月15日施行 「豆包」「千問」が一部エージェント機能停止へ (Science Portal China)", url: "https://spap.jst.go.jp/china/experiences/law/law_2608.html" },
+      { title: "「ピースサインで勤怠打刻」 Joshinが全事業所に導入した顔認証が従業員から絶賛のワケ (ITmedia ビジネスオンライン)", url: "https://www.itmedia.co.jp/business/articles/2607/15/news041.html" },
+      { title: "NEC、Joshin全事業所に顔認証システム導入 ジェスチャーで勤怠打刻 (マイナビTECH+)", url: "https://news.mynavi.jp/techplus/article/20260713-4696414/" },
+      { title: "AIチップ新興企業FuriosaAI、Nuvacore、d-Matrixが高評価額での大型資金調達を推進 (Investing.com)", url: "https://jp.investing.com/news/stock-market-news/article-93CH-1602970" }
+    ]
+  },
+  {
     date: "2026-07-14",
     pick: "ソフトバンクグループの孫正義代表が7/14、「SoftBank World 2026」の基調講演で2040年の世界像を提示——AIエージェント100兆個が24時間稼働し「人間中心からAIエージェント中心の時代へ移行する」と宣言。世界のAIインフラ投資は2040年に年5兆ドル（約800兆円）規模に達すると予測した。同じ7/13〜14には、GMOインターネットグループの熊谷正寿代表が自らグループCAIO（AI変革最高責任者）に就任するなど、国内では経営トップ自らがAI変革の陣頭指揮を執る動きが相次いだ。",
     summary: [
