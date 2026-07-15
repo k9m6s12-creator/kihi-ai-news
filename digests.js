@@ -4,6 +4,39 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-16",
+    pick: "Anthropicが7/15、モルガン・スタンレー・ゴールドマン・サックス・JPモルガンを主幹事にIPOへ向けた投資家説明会の準備を本格化——評価額は$965Bとされ、2027年へ延期したOpenAIより先に、早ければ10月にも上場する可能性が浮上した。同じ週には日本政府が7/14に「AI基本計画（第2期）」を閣議決定し「日本AX」を掲げるなど、フロンティアAI企業の上場準備と各国のAI国家戦略づくりが同時並行で進む一週間となった。",
+    summary: [
+      "Anthropicが7/15、モルガン・スタンレー、ゴールドマン・サックス、JPモルガン・チェースを主幹事にIPO投資家説明会の準備を開始。5月の資金調達後の評価額$965Bで初めてOpenAIを上回っており、2027年へIPOを延期したOpenAIより先に10月上場を目指すと報じられた。ティッカーは「ANTH」との観測もあるが未確定。",
+      "日本政府が7/14、「人工知能基本計画（第2期）」を閣議決定。AIを前提に意思決定や業務を作り変える「日本AX」を掲げ、バーティカルAI・フィジカルAIへの官民投資を2040年度までに合計30兆円超と想定する。",
+      "国内ではテクノプロ・グループが7/14、Claude Enterpriseの全社ライセンス契約を発表。約3万人のエンジニアを対象に、2029年6月までに「AI実装エンジニア」1万人体制の構築を目指す。"
+    ],
+    topics: [
+      { title: "Anthropic、IPOに向け投資家説明会を準備——評価額$965Bで10月上場も、OpenAIに先行の可能性", why: "モルガン・スタンレー、ゴールドマン・サックス、JPモルガン・チェースを主幹事に、今後数週間で投資家向け説明会を開催予定と報じられた。5月の資金調達ラウンド後の評価額は$965Bで、初めてOpenAIの評価額を上回った。順調に進めば2027年へIPOを延期したOpenAIやDeepSeekより先に公開市場へ到達する見通し。ティッカーは「ANTH」との観測もあるが、正式なS-1提出前で未確定。Claudeの商用成績の堅調さが上場準備を後押ししているとされる。", idea: "フロンティアAI企業がついに上場する——Anthropic IPO観測から投資家目線でClaudeの成長を読む", tag: "海外" },
+      { title: "（国内）日本政府、「人工知能基本計画（第2期）」を閣議決定——「日本AX」を掲げ2040年度まで数十兆円規模の投資を想定", why: "2025年12月策定の第1期計画を改訂し、7/14に閣議決定。AIを単なるツールでなく意思決定の主体として位置づけ、社会全体の業務プロセスを見直す「AIトランスフォーメーション（AX）」を打ち出した。製造・金融・医療・防衛など20の重点分野に2030年度までのロードマップを設定し、バーティカルAI・フィジカルAIへの官民投資を2040年度までにそれぞれ23.1兆円・10.5兆円と想定。AISIを中心にAIモデルの評価・トレーサビリティ体制も米英と連携して強化するとしている。", idea: "国が示す2040年のAI社会像——「AI基本計画（第2期）」を自分の仕事に引き寄せて読む", tag: "国内" },
+      { title: "（国内）テクノプロ、Claude Enterpriseを全社導入——約3万人体制で「AI実装エンジニア」1万人育成へ", why: "エンジニア派遣大手のテクノプロ・グループが7/14、Claude Enterpriseの全社ライセンス契約締結を発表。営業・採用・財務経理・経営戦略まで全業務プロセスへの導入を掲げ、2029年6月までに「AI実装エンジニア」1万人体制の構築を目指す。AI CoE室主導の研修プログラムや、社内ナレッジをRAG化してClaudeのエージェント機能で活用する仕組みも整備する。中期経営計画に位置づける100億円超のAI/DX投資の重点施策の一つで、2025年8月にブラックストーン傘下入りした同社の変革を象徴する動き。", idea: "エンジニア3万人がClaudeを使う会社になる——テクノプロの全社導入から学ぶ人材育成の設計", tag: "国内" },
+      { title: "Microsoft、AIが発見した脆弱性で史上最多570件のセキュリティパッチを公開", why: "7月のPatch Tuesdayで、これまでで最多となる570件の脆弱性を修正。うち2件は悪用が確認された脆弱性（Active Directory連携サービス、SharePoint Server）で、1件は公表済み未悪用のBitLocker関連脆弱性。MicrosoftはAIを使った脆弱性発見システムをWindowsのコードベースに導入したことが件数急増の一因と説明しており、攻撃者に先んじてバグを見つける「守り」側でのAI活用が具体的な数字で示された事例といえる。", idea: "AIが自社のバグを見つける時代——守りに使うAIの実力を570件のパッチから読む", tag: "海外" },
+      { title: "TSMC、本日4-6月期決算発表——AI投資減速の有無を占う試金石に", why: "台湾時間14時（日本時間15時）に発表予定。市場予想は売上高約400億ドル（前年同期比33%増）。焦点は、通期売上高成長率ガイダンスを現行の「30%以上」から上方修正するか、先端パッケージング技術CoWoSの供給逼迫が下半期から2027年にかけて続くか、520〜560億ドルとされる2026年設備投資計画を上方修正するかの3点。6月単月売上は前年比67.9%増の過去最高を記録しており、AI向け需要の実勢を測る指標として注目度が高い。", idea: "決算数字でAIブームの体温を測る——TSMC決算で見るべき3つのポイント", tag: "市場" }
+    ],
+    small: [
+      "Future of Life Institute（FLI）の2026年AI安全性指数で、Anthropicが9社中最高評価のC+を獲得（7月上旬公表）——ただしA・B評価は1社もなく「どの企業の安全対策もAI能力の進化速度に見合っていない」とFLIは指摘した。",
+      "SoftBank World 2026が7/14に開幕し、8/31までオンデマンド配信を継続中——孫正義会長・宮川潤一社長の基調講演に加え、20本超の講演が「AX for Japan」をテーマに配信されている。"
+    ],
+    sources: [
+      { title: "Anthropic Reportedly Plans IPO Investor Meeting, Could List as Soon as This October (TradingKey)", url: "https://www.tradingkey.com/analysis/stocks/us-stocks/262032540-anthropic-ipo-investor-meetings-965-billion-beats-openai-october-listing-claude-tradingkey" },
+      { title: "Anthropic Prepares for Potential IPO, Outpacing OpenAI (GuruFocus)", url: "https://www.gurufocus.com/news/8960658/anthropic-prepares-for-potential-ipo-outpacing-openai" },
+      { title: "【日本】政府、AI基本計画（第2期）を閣議決定。AIの先の社会変革に主眼 (Sustainable Japan)", url: "https://sustainablejapan.jp/2026/07/15/japan-ax/128124" },
+      { title: "人工知能基本計画 (内閣府 科学技術・イノベーション)", url: "https://www8.cao.go.jp/cstp/ai/ai_plan/ai_plan.html" },
+      { title: "テクノプロ、Claudeを全面導入へ 先端AIモデル活用で日本最大級のAI実装カンパニーへの変革を加速 (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000006.000177691.html" },
+      { title: "Microsoft July 2026 Patch Tuesday fixes massive 570 flaws, 3 zero-days (BleepingComputer)", url: "https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/" },
+      { title: "AI-driven bug hunting fuels record Microsoft Patch Tuesday (Help Net Security)", url: "https://www.helpnetsecurity.com/2026/07/15/microsoft-patch-tuesday-sharepoint-cve-2026-56164/" },
+      { title: "TSMCの7月16日決算発表：AI投資の限界を占う「CoWoS」3つのシグナル (財経新聞)", url: "https://www.zaikei.co.jp/article/20260712/860806.html" },
+      { title: "TSMC Q2 Earnings Preview: Why Should You Buy TSM Stock Before July 16? (Yahoo Finance)", url: "https://finance.yahoo.com/markets/stocks/articles/tsmc-q2-earnings-preview-why-190000466.html" },
+      { title: "AI Safety Index — Summer 2026 (Future of Life Institute)", url: "https://futureoflife.org/ai-safety-index-summer-2026/" },
+      { title: "「SoftBank World 2026」を開催～AXがもたらす社会変革と、事業成長を支える最先端テクノロジーを紹介～ (ソフトバンク)", url: "https://www.softbank.jp/corp/news/press/sbkk/2026/20260518_01/" }
+    ]
+  },
+  {
     date: "2026-07-15",
     pick: "Google DeepMindのハサビスCEOが7/14、フロンティアAIモデルを事前審査する米国主導の独立「標準化機関」創設を提案——サム・アルトマン氏やサティア・ナデラ氏も支持を表明し、AI企業自身が政府に代わる審査の枠組みを求める動きが本格化した。同日、Anthropicは米国のK-12教員向けに「Claude for Teachers」を無償提供開始——教育現場をめぐる生成AI各社の争奪戦も加速している。",
     summary: [
