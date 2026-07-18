@@ -4,6 +4,40 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-18",
+    pick: "中国Moonshot AIが7/16、2.8兆パラメータの超巨大オープンウェイトモデル「Kimi K3」を発表——GPT-5.6 Solに匹敵する総合性能を示し、フロントエンドのコーディング評価ではClaude Fable 5やGPT-5.6 Solを含む米国勢を上回ったとの第三者評価も出て、アジアのAI関連株が急落する「第2のDeepSeekショック」となった。翌7/17には上海のWAIC 2026で習近平国家主席が29カ国参加の新たな国際AI協力機構「WAICO」創設を発表するなど、米国中心のAI覇権に対する中国の巻き返しが同時進行した週末となった。",
+    summary: [
+      "中国Moonshot AIが7/16、2.8兆パラメータ（活性化は896個中16エキスパートのみ）のオープンウェイトモデル「Kimi K3」を発表。総合性能でFable 5に次ぐ評価を得た一方、フロントエンド構築の第三者評価では複数の米国勢を上回ったとされ、Z.ai・MiniMax・アリババなどアジアのAI関連株が急落した。全ウェイト公開は7/27予定。",
+      "習近平国家主席が7/17、上海のWAIC 2026開幕式で、ブラジル・インドネシア・南アフリカ・ロシアなど29カ国が創設メンバーとなる新組織「世界人工知能協力機構（WAICO）」の設立を発表。本部は上海に置かれ、国連事務総長も出席した。",
+      "情報処理推進機構（IPA）が7/17、「DX動向2026」調査の要点を公表。AI導入率は従業員1001人以上の大企業で8割近くに達する一方、101人以下の小規模企業では16.6％にとどまり、効果も業務効率化（91.6％）が中心で売上・利益向上への貢献はわずか3.9％にとどまるなど、企業規模間の格差と価値創出への課題が浮き彫りになった。"
+    ],
+    topics: [
+      { title: "中国Moonshot AI、2.8兆パラメータの巨大オープンモデル「Kimi K3」を発表——アジアAI株急落の「第2のDeepSeekショック」に", why: "疎な専門家混合（MoE）構成で、896個中16個のエキスパートのみ（全体の約1.8%）を活性化させることで推論コストを抑えつつ大規模化を実現。100万トークンのコンテキスト窓とネイティブな画像認識に対応し、独自のアテンション機構「Kimi Delta Attention」なども採用した。Artificial Analysisの総合指標ではFable 5に次ぐ2位、フロントエンド構築の第三者評価ではFable 5・GPT-5.6 Solを上回ったとの報告もある。API価格は入力$3・出力$15/百万トークンと米国フロンティア勢より安価で、全ウェイト公開は7/27を予定。発表直後にZ.ai・MiniMax・アリババなどアジアのAI関連株が急落し、2025年初のDeepSeek登場時と同様の市場反応が起きた。", idea: "「安くて強い」オープンモデルが来た日——Kimi K3から考える自作AIツールの選択肢", tag: "海外" },
+      { title: "習近平国家主席、上海WAIC 2026で新国際組織「WAICO（世界人工知能協力機構）」創設を発表", why: "ブラジル・インドネシア・マレーシア・南アフリカ・セネガル・ロシア・パキスタンなどグローバルサウス諸国を含む29カ国が創設メンバーとなり、本部を上海に設置。国連事務総長も出席した。習主席は「AI開発は一国の独奏であってはならず、国際協力の交響曲であるべきだ」と述べ、今後5年間で途上国向けに5,000件のAI研修機会を提供し、気象警報システム「MAZU」を30カ国に展開する方針も示した。米国主導のAI覇権に対抗し、AIガバナンスの主導権を握ろうとする中国の姿勢が鮮明になった。", idea: "「AIの国連」を中国が作る意味——WAICO創設から考える日本の立ち位置", tag: "海外" },
+      { title: "Microsoft、Anthropic「Mythos」対抗のAIセキュリティツール「Project Perception」を今月中にも投入と報道", why: "The InformationやTechRepublicの報道によれば、Anthropic・OpenAI・Microsoft自社のAIモデルを組み合わせ、タスクごとに最適なモデルへ自動振り分けすることでコストを抑えつつ、脆弱性の発見と自動修正を行う仕組み。最大の売りはコストで、Anthropic「Mythos」はOpusの約2倍・GPTの約1.8倍とされる高額なAPI料金が指摘されており、Project Perceptionはこれを大きく下回る価格設定を目指すという。実現すれば「AIによるバグ発見・自動修正」の分野で、Anthropicの牙城に価格面から切り込む動きになる。", idea: "AI同士がバグを探し合う時代の値付け競争——Project Perceptionの報道から考える導入判断のポイント", tag: "海外" },
+      { title: "（国内）IPA「DX動向2026」調査を公表——AI導入は大企業8割・小規模企業16.6％、価値創出はわずか3.9％", why: "情報処理推進機構が2026年4〜6月に実施した調査の要点を7/17に公表。DXに取り組む企業は約8割に達し、うち6割が「成果が出ている」と回答した一方、AI活用の効果は業務効率化が91.6％を占めるのに対し、売上・利益向上といった企業価値創出への貢献はわずか3.9％にとどまった。従業員1001人以上の大企業では導入率が8割近いのに対し、101人以下の小規模企業では16.6％と、企業規模による導入格差も改めて浮き彫りになった。DX推進人材の不足を訴える企業は85.5％に上る。詳細な報告書は7月下旬に公開予定。", idea: "「効率化止まり」のAI活用から抜け出すには——IPA調査の数字を自社に当てはめて読む", tag: "国内" },
+      { title: "Claude Code v2.1.212（7/17）公開——WebSearch・サブエージェント起動に上限、/forkの挙動を変更", why: "暴走した検索ループやサブエージェントの委任連鎖を防ぐため、セッションあたりのWebSearch呼び出し数（既定200件、環境変数で調整可）とサブエージェント起動数（既定200件）に上限を新設し、/clearでリセットされる仕様に。/forkはこれまでのようなセッション内サブエージェント起動ではなく、会話をバックグラウンドの新セッションへ複製する挙動に変更され、旧来の挙動は/subtaskとして分離された。2分を超えるMCPツール呼び出しも自動的にバックグラウンド化されるなど、長時間セッションの安定性改善が中心の更新。", idea: "Claude Codeの新しい上限設定を理解する——長時間セッションを崩さない使い方", tag: "海外" }
+    ],
+    small: [
+      "Kimi K3の全ウェイト公開は7/27を予定——現時点ではAPI経由（入力$3・出力$15/百万トークン）のみの提供。",
+      "国内AIエージェント実装カンファレンス「AI Agent Day 2026 Summer」が7/23〜24開催予定と発表。前回は申込5,600名超・満足度90％超だったという。"
+    ],
+    sources: [
+      { title: "China's Moonshot AI unveils Kimi K3 that rivals OpenAI, Anthropic (CNBC)", url: "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html" },
+      { title: "China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark (Tom's Hardware)", url: "https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-releases-2-8-trillion-parameter-kimi-k3" },
+      { title: "China just erased America's AI lead (Axios)", url: "https://www.axios.com/2026/07/17/china-ai-kimi-k3-open-source-anthropic-opus" },
+      { title: "中国AI・Kimiの衝撃、米専門家「アンソロピック最新型と僅差」 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOGN17CN50X10C26A7000000/" },
+      { title: "China's Xi Jinping launches new AI alliance: What is it? (Al Jazeera)", url: "https://www.aljazeera.com/news/2026/7/17/chinas-xi-jinping-launches-new-ai-alliance-what-is-it" },
+      { title: "Xinhua Headlines: Xi calls for equitable global AI governance, unveils new cooperation body (Xinhua)", url: "https://english.news.cn/20260717/128a3c67ccdd44e0b80b5b10b9c01475/c.html" },
+      { title: "Microsoft's 'Project Perception' Could Challenge Anthropic's Mythos in AI Security (TechRepublic)", url: "https://www.techrepublic.com/article/news-microsoft-project-perception-ai-security-tool/" },
+      { title: "Exclusive: Microsoft Preps Mythos-Like AI Bug Finder (The Information)", url: "https://www.theinformation.com/briefings/exclusive-microsoft-preps-mythos-like-ai-bug-finder" },
+      { title: "国内企業のAI導入は広がる一方、新たな価値創出やビジネス変革への発展が課題に～IPA「DX動向」調査 (クラウド Watch)", url: "https://cloud.watch.impress.co.jp/docs/news/2125809.html" },
+      { title: "国内企業のAI導入は広がる一方、新たな価値創出やビジネス変革への発展が課題に～IPA「DX動向」調査 (Yahoo!ニュース)", url: "https://news.yahoo.co.jp/articles/b5c4ede9b90446efb6f5af411ffe50d415533fac" },
+      { title: "Claude Code changelog (Claude Code Docs)", url: "https://code.claude.com/docs/en/changelog" },
+      { title: "「AI Agent Day 2026 Summer」豪華登壇企業を一挙に公開！ (Infoseekニュース / PR TIMES)", url: "https://news.infoseek.co.jp/article/prtimes_000000135_000155740/" }
+    ]
+  },
+  {
     date: "2026-07-16",
     pick: "Anthropicが7/15、モルガン・スタンレー・ゴールドマン・サックス・JPモルガンを主幹事にIPOへ向けた投資家説明会の準備を本格化——評価額は$965Bとされ、2027年へ延期したOpenAIより先に、早ければ10月にも上場する可能性が浮上した。同じ週には日本政府が7/14に「AI基本計画（第2期）」を閣議決定し「日本AX」を掲げるなど、フロンティアAI企業の上場準備と各国のAI国家戦略づくりが同時並行で進む一週間となった。",
     summary: [
