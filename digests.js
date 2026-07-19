@@ -4,6 +4,38 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-20",
+    pick: "Claude Fable 5の無償アクセスは6/22の当初終了予定から3度の延長を重ねてきたが、本日7/20についに恒久ルールへ着地——Max・Team Premiumプランには利用上限50%で恒久的に組み込まれる一方、Pro・Team Standardプランはサブスク包含から外れ、1回限り100ドル分のクレジット付与後は入力$10・出力$50/百万トークンの従量課金に移行する。プラン格差というかたちで「延長また延長」の綱引きに終止符が打たれた。",
+    summary: [
+      "🔁続報：Claude Fable 5が本日7/20から新体系へ移行。Max・Team Premiumは利用上限50%で恒久的に利用可能、Pro・Team Standardはサブスク包含が終了し、1回限り100ドル分のクレジット付与後は入力$10・出力$50/百万トークンの従量課金が必要に。",
+      "ホワイトハウスがOpenAI・Google・Anthropicとのフロンティア自主基準の枠組みを最終調整中——8月1日までの発表を目指すと報じられた。商務省傘下CAISIとNSAが機密ベンチマークでサイバー能力を審査する仕組みで、Anthropicが年初に打ち切られたペンタゴン契約の関係修復も透ける。",
+      "（国内）富士通が7/16、ファナック・安川電機・川崎重工業の産業ロボット大手3社とNVIDIAの技術を取り入れた「フィジカルAI」の社会実装に向けた事業検討開始を発表。石川県かほく市の工場で9月末から協調制御基盤を実装する。"
+    ],
+    topics: [
+      { title: "🔁続報：Claude Fable 5、本日7/20から恒久ルールへ——Max・Team Premiumは利用上限50%で継続、Pro・Team Standardは従量課金に", why: "6/22の当初終了予定から数えて3度の延長を経て、Anthropicはついに恒久的な提供体系を決定。Max・Team Premiumプランでは、利用上限50%までという条件付きながらFable 5がサブスクに恒久的に組み込まれる。一方Pro・Team Standardプランはサブスク包含の対象から外れ、1回限り100ドル分の使用量クレジットが付与された後は、入力$10・出力$50/百万トークンというAPI水準の従量課金でしか使えなくなる。コーディングや長時間のリサーチ・エージェント作業をこなすユーザーほど、この100ドル分はすぐに消費されると指摘されている。上位プランと下位プランで明確な待遇差をつけることで、需要予測の難しさに折り合いをつけた形。", idea: "「無料期間」が終わったらどう使うか——Fable 5の恒久ルール移行から考える生成AIコスト管理の基本", tag: "海外" },
+      { title: "🔁続報：ホワイトハウスのフロンティアAI自主基準、8月1日までの発表を目指し最終調整——商務省CAISIとNSAが機密サイバーベンチマークを担当", why: "6月のFable 5停止騒動を契機に加速した枠組みが、OpenAI・Google・Anthropicとの間でほぼ固まりつつあると報じられた。商務省傘下のAIセーフティ・イノベーションセンター（CAISI）と国家安全保障局（NSA）が、モデル発売前に高度なサイバー能力を機密ベンチマークで審査する仕組みを担う。国内商用利用者・認証済み海外企業・海外政府など利用者ごとにアクセス条件を設ける枠組みも検討されている。命令文では終始「任意（voluntary）」が強調され、義務的なライセンスや許認可として扱うことを明示的に禁じており、規制強化が開発拠点の国外流出を招くという業界側の懸念に配慮した形。Anthropicは年初に自律型兵器システムへの利用を認める契約条項を拒否し2億ドル規模のペンタゴン契約を打ち切られていたが、今回の枠組み参加はその関係修復のサインとも報じられている。", idea: "「任意の基準」という落としどころ——ホワイトハウスの自主基準案から考える規制とビジネスの綱引き", tag: "海外" },
+      { title: "OpenAI元CTOのムラティ氏率いるThinking Machines Lab、初の自社モデル「Inkling」を公開——オープンウェイトで975Bパラメータ、最強とは謳わず", why: "評価額120億ドルのスタートアップが7/15、初の自社開発モデルInklingを発表。テキスト・画像・音声・動画を横断する45兆トークンで学習した混合エキスパート（MoE）構成で、総パラメータ数975Bのうち実際に使うのはタスクごとに約410億のみ。OpenAI・Anthropic・Googleの旗艦モデルと異なりオープンウェイトで、外部の開発者や企業がダウンロードして直接改変できる。同社は「現時点で入手可能な中で最強のモデルではない」と自ら認めた上で、モデル調整プラットフォーム「Tinker」を通じて企業が自社専用にカスタマイズする起点として位置づける戦略を取っている。", idea: "「最強」を謳わないAIモデルの戦い方——Inklingのカスタマイズ戦略から考える自社特化AIの選び方", tag: "海外" },
+      { title: "Huawei、上海WAIC 2026で「Atlas 950 SuperPoD」を初公開——NVIDIA次世代スーパーノードの6.7倍の演算性能を主張", why: "16筐体でAscend NPU 1,024基を接続した構成を展示し、FP8で1エクサFLOPS、FP4で2エクサFLOPS、256TBのグローバルアドレス可能メモリを実現すると発表。NVIDIAの次世代AIスーパーノード技術NVL144と比較して演算性能6.7倍・メモリ容量15倍を主張している。米国の対中輸出規制下で、中国勢が単体チップの性能競争から複数チップを束ねる全体システムでの性能誇示へ軸足を移していることを象徴する展示で、WAIC 2026では他にも108種のチップと261種の大規模モデルが披露された。", idea: "チップ単体からシステム全体の勝負へ——Huawei Atlas 950から読む輸出規制下の中国AI半導体戦略", tag: "海外" },
+      { title: "（国内）富士通・ファナック・安川電機・川崎重工業、NVIDIA技術を取り入れた「フィジカルAI」社会実装へ事業検討を開始", why: "産業ロボット製造大手3社と富士通が7/16、製造・物流・ヘルスケア領域を見据えた協調制御基盤の共同開発に向けた事業検討開始を発表。富士通の「Fujitsu Kozuchi Physical OS」を土台に、デジタルとフィジカルをつなぐ日本主導（ソブリン）の共通ソフトウェア基盤とハードウェアを開発する。協調制御基盤は2026年内に各社へ提供され、9月末から石川県かほく市の工場での実装を開始、2027年には「バージョン2」をリリースする計画。NVIDIAのフアンCEOは発表に際し「次の産業革命はメイド・イン・ジャパン」とコメントしており、7/16に相次いで報じられたNoetraの国家AI基盤計画と並び、日本の製造業がフィジカルAIで存在感を示す動きが続いている。", idea: "ロボット大手4社が手を組む理由——フィジカルAI連合から考える日本の製造業の勝ち筋", tag: "国内" }
+    ],
+    small: [
+      "OpenAIが7/15、自己改善によるロバスト性向上を扱う研究ブログ「GPT-Red」を公開。モデルが自身の弱点を発見し補強する仕組みについて説明している。",
+      "Microsoft CEOサティア・ナデラ氏が7/13のブログ投稿で、外部AIモデルを使う企業は自社の機密情報をラボ側に渡すことになり「二重に代償を払っている」可能性があると指摘し、話題を呼んだ。"
+    ],
+    sources: [
+      { title: "Claude Fable 5 Ends Subscription Limbo: Permanent for Max, Credits-Only for Pro (Tech Times)", url: "https://www.techtimes.com/articles/320905/20260718/claude-fable-5-ends-subscription-limbo-permanent-max-credits-only-pro.htm" },
+      { title: "Anthropic slashes Claude Fable 5 limits in Max and Team Premium and pushes Pro users toward API pricing (The Decoder)", url: "https://the-decoder.com/anthropic-slashes-claude-fable-5-limits-in-max-and-team-premium-and-pushes-pro-users-toward-api-pricing/" },
+      { title: "Anthropic to add Claude's Fable 5 model to Max, Team Premium plans at 50pc of usage limits (Dawn)", url: "https://www.dawn.com/news/2016483" },
+      { title: "The White House is dictating access to frontier AI models, shifting power from tech giants, sources say (CNBC)", url: "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html" },
+      { title: "White House Races to Finalize AI Model Rules With OpenAI, Google and Anthropic (TipRanks)", url: "https://www.tipranks.com/news/white-house-races-to-finalize-ai-model-rules-with-openai-google-and-anthropic" },
+      { title: "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling (TechCrunch)", url: "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/" },
+      { title: "Ex-OpenAI CTO Murati's Thinking Machines drops Inkling, a 975B parameter model that leads US labs but trails China (The Decoder)", url: "https://the-decoder.com/ex-openai-cto-muratis-thinking-machines-drops-inkling-a-975b-parameter-model-that-leads-us-labs-but-trails-china/" },
+      { title: "Huawei Atlas 950 SuperPoD claims 6.7x more computing power than Nvidia NVL144 (Huawei Central)", url: "https://www.huaweicentral.com/huawei-atlas-950-superpod/" },
+      { title: "富士通が、ファナック、安川電機、川崎重工業の各社と、NVIDIAの技術を取り入れたフィジカルAIの社会実装に向けた事業検討を開始 (富士通)", url: "https://global.fujitsu/ja-jp/pr/news/2026/07/16-01" },
+      { title: "富士通とファナックなど3社、AIロボ実装へ協業 NVIDIAも支援 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOUC151S20V10C26A7000000/" }
+    ]
+  },
+  {
     date: "2026-07-19",
     pick: "Googleの次期フラッグシップ「Gemini 3.5 Pro」が7/16、コーディング性能の伸び悩みを理由に発売延期と報じられ、アルファベット株は時価総額にして一夜で約2,000億ドル（約30兆円）相当を失う急落を演じた——年明けから続く延期の中でも最大級の市場反応で、モデル性能競争がついに株価を直接動かす段階に入ったことを印象づけた。同じ週、日本では経済産業省主導「FRONTiaプロジェクト」の計算基盤として、NVIDIAのRubin GPU 2万7500基を投じる国家規模のAI基盤「Noetra」が始動——フロンティアモデル競争の裏側で、各国が計算資源そのものの確保に動く構図も鮮明になった。",
     summary: [
