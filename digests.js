@@ -4,6 +4,41 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-19",
+    pick: "Googleの次期フラッグシップ「Gemini 3.5 Pro」が7/16、コーディング性能の伸び悩みを理由に発売延期と報じられ、アルファベット株は時価総額にして一夜で約2,000億ドル（約30兆円）相当を失う急落を演じた——年明けから続く延期の中でも最大級の市場反応で、モデル性能競争がついに株価を直接動かす段階に入ったことを印象づけた。同じ週、日本では経済産業省主導「FRONTiaプロジェクト」の計算基盤として、NVIDIAのRubin GPU 2万7500基を投じる国家規模のAI基盤「Noetra」が始動——フロンティアモデル競争の裏側で、各国が計算資源そのものの確保に動く構図も鮮明になった。",
+    summary: [
+      "Googleの次期フラッグシップ「Gemini 3.5 Pro」が7/16、コーディング性能が社内目標に届かなかったとして発売延期と報じられ、アルファベット株が急落し時価総額約2,000億ドルが消失。OpenAI・Metaが相次いでコーディングに強い新モデルを投入する中、Googleの遅れが際立った。",
+      "（国内）経済産業省主導の国産フィジカルAI基盤事業「FRONTiaプロジェクト」の計算基盤として、NVIDIAのRubin GPU 2万7500基・Vera CPU 1万3750基を投じる国家規模のAI工場をNoetra社が建設すると発表。NEDOの5年間で最大1兆円規模の助成事業として始動する。",
+      "Meta従業員26人が、AIによる人員査定・レイオフ選定が休職者を狙い撃ちしたとして提訴していた裁判で、7/17に連邦判事が緊急差止めの請求を却下——7/22予定のレイオフ実施は予定通り進む見通しとなった。"
+    ],
+    topics: [
+      { title: "🔁続報：Google「Gemini 3.5 Pro」再び発売延期——コーディング性能未達でアルファベット株が急落、時価総額2,000億ドル消失", why: "Bloombergの報道によれば、社内テストでコーディング・複雑な推論タスクの性能が目標に届かなかったことが延期の理由。5月のGoogle I/Oで発表され6月中の広範な提供開始を予告していたが、その約束は果たされなかった。報道直後の7/16、アルファベット株は一時4.4%超下落し、時価総額にして約2,000億ドル（約30兆円）が一夜で消失。OpenAIのGPT-5.6やMetaのMuse Spark 1.1など、競合がコーディングに強い新モデルを続々投入する中、Googleだけが足踏みする構図が鮮明になった。新たな発売時期は明らかにされていない。", idea: "「まだ出せない」がニュースになる時代——Gemini再延期から考える、AI企業の情報発信のタイミング", tag: "海外" },
+      { title: "（国内）経済産業省「FRONTiaプロジェクト」始動——NVIDIA Rubin GPU 2万7500基の国家規模AI基盤をNoetraが構築", why: "NEDOの公募で6月30日に採択されたNoetra社と産総研（AIST）が、2026〜2030年度の5年間で最大1兆円規模（初年度3,873億円）の助成を受けて事業を推進。NVIDIAのVera Rubin NVL72ラック382台・Rubin GPU 2万7500基・Vera CPU 1万3750基を投じ、140メガワット規模のAI工場を建設する。製造・物流・医療・通信分野を見据えたロボティクスやデジタルツイン向けのマルチモーダル基盤モデルを開発し、学習済みモデルの重みは国内の開発者に広く公開する方針。NVIDIAのフアンCEOは「次の産業革命はメイド・イン・ジャパン」と表現した。", idea: "国がGPUを買う時代——FRONTiaプロジェクトから考える『計算資源の国産化』の意味", tag: "国内" },
+      { title: "Meta従業員26人のAIレイオフ差別訴訟、緊急差止め請求を連邦判事が却下——7/22の解雇は予定通り実施へ", why: "6月に予告されたレイオフで、キーストローク監視や勤怠データを含む複数のAI査定システムが人員選定に使われ、産休・育休・介護休暇・傷病休暇の取得者が不釣り合いに標的となったと26人の従業員が7/14に連邦地裁（オークランド）へ提訴。家族・医療休暇法（FMLA）や障害者差別禁止法（ADA）など複数の連邦・州法違反を主張している。7/17、連邦判事は7/22予定の解雇を差し止める緊急の請求を却下し、レイオフは予定通り進む見通しに。Metaは「人員判断はAIではなく人間が行った」と主張し争う姿勢。", idea: "「AIが人を選んでクビにした」と言えるのか——Metaレイオフ訴訟から考える人事評価とAIの境界線", tag: "海外" },
+      { title: "xAI「Grok Build」CLIが、開発者のリポジトリ全体とシークレットを無断でクラウドへ送信していたと発覚", why: "セキュリティ研究者がGrok Build CLI（v0.2.93）の通信をmitmproxyで解析したところ、タスク処理に必要な約192KBの通信とは別に、73チャンクに分割された合計5.10GBものデータがGoogle Cloud Storageへアップロードされていたと判明。アップロード対象には.env等の設定ファイルや、開発者が明示的にアクセス禁止を指示したファイルも含まれ、実際に必要なデータ量の2.78万倍もの量が送信されていたと報告された。xAIはソフトウェア修正ではなく、サーバー側の設定フラグ切り替えでアップロードを停止したと説明している。研究者は影響を受けたリポジトリ内のAPIキーやパスワードなど全認証情報のローテーションを推奨した。", idea: "コーディングエージェントを信頼する前に確認すべきこと——Grok Build騒動から学ぶツール選びの視点", tag: "海外" },
+      { title: "🔁続報：TSMC、2026年4-6月期決算は増収増益——売上高36%増・純利益77.4%増の過去最高", why: "7/16発表の第2四半期決算で、売上高は前年同期比36.0%増の1兆2,703.8億台湾ドル（米ドル換算402.0億ドル）、純利益は同77.4%増の7,065.6億台湾ドル。売上総利益率は67.7%、営業利益率は60.3%と高水準を維持した。AI向け先端チップ需要の強さが数字で裏付けられた形で、決算発表前に焦点とされていた通期ガイダンスの上方修正やCoWoS供給逼迫の継続についても、市場の期待に応える内容だったとみられる。", idea: "決算の数字でAIブームの実態を測る——TSMC増収増益から読み取れること", tag: "市場" }
+    ],
+    small: [
+      "Claude Fable 5の無償アクセスとClaude Codeの週次利用上限+50％措置は、本日7/19 23:59（太平洋時間）に期限を迎える——6/22の当初予定から3度目の延長を経ており、今後は再延長か、新モデル投入か、使用量クレジット制への移行かが注目される。",
+      "xAIは7/6付で社名を「SpaceXAI」へ変更し、翌7/7には新ティッカー「SPCX」でNasdaq-100指数入りしたと報じられている。"
+    ],
+    sources: [
+      { title: "Alphabet shares fall on report its most powerful AI model Gemini 3.5 Pro is delayed (CNBC)", url: "https://www.cnbc.com/2026/07/16/alphabet-stock-gemini-3-5-pro-ai.html" },
+      { title: "Google Gemini Launch Delayed as Tech Falls Short of Internal Goals (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-07-16/google-gemini-launch-delayed-as-tech-falls-short-of-internal-goals" },
+      { title: "NVIDIA新GPUを2.7万基導入、国策AI基盤モデル開発「FRONTia」始動 (PC Watch)", url: "https://pc.watch.impress.co.jp/docs/news/2125880.html" },
+      { title: "Nvidia and Japan unveil world's first national AI infrastructure — Noetra consortium to build a 140MW Rubin AI factory with 27,500 GPUs (Tom's Hardware)", url: "https://www.tomshardware.com/pc-components/gpus/nvidia-and-japans-noetra-consortium-to-build-140mw-rubin-ai-factory-with-27500-gpus" },
+      { title: "日本政府、産業界のリーダー、NVIDIA が世界初となる国家AIインフラを始動 (NVIDIA Japan Blog)", url: "https://blogs.nvidia.co.jp/blog/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure/" },
+      { title: "26 Meta workers sue over alleged AI-aided layoffs targeting employees on medical or family leave (CBS News)", url: "https://www.cbsnews.com/news/26-meta-workers-sue-ai-aided-layoffs-medical-family-leave/" },
+      { title: "Meta Faces First AI Layoff Discrimination Suit as July 22 Deadline Looms (Tech Times)", url: "https://www.techtimes.com/articles/320647/20260715/meta-faces-first-ai-layoff-discrimination-suit-july-22-deadline-looms.htm" },
+      { title: "Grok Build Shipped Entire Codebases to xAI Cloud; Privacy Toggle Did Nothing (Tech Times)", url: "https://www.techtimes.com/articles/320420/20260714/grok-build-shipped-entire-codebases-xai-cloud-privacy-toggle-did-nothing.htm" },
+      { title: "Grok Build CLI Caught Uploading Entire Repositories to xAI — Wire Analysis Reveals 'Local-First' Claim Is False (The Agent Report)", url: "https://the-agent-report.com/2026/07/grok-build-cli-repo-upload-privacy-july-2026/" },
+      { title: "TSMC Reports Record Q2 2026 Earning Results (TechPowerUp)", url: "https://www.techpowerup.com/350807/tsmc-reports-record-q2-2026-earning-results" },
+      { title: "TSMC Reports Second Quarter EPS of NT$27.25 (TSMC official)", url: "https://pr.tsmc.com/english/news/3326" },
+      { title: "Claude Fable 5 stays free for paid users until July 19 as Anthropic buys more time (BleepingComputer)", url: "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-stays-free-for-paid-users-until-july-19-as-anthropic-buys-more-time/" },
+      { title: "OpenAI, Meta and xAI unleash flurry of new AI models this week (Euronews)", url: "https://www.euronews.com/next/2026/07/08/openai-meta-and-spacexai-push-new-ai-models-in-a-week-of-major-releases" }
+    ]
+  },
+  {
     date: "2026-07-18",
     pick: "中国Moonshot AIが7/16、2.8兆パラメータの超巨大オープンウェイトモデル「Kimi K3」を発表——GPT-5.6 Solに匹敵する総合性能を示し、フロントエンドのコーディング評価ではClaude Fable 5やGPT-5.6 Solを含む米国勢を上回ったとの第三者評価も出て、アジアのAI関連株が急落する「第2のDeepSeekショック」となった。翌7/17には上海のWAIC 2026で習近平国家主席が29カ国参加の新たな国際AI協力機構「WAICO」創設を発表するなど、米国中心のAI覇権に対する中国の巻き返しが同時進行した週末となった。",
     summary: [
