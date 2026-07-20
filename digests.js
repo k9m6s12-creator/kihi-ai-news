@@ -4,6 +4,37 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-21",
+    pick: "半導体大手Nvidiaの株価が7/20、中国Moonshot AIの「Kimi K3」ショックとGoogle・Amazon・Microsoftなど大口顧客の自社チップ開発加速を背景に年初来高値から約14%下落し、心理的節目の200ドル割れに接近——フィラデルフィア半導体指数は6月の高値から20%超下落して「弱気相場」入りしたと報じられた。同じ7/16には欧州委員会がGoogleに対し、AndroidをライバルのAIアシスタントに開放し検索データも共有するよう義務付ける拘束力ある決定を発行しており、AI企業の株価と規制の両面で「囲い込み」の綻びが目立った一週間となった。",
+    summary: [
+      "Nvidia株が7/20、Kimi K3ショックと大口顧客の自社チップ開発を背景に年初来高値から約14%下落し200ドル割れに接近。フィラデルフィア半導体指数は6月の高値から20%超安で「弱気相場」入りしたと報じられた。",
+      "欧州委員会が7/16、デジタル市場法に基づきGoogleに対し、Android上でライバルAIアシスタントに自社Geminiと同等の機能アクセスを認め、検索データも競合と共有するよう義務付ける拘束力ある決定を発行した。",
+      "（国内）国産AI開発を担う企業連合が7/16、経済産業省主催の発表会で正式発足。ソニー・ソフトバンク・NEC・ホンダが中核となり、日立・東芝など製造業28社、楽天など非製造業16社の計44社がフィジカルAI基盤の構築に参加する。"
+    ],
+    topics: [
+      { title: "Nvidia株、年初来高値から約14%下落し200ドル割れに接近——Kimi K3ショックと大口顧客の自社チップ開発が重荷に", why: "Moonshot AIの「Kimi K3」開示以降、中国勢のAI性能が急速に米国勢へ迫っているとの見方が広がり、Nvidiaを含むAI関連株の重荷になっている。加えてGoogle・Amazon・Microsoftなど大口顧客が自社設計チップの開発を加速させ、Nvidiaへの依存度を下げる動きも株価の重荷に。フィラデルフィア半導体指数（SOX）は6月の高値から20%超下落し「弱気相場」入りしたと報じられ、AI関連の巨額投資が実際の収益に見合うのかという市場の懐疑論が強まっている。Nvidiaは200ドルの心理的節目を守れるかが当面の焦点。", idea: "「AIブームの息切れ」説を検証する——Nvidia株急落のニュースを自分の投資判断や事業計画にどう活かすか", tag: "市場" },
+      { title: "EU、Googleに拘束力ある決定——AndroidをライバルのAIアシスタントに開放、検索データ共有も義務付け", why: "欧州委員会がデジタル市場法（DMA）に基づき、7/16付でGoogleに対し2つの拘束力ある仕様措置を発行。1つはAndroid上の主要機能について、Gemini等の自社サービスと同等の条件でライバルAIアシスタントにもアクセスを認めるというもので、ユーザーは音声コマンドで好みのAIアシスタントを起動し、メッセージ送信や予約などアプリを横断したタスクをこなせるようになる。もう1つは、Google検索で収集したデータの一部を匿名化した上で競合の検索エンジンやAIチャットボットと共有するというもの。検索データ共有は2027年1月、Androidの相互運用性拡大は2027年7月からユーザーに反映される見込みで、GoogleがAIアシスタント市場で持つ優位性を是正する狙いがある。", idea: "プラットフォームの「囲い込み」に規制のメスが入る——EUのGoogle規制からAIアシスタント選びの今後を考える", tag: "海外" },
+      { title: "🔁続報：（国内）国産AI開発の44社連合が正式発足——ソニー・ソフトバンク・NEC・ホンダ中核に製造業28社・非製造業16社が参加", why: "経済産業省主催の発表会で7/16、国産AI基盤の開発を担う企業連合が正式に発足したと発表された。NVIDIA Rubin GPUを投じる計算基盤「Noetra」（7/19付ダイジェストで既報）に出資する中核4社——ソニーグループ・ソフトバンク・NEC・本田技研工業に加え、日立製作所や東芝、ファナック、安川電機、川崎重工業など製造業28社、楽天グループなど非製造業16社の計44社が参加。産業技術総合研究所やPreferred Networksも名を連ねる。機械やロボットを自律的に動かす「フィジカルAI」を支える基盤モデルを2026年度中に公開し、画像・音声など扱えるモダリティを順次拡大、2030年度には実世界の情報を理解・予測・再現できる「頭脳」への進化を目指す。国産AIの計算基盤（Noetra）と、そこに投入する産業データ・出資体制（44社連合）という2つの側面が7/16に相次いで明らかになった形。", idea: "44社が同じ基盤に相乗りする理由——国産フィジカルAI連合から考える『一社で戦わない』時代の生存戦略", tag: "国内" },
+      { title: "OpenAI社内で「オープンウェイトモデルへの恐怖」論争——規制で不信感を煽る戦略の提案は撤回", why: "TechCrunchの報道によれば、OpenAIの戦略担当ディーン・W・ボール氏が、中国製オープンウェイトモデルに対して米政府が規制上の恐怖・不確実性・不信（いわゆるFUD）を意図的に作り出すべきだと主張していたことが判明した。オープンウェイトモデルはフロンティア各社の投資回収モデルを脅かすとの見立てだが、ヤン・ルカン氏やMartin Casado氏、Hugging FaceのCEOクレモン・ドゥランゲ氏らは「オープン性の制限はAIを安全にせず、リスクを隠しつつ権力を集中させるだけ」と反論した。ボール氏は規制強化が政権の最善策との主張を撤回している。ジョージタウン大CSETの研究者は、モデル自体の制限よりチップ輸出規制の方が効果的との代替案を提示した。Kimi K3の登場を機に、オープンウェイトモデルの扱いを巡る米国内の路線対立が表面化した形。", idea: "「オープンは怖い」論の正体——OpenAI内部論争から考える、オープンウェイトモデルとの付き合い方", tag: "海外" },
+      { title: "Nvidia、SIGGRAPH 2026基調講演でフィジカルAI・ワールドモデルを強調——製薬大手がVera Rubin採用のDGX SuperPODを導入", why: "Nvidiaは7/20、SIGGRAPH 2026の基調講演でニューラルレンダリングやワールドモデル、物理シミュレーションなど「フィジカルAI」領域の研究・技術を相次いで発表した。あわせて、製薬大手ブリストル・マイヤーズ スクイブが次世代アーキテクチャVera Rubinを採用したDGX SuperPODを導入すると発表——創薬・分子設計・臨床開発など研究業務全般での活用を計画しており、ライフサイエンス企業として初のVera Rubin採用例となる。チャットボットやクラウドモデルにとどまらず、工場・車両・倉庫・産業システムといった物理世界へAI需要が広がるというNvidiaの主張を裏付ける動きとして注目される。", idea: "AIの次の主戦場は『物理世界』——Nvidia SIGGRAPH発表から考える非IT企業のAI活用余地", tag: "海外" }
+    ],
+    small: [
+      "DeepSeekの旧モデル名「deepseek-chat」「deepseek-reasoner」は7/24 15:59（UTC）に完全廃止予定——APIを使う開発者は新名称「deepseek-v4-pro」「deepseek-v4-flash」への移行が必要。",
+      "Moonshot AI「Kimi K3」の全ウェイト公開は引き続き7/27を予定——現時点ではAPI経由（入力$3・出力$15/百万トークン）のみの提供が続く。"
+    ],
+    sources: [
+      { title: "Commission provides guidance to Google for AI interoperability on Android and sharing of Google Search data under the Digital Markets Act (European Commission)", url: "https://digital-markets-act.ec.europa.eu/commission-provides-guidance-google-ai-interoperability-android-and-sharing-google-search-data-under-2026-07-16_en" },
+      { title: "EU Compels Google to Share Android and Search Data With Rival AI Assistants (Unite.AI)", url: "https://www.unite.ai/eu-compels-google-to-share-android-and-search-data-with-rival-ai-assistants/" },
+      { title: "Nvidia Stock NVDA Tests $200 Support as Chinese AI Competition Shakes the Chip Rally (FX Leaders)", url: "https://www.fxleaders.com/news/2026/07/20/nvidia-stock-nvda-tests-200-support-as-chinese-ai-competition-shakes-the-chip-rally/" },
+      { title: "Top Tech News Today, July 20, 2026: Alibaba, Bezos, Blackstone, Google, Moonshot AI, Nvidia, Samsung & More (Tech Startups)", url: "https://techstartups.com/2026/07/20/top-tech-news-today-july-20-2026-alibaba-bezos-blackstone-google-moonshot-ai-nvidia-samsung-more/" },
+      { title: "OpenAI is scared of open-weight models. Should the US be? (TechCrunch)", url: "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/" },
+      { title: "Noetraら、フィジカルAIに向けて国産AI開発を本格始動 ソフトバンクら44社が出資 (ケータイ Watch)", url: "https://k-tai.watch.impress.co.jp/docs/news/2125826.html" },
+      { title: "国産AIに44社連合、ものづくり復権へ頭脳研ぐ NVIDIAトップも熱視線 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOUC138VH0T10C26A7000000/" },
+      { title: "At SIGGRAPH, NVIDIA Advances Graphics and Simulation With Agentic and Physical AI (NVIDIA Blog)", url: "https://blogs.nvidia.com/blog/siggraph-news-2026/" },
+      { title: "DeepSeek V4 API Migration: Update Model Names Before July (WaveSpeed Blog)", url: "https://wavespeed.ai/blog/posts/blog-deepseek-v4-model-name-migration/" }
+    ]
+  },
+  {
     date: "2026-07-20",
     pick: "Claude Fable 5の無償アクセスは6/22の当初終了予定から3度の延長を重ねてきたが、本日7/20についに恒久ルールへ着地——Max・Team Premiumプランには利用上限50%で恒久的に組み込まれる一方、Pro・Team Standardプランはサブスク包含から外れ、1回限り100ドル分のクレジット付与後は入力$10・出力$50/百万トークンの従量課金に移行する。プラン格差というかたちで「延長また延長」の綱引きに終止符が打たれた。",
     summary: [
