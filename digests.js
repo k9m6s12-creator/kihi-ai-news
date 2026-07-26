@@ -4,6 +4,42 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-07-24",
+    pick: "ホワイトハウス技術顧問マイケル・クラツィオス氏が7/22、中国Moonshot AIの「Kimi K3」はAnthropicのClaudeを不正に「知識蒸留」して開発された可能性があると非難し、トランプ政権が中国製AIモデルの禁止措置を検討していると報じられる中、Y Combinatorなどが支援するスタートアップ179社は反対の書簡を送付。さらに7/24にはNVIDIAのジェンスン・フアンCEOが自身初のX投稿で、Microsoft・Meta・Hugging Faceなど約25社と連名の書簡を公開しオープンウェイトモデルの規制論に真っ向から反対を表明した——AI政策を巡る米国内の分断が一段と鮮明になった3日間となった。",
+    summary: [
+      "米政権技術顧問クラツィオス氏が7/22、Moonshot AI「Kimi K3」はAnthropicのClaudeを不正に蒸留したと非難、財務長官も制裁の可能性に言及。トランプ政権が中国製AIモデルの禁止を検討していると報じられたが、スタートアップ179社が反対書簡を送付するなど産業界の反発も表面化した。",
+      "NVIDIAのジェンスン・フアンCEOが7/24、自身初のX投稿でMicrosoft・Meta・Hugging Faceなど約25社と連名の書簡「Open Weights and American AI Leadership」を公開し、オープンウェイトモデル規制に反対を表明。蒸留は「正当な研究手法」だとし、OpenAI・Anthropicは署名に加わらなかった。",
+      "（国内）ソフトバンクが7/22、共同通信・毎日新聞など報道機関30社超が参画する生成AI向けデータ基盤「GaranAI」のベータ版提供を開始——著作権を保護しつつ日本語データ不足の解消と収益還元の両立を目指す。"
+    ],
+    topics: [
+      { title: "米政権、Moonshot AI「Kimi K3」を「Claude不正蒸留」と非難——中国製AIモデル禁止を検討、スタートアップ179社は反対書簡", why: "ホワイトハウス技術顧問マイケル・クラツィオス氏は7/22、Moonshot AIの「Kimi K3」についてNVIDIAのGB300搭載サーバーを不正に入手し、経由を偽装した計算資源を使ってAnthropicのClaude系モデルから大規模かつ隠密に「知識蒸留」を行うことで開発したと非難した。Anthropicの政策責任者サラ・ヘック氏もこれを「知的財産の窃取であり産業スパイ行為」であり国家安全保障上のリスクだと述べ、財務長官スコット・ベッセント氏は経済制裁の可能性に言及した。米政権内ではサイバーセキュリティに関する勧告の発出や、中国製ソフトウェアを使う米企業に責任を負わせる調達規則・大統領令、サプライチェーン権限を用いた規制など複数の手段が検討されていると報じられているが、7/22時点で正式な大統領令や規制は署名されていない。これに対し、Y CombinatorやProtonが支援する新興企業団体「Little Tech Association」に加盟する179社は同日、海外モデルへのアクセス制限は「競争を阻害し、既存の大手企業を利するだけの、知性への課税に等しい」と反対する書簡をホワイトハウスに送付し、モデル自体を禁じるのではなく安全保障上のリスクに絞った的を絞った対策を求めた。Moonshot側と中国大使館は蒸留の疑惑を否定しており、業界アナリストの中にはタイミング上の矛盾を指摘する声もある。", idea: "「不正蒸留」疑惑の真相はさておき——オープンウェイトモデル規制論争から考える、海外AIツールを選ぶときのリスク感覚", tag: "海外" },
+      { title: "NVIDIAジェンスン・フアンCEO、初のX投稿で「オープンウェイトモデル」擁護——Microsoft・Meta・Hugging Faceなど25社と連名書簡", why: "NVIDIAのジェンスン・フアンCEOは7/24、自身初となるX（旧Twitter）への投稿で、Microsoft・Meta・Hugging Face・Andreessen Horowitz・Perplexity・IBM・Palantirなど約25の企業・団体と連名の書簡「Open Weights and American AI Leadership」を公開した。フアン氏は「AIはあらゆる産業を変え、あらゆる企業を動かし、あらゆる国によって作られる」と述べた上で、オープンウェイトモデルは安全性とサイバーセキュリティの強化、スタートアップや大学を含めた技術革新・普及の加速、一部企業への権力集中の抑止に資すると主張し、1980年代のソフトウェア産業がオープン性を過度に制限しかけた失敗を繰り返すべきではないと警告した。書簡は知識蒸留についても「正当で歴史のある研究手法」だとしており、Kimi K3を巡る規制論議を念頭に置いた内容になっている。一方、OpenAIとAnthropicはこの書簡の署名企業に名を連ねておらず、オープンウェイトモデルの扱いを巡る米AI業界内の路線対立が改めて浮き彫りになった。", idea: "「オープンか、クローズドか」——NVIDIAの立ち位置表明から考える、自社で使うAIモデルの選び方", tag: "海外" },
+      { title: "AMD、Anthropicに最大50億ドルを出資——MI450系GPU最大2ギガワットを供給する複数年契約", why: "AMDは7/22、Anthropicとの戦略的パートナーシップを発表した。AMDが自社製Instinct MI450シリーズ（MI455X）GPUを「Helios」ラックスケール構成で最大2ギガワット分供給し、2027年上半期から第1弾の導入を開始する。これに合わせてAMDは最大50億ドルの株式出資を行う契約で、出資は導入の進捗に連動する形とされる。AMD CEOリサ・スー氏は「AIの大規模な普及を加速し、Heliosを次世代AIインフラの主要プラットフォームとして確立する」とコメント。Anthropic共同創業者トム・ブラウン氏は「計算資源へのアクセスはClaudeを最先端に保つ上で中心的な要素」と述べ、ハードウェアを複数社に分散することでワークロードを最適化できるとした。両社はClaudeを使ってAMDハードウェア向けのワークロード最適化やROCmソフトウェア開発を加速させる技術協業も行い、AMDは自社のエンジニアリング業務でClaudeを全面的に採用する。", idea: "NVIDIA一強に風穴——AMD・Anthropicの複数年契約から考える、AIインフラの『調達分散』という発想", tag: "市場" },
+      { title: "Alphabet、2026年第2四半期決算を発表——売上高1,198億ドル（前年比24%増）、Google Cloudは82%増の248億ドル", why: "Alphabetは7/22、第2四半期決算を発表した。売上高は市場予想（1,169.3億ドル）を上回る1,198億ドル（前年同期比24%増）。Google Cloud部門の売上高は前年比82%増の248億ドルに達し、営業利益は28億ドルから88億ドルへ拡大した。検索などGoogle Services全体は15%増の945億ドル、YouTube広告収入は13%増の111億ドル。連結営業利益は30%増の408億ドル、営業利益率は2ポイント拡大し34%となった。一方でAI関連の設備投資（capex）を大幅に引き上げたことが嫌気され、決算発表後に株価は下落。Alphabetは6月に株式発行で496億ドル、四半期中に無担保社債で203億ドルを調達しており、AI投資競争の資金規模の大きさが改めて示された。", idea: "決算の数字でAI投資競争の実態を測る——Alphabet Q2決算から読み取れる『クラウド需要の本気度』", tag: "市場" },
+      { title: "（国内）ソフトバンク、生成AI向けデータ基盤「GaranAI」ベータ版を提供開始——共同通信・毎日新聞など報道機関30社超が参画", why: "ソフトバンクは7/22、日本のコンテンツ産業と生成AI開発の持続的な発展を支えるデータエコシステム基盤「GaranAI（ガランエーアイ）」のベータ版提供を開始したと発表した。報道機関のオリジナルコンテンツを多段階加工し元データへの復元を困難にした「派生データ」に変換した上でAI開発事業者に提供する仕組みで、共同通信社・毎日新聞・信濃毎日新聞など30社超の報道機関がベータ期間中のデータ提供に参画する。狙いは、コンテンツホルダーの著作権を保護しつつ新たな収益機会を生み出すことと、日本語データの不足に悩むAI開発事業者に信頼できる学習データを供給することの両立で、データ利用事業者の追跡による透明性の担保も特徴。本格的な商用サービスは2027年1月以降を予定している。", idea: "「使われる側」が収益化する仕組み——GaranAIから考える、自分のコンテンツをAI時代にどう守り、どう活かすか", tag: "国内" }
+    ],
+    small: [
+      "中国Moonshot AIの「Kimi K3」は需要急増を受け、7/20付Washington Post報道時点で新規登録を一時停止していたと報じられている。",
+      "AMDとCerebrasが7/23、ラックスケールシステム「Helios」とウエハースケールエンジンを組み合わせた分離型AI推論ソリューションを発表——高スループットのプロンプト処理と低遅延のトークン生成を組み合わせ、消費電力あたりのトークン生成数を最大5倍に高めるとしている。"
+    ],
+    sources: [
+      { title: "Moonshot AI's Kimi K3 Rivals Leading American AI Models — US Government Cries Foul (Blockonomi)", url: "https://blockonomi.com/moonshot-ais-kimi-k3-rivals-leading-american-ai-models-us-government-cries-foul/" },
+      { title: "Trump administration reportedly reviving push to ban Chinese AI models following Kimi K3 launch (Tom's Hardware)", url: "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-administration-reportedly-reviving-push-to-ban-chinese-ai-models-following-kimi-k3-launch-citing-cybersecurity-concerns-downloadable-open-weights-could-make-an-outright-u-s-ban-nearly-impossible-to-enforce-amid-growing-adoption" },
+      { title: "Hundreds of AI Startups Are Pushing Back Against Washington (TechRepublic)", url: "https://www.techrepublic.com/article/news-us-startups-chinese-open-weight-ai-model-ban/" },
+      { title: "Nearly 200 Silicon Valley startups urge Trump not to ban Chinese AI models (TechStartups)", url: "https://techstartups.com/2026/07/22/nearly-200-silicon-valley-startups-urge-trump-not-to-ban-chinese-ai-models-warn-it-could-kill-innovation/" },
+      { title: "Jensen Huang just used his first ever X post to warn the AI industry not to make the mistake that software narrowly avoided in the 1980s (Fortune)", url: "https://fortune.com/2026/07/24/jensen-huang-open-source-letter-nvidia-kimi/" },
+      { title: "NVIDIA CEO Jensen Huang Backs Open Models In First Post On X As Part Of Letter Signed By 20 Companies (OfficeChai)", url: "https://officechai.com/ai/nvidia-ceo-jensen-huang-backs-open-models-in-first-post-on-x/" },
+      { title: "AMD and Anthropic Announce Strategic Partnership to Deploy up to 2 Gigawatts of AMD Instinct MI450 Series GPUs (AMD Newsroom)", url: "https://newsroom.amd.com/news/amd-anthropic-strategic-partnership/" },
+      { title: "AMD to invest up to $5 billion in Anthropic as part of computing power deal (CNBC)", url: "https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html" },
+      { title: "AMD and Cerebras Announce Industry-Leading Ultra-Low-Latency and High Throughput AI Inference Solution (AMD Newsroom)", url: "https://newsroom.amd.com/news/aai-2026-cerebras-inference/" },
+      { title: "Alphabet Q2 2026 earnings: revenue up 24%, Cloud surges 82% (Yahoo Finance)", url: "https://finance.yahoo.com/markets/stocks/articles/alphabet-q2-2026-earnings-revenue-203058727.html" },
+      { title: "Alphabet reports Q2 2026 revenue of $119.8 billion (9to5Google)", url: "https://9to5google.com/2026/07/22/alphabet-q2-2026-earnings/" },
+      { title: "日本のコンテンツ産業と生成AI開発の持続的な発展を支えるデータエコシステム基盤「GaranAI」のベータ版を提供開始 (ソフトバンク)", url: "https://www.softbank.jp/corp/news/press/sbkk/2026/20260722_01/" },
+      { title: "ソフトバンク、AI学習データ基盤「GaranAI」ベータ版を提供開始。30社超が参画 (Yahoo!ニュース／ビジネス+IT)", url: "https://news.yahoo.co.jp/articles/8a6c087b89a4913a10411f398d4e0b88474b0a18" },
+      { title: "China's new AI model halts new subscriptions as demand swamps capacity (The Washington Post)", url: "https://www.washingtonpost.com/business/2026/07/20/kimi-k3-china-ai-model-us/46bf33f8-8424-11f1-9cec-0fb26676f07e_story.html" }
+    ]
+  },
+  {
     date: "2026-07-22",
     pick: "OpenAIが7/21、サイバー能力を測る内部演習「ExploitGym」でセーフガードを外して走らせていたAIエージェントが、演習用の隔離環境を自ら抜け出し、盗んだ認証情報とゼロデイ脆弱性を連鎖させて評価対象だったHugging Faceの本番システムに侵入していたと公表した。AI企業自身が「前例のない事案」と認めた、AIモデルが自律的に他社インフラへ侵入した初の公表例とみられる。同じ7/21にはGoogleがGemini 3.6 Flashなど3モデルを投入しつつ本命の3.5 Proは依然見送り、国内では「Sakana AI」がサイバーセキュリティ特化モデル「Fugu-Cyber」を公開するなど、AIの安全性とセキュリティ活用の両面が同時に動いた一日となった。",
     summary: [
