@@ -5,6 +5,40 @@
 window.DIGESTS = [
   {
     date: "2026-08-05",
+    pick: "Anthropicが8/4付でClaude CodeをVer.2.1.221に更新しVSCode向けFocus viewやセキュリティ修正を加える一方、週次利用上限50%増枠を8/19まで再延長した同じ8/5、rust-lang/rustが「LLMは読む・分析するのは可、書くのは不可」とする保守的な利用方針を正式採用し、DeepSeekはMITライセンスのエージェント特化モデル「V4 Flash 0731」を投入、米中はAI半導体規制をめぐる対抗措置の応酬を強めた。国内ではソフトバンクの第1四半期決算でクラウド・AI事業が前年同期比31%増収となり、AI投資の実利が数字として表れ始めた一日となった。",
+    summary: [
+      "Anthropicが8/4、Claude CodeをVer.2.1.221に更新。VSCode向けFocus viewやzshのセキュリティ修正を加えたほか、週次利用上限を50%増やす特典の適用期限を8/19まで再延長した。",
+      "rust-lang/rustプロジェクトが8/5、LLM利用方針を正式採用。「読む・分析するのは可、書くのは不可」とし、PR説明欄や公開ドキュメントでのLLM生成物の明示なき使用を制限した。",
+      "（国内）ソフトバンクの2027年3月期第1四半期決算で、クラウド・AI事業の売上高が前年同期比31.0%増の771億円に達し、親会社ソフトバンクグループの株価が11%超急騰した。"
+    ],
+    topics: [
+      { title: "Claude Code、Ver.2.1.221に更新——VSCode向けFocus view追加、zshセキュリティ修正、週次利用上限50%増を8/19まで再延長", why: "Anthropicは8/4、Claude CodeをVer.2.1.221に更新したと明らかにした。ツール実行の様子をターン単位の折りたたみ要約に隠し、実行中のツールをライブ表示する新しいFocus view（Ctrl+Alt+Fで切り替え）を追加したほか、Linux・WSL向けのサンドボックス認証情報マスキング、zshのセキュリティ修正、プラグイン・MCP・権限管理の強化を行った。あわせて、5月から段階的に延長を繰り返してきたPro・Max・Team・シート制Enterprise向けの週次利用上限50%増枠の適用期限を8/19まで再延長したことも明らかになった。機能追加と利用上限の引き上げ延長を並行して進め、開発者の定着を図る格好。", idea: "Focus viewでエージェントの動きが見えにくくなる代わりに得られるもの——Claude Code Ver.2.1.221から考える、ターン単位要約とのつきあい方", tag: "海外" },
+      { title: "rust-lang/rust、LLM利用方針を正式採用——「読む・分析するのは可、書くのは不可」の保守的スタンス", why: "Rustコンパイラ開発を担うrust-lang/rustの5チームは8/5、モノリポへの貢献においてLLMをどう使ってよいかを定めた方針を公式採用したと発表した。方針は、LLMはコードを読む・分析する・学ぶ用途では問題ないが「創り出す」用途には使わないという保守的な立場を取る。PR説明欄や公開ドキュメント、GitHubコメントでのLLM出力の使用は明示しない限り認めず、レビュアーはLLM製と分かるPRのレビューを拒否できるとした。背景には、仕上がりの良いコードがもはや投稿者の理解度や労力を示す指標にならなくなったこと、コードを書くハードルが下がったことでレビュー側の負荷が増していること、機械的なコピー＆ペーストが時間を浪費していることへの懸念がある。", idea: "OSSプロジェクトはAI生成コードとどう向き合うべきか——rust-langの方針から考える、社内開発ルールに転用できる線引き", tag: "海外" },
+      { title: "DeepSeek、「V4 Flash 0731」を正式リリース——MITライセンスでエージェント・コーディング性能が大幅向上", why: "DeepSeekは、プレビュー版を置き換える形で「DeepSeek-V4-Flash-0731」を正式リリースした。284BパラメータのMoEモデルで、アクティブパラメータは13B、コンテキスト長は100万トークン。重みはMITライセンスで商用のオンプレミス展開も許可されている。4月のプレビュー版を新たな事後学習パイプラインでエージェント・コーディング・推論・ツール利用に特化して再学習したもので、公開されているエージェント系ベンチマークではより大規模な上位モデルV4-Proのプレビュー版を上回ったという。価格は入力・出力とも100万トークンあたり0.14ドル・0.28ドルに設定されている。", idea: "アーキテクチャを変えず学習し直すだけで上位モデルを超える——DeepSeek V4 Flashの手法から考える、モデル選定でスペック表だけを見ない大切さ", tag: "海外" },
+      { title: "中国、対米「対抗措置」を発表——ドローン輸出審査厳格化や米企業6社との取引禁止、AI半導体規制の応酬が激化", why: "中国は8/5（水）、米国による対中制裁への対抗措置を発表した。デュアルユース輸出管理リストに載るドローンや主要部品・関連技術について対米輸出を案件ごとの審査制に切り替えるほか、中国の認証機関による工場フォローアップ検査を停止し、米国の適合性検査企業をブラックリストに追加、オフィス用プリンター・複写機の輸入について安全保障上の調査を開始するとした。あわせて米企業6社との取引を禁止した。背景には、中国のAI進展を遅らせる狙いで米国が先端半導体やその製造装置の輸出を制限してきた経緯があり、トランプ政権当局者が中国AI企業への制裁を示唆したことへの反応とされる。中国側は米国が新たな制限を打ち出せば、さらなる対抗措置を取ると警告した。", idea: "AI半導体をめぐる米中の応酬はどこまで広がるか——中国の対抗措置から考える、サプライチェーン分散を検討すべきタイミング", tag: "市場" },
+      { title: "（国内）ソフトバンク、2027年3月期第1四半期決算——クラウド・AI事業が前年同期比31%増収、親会社株は11%超急騰", why: "ソフトバンク株式会社は8/5、2027年3月期第1四半期（2026年4〜6月期）の連結決算を発表した。売上高は前年同期比9.4%増の1兆8147億円、営業利益は同4.0%増の3023億円、純利益は同3%増の約1500億円と、全事業セグメントで増収増益を確保した。中でもクラウド・AI事業の売上高は同31.0%増の771億円に達し、AIデータセンターの稼働が業績拡大を牽引した。会社側はクラウド・AI関連売上高の年平均成長率を2027年度まで30%とする見通しを示し、この発表を受けて親会社ソフトバンクグループの株価は11%超急騰し日経平均をけん引した。", idea: "国内通信キャリアの決算にAI投資の答え合わせを見る——ソフトバンクのクラウド・AI31%増収から考える、自社のAI投資対効果の測り方", tag: "国内" }
+    ],
+    small: [
+      "AI・人工知能EXPO NEO 2026が8/5・6の2日間、東京国際フォーラムで初開催。出展約100社・来場見込み1万人規模で、来場者のAI導入フェーズを4色で可視化する国内初のAX（AIトランスフォーメーション）フェーズ特化型展示会と位置づけられている。",
+      "Microsoftのサイバーセキュリティ特化AIモデル「MAI-Cyber-1-Flash」が8/3、パブリックプレビューを開始。自律的な脆弱性検出・修復を担うエージェント基盤「Project Perception」上で稼働し、ベンチマーク「CyberGym」で95.95%のスコアを記録したという。"
+    ],
+    sources: [
+      { title: "Claude Code changelog (code.claude.com)", url: "https://code.claude.com/docs/en/changelog" },
+      { title: "Claude Usage Limits 2026: Every Change, Dated and Explained (explainx.ai)", url: "https://explainx.ai/blog/claude-usage-limits-2026-timeline-explained" },
+      { title: "rust-lang/rust is adopting an LLM policy (Inside Rust Blog)", url: "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/" },
+      { title: "Rust Moves to Restrict LLM Use in Contributions After Months of Debate (Socket)", url: "https://socket.dev/blog/rust-moves-to-restrict-llm-use-in-contributions" },
+      { title: "DeepSeek V4 Flash Is Now Official: What Changed in the 0731 Build (Hugging Face)", url: "https://huggingface.co/blog/ResterChed/deepseek-v4-flash-official-release" },
+      { title: "DeepSeek Upgrades DeepSeek-V4-Flash-0731 with Major Agentic and Coding Gains (MarkTechPost)", url: "https://www.marktechpost.com/2026/07/31/deepseek-upgrades-deepseek-v4-flash-0731-with-major-agentic-and-coding-gains/" },
+      { title: "China announces countermeasures against Washington, including controls on drone exports to the US (AP via ClickOnDetroit)", url: "https://www.clickondetroit.com/business/2026/08/05/china-announces-countermeasures-against-washington-including-controls-on-drones-exports-to-the-us/" },
+      { title: "China hits US with sanctions, drone export curbs ahead of Xi visit (CNN)", url: "https://www.cnn.com/2026/08/05/china/china-us-sanctions-intl-hnk" },
+      { title: "ソフトバンクの第1四半期決算、全セグメント増収で売上1.8兆円超 クラウド・AIが牽引 (Yahoo!ニュース／ビジネス+IT)", url: "https://news.yahoo.co.jp/articles/60d28a5963b64165af57b1d7782df10e4bc0ce00" },
+      { title: "ソフトバンクが反発、クラウド・AI売上高の年平均成長率30%の見通し示す (株探ニュース)", url: "https://kabutan.jp/news/marketnews/?b=n202608050666" },
+      { title: "AI・人工知能EXPO NEO 2026 公式サイト", url: "https://www.nextech-week.jp/aineo/ja-jp.html" },
+      { title: "Microsoft Unveils MAI-Cyber-1-Flash, Its First Cybersecurity AI Model (SecurityWeek)", url: "https://www.securityweek.com/microsoft-unveils-mai-cyber-1-flash-its-first-cybersecurity-ai-model/" }
+    ]
+  },
+  {
+    date: "2026-08-05",
     pick: "OpenAIが7/31、ChatGPT公開から4年足らずで月間利用者10億人・導入企業200万社突破という生成AI業界最大級の普及節目を発表した一方、Anthropicは8/4に元カリフォルニア州最高裁判事Tino Cuéllar氏を初代Chief Global Affairs Officerに招聘し政策対応体制を強化した直後の8/4夜〜8/5、Claude Opus 5・Sonnet 5・Fable 5・Mythos 5など主要モデル全体で断続的な障害に見舞われた——普及の勢いと運用の脆さが同時に表面化した一週間となった。",
     summary: [
       "OpenAIが7/31、月間利用者10億人・導入企業200万社突破を発表。GPT-5.6ファミリーの値下げと同時期の到達で、登録半年後には1日のメッセージ数が約50%増え、利用する業務の種類も約2倍に広がっているという。",
