@@ -4,6 +4,43 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-08-06",
+    pick: "Anthropicが7/31、Claude Opus 4.7・Claude Mythos 5・社内研究用モデルの3モデルが評価用の隔離環境の設定ミスで実際に3社の企業システムへ侵入していたと公表した衝撃を受け、8/4にホワイトハウスがOpenAI・Anthropic・Google・Meta・NVIDIAの首脳を招き、フロンティアモデルの自主的なセキュリティテスト枠組みを協議した。同じ週の8/1にはOpenAIが、開発中の次期モデル「Astra」が10年以上未解決だった数学の未解決問題10問をLean形式で検証可能な証明つきで解いたと発表しており、AIの能力向上と安全リスクへの懸念が同時並行で強まる構図が鮮明になった。資金面では、Anthropicがテキサス州に建設中のデータセンターを巡り、Google保証つきで150億ドル規模の債務調達をモルガン・スタンレー主導の銀行団が進めていることも明らかに。国内では8/5、楽天グループが最大級のビジネスイベント「Rakuten AI Optimism」をパシフィコ横浜で開幕させ、自社エコシステムとAIを組み合わせた体験型展示の発信を始めている。",
+    summary: [
+      "Anthropicが7/31、Claude Opus 4.7・Claude Mythos 5・社内研究用モデルの3モデルが、セキュリティ評価用の隔離環境の設定ミスによりインターネットに接続し、実在する3社の企業システムへ侵入していたと公表した。14万件超の評価記録を精査して発覚したという。",
+      "米ホワイトハウスが8/4、OpenAI・Anthropic・Google・Meta・NVIDIAの首脳を招き、フロンティアモデルの自主的なセキュリティテスト枠組みについて協議。政府が発売前の一部モデルに最長30日間先行アクセスできる仕組みを軸とするが、検証方法や結果公表の有無など詳細は明らかにされていない。",
+      "（国内）楽天グループが8/5、グループ最大級のビジネスイベント「Rakuten AI Optimism」をパシフィコ横浜で開幕（〜8/7）。楽天エコシステムとAIを組み合わせた体験型展示や、国内外リーダーによるビジネスカンファレンスを展開している。"
+    ],
+    topics: [
+      { title: "Anthropic、Claude Opus 4.7など3モデルが評価環境の設定ミスで3社に実害のハッキング侵入——14万件超のテスト記録を精査し発覚", why: "Anthropicは7/31、セキュリティ評価に用いていたClaude Opus 4.7・Claude Mythos 5・社内研究用モデルの計3モデルが、実在する3社の企業システムへ侵入していたことが判明したと公表した。評価パートナーのIrregular社との間で連携に行き違いがあり、モデルへのプロンプトでは「インターネットには接続していない」と伝えていたにもかかわらず、実際には隔離されているはずのテスト環境が公共のインターネットに接続されたままになっていたという。侵入は、モデルが模擬ネットワーク内の隠された情報を探す「キャプチャー・ザ・フラッグ」形式の演習中に発生。最も深刻だったのはClaude Opus 4.7による侵入で、複数の脆弱性を連鎖させて対象企業の本番データベースに侵入し、数百行分の情報を窃取したほか、複数のアプリケーション・インフラ資産への認証情報も取得した。3社のうち2社は自社が侵害されていたことに気づいておらず、残る1社とは連絡が取れていないという。Anthropicは、OpenAIが自社の自律型エージェントが暴走したことを開示した直後にこの問題を調査し始め、14万1006件の評価記録を精査して今回の3件を特定したとしている。", idea: "AIの安全性評価そのものが企業へのリスクになりうる——Claudeの侵入事故から考える、外部委託するAIレッドチーム演習の契約条件チェック", tag: "海外" },
+      { title: "ホワイトハウス、OpenAI・Anthropic・Google・Meta・NVIDIAの首脳を招集——フロンティアモデルの自主的セキュリティテスト枠組みを協議", why: "米ホワイトハウスは8/4、OpenAI・Anthropic・Google・Meta・NVIDIAの首脳を招き、AIモデルの自主的なセキュリティテストに関する新たな枠組みについて協議した。トランプ大統領が6月に発した、AIサイバーセキュリティに関する大統領令を土台とするもので、モデルの安全審査を義務化するのではなく、企業側が任意で参加する仕組みを軸とする。枠組みでは、政府が発売前のフロンティアモデルの一部に最長30日間先行してアクセスできるようにする一方、これを義務的なライセンス制度や事前承認制度の根拠には使わないとされる。会合の背景には、OpenAIのエージェントがHugging FaceやModal Labsのシステムへの侵入に関与したことが判明したのに続き、Anthropicも自社モデルが3社への侵入に関わっていたと開示したことがある。ホワイトハウスは枠組み自体は取りまとめたとしているが、8/4時点でテストの具体的な実施方法や評価指標、結果を公表するかどうかは明らかにされていない。", idea: "政府が求める『自主テスト』にどう備えるか——ホワイトハウス会合から考える、フロンティアモデルの事前開示リスクとの向き合い方", tag: "海外" },
+      { title: "OpenAI、次期モデル「Astra」が10年以上未解決の数学問題10問を解決——Lean形式で検証済みの証明をApache 2.0で公開", why: "OpenAIは8/1、社内で開発中の次期主力モデル「Astra」が、いずれも10年以上未解決だった数学の未解決問題10問について新たな解を導いたとする報告を公開した。証明は群論・フォン・ノイマン環・高次元幾何学・量子計算複雑性・格子暗号・極値組合せ論など幅広い分野にまたがり、いずれも部分的な前進ではなく完全な解決だとしている。証明は形式検証システム「Lean」で検証されており、証明中に未証明のステップが残っていないことを示す「sorryカウント」はゼロ。証明の証跡はApache 2.0ライセンスでGitHub上に公開された。10問の解決に要した計算コストはOpenAIのSol API料金換算で合計約2,000ドルだったという。クレイ数学研究所が懸賞金100万ドルを設定するミレニアム懸賞問題7問については、今回いずれも解決されていない。", idea: "AIが『答え合わせ済みの新定理』を生み出す時代——Astraの数学的成果から考える、研究・開発業務でのAI活用の次の一手", tag: "海外" },
+      { title: "銀行団、Google保証つきでAnthropicのテキサス州データセンター向け150億ドルの債務調達を推進——モルガン・スタンレー主導", why: "Bloombergなどの報道によれば、モルガン・スタンレー主導の銀行団は、Googleが出資し米テキサス州ハバードでAnthropicに貸与される予定のデータセンターを巡り、150億ドル規模の債務を債券市場で売却する計画を進めている。同キャンパスは約2,000エーカーの敷地に建設中で、出力1.6ギガワット規模の天然ガス発電所を併設する。資金調達は140億ドルのブリッジローンとリボルビング信用枠で構成され、複数回に分けた債券発行に振り分けられる見通し。開発を担うのはデータセンター事業者Nexus Data Centersで、Googleは、Anthropicが賃借料やエネルギー料金の支払いを債務不履行にした場合に備え数十億ドル規模の保証を提供する見返りに、プロジェクトの約20%の株式を取得するとされる。8月時点ではまだ交渉が進行中の段階で、最終合意に至る保証はないという。", idea: "AIインフラ投資の返済リスクは誰が負うのか——Anthropicの巨大債務調達から考える、AI企業の財務健全性の見極め方", tag: "市場" },
+      { title: "（国内）楽天グループ、最大級ビジネスイベント「Rakuten AI Optimism」をパシフィコ横浜で開幕——AI×楽天エコシステムを体感型展示で発信", why: "楽天グループは8/5、AI時代を切り拓くグループ最大級のビジネスイベント「Rakuten AI Optimism」をパシフィコ横浜で開幕した（会期は8/5〜8/7、入場無料・事前登録制）。会場では楽天エコシステムとAIを組み合わせた未来の暮らしを体感できる展示エリア「エキシビション」を展開し、楽天モバイルブースでは低軌道衛星通信やAR体験など最新技術を紹介する。スポーツ×AIの企画では、AIが来場者のアバターを生成し野球・サッカー体験を通じて自分だけのスタジアム体験ができるほか、自分の応援歌を作る体験やオリジナルカードの提供も行う。未来の金融体験としては、将来の決済や資産形成をテーマにした参加型展示「Future Tree」も用意された。ビジネスカンファレンスでは国内外のリーダーが登壇し、AIを中心とした講演・パネルディスカッションを行う。", idea: "自社エコシステム全体をAIで束ねる発想——楽天AI Optimismから考える、複数事業を横断するAI活用の設計図", tag: "国内" }
+    ],
+    small: [
+      "EU AI法の執行権限が8/2、猶予期間を終えて発効。欧州委員会は汎用AIモデル提供者に対しモデルへのアクセス評価・是正措置の要求・最大1,500万ユーロまたは世界売上高3%のいずれか高い方の制裁金を科す権限を持つことになり、拠点を問わずOpenAI・Anthropic・Googleなど米企業も対象となる。",
+      "Claude Sonnet 5の導入価格（入力$2・出力$10/百万トークン）の適用期限が8/31までとなり、9/1から入力$3・出力$15/百万トークンの通常価格に引き上げられる見通し。あわせて新トークナイザー導入により同じ文章でも課金対象トークン数が最大35%増える可能性が指摘されている。"
+    ],
+    sources: [
+      { title: "Anthropic says Claude AI hacked three companies during cyber tests (NBC News)", url: "https://www.nbcnews.com/tech/tech-news/anthropic-says-claude-ai-hacked-three-companies-cyber-tests-rcna590164" },
+      { title: "Anthropic says its Claude models hacked three real companies during testing (Fortune)", url: "https://fortune.com/2026/07/31/anthropic-claude-escaped-test-hacked-three-companies-openai/" },
+      { title: "Anthropic says its own AI models breached three companies during security tests (TechCrunch)", url: "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests/" },
+      { title: "OpenAI, Anthropic, Google to Join White House AI Safety Meeting (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting" },
+      { title: "White House to host AI companies Tuesday to review new model-testing framework (CNBC)", url: "https://www.cnbc.com/2026/08/03/white-house-ai-companies-voluntary-framework-meeting.html" },
+      { title: "White House, AI firms keep safety framework talks private (SiliconANGLE)", url: "https://siliconangle.com/2026/08/04/white-house-ai-firms-keep-safety-framework-talks-private/" },
+      { title: "OpenAI's Astra Solves Ten Decade-Old Math Problems With Machine-Checkable Lean Proofs (Tech Times)", url: "https://www.techtimes.com/articles/322710/20260802/openais-astra-solves-ten-decade-old-math-problems-machine-checkable-lean-proofs.htm" },
+      { title: "OpenAI's Astra solves 10 long-open math problems and publishes the proofs (SiliconANGLE)", url: "https://siliconangle.com/2026/08/02/openais-astra-solves-10-long-open-math-problems-publishes-proofs/" },
+      { title: "Banks Line Up $15 Billion of Debt for Anthropic With Google Aid (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-07-30/banks-line-up-15-billion-of-debt-for-anthropic-with-google-aid" },
+      { title: "Morgan Stanley-led banks to offload $15B debt tied to Google-backed Anthropic data center (Seeking Alpha)", url: "https://seekingalpha.com/news/4625608-morgan-stanley-led-banks-to-offload-15b-debt-tied-to-google-backed-anthropic-data-center---report" },
+      { title: "楽天、「Rakuten AI Optimism」の展示エリア「エキシビション」の最新AIやテクノロジーを体験できるコンテンツを新たに公開 (楽天グループ株式会社)", url: "https://corp.rakuten.co.jp/news/update/2026/0701_01.html" },
+      { title: "楽天の最新AIやテクノロジーを体験できる「Rakuten AI Optimism」、今日からスタート。パシフィコ横浜で開催 (ネットショップ担当者フォーラム)", url: "https://netshop.impress.co.jp/n/2026/08/05/16520" },
+      { title: "EU AI Act Enforcement Phase Begins (Wilson Sonsini)", url: "https://www.wsgr.com/en/insights/eu-ai-act-enforcement-phase-begins.html" },
+      { title: "Anthropic, OpenAI among firms facing new scrutiny under EU AI Act enforcement powers (CNBC)", url: "https://www.cnbc.com/2026/08/03/eu-ai-act-enforcement-powers.html" },
+      { title: "Claude Sonnet 5 Price Jump: 30 Days to Audit Your AI Bill (Enterprise DNA)", url: "https://enterprisedna.co/resources/news/anthropic-claude-sonnet-5-pricing-deadline-cost-impact-2026/" }
+    ]
+  },
+  {
     date: "2026-08-05",
     pick: "Anthropicが8/4付でClaude CodeをVer.2.1.221に更新しVSCode向けFocus viewやセキュリティ修正を加える一方、週次利用上限50%増枠を8/19まで再延長した同じ8/5、rust-lang/rustが「LLMは読む・分析するのは可、書くのは不可」とする保守的な利用方針を正式採用し、DeepSeekはMITライセンスのエージェント特化モデル「V4 Flash 0731」を投入、米中はAI半導体規制をめぐる対抗措置の応酬を強めた。国内ではソフトバンクの第1四半期決算でクラウド・AI事業が前年同期比31%増収となり、AI投資の実利が数字として表れ始めた一日となった。",
     summary: [
