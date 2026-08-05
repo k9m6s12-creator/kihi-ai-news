@@ -4,6 +4,77 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-08-05",
+    pick: "OpenAIが7/31、ChatGPT公開から4年足らずで月間利用者10億人・導入企業200万社突破という生成AI業界最大級の普及節目を発表した一方、Anthropicは8/4に元カリフォルニア州最高裁判事Tino Cuéllar氏を初代Chief Global Affairs Officerに招聘し政策対応体制を強化した直後の8/4夜〜8/5、Claude Opus 5・Sonnet 5・Fable 5・Mythos 5など主要モデル全体で断続的な障害に見舞われた——普及の勢いと運用の脆さが同時に表面化した一週間となった。",
+    summary: [
+      "OpenAIが7/31、月間利用者10億人・導入企業200万社突破を発表。GPT-5.6ファミリーの値下げと同時期の到達で、登録半年後には1日のメッセージ数が約50%増え、利用する業務の種類も約2倍に広がっているという。",
+      "Anthropicが8/4、元カリフォルニア州最高裁判事Tino Cuéllar氏を初代Chief Global Affairs Officerに招聘したと発表した直後の8/4夜〜8/5、Claude Opus 5・Sonnet 5・Fable 5・Mythos 5など主要モデル全般でエラー率上昇の障害が発生し復旧作業が続いた。",
+      "（国内）Sakana AIが8/3、Kimi K2.6を基盤に日本語・日本のビジネス文脈へ適合させたLLM API「Sakana Namazu」の提供を開始。OpenAI互換APIでbase_url変更のみで乗り換え可能とした。"
+    ],
+    topics: [
+      { title: "OpenAI、月間利用者10億人・導入企業200万社を突破——ChatGPT公開から4年足らずで生成AI業界最大級の普及節目に", why: "OpenAIは7/31、自社AIモデルを月間10億人超が利用し、導入企業も200万社を超えたと発表した。ChatGPT公開から4年足らずでの到達で、生成AI業界でこれまでで最大級の普及規模とされる。発表はGPT-5.6ファミリーの値下げ（GPT-5.6 Lunaを80%、GPT-5.6 Terraを20%値下げ）と同時期で、利用者は登録から半年後には1日あたりのメッセージ数が約50%増え、利用する業務の種類も約2倍に広がっているという。OpenAIはユーザーの利用が一時的なブームでなく日常的な習慣として定着しつつあると強調している。", idea: "10億人が使うAIをどう自分の仕事に落とし込むか——OpenAIの普及数字から考える、生成AI活用の『次の一歩』", tag: "海外" },
+      { title: "Anthropic、元カリフォルニア州最高裁判事Tino Cuéllar氏を初代Chief Global Affairs Officerに招聘——AI統治のグローバル戦略を強化", why: "Anthropicは8/4、Mariano-Florentino（Tino）Cuéllar氏を初代Chief Global Affairs Officerとして迎えたと発表した。Cuéllar氏はカーネギー国際平和財団の前会長でカリフォルニア州最高裁判所の判事も務めた人物。オバマ政権のホワイトハウスで特別補佐官を務めた経歴も持つ。就任にあたりスタンフォード大学ロースクール教授職は休職とし、1月から名を連ねていたAnthropicの長期便益信託（Long-Term Benefit Trust）の役職は退く。担当は政策立案・国際的な戦略関係構築・各国政府との関係で、社長ダニエラ・アモデイ氏の直属となる。トランプ政権との緊張関係が続くとされる中でのAI政策対応体制の強化と位置づけられている。", idea: "判事出身を政策トップに据える理由——Anthropicの人事から考える、AI企業の規制対応の作法", tag: "海外" },
+      { title: "Claude、Opus 5・Sonnet 5・Fable 5・Mythos 5など主要モデル全般で障害——8/4夜から8/5にかけてエラー率上昇", why: "Anthropicは8/4午後8時53分（UTC）から約1時間10分にわたり複数のClaudeモデルでエラー率上昇の障害が発生したことを公表しており、これとは別に8/5（水曜）にも利用者からアクセス障害の報告が急増した。Downdetectorでは報告件数が急増し、影響はClaude Mythos 5・Claude Fable 5・Claude Opus 5・Claude Sonnet 5など主要モデル全体に及んだ。Anthropicは原因の特定と復旧作業を進めていると発表したが、8/5時点で具体的な原因や復旧見込み時刻は公表されていない。同社が前日にChief Global Affairs Officerの新設を発表した直後というタイミングで、事業拡大と運用の安定性の両立という課題が改めて浮き彫りになった。", idea: "使えない時間にどう備えるか——Claude障害から考える、生成AI依存業務のバックアップ設計", tag: "海外" },
+      { title: "EU AI法、第50条の透明性義務が8/2発効——チャットボットのAI開示・AI生成コンテンツの電子透かし義務化", why: "EUのAI法（AI Act）第50条に基づく透明性義務が8/2から適用開始となった。チャットボットや音声アシスタント、AIエージェントなど個人と直接対話するAIシステムの提供者は、それが自明でない限り利用者に「AIと対話している」ことを開示する義務を負う。また、合成音声・画像・動画・テキストを生成するAIシステムの提供者は、出力を機械可読な形式でマーキングし、AI生成と検出可能な状態にすることが求められる。欧州委員会は7/20にこの義務に関するガイドラインを採択済み。違反した場合は最大1,500万ユーロまたは世界売上高の3%のいずれか高い方の制裁金が科される可能性がある。既存の生成AIシステムについては、マーキング・検出義務のみ2026年12月2日までの経過期間が設けられている。", idea: "AIが作ったと分かるようにする義務——EU透明性ルールから考える、日本のnote運用で先取りすべき表示習慣", tag: "海外" },
+      { title: "（国内）Sakana AI、日本語特化LLM API「Sakana Namazu」を提供開始——Kimi K2.6ベースでbase_url変更のみで乗り換え可能", why: "Sakana AIは8/3、日本語と日本のビジネス文脈に特化した大規模言語モデル「Namazu」をアップデートし、開発者向けAPI「Sakana Namazu」として正式提供を開始した。Moonshot AIが公開したオープンモデル「Kimi K2.6」を基盤に、自社データを用いて日本語表現や日本特有のビジネス慣習への適応を進めた。Web検索・コード実行がビルトインツールとして利用でき、OpenAI互換のAPI仕様を採用しているため、既存のOpenAI API向けコードは接続先のbase_urlを書き換えるだけで移行できる設計となっている。ベンチマークでは、日本の政治・行政分野の知識を問う「FairPoliticsQA」のスコアが34.10%から56.30%へ大きく向上するなど、日本固有の文脈理解が強化されたことが示された。初期費用・月額固定費なしの従量課金制で提供される。", idea: "土台は海外OSS、味付けは自前データという型——Sakana Namazuから考える国産AI活用の乗り換えやすさ", tag: "国内" },
+      { title: "データサイエンス基盤大手Anaconda、AIセキュリティ企業Enkrypt AIを買収——300超の攻撃カテゴリでレッドチーミング、規制対応も自動化", why: "Anacondaは8/4、AIセキュリティ・コンプライアンス企業Enkrypt AIの買収を発表した。Enkrypt AIは、企業のAIモデルやエージェントを対象に、展開前の300種類超の攻撃カテゴリに対するレッドチーミング、ジェイルブレイクや機密情報漏えいをリアルタイムで防ぐ実行時ガードレール、エージェント運用全体をカバーするセキュリティ、NIST AIリスク管理フレームワークやEU AI法を実装可能なガードレールへ変換するコンプライアンス自動化を提供してきた。買収により、Anaconda Platformはプロンプト入力からAIネイティブなアプリケーションの本番運用までの全工程を一貫して統治できる体制になるとしている。企業のAI活用が試験導入から本番の大量トークン消費段階へ移る中、セキュリティ・ガバナンス機能を持つ企業の統合が相次いでいる動きの一角。", idea: "AIを使うから守りながら使うへ——Anaconda×Enkrypt AI買収から考える社内AI運用のセキュリティチェック項目", tag: "市場" }
+    ],
+    small: [
+      "米Microsoft幹部ジェイ・パリク氏が社内メールで部門ごとの「AIトークン予算目標」導入を通知——「Tokenmaxxing（トークン消費の最大化）は最適化目標ではない」と明言し、AIコスト管理の厳格化姿勢を示した。社内のデフォルトモデルは比較的安価なGPT-5.6に設定されたという。",
+      "米第9巡回区控訴裁判所が8/4、PerplexityのAIショッピングエージェント「Comet」のAmazon.comへのアクセスを禁じていた下級審の差止命令を取り消す判断を示し、Amazon.comに「アクセス」していたのはPerplexityではなく利用者だと認定した。"
+    ],
+    sources: [
+      { title: "OpenAI Reaches 1 Billion Active Users as AI Becomes Daily Habit (PYMNTS.com)", url: "https://www.pymnts.com/news/artificial-intelligence/2026/openai-reaches-1-billion-active-users-as-ai-becomes-daily-habit/" },
+      { title: "OpenAI surpasses 1 billion users after cutting GPT-5.6 prices (Quartz)", url: "https://qz.com/openai-billion-users-gpt-price-cuts-073126" },
+      { title: "Tino Cuellar joins Anthropic as Chief Global Affairs Officer (Anthropic)", url: "https://www.anthropic.com/news/tino-cuellar" },
+      { title: "Anthropic names global affairs chief as Trump tensions persist (CNBC)", url: "https://www.cnbc.com/2026/08/04/anthropic-names-global-affairs-chief-as-trump-tensions-persist.html" },
+      { title: "Is Claude Down? Anthropic Says It's Working on a Fix After Users Report Widespread Issues (Benzinga)", url: "https://www.benzinga.com/markets/tech/26/08/60943268/is-claude-down-anthropic-says-its-working-on-a-fix-after-users-report-widespread-issues" },
+      { title: "EU AI Act: Transparency Obligations Take Effect 2 August 2026 (Cooley)", url: "https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026" },
+      { title: "Sakana AI、日本語特化のLLM API「Sakana Namazu」を提供開始 (Sakana AI)", url: "https://sakana.ai/namazu-api/" },
+      { title: "Sakana AI、日本語に特化したLLM API「Sakana Namazu」を提供開始 (窓の杜)", url: "https://forest.watch.impress.co.jp/docs/news/2130768.html" },
+      { title: "Anaconda Acquires Enkrypt AI for AI Security (Anaconda)", url: "https://www.anaconda.com/blog/anaconda-acquires-enkrypt-ai" },
+      { title: "Anaconda Acquires Enkrypt AI to Secure the Trillion-Token Enterprise (AIwire)", url: "https://www.hpcwire.com/aiwire/2026/08/04/anaconda-acquires-enkrypt-ai-to-secure-the-trillion-token-enterprise/" },
+      { title: "Microsoft Tells Engineers 'Tokenmaxxing Is Not What We Are Optimizing For' (404 Media)", url: "https://www.404media.co/microsoft-tells-engineers-tokenmaxxing-is-not-what-we-are-optimizing-for/" },
+      { title: "Perplexity has successfully overturned Amazon's injunction on its AI shopping bot (Engadget)", url: "https://www.engadget.com/2230471/perplexity-has-successfully-overturned-amazon-injunction-on-its-ai-shopping-bot/" }
+    ]
+  },
+  {
+    date: "2026-07-28",
+    pick: "Anthropicが7/24、最上位モデル「Fable 5」に迫る知性を半額で提供する新モデル「Claude Opus 5」を全プラットフォームに投入した3日後の7/26夜、中国Moonshot AIが2.8兆パラメータの「Kimi K3」全ウェイトを予告より前倒しで公開し、史上最大級のオープンウェイトモデルとなった。同じ7/27にはNVIDIAがMicrosoft・Cisco・IBMなど40社超と「Open Secure AI Alliance」を結成しセキュリティOSS「NOOA」を公開する一方、OpenAIの10ギガワット級オハイオ州データセンター計画には最大2,500億ドルの金融保証を検討していると報じられ——フロンティアAIの「オープン化」と「巨大資本の集中」が同時並行で進む一週間となった。",
+    summary: [
+      "Anthropicが7/24、新モデル「Claude Opus 5」を全プラットフォームに投入。最上位「Fable 5」に迫る知性を半額（入力$5・出力$25/百万トークン）で提供し、Frontier-BenchやARC-AGI-3などでOpus 4.8を上回る成績を記録。処理の力の入れ具合を切り替える「effort」設定や、会話途中でのツール変更機能も追加された。",
+      "🔁続報：Moonshot AIが7/26夜（米東部時間）、予告していた7/27より前倒しで「Kimi K3」の全ウェイトをHugging Faceで公開。総パラメータ2.8兆・活性化1,040億、Apache 2.0ライセンスでの公開となり、オープンウェイトモデルとして史上最大級の規模に達した。",
+      "（国内）富士通が7/28、独自LLM「Takane」を基盤とする金融機関専用AIシステムを発表。2027年3月の提供開始を予定し、金融機関がデータのアクセス権限を自社管理しながら融資審査や資料作成をAIで支援できる設計とした。"
+    ],
+    topics: [
+      { title: "Anthropic、新モデル「Claude Opus 5」を全プラットフォームに投入——最上位「Fable 5」に迫る性能を半額で提供", why: "Anthropicは7/24、Claude Opus 4.8の後継となる新モデル「Claude Opus 5」を発表し、Claude Max・Pro・Team・Enterprise・APIなど全プラットフォームで利用可能にした。価格はOpus 4.8から据え置きで入力$5・出力$25/百万トークン。自社ベンチマーク「Frontier-Bench v0.1」ではOpus 4.8のスコアを2倍以上に伸ばして全モデル中トップとなり、視覚的推論を測る「ARC-AGI-3」では次点モデルの3倍のスコアを記録、コンピュータ操作を評価する「OSWorld 2.0」では最上位モデル「Fable 5」の結果を3分の1以下のコストで上回ったとしている。新機能として、タスクにかける処理の力の入れ具合を低・中・高で切り替えられる「effort」設定と、開発者向けにプロンプトキャッシュを無効化せずに会話途中でツール構成を変更できる機能をベータ公開した。処理速度を約2.5倍にする代わりに料金も2倍になる「Fastモード」も用意されている。Claude Maxではデフォルトモデルとなり、Claude Codeでもデフォルトの Opusモデルとして採用された。", idea: "「性能は上位モデル並み、価格は半分」という選択肢——Opus 5から考える、日常業務でのAIモデルの使い分け方", tag: "海外" },
+      { title: "🔁続報：Moonshot AI「Kimi K3」、全ウェイトを予告より前倒しで公開——2.8兆パラメータで史上最大級のオープンウェイトモデルに", why: "中国Moonshot AIは、7/27を期限としていた「Kimi K3」の全ウェイト公開を1日前倒しし、7/26夜（米東部時間）にHugging Face上で1.4テラバイトのモデルファイルをApache 2.0という利用制限の緩いライセンスで公開した。Kimi K3は専門家混合（MoE）構成で総パラメータ数2.8兆、実際にトークンごとに使うのは1,040億のみ。テキストに加え画像・動画も扱え、100万トークンのコンテキスト長に対応する。3兆パラメータ級に達した初のオープンソースモデルとされ、AnthropicのClaudeを「不正に蒸留」して開発した疑いを米政権が指摘していた経緯（7/24付ダイジェストで既報）を経てもなお、予定通りの全面公開に踏み切った形。研究者や企業は自前のサーバーで直接実行・改変できるようになり、オープンウェイトモデルの実力を独自に検証できる状況になった。", idea: "「疑惑」の渦中でも全面公開に踏み切った理由——Kimi K3のオープン化から考える、海外AIとの向き合い方", tag: "海外" },
+      { title: "NVIDIA主導で40社超が「Open Secure AI Alliance」結成——AIエージェント向けセキュリティOSS「NOOA」を公開、OpenAI・Anthropic・Googleは不参加", why: "NVIDIAは7/27、Microsoft・Cisco・IBM・Adobe・Cloudflare・CrowdStrike・Hugging Face・Red Hat・Linux Foundationなど40社超と共同で「Open Secure AI Alliance」の発足を発表した。クラウド・サイバーセキュリティ・エンタープライズソフトウェア・オープンソース財団など幅広い分野の企業が参加し、AIエージェントの権限管理・隔離・ガードレール・ログ・モデル形式・脆弱性スキャン・安全なコーディング手法まで、エージェント運用の全領域を対象にした技術・手法を共同開発し共有するとしている。あわせてNVIDIAは、AIエージェントを通常のPythonクラスとして扱いテスト・追跡・監査・統治を容易にするオープンソース研究フレームワーク「NOOA（NVIDIA Labs Object-Oriented Agent）」をGitHubで公開した。発足の背景には7月中旬に公表されたHugging Faceへの侵入事件があり、同社が防御・分析にクローズドなモデルではなく自社運用のオープンウェイトモデルを用いて1万7,000件超の挙動を分析し封じ込めに成功した経緯が「オープンな防御ツールの必要性」を示す実例として挙げられている。一方でOpenAI・Anthropic・Googleは参加企業に名を連ねていない。", idea: "「守る側」にもオープンソースが要る——Open Secure AI Allianceから考える、AIエージェント導入時のセキュリティチェックリスト", tag: "海外" },
+      { title: "NVIDIA、OpenAIのオハイオ州10ギガワット級データセンターに最大2,500億ドルの金融保証を検討——別途チップ購入向け350億ドルの融資協議も", why: "The Wall Street Journalの報道によれば、NVIDIAはOpenAIが投資適格の信用格付けを持たない中、ソフトバンクのエネルギー子会社が米オハイオ州南部で開発中の10ギガワット級データセンター用地の賃借を可能にするため、最大2,500億ドル規模の金融保証を提供する方向で協議を進めている。NVIDIA自身の信用力を貸し手に対する裏付けとして使うことで、OpenAI単独では組成が難しい大型債務の調達を後押しする狙い。これとは別に、同用地に導入するチップの購入資金として最大350億ドル規模の融資についても協議しているとされる。プロジェクト第1期は800メガワット規模で2028年の完成を予定しており、チップを含めた総事業費は5,000億ドルを超え史上最大級のデータセンター計画になる見通し。7/27時点で条件は未確定で、最終的に合意に至る保証はないとされている。", idea: "GPUメーカーが「信用保証人」になる時代——NVIDIA・OpenAIの巨大融資協議から考える、AIインフラ投資の裏側", tag: "市場" },
+      { title: "（国内）富士通、独自LLM「Takane」基盤の金融機関専用AIシステムを発表——2027年3月提供開始、データを自社管理しながら融資審査・資料作成を支援", why: "富士通は7/28、地方銀行をはじめとする金融機関向けに特化したAIシステムを発表した。2026年8月から開発に着手し、提供開始は2027年3月を予定する。金融機関側がデータへのアクセス権限や運用ルールを自社で管理できる仕組みを備え、機密性の高い金融データを外部に預けることなく安全にAIを活用できる点が特徴。顧客分析AIと営業提案AIを組み合わせ、融資審査や資料作成といった業務を支援する。基盤には金融業界特有の商習慣や規制要件に対応した富士通独自の大規模言語モデル「Takane」を用い、料金体系は固定費とAIの実利用量に応じた従量課金を組み合わせる方式とする。", idea: "「データは外に出さない」が刺さる業界——富士通の金融特化AIから考える、自社データを守りながらAIを使う設計の作り方", tag: "国内" }
+    ],
+    small: [
+      "Claude Codeが7月下旬のアップデートで、Claude Opus 5をデフォルトのOpusモデルに設定（1Mコンテキスト・Fastモード時は入力$10・出力$50/百万トークン）。サブエージェントのネスト機能も深さ1階層から3階層まで拡張された。",
+      "法務省の有識者検討会が7/27、生成AIの普及を踏まえた報告書案をまとめ、著名人の声についても肖像と同様に無断使用を防ぐ「パブリシティ権」を認めるべきとする方向性を示した。"
+    ],
+    sources: [
+      { title: "Introducing Claude Opus 5 (Anthropic)", url: "https://www.anthropic.com/news/claude-opus-5" },
+      { title: "Anthropic launches Opus 5 (TechCrunch)", url: "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/" },
+      { title: "Anthropic releases Claude Opus 5: Here's how it's different than what's already out there (Fortune)", url: "https://fortune.com/2026/07/24/anthropic-debuts-claude-opus-5-with-feature-that-lets-users-toggle-between-cost-and-capability/" },
+      { title: "Anthropic releases new model, Opus 5 (Axios)", url: "https://www.axios.com/2026/07/24/anthropic-releases-new-model-opus-5" },
+      { title: "Claude Code Updates by Anthropic - July 2026 (Releasebot)", url: "https://releasebot.io/updates/anthropic/claude-code" },
+      { title: "Moonshot AI Releases Kimi K3: First Open-Weight 2.8T Frontier Model on Hugging Face (Warp2Search)", url: "https://www.warp2search.net/story/moonshot-ai-releases-kimi-k3-first-openweight-28t-frontier-model-on-hugging-face" },
+      { title: "Kimi K3 Open Weights Shipped: What the Licence Says (Digital Applied)", url: "https://www.digitalapplied.com/blog/kimi-k3-open-weights-shipped-license-restrictions-2026" },
+      { title: "Industry Leaders Join Open Secure AI Alliance for AI Safety and Security (NVIDIA Blog)", url: "https://blogs.nvidia.com/blog/open-secure-ai-alliance/" },
+      { title: "NVIDIA Forms 37-Member Open Secure AI Alliance and Open-Sources NOOA Framework (The Hacker News)", url: "https://thehackernews.com/2026/07/nvidia-forms-37-member-open-secure-ai.html" },
+      { title: "Nvidia forms 37-member AI security alliance without OpenAI, Anthropic or Google (CoinDesk)", url: "https://www.coindesk.com/tech/2026/07/27/nvidia-forms-37-member-ai-security-alliance-without-openai-anthropic-or-google" },
+      { title: "Nvidia explores $250 billion guarantee for OpenAI's Ohio data centre project (Yahoo Finance)", url: "https://finance.yahoo.com/technology/ai/articles/nvidia-explores-250-billion-guarantee-103204602.html" },
+      { title: "Nvidia weighs $250 billion guarantee so OpenAI can lease SoftBank's 10-gigawatt Ohio campus (Tom's Hardware)", url: "https://www.tomshardware.com/tech-industry/data-centers/nvidia-weighs-250-billion-guarantee-so-openai-can-lease-softbanks-10-gigawatt-ohio-campus" },
+      { title: "富士通が金融専用のAIシステム 27年提供開始、機密保持しやすく (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOUC285M50Y6A720C2000000/" },
+      { title: "声にも無断使用されない権利 法務省検討会が報告書案 (NHKニュース)", url: "https://news.web.nhk/newsweb/na/na-k10015187371000" }
+    ]
+  },
+  {
     date: "2026-07-24",
     pick: "ホワイトハウス技術顧問マイケル・クラツィオス氏が7/22、中国Moonshot AIの「Kimi K3」はAnthropicのClaudeを不正に「知識蒸留」して開発された可能性があると非難し、トランプ政権が中国製AIモデルの禁止措置を検討していると報じられる中、Y Combinatorなどが支援するスタートアップ179社は反対の書簡を送付。さらに7/24にはNVIDIAのジェンスン・フアンCEOが自身初のX投稿で、Microsoft・Meta・Hugging Faceなど約25社と連名の書簡を公開しオープンウェイトモデルの規制論に真っ向から反対を表明した——AI政策を巡る米国内の分断が一段と鮮明になった3日間となった。",
     summary: [
