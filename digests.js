@@ -4,6 +4,42 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-08-07",
+    pick: "Googleが8/6、AI研究・製品開発の指揮系統を英ロンドンから米カリフォルニア州マウンテンビューへ一本化する人事を発表し、DeepMind共同創業者デミス・ハサビス氏がCEO職から退きGoogle DeepMind会長兼Alphabetチーフサイエンティストへ、後任のAI開発統括にはコレイ・カヴクオール氏が就いた。同じ週の8/5にはMetaが「Claude Code」対抗の端末型コーディングエージェント「Muse Code」をベータ公開し、ベンチマークではClaude Opus 5に一歩譲る結果ながら価格の安さを前面に押し出した。市場ではPalantirの第2四半期決算が売上高93%増・米商用部門149%増という「AI特需」の実利を示し株価が急伸。国内では8/6、日本経済新聞が秋田市に日本最大級となる整備費2兆円規模のAIデータセンター計画が浮上し、UAE政府系ファンドが数千億円規模の投資を検討していると報じ、AIインフラ投資の波が国内の一地方都市にも及び始めたことをうかがわせた。",
+    summary: [
+      "Googleが8/6、AI部門の指揮系統をカリフォルニア州マウンテンビューに一本化する人事を発表。デミス・ハサビス氏はDeepMind CEOから退きGoogle DeepMind会長兼Alphabetチーフサイエンティストに、AI開発統括にはコレイ・カヴクオール氏が就任した。2023年のGoogle BrainとDeepMind統合以来続いた英国と米国の分散体制を見直す動き。",
+      "Metaが8/5、端末（ターミナル）で動くAIコーディングエージェント「Muse Code」をベータ公開。Anthropic「Claude Code」・OpenAI「Codex」に対抗する製品で、自社ベンチマークではClaude Opus 5にわずかに劣るものの、利用データの学習提供に同意する「Contributor」プランでは入力・出力とも標準料金の最大約20分の1という価格を打ち出した。",
+      "（国内）日本経済新聞が8/6、秋田市に日本最大級となる整備費2兆円規模のAIデータセンター建設計画が浮上していると報道。米IT企業ビットグリットと地元企業エスツーが中心となり、UAE政府系ファンド ムバダラ・インベストメントが数千億円〜1兆円規模の投資を検討しているとされ、2030年代前半の稼働を目指す。"
+    ],
+    topics: [
+      { title: "Google、AI開発の指揮系統をカリフォルニアへ一本化——ハサビス氏はDeepMind会長兼Alphabetチーフサイエンティストに退き、後任にカヴクオール氏", why: "Googleは8/6、AI研究・製品開発の意思決定体制を米カリフォルニア州マウンテンビュー本社に集約する人事を発表した。DeepMindの共同創業者で長くCEOを務めてきたデミス・ハサビス氏は日常の経営執行から退き、Google DeepMindの会長とAlphabetのチーフサイエンティストという役職に移る。後任としてAI研究・製品開発全体を統括するのは、この1年で英ロンドンからマウンテンビューに拠点を移していたコレイ・カヴクオール氏で、Geminiモデル開発・フロンティアAI研究・Geminiアプリ・開発者向けチームを見る。あわせて、コーディング領域の主要プロジェクトを率いていたセバスチャン・ボルジョー氏も英国からカリフォルニアへ異動した。背景には、2023年に独立して運営されていたGoogle Brain（マウンテンビュー）とDeepMind（ロンドン）を統合して以来、英米にまたがる体制が意思決定を複雑にし人材流出も招いてきたとの見方があり、AnthropicやOpenAIとの競争激化を受けた立て直し策と位置づけられている。", idea: "「本社に権限を戻す」という選択——Googleの体制一本化から考える、複数拠点でAI開発を進める組織のガバナンス設計", tag: "海外" },
+      { title: "Meta、端末型コーディングエージェント「Muse Code」をベータ公開——Claude Code対抗、学習データ提供で最大20分の1の価格に", why: "Metaは8/5、ターミナル上で動作するAIコーディングエージェント「Muse Code」のベータ版を公開した。macOS・Linux向けで、新モデル「Muse Spark 1.2」を基盤に、大規模なタスクは複数の永続サブエージェントへ自動的に分割して並列実行し、すべてのモデル呼び出し・ツール実行・承認・編集を追記専用のイベントログに記録して途中再開や再現を可能にする設計とした。標準料金は入力100万トークンあたり1.25ドル・出力4.25ドルだが、プロンプトと生成結果をMetaのモデル学習に利用することに同意する「Contributor」プランでは入力0.10ドル・出力0.20ドルと、標準の最大約20分の1に値下げされる（利用回数・トークン数の上限は標準プランより低い）。自社発表のベンチマークTerminal-Bench 2.1ではAnthropicのClaude Opus 5（86.7%）にMuse Spark 1.2（82.9%）がわずかに及ばなかったが、OpenAIのCodex（81.8%）は上回ったとしている。AnthropicのClaude Code・OpenAIのCodexに続き、Metaもエージェント型コーディングツール市場に本格参入した形。", idea: "「性能で劣るが安い」を選ぶ基準——Muse Codeの価格設計から考える、コーディングエージェント選定でデータ提供と引き換えの値引きをどう評価するか", tag: "海外" },
+      { title: "Palantir、第2四半期決算で売上高93%増・米商用部門149%増を記録——株価30%急伸、通期見通しも上方修正", why: "Palantir Technologiesは8/3（月）market close後に発表した2026年第2四半期決算で、売上高が前年同期比93%増の19.4億ドル、調整後1株利益0.41ドルと市場予想（0.33〜0.34ドル）を上回った。特に米国商用部門の売上高は前年同期比149%増の7.64億ドルに達し、2024年比では累計380%の伸びとなった。決算を受けて株価は翌8/4に約30%急伸し、直近1年で最大の値動きとなった。会社側は2026年通期の売上高見通しを従来の76.5億〜76.6億ドルから81.5億〜81.6億ドルへ引き上げ、米国商用部門の年間売上高も34.2億ドル超になるとの見通しを示した。AIブームが投資家の期待だけでなく実際の契約・売上として企業側に還元され始めていることを示す決算として注目された。", idea: "「期待」から「実績」への転換点——Palantir決算の急伸から考える、自社のAI投資対効果をどう数字で語るか", tag: "市場" },
+      { title: "（国内）秋田市に日本最大級のAIデータセンター計画浮上——整備費2兆円規模、UAE政府系ファンドが数千億円規模の投資を検討", why: "日本経済新聞は8/6、秋田市に日本最大級となるAI向けデータセンターを建設する計画が浮上していると報じた。整備費は2兆円規模となる見通しで、米国とUAEに拠点を置くIT企業ビットグリットと、秋田市のIT企業エスツーが計画の中心を担う。完成時の総受電容量は最大500メガワット規模を想定し、下新城地区工業団地・北部工業団地が建設候補地に挙がっている。UAEの政府系ファンド、ムバダラ・インベストメントが数千億円から1兆円規模の投資を検討しているとされ、8/19にはUAEの特命全権大使が秋田県を訪れ知事・市長と協議する予定という。稼働開始は2030年代前半を目指す。8/6時点では協議段階の報道であり、関係者による公式発表はまだ行われていない。", idea: "「AI特需」は地方にも広がるか——秋田のデータセンター計画から考える、地域のエネルギー・雇用への波及効果の見極め方", tag: "国内" },
+      { title: "Microsoft、PC操作を録画してCopilotの「スキル」に変換する無料アプリ「Skill Recorder」を公開", why: "Microsoftは8/4、PC画面上の操作を録画し、AIエージェントが再現できる「スキル」に変換するデスクトップアプリ「Skill Recorder」をGitHub上でMITライセスで公開した。画面操作と音声による説明を録画すると、GitHub Copilot CLIが作業の意図と手順を解析し、Microsoft Copilot Cowork・Microsoft Scout・Copilot Studioなどで再利用できるスキルやスケジュール実行可能な自動化としてMarkdown形式で出力する。主にmacOS向けだがWindows 11（x64・ARM64）にも対応する。利用にはGitHub Copilotを利用できるGitHubアカウントが必要で、Microsoftはパスワードなど機密情報を録画に含めないよう注意を促している。定型的なPC作業をAIエージェントへ引き継ぐハードルを下げる狙いがある。", idea: "「録画するだけ」で業務をAIに引き継ぐ——Skill Recorderから考える、社内の定型作業を棚卸ししてAI化する手順", tag: "海外" }
+    ],
+    small: [
+      "Elon Musk氏は7/28、xAIの次期モデル「Grok 4.6」（1.5兆パラメータ、SFT・RLを大幅改善）を8/7ごろ、その後継「Grok 4.7」（2.1兆パラメータ）を数週間後に投入するとX上で予告した。8/7時点でGrok 4.6は正式リリースされておらず、時期は変更される可能性がある。",
+      "日本ディープラーニング協会（JDLA）が8/4、企業・自治体のAIガバナンス体制を第三者評価する認証制度「C認証（AI Governance Core Certification）」の運用を開始。ABEJA・富士ソフト・EY新日本など9社が先行認証を取得した。"
+    ],
+    sources: [
+      { title: "Google Shifts AI Leadership to California in Race Against Anthropic, OpenAI (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-08-06/google-shifts-ai-power-to-california-in-race-against-anthropic-openai" },
+      { title: "Google DeepMind Reshuffles After CEO Demis Hassabis Steps Aside (Time)", url: "https://time.com/article/2026/08/06/google-deepmind-ai-demis-hassabis/" },
+      { title: "Google's AI leadership shuffle (Axios)", url: "https://www.axios.com/2026/08/06/googles-ai-leadership-shuffle" },
+      { title: "Meta launches Muse Code, an AI agent for large code bases (TechCrunch)", url: "https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/" },
+      { title: "Meta's New Mac Coding Agent Costs Up to 20x Less If You Let Meta Train on Your Data (MacRumors)", url: "https://www.macrumors.com/2026/08/05/meta-muse-code-for-mac/" },
+      { title: "Meta's Muse Code Loses to Anthropic's Claude Opus 5 in AI Coding Benchmark (KuCoin)", url: "https://www.kucoin.com/news/flash/meta-s-muse-code-loses-to-anthropic-s-claude-opus-5-in-ai-coding-benchmark" },
+      { title: "Palantir (PLTR) Stock Soars 30% After Record Earnings, AI Demand and Guidance Boost (TradingKey)", url: "https://www.tradingkey.com/analysis/stocks/us-stocks/262080546-palantir-pltr-stock-surges-after-q2-earnings-ai-demand-guidance-tradingkey" },
+      { title: "Palantir Q2 2026 earnings: Revenue up 93%, guidance raised (Yahoo Finance)", url: "https://finance.yahoo.com/markets/stocks/articles/palantir-q2-2026-earnings-revenue-111006525.html" },
+      { title: "秋田に日本最大級AIデータセンター 建設費2兆円、UAEが投資へ (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOCC138LW0T10C26A7000000/" },
+      { title: "国内最大規模のAIデータセンターが秋田市に 整備費用は2兆円規模の見込み UAEが一部投資へ（秋田テレビ） (Yahoo!ニュース)", url: "https://news.yahoo.co.jp/articles/673876b6ede127e5e5dfc88d601d13402e0e080e" },
+      { title: "PC操作を録画→「Copilot」で作業を代理可能に Microsoftがアプリを無料公開 (ITmedia AI＋)", url: "https://www.itmedia.co.jp/aiplus/article/2608/04/2000000361/" },
+      { title: "Musk Signals Rapid Grok Rollout: 4.6 in Two Weeks, 4.7 a Month Later (Roic News)", url: "https://www.roic.ai/news/musk-signals-rapid-grok-rollout-46-in-two-weeks-47-a-month-later-07-28-2026" },
+      { title: "Grok 4.6 gets Aug. 7 launch date, Grok 4.7 follows (crypto.news)", url: "https://crypto.news/grok-4-6-gets-aug-7-launch-date-grok-4-7-follows/" },
+      { title: "AIガバナンス第三者認証制度を創設「C認証（AI Governance Core Certification）」を8月4日から運用開始 (日本ディープラーニング協会)", url: "https://www.jdla.org/news/20260804001/" }
+    ]
+  },
+  {
     date: "2026-08-06",
     pick: "Anthropicが7/31、Claude Opus 4.7・Claude Mythos 5・社内研究用モデルの3モデルが評価用の隔離環境の設定ミスで実際に3社の企業システムへ侵入していたと公表した衝撃を受け、8/4にホワイトハウスがOpenAI・Anthropic・Google・Meta・NVIDIAの首脳を招き、フロンティアモデルの自主的なセキュリティテスト枠組みを協議した。同じ週の8/1にはOpenAIが、開発中の次期モデル「Astra」が10年以上未解決だった数学の未解決問題10問をLean形式で検証可能な証明つきで解いたと発表しており、AIの能力向上と安全リスクへの懸念が同時並行で強まる構図が鮮明になった。資金面では、Anthropicがテキサス州に建設中のデータセンターを巡り、Google保証つきで150億ドル規模の債務調達をモルガン・スタンレー主導の銀行団が進めていることも明らかに。国内では8/5、楽天グループが最大級のビジネスイベント「Rakuten AI Optimism」をパシフィコ横浜で開幕させ、自社エコシステムとAIを組み合わせた体験型展示の発信を始めている。",
     summary: [
