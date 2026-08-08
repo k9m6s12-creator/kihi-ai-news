@@ -4,6 +4,43 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-08-09",
+    pick: "Anthropicが8/7、Claude Codeの既定権限設定を8/14から「オートモード」へ切り替えると発表し、専用の分類器が危険なコマンドの89%を検知できるとした一方、同じ8/7にOpenAIはChatGPTの有料プランを単一モデルGPT-5.6 Solへ統合し無料プランのテキスト会話を無制限化するなど、両社は使い勝手の底上げを競った。市場では8/1〜8/7の週にNVIDIA株が約10%超上昇し時価総額が約5,620億ドル増加——SpaceXが8/4の決算説明会でAI基盤をNVIDIA製ハードウェアに一本化すると表明したことに加え、Microsoft・Amazon・Alphabet・Metaの決算がAIインフラ投資の継続を裏付けたことが追い風となり、1年超ぶりの上げ幅を記録した。Anthropicは8/5、Claude向け半導体を自社設計するチームの始動も明らかにしており、推論コストの引き下げを狙う布石を打っている。国内では8/7、ソフトバンクが法人向けAIエージェント基盤「AGENTIC STAR」にAIコーディングツールも含めた複数LLMサービスへのアクセスを統制する「LLM Gateway」機能を標準搭載したと発表し、生成AI活用の「試験導入」から「全社運用」への移行を支える機能整備が進んだ。",
+    summary: [
+      "Anthropicが8/7、Claude Codeの既定権限設定を8/14から「オートモード」に切り替えると発表。専用分類器が危険な操作のみ承認を求める仕組みに変え、テストでの危険コマンド検知率は89%（従来の人手承認は14%）に達したという。",
+      "OpenAIが8/7、ChatGPTの応答モデルを刷新。有料プランは即答と推論を単一モデルGPT-5.6 Solに統合し、無料プランは既定モデルをGPT-5.6 Lunaとしてテキスト会話を無制限に利用できるようにした。",
+      "（国内）ソフトバンクが8/7、法人向けAIエージェント基盤「AGENTIC STAR」に、AIコーディングツールを含む複数LLMサービスへのアクセスを一元管理する「LLM Gateway」機能を標準搭載したと発表した。"
+    ],
+    topics: [
+      { title: "Claude Code、オートモードを8/14からデフォルト化——判定分類器が危険操作の89%を検知、従来の手動承認は14%どまり", why: "Anthropicは8/7、ターミナル型AIコーディングエージェント「Claude Code」のPro・Max・Team向け既定権限設定を、8/14から「オートモード」に切り替えると発表した。従来はツール呼び出しのたびに人間の承認を求める設定が既定だったが、今後は専用の分類器（クラシファイア）がシェルコマンドやファイル操作を都度審査し、不可逆・破壊的・想定範囲外と判断した操作にのみ承認を求める仕組みに変わる。Anthropicが行ったテストでは、危険なコマンドの検知率はオートモードの分類器で89%に達した一方、従来の逐次承認方式では14%にとどまったという。分類器がブロックを繰り返す場面ではセッションが手動承認モードへ自動的に切り戻る仕組みも備える。個別設定でピン留めしているユーザーやEnterprise版は対象外で、分類器判定に伴う追加トークンはAnthropicが負担し課金しないとしている。", idea: "「毎回の承認」から「危険なときだけ止める」へ——Claude Codeのオートモード既定化から考える、AIエージェントの権限設計の見直しどころ", tag: "海外" },
+      { title: "OpenAI、ChatGPTの応答モデルを一本化——有料プランはGPT-5.6 Solに統合、無料プランはGPT-5.6 Lunaでテキスト会話が無制限に", why: "OpenAIは8/7、ChatGPTの応答生成の仕組みを刷新したと発表した。Plus・Pro向けには、即答（インスタント）と深い推論を別モデルとして切り替えていた従来方式をやめ、単一のGPT-5.6 Solが状況に応じて即答・熟考のどちらにも対応する形に統合。回答にどれだけ考える時間をかけるかをユーザー自身がスライダーで調整できる機能も加えた。無料・Go向けには既定モデルをGPT-5.6 Lunaに更新し、テキストでの会話を無制限に利用できるようにしたほか、難しい質問には「Think」ボタンでより高度な推論を呼び出せるようにした。事実に基づく正確性や回答の的確さの向上も図ったとしており、無料ユーザーの利用制限緩和と有料ユーザーの体験簡素化を同時に進めた形。", idea: "「どのモデルを使うか」を考えなくていい設計——ChatGPTのモデル統合から考える、社内AIツール選定のUI簡素化", tag: "海外" },
+      { title: "NVIDIA株、週間で1年超ぶりの上げ幅——SpaceXの「NVIDIA専用」表明とMicrosoft・Amazon・Alphabet・Metaの決算が追い風に", why: "NVIDIA株は8/1〜8/7の5営業日で約10〜12%上昇し、時価総額は1週間で約5,620億ドル増加、1年超ぶりの大きな上げ幅を記録した。主因の一つは8/4、新規株式公開後初の決算説明会でSpaceXがAI向け計算基盤の構築をNVIDIA製ハードウェアに一本化すると表明したこと。イーロン・マスク氏は「Vera Rubinアーキテクチャが最良と判断し、NVIDIAで統一することにした」と述べた。もう一つの追い風は、同じ週に決算を発表したMicrosoft・Amazon・Alphabet・Metaが軒並みAIインフラへの投資継続・拡大を示したことで、NVIDIAの主要顧客による設備投資意欲の強さが改めて裏付けられた。別途、調査会社Counterpoint Researchは、世界55カ国以上・170超の「主権AI」LLMのうち92%超がNVIDIA製チップを採用しているとの調査結果も公表しており、NVIDIAの供給網での存在感の大きさを裏付けている。", idea: "「大口顧客の設備投資」が株価を動かす構図——NVIDIA急伸から考える、自社のAIインフラ投資計画の位置づけ方", tag: "市場" },
+      { title: "（国内）ソフトバンク、法人向けAIエージェント基盤「AGENTIC STAR」に「LLM Gateway」機能を標準搭載——AIコーディングツールも統制下に", why: "ソフトバンクは8/7、法人向けAIエージェントプラットフォーム「AGENTIC STAR」のSaaS版に、複数の大規模言語モデル（LLM）サービスへのアクセスを一元管理する「LLM Gateway」機能を標準搭載したと発表した。従業員が業務で使うAIコーディングツールが、企業の管理・統制の仕組みを介さずに直接LLMへアクセスすると、機密情報・個人情報の取り扱いや社内の利用ルール適用が課題になる。LLM Gatewayをコーディングツールと外部LLMサービスの間に挟むことで、AGENTIC STARが備える利用ログ管理・アクセス制御などの統制機能を、コーディングツール側の使い勝手を変えずに適用できるようにした。生成AIの業務利用が「試験導入」から「全社運用」の段階に進む中、AIエージェントの利便性とガバナンスの両立を狙う機能追加として位置づけられる。", idea: "「使い勝手を変えずに統制する」という発想——LLM Gatewayから考える、社内のAIコーディングツール運用ルールの整備順序", tag: "国内" },
+      { title: "Anthropic、自社チップ設計チームを始動——Claude向け半導体を協調設計し推論コストを半減目指す", why: "Anthropicは8/5、Claudeモデル向けの独自AIチップを設計する社内チームの立ち上げを確認したと報じられた。採用中の半導体エンジニア職には年俸最大48.5万ドルを提示しているとされ、技術面の中心人物には、OpenAIの自社チップ開発チームに2人目のハードウェア人材として2024年1月に加わり、その前はテスラのDojoスーパーコンピュータ計画に携わっていたクライブ・チャン氏が6月に入社し就いている。狙いは、チップ設計をClaudeのアテンション機構など固有のアーキテクチャに合わせて最適化する「協調設計」により、1トークンあたりの推論コストを約50%削減すること。既存のAWS・Google・NVIDIA・AMDとの複数チップ調達体制は維持しつつ、独自チップ開発を上乗せするマルチチップ戦略をとる。4月にはGoogle・Broadcomとの提携を拡大し、2027年稼働予定分だけで3.5ギガワット規模の次世代TPU容量を確保しており、自社設計チップはこれを補完する位置づけとなる。", idea: "「モデルとチップを一緒に設計する」発想——Anthropicの半導体チーム始動から考える、AI活用コストを下げる次の一手", tag: "海外" }
+    ],
+    small: [
+      "AIsmileyとMMD研究所が8/7発表した「2026年企業のAI導入・活用に関する調査」で、社内でAIを組織的に導入・活用している企業は26.8%（うち「全社的に導入」は18.1%）にとどまる一方、導入済み企業の68.0%が「うまくいっている」と回答。「AIの導入は許可されていない」との回答も20.6%あった。",
+      "Ilya Sutskever氏率いるSafe Superintelligence（SSI）とNVIDIAが7/27、長期戦略提携を発表。NVIDIAはSSIに数十億ドル規模（Bloomberg報道では50億ドル）を出資し、次世代プラットフォーム「Vera Rubin」へのアクセスを含め計算資源を桁違いに拡大するとした。"
+    ],
+    sources: [
+      { title: "Auto mode is now the default in Claude Code for Pro, Max, and Team plans (Anthropic)", url: "https://claude.com/blog/auto-mode-default-in-claude-code" },
+      { title: "PSA: Claude Code enabling auto mode as default next week, Anthropic says (9to5Mac)", url: "https://9to5mac.com/2026/08/07/psa-claude-code-enabling-auto-mode-as-default-next-week-anthropic-says/" },
+      { title: "Anthropic sets Claude Code to Auto Mode by default to protect developers from bad approvals (The Decoder)", url: "https://the-decoder.com/anthropic-sets-claude-code-to-auto-mode-by-default-to-protect-developers-from-bad-approvals/" },
+      { title: "Improving GPT-5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users (OpenAI)", url: "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/" },
+      { title: "GPT-5.6 Sol ChatGPT Update: 68% Fewer Errors (Aug 2026) (explainx.ai)", url: "https://explainx.ai/blog/gpt-5-6-sol-luna-chatgpt-unlimited-free-august-2026" },
+      { title: "Stock market news for Aug. 7, 2026 (CNBC)", url: "https://www.cnbc.com/2026/08/06/stock-market-today-live-updates.html" },
+      { title: "Nvidia Hits Two-Month High After Five-Day Winning Streak Tops 10% (TradingKey)", url: "https://www.tradingkey.com/analysis/stocks/us-stocks/262082021-us-stock-nvidia-nvda-price-ai-chip-spacex-tradingkey" },
+      { title: "Nvidia Stock Rises 2.2% as SpaceX Commits to Its Chips (Yahoo Finance)", url: "https://finance.yahoo.com/technology/ai/articles/nvidia-stock-rises-2-2-192151950.html" },
+      { title: "NVIDIA Dominates With 92% Share in Counterpoint Research's Sovereign AI LLM Index (Counterpoint Research)", url: "https://counterpointresearch.com/en/insights/invidia-dominates-with-92-percent-share-in-counterpoint-researchs-sovereign-ai-llm-index" },
+      { title: "ソフトバンク、「AGENTIC STAR」SaaS版に「LLM Gateway」機能を標準搭載 (AI Watch)", url: "https://ai.watch.impress.co.jp/docs/news/2131486.html" },
+      { title: "ソフトバンク「AGENTIC STAR」に「LLM Gateway」標準搭載 AIコーディングツールもガバナンス管理下に (ロボスタ)", url: "https://robotstart.info/article/2026/08/07/382247.html" },
+      { title: "Anthropic Confirms In-House Chip Team: Co-Design Bet Could Cut Claude Inference Costs in Half (Tech Times)", url: "https://www.techtimes.com/articles/323238/20260805/anthropic-confirms-house-chip-team-co-design-bet-could-cut-claude-inference-costs-half.htm" },
+      { title: "Anthropic Enters The AI Chip Race With In-House Chip Team (Forbes)", url: "https://www.forbes.com/sites/jonmarkman/2026/08/06/anthropic-enters-the-ai-chip-race-with-in-house-chip-team/" },
+      { title: "【2026年企業のAI導入・活用に関する調査】AIを組織として導入できている企業は26.8％ (AIsmiley)", url: "https://aismiley.co.jp/ai_news/ai-adoption-survey-2026/" },
+      { title: "Ilya Sutskever's Safe Superintelligence Inc. and NVIDIA Announce Long-Term Strategic Partnership (NVIDIA Newsroom)", url: "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership" }
+    ]
+  },
+  {
     date: "2026-08-07",
     pick: "Googleが8/6、AI研究・製品開発の指揮系統を英ロンドンから米カリフォルニア州マウンテンビューへ一本化する人事を発表し、DeepMind共同創業者デミス・ハサビス氏がCEO職から退きGoogle DeepMind会長兼Alphabetチーフサイエンティストへ、後任のAI開発統括にはコレイ・カヴクオール氏が就いた。同じ週の8/5にはMetaが「Claude Code」対抗の端末型コーディングエージェント「Muse Code」をベータ公開し、ベンチマークではClaude Opus 5に一歩譲る結果ながら価格の安さを前面に押し出した。市場ではPalantirの第2四半期決算が売上高93%増・米商用部門149%増という「AI特需」の実利を示し株価が急伸。国内では8/6、日本経済新聞が秋田市に日本最大級となる整備費2兆円規模のAIデータセンター計画が浮上し、UAE政府系ファンドが数千億円規模の投資を検討していると報じ、AIインフラ投資の波が国内の一地方都市にも及び始めたことをうかがわせた。",
     summary: [
