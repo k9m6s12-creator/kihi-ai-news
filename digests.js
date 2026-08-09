@@ -4,6 +4,42 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-08-10",
+    pick: "OpenAIは8/3、公開前の次期主力モデル「Astra」が数学・理論計算機科学分野で10年以上未解決だった10件の問題に取り組み、新たな証明・反例を導いたと発表した。249ページの論文とLean 4による形式検証済みの証明一式をGitHubで公開し、費用は合計約2000ドルにとどまったという。同じOpenAIは8/9、2025年10月投入のAIブラウザ「Atlas」の提供を終了し、ブラウザ内エージェント機能をChatGPT本体とChrome拡張機能へ統合する方針に転換した。EUでは8/2、AI法の透明性義務の適用が始まり、チャットボットであることの開示やAI生成コンテンツへのラベル付けが必須となり、違反には最大1500万ユーロの制裁金が科されることになった。市場では米半導体工業会（SIA）が8月、2026年6月の世界半導体売上高が前年同月比123.6%増の1345億ドルとなり過去最高を更新したと発表し、生成AI向け需要の強さを裏付けた。国内ではナレッジワークが8/4、シリーズC 1stクローズで35億円を調達し「セールスAIエージェントOS」の提供を開始したと発表、リコージャパンなど新たに10社が出資に加わった。",
+    summary: [
+      "OpenAIが8/3、公開前の次期主力モデル「Astra」が10年以上未解決だった数学・理論計算機科学の10件の問題に取り組み新結果を導いたと発表。249ページの論文とLean 4形式検証済み証明をGitHubで公開し、生成コストは合計約2000ドルにとどまったという。査読・外部検証はまだ行われていない。",
+      "OpenAIが8/9、AIブラウザ「Atlas」の提供を終了。ブラウザ内エージェント機能はChatGPT本体とChrome拡張機能へ統合する方針で、保存データは自動移行されないため利用者に手動バックアップを呼びかけていた。",
+      "（国内）ナレッジワークが8/4、シリーズC 1stクローズで35億円を調達したと発表し、営業業務向けAI基盤「セールスAIエージェントOS」の提供を開始。リコージャパンなど新たに10の事業会社が出資に加わった。"
+    ],
+    topics: [
+      { title: "OpenAI、未公開の次期モデル「Astra」が10年以上未解決の数学・計算量理論問題10件に新結果——証明費用は約2000ドル、Lean 4で形式検証済み", why: "OpenAIは8/3、社内で開発中の次期主力モデル「Astra」が、高次元幾何・符号理論・群論・算術回路計算量・量子計算量・格子暗号・極値組合せ論など多岐にわたる分野で10年以上未解決だった10件の問題に取り組み、非ソフィック群の存在を示す具体的構成や、コンヌの剛性予想への反例、高次元球充填密度の改善などの新結果を導いたと発表した。249ページの論文と、証明の各手順をLean 4で機械検証したソースコードをApache 2.0ライセンスでGitHubに公開しており、証明中の未完了箇所を示す「sorry」の数はゼロだという。生成にかかった計算コストは合計約2000ドルにとどまったとしている。Astraは一般提供前の内部モデルで、論文としての査読や外部研究者による独立検証はまだ行われておらず、公開時点の主張がそのまま維持されるかは今後の検証を待つ必要がある。", idea: "「査読前の主張」をどう扱うか——Astraの数学的成果発表から考える、未公開AIモデルの実力を評価する際の注意点", tag: "海外" },
+      { title: "OpenAI、AIブラウザ「Atlas」を8/9で提供終了——エージェント機能はChatGPT本体とChrome拡張機能へ統合", why: "OpenAIは、2025年10月に投入したAI搭載ブラウザ「Atlas」の提供を2026年8/9をもって終了した。AtlasはmacOS版のみが提供され、公開から8か月が過ぎてもWindows・iOS・Android版は用意されないままだった。OpenAIは、利用者に新しいブラウザへの乗り換えを求めるより、普段使っているChatGPT本体にブラウザ内エージェント機能を組み込む方が効果的だと判断したと説明しており、複数タブ操作・ダウンロード・アカウントログインへの対応を含む、より高機能なブラウジング体験をChatGPTとChrome拡張機能に段階的に統合していくとした。Atlasに保存されたブックマーク・閲覧履歴・保存済みパスワード・Cookieなどのデータは自動移行されず、OpenAIは終了前にブックマークをHTML形式で書き出すなど手動でのバックアップを利用者に呼びかけていた。", idea: "「専用アプリ」から「本体への統合」へ——Atlas終了から考える、AIエージェント機能をどの製品に実装すべきかの見極め方", tag: "海外" },
+      { title: "世界半導体売上高、6月は前年同月比123.6%増の1345億ドルで過去最高——SIA、2026年通期は1.5兆ドル超えを予測", why: "米半導体工業会（SIA）は8月、2026年6月の世界半導体売上高が1345億ドルとなり、前年同月比123.6%増・前月比9.7%増で過去最高を更新したと発表した。第2四半期（4〜6月）の売上高は4033億ドルで、第1四半期比35.1%増。地域別の前年同月比の伸びはアメリカ大陸が160.9%増と最大で、アジア太平洋・その他地域が124.4%増、中国が112.8%増、欧州が75.2%増、日本も39%増と、生成AI向け需要が世界的に半導体市場を押し上げている構図が鮮明になった。SIAのジョン・ヌーファー会長兼CEOは、2026年通期の世界半導体売上高が1.5兆ドルを超える見通しを示しており、データセンター向けAIチップやHBMメモリーへの投資が牽引役となっている。", idea: "「AI特需」を数字で裏付ける半導体売上高——SIA統計から考える、自社のAI投資と業界全体の需要動向の照らし合わせ方", tag: "市場" },
+      { title: "（国内）ナレッジワーク、35億円調達し「セールスAIエージェントOS」提供開始——リコージャパンなど新たに10社が出資", why: "営業支援サービスを展開するナレッジワークは8/4、シリーズC 1stクローズとして第三者割当増資により35億円を調達したと発表した。リコーの国内販売子会社リコージャパンなど新たに10の事業会社から出資を受け、販売・機能開発の両面で連携を強化する。同社は同時に、営業業務向けのAI基盤「セールスAIエージェントOS」の提供を開始したと発表。顧客企業の営業戦略やデータを踏まえてAIエージェントが業務を代行・支援する仕組みで、既存の「セールスAIプロダクトシリーズ」や、顧客ごとにAIエージェントを構築・運用する「セールスAXコンサルティングシリーズ」と組み合わせて提供する。調達資金は基盤構築に充てるほか、顧客に常駐してAI導入を支援する「フォワード・デプロイド・エンジニア（FDE）」やコンサルタントを今後3年で100〜150人規模で増員する計画としている。", idea: "「常駐支援人材への投資」という選択——ナレッジワークの増員計画から考える、社内のAIエージェント導入をどう定着させるか", tag: "国内" },
+      { title: "EU、AI法の透明性義務の適用開始——チャットボットの開示・AI生成コンテンツへのラベル付けを義務化、違反は最大1500万ユーロ", why: "EUは8/2、AI法（AI Act）第50条に基づく透明性義務の適用を開始した。対象は、利用者と直接対話するAIシステム（チャットボットなど）であることの開示、AI生成・改変された画像・音声・動画・文章へのラベル付け、感情認識・生体分類システムの利用開示、公共の関心事に関するディープフェイクやAI生成テキストの開示の4分野。違反には最大1500万ユーロ（または全世界年間売上高の3%、いずれか高い方）の制裁金が科され、EU機関・団体・機関には最大75万ユーロの制裁金が適用される。チャットボットやディープフェイクの開示義務は即時適用される一方、AI生成コンテンツへの機械可読な電子透かし表示義務については、8/2時点で既に市場に出ているツールに限り2026年12月までの猶予期間が設けられている。", idea: "「表示義務」への対応をどう進めるか——EU AI法の透明性ルール施行から考える、自社サービスのAI生成コンテンツ表示の準備状況点検", tag: "海外" }
+    ],
+    small: [
+      "AI基盤企業Firebirdは8/8、アルメニア・フラズダンでNVIDIA製アクセラレーテッドコンピューティングとDell PowerEdgeサーバーを用いたCIS地域最大のAIファクトリーを稼働開始したと発表。2027年末までにNVIDIAのBlackwell・Rubin世代GPUを7万基超、300メガワット規模まで拡張する計画で、アルメニアのパシニャン首相らが開所式に出席した。",
+      "HEROZは8/3、子会社を通じてエキストラ（川崎市）から中小企業向けAI研修事業を取得したと発表。全国のフランチャイズ・OEMパートナー網を通じた生成AI研修サービスを取り込み、AIトランスフォーメーション支援事業の拡充を図るとしている。"
+    ],
+    sources: [
+      { title: "OpenAI announces its next major model Astra by dropping ten previously unsolved math solutions (The Decoder)", url: "https://the-decoder.com/openai-announces-its-next-major-model-astra-by-dropping-ten-previously-unsolved-math-solutions/" },
+      { title: "OpenAI Astra model solves 10 open math problems for $2,000 (Quartz)", url: "https://qz.com/openai-astra-model-math-problems-lean-proofs-080326" },
+      { title: "OpenAI Says Next-Generation Model Solved 10 Major Open Problems in Quantum Complexity, Mathematics (The Quantum Insider)", url: "https://thequantuminsider.com/2026/08/04/openai-says-next-generation-model-solved-10-major-open-problems-in-quantum-complexity-mathematics/" },
+      { title: "OpenAI Kills Atlas Browser After 8 Months: What Replaces It and What Users Must Do Now (Tech Times)", url: "https://www.techtimes.com/articles/320183/20260711/openai-kills-atlas-browser-after-8-months-what-replaces-it-what-users-must-do-now.htm" },
+      { title: "Evolving Atlas into ChatGPT for browser-based agentic work (OpenAI Help Center)", url: "https://help.openai.com/en/articles/20001371-evolving-atlas-into-chatgpt-for-browser-based-agentic-work" },
+      { title: "OpenAI to Shut Down ChatGPT Atlas Browser in August as AI Battle Shifts to Enterprise Infrastructure (BigGo Finance)", url: "https://finance.biggo.com/news/cd684ec5-a42f-4ed9-864a-804e43692b53" },
+      { title: "Global Semiconductor Sales Increase 35.1% from Q1 2026 to Q2 2026 (Semiconductor Industry Association)", url: "https://www.semiconductors.org/global-semiconductor-sales-increase-35-1-from-q1-2026-to-q2-2026/" },
+      { title: "Global Chip Sales Reach $403.3 Billion in Q2 2026 (Electropages)", url: "https://www.electropages.com/blog/2026/08/global-semiconductor-sales-rise-351-q2-2026" },
+      { title: "ナレッジワーク、「セールスAIエージェントOS」の提供を開始。シリーズC 1stクローズで35億円を資金調達 (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000148.000063428.html" },
+      { title: "営業支援のナレッジワーク、35億円調達 リコー系と販売や開発で提携 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOUC3074S0Q6A730C2000000/" },
+      { title: "EU AI Transparency Rules Take Effect With Deepfake Labeling Mandate (Dataconomy)", url: "https://dataconomy.com/2026/08/04/eu-ai-transparency-rules-deepfake-labeling/" },
+      { title: "EU AI transparency rules take effect with labeling mandate (TechBriefly)", url: "https://techbriefly.com/2026/08/04/eu-ai-transparency-rules-labeling-mandate/" },
+      { title: "Firebird Opens the Region's Largest AI Factory and Announces Global Expansion (PR Newswire)", url: "https://www.prnewswire.com/news-releases/firebird-opens-the-regions-largest-ai-factory-and-announces-global-expansion-302846589.html" },
+      { title: "HEROZ＜4382＞、エキストラからAI研修事業を取得 (M&Aオンライン)", url: "https://maonline.jp/news/20260803b" }
+    ]
+  },
+  {
     date: "2026-08-09",
     pick: "Anthropicが8/7、Claude Codeの既定権限設定を8/14から「オートモード」へ切り替えると発表し、専用の分類器が危険なコマンドの89%を検知できるとした一方、同じ8/7にOpenAIはChatGPTの有料プランを単一モデルGPT-5.6 Solへ統合し無料プランのテキスト会話を無制限化するなど、両社は使い勝手の底上げを競った。市場では8/1〜8/7の週にNVIDIA株が約10%超上昇し時価総額が約5,620億ドル増加——SpaceXが8/4の決算説明会でAI基盤をNVIDIA製ハードウェアに一本化すると表明したことに加え、Microsoft・Amazon・Alphabet・Metaの決算がAIインフラ投資の継続を裏付けたことが追い風となり、1年超ぶりの上げ幅を記録した。Anthropicは8/5、Claude向け半導体を自社設計するチームの始動も明らかにしており、推論コストの引き下げを狙う布石を打っている。国内では8/7、ソフトバンクが法人向けAIエージェント基盤「AGENTIC STAR」にAIコーディングツールも含めた複数LLMサービスへのアクセスを統制する「LLM Gateway」機能を標準搭載したと発表し、生成AI活用の「試験導入」から「全社運用」への移行を支える機能整備が進んだ。",
     summary: [
