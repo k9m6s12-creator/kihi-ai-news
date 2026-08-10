@@ -4,6 +4,42 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-08-11",
+    pick: "OpenAIは8/10、防御側セキュリティ専門家向けプログラム「Daybreak」を「Blue」「Red」の2階層に再編し、専用モデル「GPT-5.6-Cyber」を投入したと発表した。機微なセキュリティ関連の質問への回答率は通常モデルの約1.5%から95%へ引き上げられ、Chromeの未知の脆弱性発見にも成功したという。同じ8/10、Anthropicは資産運用大手Macquarie Asset Management・シンガポール政府系ファンドGICと共同で、データセンターの開発・運営・賃貸を専門に担う新会社「Theseus Infrastructure」を設立すると発表し、AnthropicがアンカーテナントとなりMacquarieとGICが資金の大半を拠出する仕組みで米国内のインフラ調達を加速させる。Metaも同日、300億パラメータのオープンウェイトモデル「Muse Glimmer」をApache 2.0ライセンスで公開し、4bit量子化により単一のコンシューマー向けGPUでエージェント実行できるとアピールした。市場では8/10、日経平均株価が3営業日ぶりに反発し前週末比2.08%高の66,970円まで上昇——米雇用統計の下振れによる早期利上げ観測後退を受け、AI・半導体関連株への買いが先行した。国内ではNECが8/10、8/1付で数万人規模の大手企業として初めてAIのみで構成する「コーポレートAI・Workforce部門」を新設したと発表し、7月の社内実証では役員会議向けの経営分析・リスク予兆検知にかかる時間を約7分の1に短縮できたとした。",
+    summary: [
+      "OpenAIが8/10、防御側セキュリティ専門家向けプログラム「Daybreak」を「Blue」「Red」の2階層に再編し、専用モデル「GPT-5.6-Cyber」を投入。機微なセキュリティ関連質問への回答率は通常モデルの約1.5%から95%に上昇し、Chromeの未知の脆弱性2件・モバイルOSの脆弱性5件を発見したという。",
+      "Anthropicが8/10、資産運用大手Macquarie Asset Management・シンガポール政府系ファンドGICと共同で、データセンターの開発・運営・賃貸を専門に担う新会社「Theseus Infrastructure」を設立すると発表。AnthropicがアンカーテナントとなりMacquarie・GICが各プロジェクトの株式資本の大半を拠出し、米国内でのインフラ調達を加速させる。",
+      "（国内）NECが8/10、8/1付で「コーポレートAI・Workforce部門」を新設したと発表。数万人規模の国内大手企業としては初めて社員をAIのみで構成する部署で、7月の社内実証では役員会議向けの経営分析・リスク予兆検知にかかる時間を約7分の1に短縮できたという。"
+    ],
+    topics: [
+      { title: "OpenAI、サイバーセキュリティ特化モデル「GPT-5.6-Cyber」を投入——Daybreakを「Blue」「Red」の2階層に拡大、機微な質問への回答率は95%に", why: "OpenAIは8/10、防御側のセキュリティ専門家向けプログラム「Daybreak」を「Blue」「Red」の2つのアクセス階層に再編し、新たな専用モデル「GPT-5.6-Cyber」を投入したと発表した。Daybreak Blueは、通常のGPT-5.6 Solの安全策を正当なセキュリティ業務向けに調整したもので、脆弱性調査・セキュアコードレビュー・マルウェア解析・インシデント対応などに利用できる。Daybreak Redは、より制限を緩めた専用モデルGPT-5.6-Cyberへのアクセスを認めるもので、脆弱性研究・エクスプロイト検証・侵入テストなど攻撃的なセキュリティ業務を想定する。OpenAIの社内ベンチマークでは、機微なサイバーセキュリティ関連の質問に対する回答率が、通常のGPT-5.6 Solでは約1.5%にとどまるのに対し、GPT-5.6-Cyberでは95%に達したという。同モデルは実際にChromeの未知の脆弱性2件、モバイルOSの脆弱性5件を発見したほか、他モデルが拒否したWebSocket認証バイパスの開発にも成功したとしており、OpenAIの「Preparedness Framework」ではサイバーセキュリティ能力を最高区分の「High」と評価している。両階層とも本人確認・アカウントセキュリティ・利用監視・法的申告が必須で、ハードウェアセキュリティキーの必須化は9/1から始まる。", idea: "「攻撃者に先回りする」ためのAI解禁——GPT-5.6-Cyberの投入から考える、自社のセキュリティ調査にAIをどこまで使わせるか", tag: "海外" },
+      { title: "Anthropic、Macquarie・GICと新会社「Theseus Infrastructure」設立——データセンターの開発・運営・賃貸を担う専用プラットフォームを米国で構築", why: "Anthropicは8/10、資産運用大手Macquarie Asset Management、シンガポール政府系ファンドGICと共同で、データセンターインフラの開発・運営・賃貸を専門に手がける新会社「Theseus Infrastructure」を設立したと発表した。Anthropicが主要テナント（アンカーテナント）となる長期契約のもと、新規サイトの選定・開発を米国を皮切りに進める。Macquarie Asset Managementの運用ファンドがGICとともにプラットフォームを所有し、各プロジェクトの株式資本の大部分を拠出する一方、Macquarieはデジタルインフラの開発・資金調達の知見を、GICはインフラ投資の経験を持ち寄る。具体的な投資額やサイト数は公表されていないが、各プロジェクトは相当規模の設備投資を要し、建設・運用の両面で地域に数千人規模の雇用を生む見通しだという。Anthropicは、データセンター稼働に伴い周辺住民の電気料金が上昇した場合、その負担を自社が肩代わりすると表明している。既存のGoogle・AWS・NVIDIA・AMDとの複数チップ調達体制に加え、資金力のある機関投資家を新たなインフラ調達パートナーに加える動きといえる。", idea: "「賃貸で借りる」データセンター戦略——Theseus設立から考える、AI企業のインフラ投資リスクの分散手法", tag: "市場" },
+      { title: "Meta、30Bパラメータのオープンウェイトモデル「Muse Glimmer」を公開——4bit量子化でコンシューマー向けGPU1枚でエージェント実行が可能に", why: "Meta Superintelligence Labsは8/10、300億パラメータの密なマルチモーダルモデル「Muse Glimmer」をApache 2.0ライセンスでHugging Face上に公開した。ローカル環境でのコーディング・関数呼び出し・自律型エージェントのワークフロー実行を想定して設計されており、4bit量子化によりメモリー使用量を約55GBから18〜20GBまで圧縮、24GBまたは32GB VRAMを備えた単一のコンシューマー向けGPU・PC・Macでオフライン実行できるという。ロジット蒸留・長文脈のエージェント向けデータ・強化学習を組み合わせて訓練されており、テキストと画像入力に対応、OpenClawなどのオーケストレーションフレームワークとも連携する。失敗したツール呼び出しを自動的に再試行する自律的な障害回復機能も備える。先月公開した「Muse Spark 1.1」に続く公開で、マーク・ザッカーバーグCEOは、より高性能なフロンティア級モデル「Muse Spark 1.2」の重みも近く公開する方針を示しているという。AnthropicのClaude Code対抗の「Muse Code」に続き、Metaはオープンウェイト路線でも存在感を強めている。", idea: "「手元のGPU1枚で動く」エージェントモデル——Muse Glimmer公開から考える、クラウドAPI依存を減らすローカルAI活用の検討ポイント", tag: "海外" },
+      { title: "（国内）NEC、大手企業初の「AI自律型組織」新設——社員ゼロの「コーポレートAI・Workforce部門」が全社業務自動化を主導", why: "NECは8/10、8/1付で「コーポレートAI・Workforce部門」を新設したと発表した。同社によれば、数万人規模の国内大企業がAIのみで構成する部署を設けるのは初めてだという。組織は「AI部門長」「AIボード」「AIマネージャー」「AI社員」の4階層で構成され、AIマネージャーが社内の業務ニーズに応じてAI社員を都度生成し役割を付与する仕組み。AI社員はNECの企業理念や行動規範、社内規定を踏まえたオンボーディングを受け、不足するスキルを自律的に習得・更新するという。全エージェントの稼働状況をリアルタイムに可視化する「AI統合管理コックピット」も備える。7月から1カ月間実施した社内実証では、役員会議向けの経営分析・シミュレーション・リスク予兆検知を一貫してAIが担うことで、従来かかっていた時間を約7分の1に短縮できたとしている。最終判断や統治は引き続き人間が担う設計で、NECは労働人口減少下での「増力」を掲げている。", idea: "「社員ゼロの部署」をどう設計するか——NECのAI自律型組織から考える、自社業務でAIエージェントに任せる範囲の線引き", tag: "国内" },
+      { title: "日経平均、8/10に3営業日ぶり反発——AI・半導体関連への買いが先行し66,970円まで上昇、米雇用統計下振れが追い風に", why: "東京株式市場で8/10、日経平均株価は3営業日ぶりに反発し、終値は前週末比1,363円51銭（2.08%）高の66,970円22銭となった。米国で発表された雇用統計が市場予想を下回り、米連邦準備理事会（FRB）による早期利上げ観測が後退。前週末の米株式市場でハイテク・半導体株が上昇したことを受け、東京市場でも朝方からアドテスト・イビデンなどAI・半導体関連銘柄への買いが先行した。米長期金利の低下により、高PER（株価収益率）のハイテク株の相対的な割高感が薄れたことも追い風になったとみられる。同日は、8/7に通期業績見通しを引き上げたリクルートホールディングスの株式が制限値幅の上限（ストップ高水準）まで買われたことも投資家心理を上向かせた。AI関連需要への期待が、個別の決算や米金利動向に左右されながらも日本株市場を押し上げる構図が続いている。", idea: "「米金利」と「AI関連株」の連動をどう読むか——日経平均の反発から考える、AI投資テーマ株のリスク管理", tag: "市場" }
+    ],
+    small: [
+      "Ripplingは8/7、社内のAIトークン利用量・コストを可視化し、モデルアクセスや支出に関するポリシー設定・低コストモデルへのルーティングもできる管理ツール「AI Spend Console」を発表。自社では研究開発人員予算の40%がAIトークン費用に充てられる見通しとなり、一部社員は月5万ドル相当を消費していたことが開発の背景という。",
+      "経済産業省は7/31、AI政策とロボット政策を所管部局に一元化する政令改正を閣議決定し、8/5付で商務情報政策局に新課「情報処理システム開発・ロボット課」（通称「AI産業課」）を設置。従来別々の局が担っていたAI関連事務とロボット関連事務を統合した。"
+    ],
+    sources: [
+      { title: "NEC、AIネイティブカンパニーへの変革に向け、大手企業で初めて、人と共創するAI自律型組織を新設 (NEC)", url: "https://jpn.nec.com/press/202608/20260810_01.html" },
+      { title: "NEC、部門長から社員まで「全員AI」の新組織 (ITmedia AI＋)", url: "https://www.itmedia.co.jp/aiplus/article/2608/10/2000000484/" },
+      { title: "NEC、AIエージェント「17人」で新部署 無人組織が業務自動化を推進 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOUC319AJ0R30C26A7000000/" },
+      { title: "Expanding Daybreak as the Cyber Defense Window Narrows (OpenAI)", url: "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/" },
+      { title: "OpenAI launches GPT-5.6-Cyber to help defenders find vulnerabilities before attackers do (The Decoder)", url: "https://the-decoder.com/openai-launches-gpt-5-6-cyber-to-help-defenders-find-vulnerabilities-before-attackers-do/" },
+      { title: "OpenAI expands Daybreak cybersecurity initiative as AI agent threats evolve (CNBC)", url: "https://www.cnbc.com/2026/08/10/open-ai-daybreak-cybersecurity.html" },
+      { title: "Anthropic, Macquarie Asset Management, and GIC announce strategic partnership to develop dedicated data center infrastructure at scale (Macquarie Group)", url: "https://www.macquarie.com/au/en/about/news/2026/anthropic-mam-gic-data-centre-infrastructure-partnership.html" },
+      { title: "Anthropic, Macquarie and GIC Form Venture for AI Data Centers (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-08-10/anthropic-macquarie-and-gic-form-venture-for-ai-data-centers" },
+      { title: "Meta returns to open source with Muse Glimmer, an Apache 2.0 licensed 30B parameter AI model optimized for agents — available now (VentureBeat)", url: "https://venturebeat.com/technology/meta-returns-to-open-source-with-muse-glimmer-an-apache-2-0-licensed-30b-parameter-ai-model-optimized-for-agents-available-now" },
+      { title: "Meta releases open-source Muse Glimmer model with 30B parameters (SiliconANGLE)", url: "https://siliconangle.com/2026/08/10/meta-releases-open-source-muse-glimmer-model-30b-parameters/" },
+      { title: "東証寄り付き 日経平均は反発で始まる AI・半導体関連に買い (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOFL1006C0Q6A810C2000000/" },
+      { title: "明日の株式相場に向けて＝真夏の「ＡＩツルハシ」大旋回！ 再点火の号砲鳴るか (株探ニュース)", url: "https://kabutan.jp/news/marketnews/?b=n202608101027" },
+      { title: "Introducing Rippling AI Spend Console (Rippling)", url: "https://www.rippling.com/blog/introducing-ai-spend-console" },
+      { title: "経済産業省、AIとロボット政策を一元化する新組織を設置へ (事業構想オンライン)", url: "https://www.projectdesign.jp/articles/news/cf53764e-dda0-4b83-a0f8-5edd590b86b1" }
+    ]
+  },
+  {
     date: "2026-08-10",
     pick: "OpenAIは8/3、公開前の次期主力モデル「Astra」が数学・理論計算機科学分野で10年以上未解決だった10件の問題に取り組み、新たな証明・反例を導いたと発表した。249ページの論文とLean 4による形式検証済みの証明一式をGitHubで公開し、費用は合計約2000ドルにとどまったという。同じOpenAIは8/9、2025年10月投入のAIブラウザ「Atlas」の提供を終了し、ブラウザ内エージェント機能をChatGPT本体とChrome拡張機能へ統合する方針に転換した。EUでは8/2、AI法の透明性義務の適用が始まり、チャットボットであることの開示やAI生成コンテンツへのラベル付けが必須となり、違反には最大1500万ユーロの制裁金が科されることになった。市場では米半導体工業会（SIA）が8月、2026年6月の世界半導体売上高が前年同月比123.6%増の1345億ドルとなり過去最高を更新したと発表し、生成AI向け需要の強さを裏付けた。国内ではナレッジワークが8/4、シリーズC 1stクローズで35億円を調達し「セールスAIエージェントOS」の提供を開始したと発表、リコージャパンなど新たに10社が出資に加わった。",
     summary: [
