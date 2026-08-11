@@ -4,6 +4,41 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-08-12",
+    pick: "Anthropicは8/11、ビットコインマイニング企業からAIデータセンター事業へ転換中のRiot Platformsと20年契約を結び、テキサス州ロックデールの拠点から191メガワット分の電力容量を調達すると発表した。契約総額は約91億ドルで、延長オプション行使時は161億ドルまで拡大する見込みという。同じ8/11、Anthropicは欧州連合（EU）のAI法が定める透明性ルールへの対応として、新しいClaudeモデルが生成するテキストに機械可読の見えない電子透かしを埋め込む取り組みを開始したと明らかにし、この措置を欧州に限らず世界中の利用者に適用するとした。OpenAIも8/10、ChatGPT Business向けに月額125ドル（年払いなら100ドル）の上位プラン「Premium seats」を発表し、既存の「Standard」プランで生じていた5時間ごとの利用上限を撤廃し利用枠を5倍に広げるとした。市場では8/11、NVIDIAがBlackRock・ゴールドマン・サックス・ブラックストーン・アポロ・グローバル・マネジメント・KKRなど米加の金融大手6社と組み、AIデータセンター建設向けに外部から総額約5000億ドル（約80兆円）を調達する枠組みを発表し、資金力に乏しいAI企業のインフラ構築を金融面から後押しする狙いを示した。国内では8/11、AI接客システムを手がけるファーストローンチが、静岡市清水区役所でAIアバター「AICO」と自律移動ロボット「Lanky Mini」を組み合わせた窓口案内の実証実験を開始したと発表した。",
+    summary: [
+      "Anthropicが8/11、ビットコインマイニング企業からAIデータセンター事業へ転換中のRiot Platformsと20年契約を締結し、テキサス州ロックデールの拠点から191メガワット分の電力容量を調達すると発表。契約総額は約91億ドルで、延長オプション行使時は161億ドルまで拡大する見込みという。",
+      "OpenAIが8/10、ChatGPT Business向けに月額125ドル（年払いは100ドル）の上位プラン「Premium seats」を発表。既存の「Standard」プランにあった5時間ごとの利用上限を撤廃し、Codexやワークスペース向けエージェント機能の利用枠を5倍に拡大した。",
+      "（国内）AI接客システムを手がけるファーストローンチが8/11、静岡市清水区役所でAIアバター「AICO」と自律移動ロボット「Lanky Mini」を組み合わせた窓口案内の実証実験を開始したと発表。2026年8/10〜2027年2/28の期間、13言語以上に対応するキオスク版と多言語対応のロボット版で、来庁者対応の効率化を検証する。"
+    ],
+    topics: [
+      { title: "Anthropic、ビットコインマイナー転身のRiot Platformsと20年91億ドルのデータセンター契約——テキサスから191メガワット調達、延長時は161億ドル規模に", why: "Anthropicは8/11、ビットコインマイニング企業からAIデータセンター事業へ転換を進めるRiot Platformsと20年契約を結んだと発表した。テキサス州ロックデールにある同社の拠点から191メガワット分の電力容量を調達する内容で、契約総額は約91億ドル。2027年12月までに96メガワット、2028年6月までに191メガワットの全量を段階的に稼働させる計画で、契約期間は2048年6月まで続く。2回分の5年延長オプションを行使すれば契約総額は最大161億ドルに達する見通しという。Riotは建設初期費用を賄うため、モルガン・スタンレー経由で5億7300万ドルの短期融資枠を組成した。Anthropicにとってはこの3か月で3件目となる大型計算資源調達で、累計のコミットメント額は600億ドルを超えるとされる。発表を受けRiot株は時間外取引で約25%急伸した。", idea: "「仮想通貨マイナーの電力」をAIに転用する契約——Riot Platforms提携から考える、自社のAIインフラ調達で電力確保をどう先回りするか", tag: "海外" },
+      { title: "Anthropic、Claudeが生成するテキストに見えない電子透かしを世界中で導入——EU AI法の透明性ルールに対応、コピペ後も検知可能だが言い換えで消える", why: "Anthropicは8/11、新しいClaudeモデルが生成するテキストに機械可読の見えない電子透かしを埋め込む取り組みを始めたと明らかにした。欧州連合（EU）のAI法第50条が定める透明性義務と、AI生成コンテンツに関するEUの行動規範（Code of Practice）への対応が目的だが、Anthropicはこの措置を欧州の利用者に限らず世界中に適用するとしている。透かしはコピー＆ペーストを経ても文章に残る一方、大幅な言い換えや推敲、他の文章との混合によって消えてしまう限界があるという。テキストには見えない透かしを、対応ファイル形式には署名付きの来歴情報を付与する二段構えの仕組みで、旧モデルへの適用は今後のEU AI法の移行期間中に順次進める方針としている。", idea: "「消えるかもしれない透かし」をどう受け止めるか——Claudeの電子透かし導入から考える、自社のAI生成コンテンツ表示ルールの見直しどころ", tag: "海外" },
+      { title: "OpenAI、ChatGPT Businessに月額125ドルの上位プラン「Premium seats」——5時間ごとの利用上限を撤廃し利用枠5倍に、IPO見据え収益拡大へ", why: "OpenAIは8/10、法人向け「ChatGPT Business」に新しい上位プラン「Premium seats」を発表した。料金は1ユーザーあたり月額125ドル（年払いの場合は月額100ドル）で、既存の「Standard」プランに設けられていた5時間ごとの利用上限を撤廃し、Codexやワークスペース向けエージェント機能を含む利用枠を標準プランの5倍に拡大する。エージェント型の機能がトークンを大量に消費する利用実態を踏まえた措置で、8/20まではウェイトリストに登録した企業向けに最大500ドル相当のワークスペースクレジットを提供するという。IPO（新規株式公開）を見据え収益基盤を強化する動きの一環とみられている。", idea: "「使い放題」を上位プランで売る発想——Premium seats導入から考える、社内のAIエージェント利用量に応じた契約プラン選びの基準", tag: "海外" },
+      { title: "NVIDIA、金融大手6社と組みAIデータセンター向けに外部から約5000億ドル調達する枠組みを発表——資金力の乏しいAI企業のインフラ構築を後押し", why: "NVIDIAは8/11、BlackRock・ゴールドマン・サックス・ブラックストーン・アポロ・グローバル・マネジメント・KKRなど米国の金融大手5社とカナダの金融機関1社の計6社と協力し、AIデータセンター建設向けに外部から総額約5000億ドル（約80兆円）を調達する枠組みを発表した。自己資金だけでは大規模なAIインフラを構築しにくい中小のAI関連企業が、この枠組みを通じて資金調達しやすくする狙いがあるという。NVIDIAがGPUの供給網の中心にとどまりながら、顧客企業の設備投資を金融機関の資金力で支える構図で、AIインフラ投資を巡る資金調達手法の多様化が進んでいることを示す動きといえる。", idea: "「GPU供給網の中心」が金融の枠組みも作る——NVIDIAの資金調達スキームから考える、自社のAI投資を外部資金でどう賄うかの選択肢", tag: "市場" },
+      { title: "（国内）静岡市清水区役所、AIアバター「AICO」と自律移動ロボット「Lanky Mini」で窓口案内を実証実験——13言語以上に対応、2027年2月まで", why: "AI接客システムを手がけるファーストローンチは8/11、静岡市・静岡理工科大学・清水港振興会・キングソフトなどと連携し、静岡市清水区役所1階でAIアバター「AICO」による窓口案内の実証実験を8/10から開始したと発表した。期間は2027年2/28まで。清水港をテーマにしたご当地バーチャルYouTuber「渚はのん」がアバターキャラクターを務め、キオスク版は日本語・英語・中国語・韓国語を含む13言語以上に対応する。あわせて、キングソフト製の自律移動ロボット「Lanky Mini」にAICOを組み込み、来庁者に自らアプローチして案内する仕組みも試験導入し、当初4言語に対応する。定型的な問い合わせ対応の負担を軽減し、職員がより複雑な個別対応に注力できるかを検証する狙いという。", idea: "「ロボットが自分から話しかける」窓口案内——清水区役所の実証実験から考える、自治体・企業窓口でのAIアバター導入の勘所", tag: "国内" }
+    ],
+    small: [
+      "Anthropicは8/11、政府機関向け「Claude for Government」のベータ版を開始し、Claude CodeとClaude CoworkをFedRAMP High認証環境上のデスクトップアプリで公開。管理者は部門ごとの支出上限や設定既定値を管理でき、監査ログにも対応する。8月末までは連邦政府機関向けに1機関あたり1ドルで無制限シートを提供する期間限定プログラムも用意した。",
+      "Googleは8月、広告・分析ツール向けのAIエージェント「Ask Advisor」の機能を拡張し、Google Analyticsのホーム画面に前回ログイン以降の主要な変化を要約する「AI Overviews」表示や、類似ビジネスの匿名化データとキャンペーン成果を比較する機能を追加した。"
+    ],
+    sources: [
+      { title: "Anthropic Strikes $9 Billion Deal With Cloud Computing Firm Riot (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-08-11/anthropic-strikes-9-billion-deal-with-cloud-computing-firm-riot" },
+      { title: "Anthropic signs $9.1 billion data center deal with Riot Platforms (Yahoo Finance)", url: "https://finance.yahoo.com/technology/ai/articles/anthropic-signs-9-1-billion-113731732.html" },
+      { title: "Riot Platforms Soars 17% on $9.1B Anthropic Data Center Deal (24/7 Wall St.)", url: "https://247wallst.com/investing/2026/08/11/riot-platforms-soars-17-on-9-1b-anthropic-data-center-deal-ai-infrastructure-peers-iren-applied-digital-terawulf-head-higher/" },
+      { title: "Anthropic will embed invisible watermarks in all Claude AI text (Northeast Times)", url: "https://northeasttimes.com/2026/08/11/anthropic-will-embed-invisible-watermarks-in-all-claude-ai-text/" },
+      { title: "EU compliance, delivered globally: Anthropic to watermark Claude's output worldwide (Euronews)", url: "https://www.euronews.com/next/2026/08/11/eu-compliance-delivered-globally-anthropic-to-watermark-claudes-output-worldwide" },
+      { title: "Copy-paste no more: Anthropic puts invisible watermarks on Claude text under EU rules (Interesting Engineering)", url: "https://interestingengineering.com/ai-robotics/anthropic-claude-text-invisible-watermarks" },
+      { title: "Premium seats are coming to ChatGPT Business (OpenAI)", url: "https://openai.com/index/premium-seats-chatgpt-business/" },
+      { title: "OpenAI introduces $125 Premium Seats for ChatGPT Business as agentic AI burns through more tokens (The Decoder)", url: "https://the-decoder.com/openai-introduces-125-premium-seats-for-chatgpt-business-as-agentic-ai-burns-through-more-tokens/" },
+      { title: "NVIDIAと金融6社、外部から80兆円調達 AIデータセンター構築支援 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOGN108UK0Q6A810C2000000/" },
+      { title: "米エヌビディア、80兆円調達へ AI設備投資で金融連合から（時事通信） (Yahoo!ニュース)", url: "https://news.yahoo.co.jp/articles/d8924779b95545937ac03b8394cf50a18c39fb0c" },
+      { title: "静岡市清水区役所にてAIアバター「AICO」とロボット「Lanky Mini」による窓口案内の実証実験を開始 (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000004.000104750.html" },
+      { title: "Bringing Claude Code and Claude Cowork to government (Anthropic)", url: "https://claude.com/blog/bringing-claude-code-and-claude-cowork-to-government" },
+      { title: "Google brings new AI agent capabilities to Ads and Analytics (Search Engine Land)", url: "https://searchengineland.com/google-brings-new-ai-agent-capabilities-to-ads-and-analytics-484542" }
+    ]
+  },
+  {
     date: "2026-08-11",
     pick: "OpenAIは8/10、防御側セキュリティ専門家向けプログラム「Daybreak」を「Blue」「Red」の2階層に再編し、専用モデル「GPT-5.6-Cyber」を投入したと発表した。機微なセキュリティ関連の質問への回答率は通常モデルの約1.5%から95%へ引き上げられ、Chromeの未知の脆弱性発見にも成功したという。同じ8/10、Anthropicは資産運用大手Macquarie Asset Management・シンガポール政府系ファンドGICと共同で、データセンターの開発・運営・賃貸を専門に担う新会社「Theseus Infrastructure」を設立すると発表し、AnthropicがアンカーテナントとなりMacquarieとGICが資金の大半を拠出する仕組みで米国内のインフラ調達を加速させる。Metaも同日、300億パラメータのオープンウェイトモデル「Muse Glimmer」をApache 2.0ライセンスで公開し、4bit量子化により単一のコンシューマー向けGPUでエージェント実行できるとアピールした。市場では8/10、日経平均株価が3営業日ぶりに反発し前週末比2.08%高の66,970円まで上昇——米雇用統計の下振れによる早期利上げ観測後退を受け、AI・半導体関連株への買いが先行した。国内ではNECが8/10、8/1付で数万人規模の大手企業として初めてAIのみで構成する「コーポレートAI・Workforce部門」を新設したと発表し、7月の社内実証では役員会議向けの経営分析・リスク予兆検知にかかる時間を約7分の1に短縮できたとした。",
     summary: [
