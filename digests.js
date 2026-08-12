@@ -4,6 +4,43 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-08-13",
+    pick: "AIエージェント開発を手がけるManus（開発元Butterfly Effect）は8/11、2025年12月に合意していたMeta傘下入り（総額約20億ドル規模）を解消し、独立企業として運営を再開すると発表した。中国国家発展改革委員会（NDRC）が4月、対外投資規制や技術輸出管理への抵触を理由に買収を差し止めたためで、2025年12/29以降に作成された利用者データは8/23午前7時59分（シンガポール時間）までにバックアップするよう呼びかけ、同日8時から24日にかけて該当データを削除するとした。同じ8/11、NVIDIAはオープンウェイトモデル「Nemotron 3.5 Lightning」を公開したと発表した。総パラメータ316億（推論時のアクティブパラメータは36億）のMoE（混合エキスパート）構成でハイブリッドMamba-Transformer構造を採用し、前世代「Nemotron 3 Nano」比で出力速度は最大4倍、タスク完了は30%高速化したという。Artificial Analysis Intelligence Indexのスコアは24で、パラメータ数が約4分の1にもかかわらずOpenAIの「gpt-oss-120b」に匹敵する結果を示したとしている。イーロン・マスク氏が率いるSpaceX傘下のAI部門SpaceXAI（旧xAI）も8/11、クラウド上のコンピューターを自律操作し業務アプリへのログインまで代行するAIエージェント「Grok Bot」のベータ版を公開したと発表し、承認が必要な場面のみ利用者に確認を求める設計とした。国内では8/10、NTTドコモとサムスン電子が、AIでスマートフォンの通信速度低下を事前に予測し良好なネットワークへ自動切り替えする技術の実証に成功したと発表し、2026年1月の実証実験で速度低下の発生頻度を13.1%から7.2%へ5.9ポイント引き下げたとした。市場では8/12、日経平均株価がAI・半導体関連株への買いを支えに前日比553円84銭（0.83%）高の67,524円06銭と約1カ月ぶりの高値水準で取引を終えた。",
+    summary: [
+      "AIエージェント開発のManus（Butterfly Effect）が8/11、2025年12月合意のMeta傘下入り（約20億ドル規模）を解消し独立運営を再開すると発表。中国当局が4月に対外投資規制違反を理由に買収を差し止めたためで、2025年12/29以降のデータは8/23までのバックアップを利用者に呼びかけている。",
+      "NVIDIAが8/11、オープンウェイトモデル「Nemotron 3.5 Lightning」を公開。総パラメータ316億・アクティブパラメータ36億のMoE構成で、出力速度は前世代比最大4倍、Artificial Analysis Intelligence Indexのスコアはパラメータ数約4分の1のOpenAI「gpt-oss-120b」に匹敵する24を記録したという。",
+      "（国内）NTTドコモとサムスン電子が8/10、AIでスマートフォンの通信速度低下を事前に予測し良好なネットワークへ自動切り替える技術の実証に成功したと発表。2026年1月の実証実験で速度低下の発生頻度を13.1%から7.2%へ5.9ポイント引き下げたとしている。"
+    ],
+    topics: [
+      { title: "AIエージェントのManus、Meta傘下入り解消し独立運営を再開——中国当局が対外投資規制を理由に約20億ドル買収を差し止め", why: "AIエージェント開発を手がけるManus（開発元Butterfly Effect）は8/11、公式ブログで2025年12月に合意していたMetaによる買収（総額約20億ドル規模）を解消し、独立企業として運営を再開すると明らかにした。中国国家発展改革委員会（NDRC）が2026年4月、対外投資規制や技術輸出管理のルールへの抵触を理由に買収を差し止めたことが背景という。ManusはMeta傘下となった2025年12/29以降に作成された利用者データについて、8/23午前7時59分（シンガポール時間）までにバックアップを行うよう呼びかけ、同日8時から24日にかけて該当データを削除するとした。Manusは「世界中の数百万人の利用者へのサービス提供を続ける」としており、大型買収が政府の対外投資・技術輸出規制によって覆された事例として注目されている。", idea: "「中国当局に止められた買収」から考える、越境M&AでのAI企業デューデリジェンスの死角", tag: "海外" },
+      { title: "NVIDIA、316億パラメータのオープンウェイトモデル「Nemotron 3.5 Lightning」を公開——アクティブパラメータ36億のMoEで出力速度は前世代比最大4倍", why: "NVIDIAは8/11、エージェント向けの小型オープンウェイトモデル「Nemotron 3.5 Lightning」を公開したと発表した。総パラメータ316億のうち推論時に使うアクティブパラメータは36億にとどまるMoE（混合エキスパート）構成で、前世代「Nemotron 3 Nano 30B A3B」と同じハイブリッドMamba-Transformer構造を継承しつつ、知能・エージェント性能を大きく引き上げたという。投機的デコーディングや量子化を組み合わせ、出力速度は前世代比最大4倍、タスク完了時間は30%短縮したとしている。第三者評価のArtificial Analysis Intelligence Indexではスコア24を記録し、パラメータ数が約4分の1にもかかわらずOpenAIのオープンモデル「gpt-oss-120b」に匹敵する結果を示したという。コードレビューやツール呼び出し、セキュリティ警告の監視、請求関連の問い合わせ対応など、長時間稼働するエージェント向けの高頻度・低コスト用途を想定して設計されており、モデルルーティング機能「NeMo Switchyard」と組み合わせて、Hugging Face・ModelScope・OpenRouter・build.nvidia.comなどで入手できる。", idea: "「小型モデルで大型モデル並みの性能」をどう検証するか——Nemotron 3.5 Lightning公開から考える、エージェント基盤選定でのコスト対効果の見極め方", tag: "海外" },
+      { title: "イーロン・マスク氏率いるSpaceXAI（旧xAI）、自律型AIエージェント「Grok Bot」をベータ公開——クラウド上でアプリを自律操作し承認が必要な場面のみ確認", why: "SpaceX傘下のAI部門SpaceXAI（2026年7月にxAIから改称）は8/11、業務アプリを自律操作するAIエージェント「Grok Bot」のベータ版を公開したと発表した。従来のチャットボットのように質問に答えたり文書を生成したりするのではなく、GmailやCRMなどの業務アプリケーションに直接ログインし、人間の作業手順を模倣しながらタスクを最初から最後まで代行する。承認が必要な判断が生じた場合にのみ利用者に確認を求める設計で、クラウド上で動作するためパソコンを閉じたり離席したりしても処理を継続できるという。複数のGrok Botが互いにメッセージをやり取りしてタスクを分担することも可能で、営業チームは夜間に見込み客の選別やメール文案作成に、財務チームはメールから経費レシートを抽出する作業に社内で試験活用していたとしている。macOS・Windows・iOS・Linux（Debian/Ubuntu x64向け.deb）に対応し、Android版は今後の提供となる。利用にはSuperGrok Heavy、Cursor Ultra、Cursor Teams Premiumのいずれかへの加入が必要という。", idea: "「承認が必要な時だけ止める」エージェント設計——Grok Bot公開から考える、業務アプリを自律操作させるAIエージェント導入の勘所", tag: "海外" },
+      { title: "（国内）NTTドコモ×サムスン電子、AIで通信速度低下を事前予測し自動切り替えする技術の実証に成功——発生頻度を13.1%から7.2%へ削減", why: "NTTドコモとサムスン電子は8/10、スマートフォンの通信速度低下をAIで事前に予測し、低下が実際に起きる前に自動で良好なネットワークへ切り替える技術を共同開発し、実証に成功したと発表した。端末から匿名で収集した過去の通信品質データに加え、利用者の移動傾向やサービス利用状況をAIが分析し、動画視聴時の途切れや画質低下につながる通信速度低下の予兆を検知する仕組み。2026年1月に日本国内で実施した実証実験では、通信速度低下の発生頻度を13.1%から7.2%へ5.9ポイント引き下げることに成功したという。両社は、2030年代の実現を目指す第6世代移動通信システム（6G）時代に求められる、AIがネットワーク運用を自律的に担う「AI-Centricネットワーク」の実現につなげる考えを示している。", idea: "「通信が切れる前に切り替える」予測型AI——ドコモ・サムスンの実証から考える、自社インフラでの予兆検知AI活用の検討ポイント", tag: "国内" },
+      { title: "日経平均、8/12に約1カ月ぶりの高値水準——AI・半導体関連株への買いが続き67,524円まで続伸", why: "東京株式市場で8/12、日経平均株価は前日比553円84銭（0.83%）高の67,524円06銭で取引を終え、約1カ月ぶりの高値水準となった。米国の7月消費者物価指数（CPI）発表を控え午前は様子見の展開となったものの、午後にかけてリスク選好の動きが強まり、AI・半導体関連株への買いが相場を押し上げた。韓国総合株価指数（KOSPI）の上昇も投資家心理の追い風になったとみられる。NVIDIAの新型オープンモデル公開などAI関連の材料が相次ぐ中、半導体・電子部品関連銘柄を中心に物色が広がる展開が続いており、AI投資テーマへの資金流入が日本株市場でも継続していることをうかがわせた。", idea: "「AI・半導体相場」への資金流入が続く構図——日経平均の続伸から考える、AI関連株投資のタイミングの見極め方", tag: "市場" }
+    ],
+    small: [
+      "OpenAIは8/11、ChatGPT・ChatGPT Work・Codexを統合したデスクトップアプリのLinux版（プレビュー）を公開。Ubuntu 24.04/26.04 LTS・Debian 13・Fedora 43/44のx64/ARM64環境に対応し、.deb/.rpm形式でopenai.com/codexから入手できる。既存のmacOS・Windows版に続き主要OSでの提供がそろった。",
+      "Google Chief ScientistのJeff Dean氏と長年の盟友Sanjay Ghemawat氏は8/5、27年間在籍したGoogleを退社し、科学研究の実験の提案・実行・評価・改善を自動化するスタートアップ「Discovery Loop」を共同創業したと明らかにした。Oriol Vinyals氏・Quoc Le氏も共同創業者に名を連ね、Radical VenturesとKhosla Venturesが主導する資金調達にAlphabetも出資したという。"
+    ],
+    sources: [
+      { title: "Manus to Resume Independent Operations in Unwind of Meta Deal (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-08-11/manus-to-resume-independent-operations-in-unwind-of-meta-deal" },
+      { title: "A note to our users (Manus)", url: "https://manus.im/blog/a-note-to-our-users" },
+      { title: "NVIDIA Nemotron 3.5 Lightning Delivers Fast, Accurate Specialized Task Execution for Long-Running Agents (NVIDIA Technical Blog)", url: "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/" },
+      { title: "NVIDIA AI Releases Nemotron 3.5 Lightning: A 30B Open MoE with 3B Active Parameters, and NeMo Switchyard Model Router (MarkTechPost)", url: "https://www.marktechpost.com/2026/08/11/nvidia-ai-releases-nemotron-3-5-lightning-and-nemo-switchyard/" },
+      { title: "NVIDIAが30Bのオープンモデル公開 (ITmedia AI＋)", url: "https://www.itmedia.co.jp/aiplus/article/2608/12/2000000503/" },
+      { title: "SpaceXAI Unveils Grok Bot to Work Like a Team of AI Agents (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-08-11/spacexai-unveils-grok-bot-to-work-like-a-team-of-ai-agents" },
+      { title: "SpaceXAI unveils Grok bot to work like a team of AI agents (The Star)", url: "https://www.thestar.com.my/tech/tech-news/2026/08/12/spacexai-unveils-grok-bot-to-work-like-a-team-of-ai-agents" },
+      { title: "24時間働く AI同僚「Grok Bot」公開 (ITmedia AI＋)", url: "https://www.itmedia.co.jp/aiplus/article/2608/12/2000000505/" },
+      { title: "ドコモとSamsung、AIで通信速度低下を予測し未然に防ぐ技術の実証に成功 (NTTドコモ)", url: "https://www.docomo.ne.jp/binary/pdf/info/news_release/topics_260810_d1.pdf" },
+      { title: "AIで通信速度低下を予測、自動切り替え ドコモとサムスン電子が実証 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOUC1070V0Q6A810C2000000/" },
+      { title: "ドコモとサムスン、動画視聴時の“イライラ”解消 そのカラクリは？ (ITmedia Mobile)", url: "https://www.itmedia.co.jp/mobile/articles/2608/12/news064.html" },
+      { title: "東証14時 日経平均は続伸、AI・半導体関連に買い (株探ニュース)", url: "https://kabutan.jp/news/marketnews/?b=n202608121197" },
+      { title: "ChatGPTデスクトップアプリにLinux版 (ITmedia AI＋)", url: "https://www.itmedia.co.jp/aiplus/article/2608/12/2000000504/" },
+      { title: "Jeff Dean and other top AI researchers are leaving Google to launch their own startup (TechCrunch)", url: "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/" },
+      { title: "The startup idea that convinced a UW computer science legend to leave Google after 27 years (GeekWire)", url: "https://www.geekwire.com/2026/the-startup-idea-that-convinced-a-uw-computer-science-legend-to-leave-google-after-27-years/" }
+    ]
+  },
+  {
     date: "2026-08-12",
     pick: "Anthropicは8/11、ビットコインマイニング企業からAIデータセンター事業へ転換中のRiot Platformsと20年契約を結び、テキサス州ロックデールの拠点から191メガワット分の電力容量を調達すると発表した。契約総額は約91億ドルで、延長オプション行使時は161億ドルまで拡大する見込みという。同じ8/11、Anthropicは欧州連合（EU）のAI法が定める透明性ルールへの対応として、新しいClaudeモデルが生成するテキストに機械可読の見えない電子透かしを埋め込む取り組みを開始したと明らかにし、この措置を欧州に限らず世界中の利用者に適用するとした。OpenAIも8/10、ChatGPT Business向けに月額125ドル（年払いなら100ドル）の上位プラン「Premium seats」を発表し、既存の「Standard」プランで生じていた5時間ごとの利用上限を撤廃し利用枠を5倍に広げるとした。市場では8/11、NVIDIAがBlackRock・ゴールドマン・サックス・ブラックストーン・アポロ・グローバル・マネジメント・KKRなど米加の金融大手6社と組み、AIデータセンター建設向けに外部から総額約5000億ドル（約80兆円）を調達する枠組みを発表し、資金力に乏しいAI企業のインフラ構築を金融面から後押しする狙いを示した。国内では8/11、AI接客システムを手がけるファーストローンチが、静岡市清水区役所でAIアバター「AICO」と自律移動ロボット「Lanky Mini」を組み合わせた窓口案内の実証実験を開始したと発表した。",
     summary: [
