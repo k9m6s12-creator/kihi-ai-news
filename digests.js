@@ -4,6 +4,40 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-08-14",
+    pick: "Anthropicは8/14、Claude Codeの安全機能「オートモード」をPro・Max・Teamプランの新規セッションで既定オンにする展開を始めた。パーミッションプロンプトのたびに逐一承認を求める従来方式に代え、破壊的・不可逆な操作を検知する分類器がバックグラウンドでコマンドを審査する仕組みで、1053人の有料ユーザーによる検証では、人間のレビューが危険なコマンドを検知できたのは13.6%にとどまった一方、オートモードは89%を検知したというデータを公表した。同じ8/13、Anthropicはイスラエルの映像生成AIスタートアップDecartを約60億ドルで買収する方向で協議していると報じられた。実現すればAnthropic史上最大の買収となる見込みで、2026年5月時点の評価額（約40億ドル）から5割ほど高い水準という。OpenAIも8/13、年換算収益（ARR）が400億ドルを突破したと報じられ、2025年末からほぼ倍増するペースとなり、新規株式公開（IPO）に向けた収益基盤の強化を印象付けた。国内では8/13、Sakana AIが対話AIサービス「Sakana Chat」を刷新し、複数の最先端モデルを束ねるオーケストレーター型モデル「Sakana Fugu」を無料開放するとともに、日本語特化モデル「Sakana Namazu」のベースをMoonshot AIの中国製オープンモデル「Kimi K2.6」に切り替えたと発表した。市場では8/13、日経平均株価が3営業日続伸し前日比784円高の68,308円で取引を終え約1カ月ぶりの高値を更新、TOPIXも連日で最高値を更新した。",
+    summary: [
+      "Anthropicが8/14、Claude Codeの安全機能「オートモード」をPro・Max・Teamプランの新規セッションで既定オンに展開開始。1053人による検証では人間のレビューの危険コマンド検知率13.6%に対し、オートモードは89%を検知したというデータを公表した。",
+      "Anthropicが8/13、イスラエルの映像生成AIスタートアップDecartを約60億ドルで買収する方向で協議していると報道。実現すればAnthropic史上最大の買収となる見込みで、2026年5月時点の評価額（約40億ドル）から5割ほど高い水準という。",
+      "（国内）Sakana AIが8/13、対話AIサービス「Sakana Chat」を刷新。オーケストレーター型モデル「Sakana Fugu」を無料開放し、日本語特化モデル「Sakana Namazu」のベースをMoonshot AIの中国製オープンモデル「Kimi K2.6」に切り替えた。"
+    ],
+    topics: [
+      { title: "Claude Code、安全機能「オートモード」を8/14からPro・Max・Team既定オンに——人間レビューの危険コマンド検知率13.6%に対しオートモードは89%", why: "Anthropicは8/14、Claude Codeの新規セッションにおいて、安全機能「オートモード」をPro・Max・Teamプランの既定設定として展開を始めたと発表した。従来はコマンド実行のたびにパーミッションプロンプトで逐一承認を求めていたが、破壊的・不可逆・環境外への操作を検知する分類器がバックグラウンドで審査し、危険なものだけをブロックする仕組みに切り替える。Anthropicは、ユーザーがパーミッションプロンプトの97%を承認している実態や、約半数のCLIユーザーがbashの許可ルールを自作し6割超が権限確認を回避していたことを明かした上で、1053人の有料ユーザーによる検証結果として、人間のレビューが危険なコマンドを検知できた割合は13.6%にとどまったのに対し、オートモードの分類器は89%を検知したとするデータを示した。実運用データでも、手動承認のセッションは重大度7以上の意図しない害の発生率がオートモード利用時の2倍（6.3%対2.4%）だったという。Enterprise・API・AWS Bedrock・Google Cloud・Microsoft Foundry向けはオプトイン方式のまま据え置く。", idea: "「人間の確認より機械の分類器の方が安全」というデータが持つ意味——Claude Codeのオートモード既定化から考える、社内のAIエージェント運用ルールの見直しどころ", tag: "海外" },
+      { title: "Anthropic、イスラエルの映像生成AIスタートアップDecartを約60億ドルで買収協議——実現すれば史上最大買収、評価額から5割高い水準", why: "Anthropicはイスラエルの映像生成AIスタートアップDecartを約60億ドルで買収する方向で協議していると8/13、Bloombergなどが報じた。協議はまだ初期段階で決裂する可能性もあるという。Decartは2023年、イスラエル軍のシグナル諜報部隊「8200部隊」出身のDean Leitersdorf氏とMoshe Shalev氏が創業し、従業員は約100人。チップの処理効率を高めてAIの学習・推論コストを下げるソフトウェアや、映像をリアルタイムで編集する独自モデル「Lucy」、ロボットや自動運転の学習に使うシミュレーション環境を生成するモデル「Oasis」を手がける。実現すればAnthropicにとって過去最大の買収となる見込みで、2026年5月にRadical Ventures主導・NVIDIA参加で3億ドルを調達した際の評価額（約40億ドル）から5割ほど高い水準という。新規株式公開（IPO）を控えるAnthropicが、映像生成やGPU効率化の技術を取り込みコスト競争力を高める狙いとみられている。", idea: "「評価額の5割増し」で買収する理由——Anthropic・Decart協議から考える、AI企業のM&Aでチップ効率化技術がなぜ高く評価されるか", tag: "海外" },
+      { title: "OpenAI、年換算収益が400億ドル突破と報道——2025年末からほぼ倍増、IPOに向け収益基盤アピール", why: "OpenAIの年換算収益（ARR）が400億ドルを突破したと8/13、Bloombergが関係者の話として報じた。2025年末時点からほぼ倍増するペースで、AIコーディングツールや各種サブスクリプション、立ち上がったばかりの広告事業が成長をけん引しているという。同社はウォール街での新規株式公開（IPO）を計画しているとされ、今回の数字は投資家に収益基盤の強さを印象付ける材料となりそうだ。エージェント型AIの利用拡大に伴いトークン消費量が急増する中、OpenAIは法人向けに上位プラン「Premium seats」を投入するなど、収益化を急ぐ動きを強めている。", idea: "「ARR倍増」の中身をどう読むか——OpenAIの収益急拡大報道から考える、AIサービスの売上構成をコーディング・サブスク・広告のどこで見るか", tag: "海外" },
+      { title: "（国内）Sakana AI、「Sakana Chat」を刷新——オーケストレーター型「Sakana Fugu」を無料開放、日本語モデル「Sakana Namazu」は中国製Kimi K2.6ベースに刷新", why: "Sakana AIは8/13、対話AIサービス「Sakana Chat」をアップデートしたと発表した。複数の最先端モデルをタスクに応じて動的に使い分ける「集合知」型のオーケストレーターモデル「Sakana Fugu」を無料で選択できるようにしたほか、日本語対応に強みを持つ「Sakana Namazu」を刷新し、ベースモデルをMoonshot AIの中国製オープンモデル「Kimi K2.6」に切り替えることで日本語の応答品質と自律実行能力を高めたという。あわせてサンドボックス上でのPythonコード実行や、生成したHTML・成果物のプレビュー表示、Word・Excel・PDFなどのファイル添付にも対応した。国産AIスタートアップが海外のオープンモデルを土台に自社サービスの実力を底上げする動きとして注目される。", idea: "「土台は海外オープンモデル、磨き込みは国内」という作り方——Sakana Chat刷新から考える、国産AIサービスがベースモデル選定でどこを重視すべきか", tag: "国内" },
+      { title: "日経平均、3営業日続伸で784円高の68,308円——約1カ月ぶり高値、TOPIXも連日で最高値更新", why: "東京株式市場で8/13、日経平均株価は3営業日続けて上昇し、前日比784円高の68,308円で取引を終えた。約1カ月ぶりの高値水準で、朝方には上げ幅が1000円を超える場面もあったという。米国の7月消費者物価指数（CPI）の伸びが市場予想通りで前月から鈍化し、早期の追加利上げ観測が後退したことを受け米ナスダック指数が反発、フィラデルフィア半導体株指数（SOX）も上昇したことが追い風となった。韓国総合株価指数（KOSPI）の上昇も投資家心理を支え、AI・半導体関連株の高い収益水準が引き続き評価されているという。TOPIX（東証株価指数）も連日で終値としての最高値を更新した。", idea: "「ブーム一巡後も評価される」AI・半導体株——日経平均続伸から考える、AI投資テーマで今どの銘柄群に資金が向かっているか", tag: "市場" }
+    ],
+    small: [
+      "Microsoftは8/13、Copilotの個人向けアプリで「Group Chats」「AIポッドキャスト生成」「Copilot Labs」「Deep Research」などの機能を8/18に終了すると発表。個人向けCopilotとMicrosoft 365 Copilotのアプリ統合を進める一環で、既存の保存済みレポートは閲覧できるが新規作成はできなくなる。",
+      "NVIDIAが主導しBlackRock・ゴールドマン・サックス・ブラックストーンなど金融大手6社と組んだAIデータセンター向け外部資金調達枠組み（総額約5000億ドル規模）について、8/13付の海外メディアが改めて詳報し、AI企業向けインフラ投資を独自の投資対象として金融機関に売り込む狙いを伝えた。"
+    ],
+    sources: [
+      { title: "Anthropic is turning Claude Code's auto mode on by default (TechCrunch)", url: "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/" },
+      { title: "Auto mode: the default in Claude Code (Claude)", url: "https://claude.com/blog/auto-mode-default-in-claude-code" },
+      { title: "Claude Code puts auto mode in the driver's seat (The Register)", url: "https://www.theregister.com/ai-and-ml/2026/08/10/claude-code-puts-auto-mode-in-the-drivers-seat/" },
+      { title: "Anthropic Said in Talks to Buy AI Startup Decart for $6 Billion (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-08-13/anthropic-said-in-talks-to-buy-ai-startup-decart-for-6-billion" },
+      { title: "Anthropic in talks to buy Israeli AI startup Decart for about $6bn (Yahoo Finance)", url: "https://finance.yahoo.com/technology/ai/articles/anthropic-talks-buy-israeli-ai-074100462.html" },
+      { title: "Anthropic Weighs Its Largest-Ever Acquisition, a $6 Billion Deal for Decart (Benzinga)", url: "https://www.benzinga.com/markets/private-markets/26/08/61195901/anthropic-weighs-its-largest-ever-acquisition-a-6-billion-deal-for-decart" },
+      { title: "OpenAI's Revenue Run Rate Tops $40 Billion Ahead of IPO (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-08-13/openai-s-revenue-run-rate-tops-40-billion-ahead-of-ipo" },
+      { title: "Sakana AIの「Sakana Chat」で「Sakana Fugu」を利用可能に ～「Sakana Namazu」も更新 (窓の杜)", url: "https://forest.watch.impress.co.jp/docs/news/2132571.html" },
+      { title: "Sakana Chatがアップデート：「Sakana Fugu」と新世代「Sakana Namazu」が利用可能に (Sakana AI)", url: "https://sakana.ai/chat-update/" },
+      { title: "＜マ－ケット日報＞ 2026年8月13日 (株探ニュース)", url: "https://s.kabutan.jp/news/n202608131148/" },
+      { title: "Microsoft kills off unsuccessful AI features while merging its separate Copilot apps (TechCrunch)", url: "https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/" },
+      { title: "Nvidia wants your pension fund in the AI trade (Fortune)", url: "https://fortune.com/2026/08/13/nvidia-wants-your-pension-fund-in-the-ai-trade/" }
+    ]
+  },
+  {
     date: "2026-08-13",
     pick: "AIエージェント開発を手がけるManus（開発元Butterfly Effect）は8/11、2025年12月に合意していたMeta傘下入り（総額約20億ドル規模）を解消し、独立企業として運営を再開すると発表した。中国国家発展改革委員会（NDRC）が4月、対外投資規制や技術輸出管理への抵触を理由に買収を差し止めたためで、2025年12/29以降に作成された利用者データは8/23午前7時59分（シンガポール時間）までにバックアップするよう呼びかけ、同日8時から24日にかけて該当データを削除するとした。同じ8/11、NVIDIAはオープンウェイトモデル「Nemotron 3.5 Lightning」を公開したと発表した。総パラメータ316億（推論時のアクティブパラメータは36億）のMoE（混合エキスパート）構成でハイブリッドMamba-Transformer構造を採用し、前世代「Nemotron 3 Nano」比で出力速度は最大4倍、タスク完了は30%高速化したという。Artificial Analysis Intelligence Indexのスコアは24で、パラメータ数が約4分の1にもかかわらずOpenAIの「gpt-oss-120b」に匹敵する結果を示したとしている。イーロン・マスク氏が率いるSpaceX傘下のAI部門SpaceXAI（旧xAI）も8/11、クラウド上のコンピューターを自律操作し業務アプリへのログインまで代行するAIエージェント「Grok Bot」のベータ版を公開したと発表し、承認が必要な場面のみ利用者に確認を求める設計とした。国内では8/10、NTTドコモとサムスン電子が、AIでスマートフォンの通信速度低下を事前に予測し良好なネットワークへ自動切り替えする技術の実証に成功したと発表し、2026年1月の実証実験で速度低下の発生頻度を13.1%から7.2%へ5.9ポイント引き下げたとした。市場では8/12、日経平均株価がAI・半導体関連株への買いを支えに前日比553円84銭（0.83%）高の67,524円06銭と約1カ月ぶりの高値水準で取引を終えた。",
     summary: [
