@@ -4,6 +4,42 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-08-15",
+    pick: "Anthropicの主要出資者6社が、同社が10月に計画する新規株式公開（IPO）で2兆ドル以上の評価額を目指せるとの見方を示していると8/13、英Financial Timesが報じた。実現すれば2026年6月に1兆7700億ドルの評価額で上場したSpaceXを上回り史上最大のIPOとなる見通しで、出資者らはAnthropicの年換算収益（ARR）が2026年末までに1000億〜1200億ドルに達すると見積もっているという。Fortuneは8/14、実際の事業はまだ黒字化にほど遠く、この評価額を正当化するにはアマゾン・ドット・コム並みの利益成長軌道が必要になると指摘した。同じ8/13、OpenAIは主力モデル「GPT-5.6 Sol」を通常処理より最大14倍高速化する新API階層「Ultrafast」のプレビューを開始したと発表し、半導体スタートアップCerebrasの基盤を用いて出力速度を毎秒最大750トークンまで引き上げたとした。中国のDeepSeekも8月、API「V4-Pro」「V4-Flash」にピーク・オフピーク制の時間帯別価格を導入し、8/16付でモデル・トークン種別によって最大1100%の値上げに踏み切ると発表、値下げ競争が続いてきた生成AI業界の転換点として注目されている。国内では8/14、三菱HCキャピタルがVPP（仮想発電所）プラットフォームを手がけるShizen Connectと資本業務提携を締結したと発表し、低圧発電所や蓄電池をIoT・AIで統合制御する開発を共同で進めるとした。市場では8/14、日経平均株価が4営業日続伸し前日比405円高の68,713円80銭で取引を終え、取引時間中には一時69,608円まで上昇し約1カ月ぶりに69,000円台を回復、TOPIXも連日で最高値を更新した。",
+    summary: [
+      "Anthropicの主要出資者6社が、10月に計画するIPOで2兆ドル以上の評価額を目指せるとの見方を示していると8/13、Financial Timesが報道。実現すれば6月に1兆7700億ドルで上場したSpaceXを上回る史上最大のIPOとなる見通しで、Fortuneは8/14、事業の黒字化がまだ遠いことを課題に挙げた。",
+      "OpenAIが8/13、GPT-5.6 Solを最大14倍高速化する新API階層「Ultrafast」のプレビューを開始。半導体スタートアップCerebrasの基盤を用いて出力速度を毎秒最大750トークンまで引き上げた。中国のDeepSeekは8月、8/16付でAPI料金を最大1100%値上げすると発表し、生成AI業界の値下げ競争に転換点が訪れつつある。",
+      "（国内）三菱HCキャピタルが8/14、VPP（仮想発電所）プラットフォームのShizen Connectと資本業務提携を締結したと発表。低圧発電所や蓄電池、給湯器などをIoT・AIで統合制御する開発を共同で進め、電力需給の最適化を目指すとした。"
+    ],
+    topics: [
+      { title: "Anthropicの出資者、10月IPOで評価額2兆ドル超えを想定と報道——実現なら史上最大、SpaceXの1兆7700億ドルを上回る見通し", why: "Anthropicの主要出資者6社が、同社が10月に計画する新規株式公開（IPO）で2兆ドル以上の評価額を目指せるとの見方を示していると8/13、英Financial Timesが報じた。実現すれば2026年6月に1兆7700億ドルの評価額で上場したSpaceXを上回り、史上最大のIPOとなる見通し。背景には、出資者らがAnthropicの年換算収益（ARR）が2026年末までに1000億〜1200億ドルに達すると見積もっていることがあるといい、2026年5月の資金調達時点の評価額（約9650億ドル）から2倍以上への急拡大となる。ただしAnthropicの経営陣自身は、IPOの評価額目標を明確にしていないとされる。Fortuneは8/14、Anthropicの実際の事業がまだ黒字化にほど遠く、この評価額を正当化するにはアマゾン・ドット・コム並みの利益成長軌道を描く必要があると指摘し、中国勢の低価格AIモデルとの競争激化や規制圧力、米政府との係争など先行きの不確実性も課題として挙げた。", idea: "「評価額2兆ドル」の根拠をどう検証するか——Anthropic IPO報道から考える、AI企業の収益予測とバリュエーションの読み方", tag: "海外" },
+      { title: "OpenAI、GPT-5.6 Solを最大14倍高速化する新API階層「Ultrafast」プレビュー開始——Cerebras基盤で毎秒750トークン出力", why: "OpenAIは8/13、主力モデル「GPT-5.6 Sol」を通常処理より最大14倍高速に応答させる新しいAPIサービス階層「Ultrafast」のプレビューを開始したと発表した。半導体スタートアップCerebrasの推論基盤を活用し、出力速度を毎秒最大750トークンまで引き上げる一方、知能面は標準版のGPT-5.6 Solと同一に保っているという。Cerebrasによれば、この速度はAnthropicの「Claude Opus 4.8」（Fastモード）の5倍、「Claude Fable 5」の11倍に達するとしている。当面は限られた顧客のみを対象にした試験提供で、OpenAI社内ではインシデント対応など即応性が求められる業務での活用が試されているという。", idea: "「知能を落とさず速度だけ14倍」の意味——Ultrafast提供開始から考える、応答速度が競争軸になる業務でのAPI選定基準", tag: "海外" },
+      { title: "DeepSeek、API料金を8/16付で最大1100%値上げ——ピーク・オフピーク制を導入、生成AI「値下げ競争」に転換点", why: "中国のAIスタートアップDeepSeekは8月、API「V4-Pro」「V4-Flash」の料金体系を見直し、協定世界時1〜4時・6〜10時を「ピーク時間帯」、それ以外を「オフピーク時間帯」（ピークの半額）とする時間帯別価格を8/16付で導入すると発表した。値上げ幅はモデルやトークンの種類（キャッシュヒット入力・キャッシュミス入力・出力）によって異なり、報道では最大1100%に達するケースがあるとされる。一例として、V4-Proの出力価格は現行の100万トークンあたり0.87ドルから、ピーク時には3.96ドルへ引き上げられる。DeepSeekは、想定を上回る利用急増で計算資源が逼迫し、これまでの低価格設定が持続可能でなくなったことを理由に挙げている。OpenAIやAnthropicが相次いで値下げに動く一方、価格破壊の震源地だったDeepSeekが値上げに転じたことで、生成AI業界の値下げ競争の構図に転換点が訪れつつある。", idea: "「値下げの震源」が値上げに転じる意味——DeepSeekの料金改定から考える、低価格AIモデルへの依存リスクの見直しどころ", tag: "海外" },
+      { title: "（国内）三菱HCキャピタル、VPP新興Shizen Connectと資本業務提携——IoT・AIで低圧発電所や蓄電池を統合制御、電力需給の最適化へ", why: "三菱HCキャピタルは8/14、エネルギー設備をIoT・AIで統合制御するVPP（仮想発電所）プラットフォームを手がけるShizen Connectと資本業務提携契約を締結したと発表した。Shizen Connectが実施するシリーズAラウンドの第三者割当増資に参画する形で、同社は2026年5月にシリーズA 1stクローズとして27億円を調達している。両社は今後、低圧発電所・蓄電池・給湯器といった分散型エネルギー設備を対象に、IoT・AIを活用した最適な制御・運用の検証や共同開発を進める方針で、固定価格買取制度（FIT）から市場価格連動のFIP制度への転換や、企業向けデマンドレスポンス（DR）サービスの構築を通じて電力需給の調整とエネルギー設備の価値向上を目指すという。再生可能エネルギーの導入拡大に伴い、分散した設備をAIでまとめて制御するVPPの重要性が増す中、リース大手が新興企業のAI技術に出資する動きとして注目される。", idea: "「分散した設備をAIでまとめる」VPPの勘所——三菱HCキャピタルの出資から考える、自社の再エネ・蓄電池運用にAI制御をどう組み込むか", tag: "国内" },
+      { title: "日経平均、4営業日続伸で68,713円——一時69,000円台回復も上値重く、TOPIXは連日最高値", why: "東京株式市場で8/14、日経平均株価は4営業日続けて上昇し、前日比405円21銭高の68,713円80銭で取引を終えた。朝方には前日の米国株高を受けAI・半導体関連株に買いが先行し、一時69,608円24銭まで上昇して約1カ月ぶりに69,000円台を回復する場面があったものの、週末の持ち高調整売りや日銀の9月追加利上げ観測も意識され、後場にかけて上げ幅を縮小した。半導体検査装置大手アドバンテストが最高値を更新するなど、AI関連銘柄を中心とした物色は継続しており、TOPIX（東証株価指数）も連日で終値としての最高値を更新した。", idea: "「上値の重さ」をどう読むか——日経平均の4日続伸から考える、AI相場の過熱感と利上げ観測のせめぎ合い", tag: "市場" }
+    ],
+    small: [
+      "Appleが中国市場向けに、アリババの支援を受けて独自の大規模言語モデルを開発したと8/14、複数の海外メディアが報じた。中国政府から自社製AIモデルの提供を認められた初の外国企業になるといい、アリババの「Qwen」やバイドゥの技術も組み合わせ、iOS・iPadOS・macOS・visionOS向けの中国版Apple Intelligenceに今後数カ月以内に展開する計画という。",
+      "Googleは8/13、軽量モデル「Gemini 3.6 Flash」の公開からわずか3週間で、後継の「Gemini 3.7 Flash」を法人・有料個人向けに投入したと発表。2026年末まで入出力とも通常価格の半額で提供する導入価格を設定し、低価格な中国製AIモデルとの競争激化に対応する姿勢を示した。"
+    ],
+    sources: [
+      { title: "Anthropic Could Seek $2 Trillion Valuation in Record IPO (PYMNTS)", url: "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-could-seek-2-trillion-valuation-in-record-ipo/" },
+      { title: "Anthropic Eyes $2 Trillion In October IPO, A Record-Breaking Debut (Forbes)", url: "https://www.forbes.com/sites/jonmarkman/2026/08/13/anthropic-eyes-2-trillion-in-october-ipo-a-record-breaking-debut/" },
+      { title: "Anthropic needs to bring in Amazon-style earnings to justify its $2 trillion valuation (Fortune)", url: "https://fortune.com/2026/08/14/anthropic-valuation-ipo-amazon-trillion-openai/" },
+      { title: "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed (OpenAI)", url: "https://openai.com/index/previewing-ultrafast/" },
+      { title: "Accelerating GPT-5.6 Sol Ultrafast with OpenAI (Cerebras)", url: "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai" },
+      { title: "GPT-5.6 Sol goes 14x faster as OpenAI launches Ultrafast mode powered by Cerebras (The Decoder)", url: "https://the-decoder.com/gpt-5-6-sol-goes-14x-faster-as-openai-launches-ultrafast-mode-powered-by-cerebras/" },
+      { title: "DeepSeek raises some V4 prices by more than 10x as AI demand strains capacity (InfoWorld)", url: "https://www.infoworld.com/article/4209439/deepseek-raises-some-v4-prices-by-more-than-10x-as-ai-demand-strains-capacity.html" },
+      { title: "DeepSeek to introduce peak and off-peak pricing for its API (TechNode)", url: "https://technode.com/2026/08/14/deepseek-to-introduce-peak-and-off-peak-pricing-for-its-api/" },
+      { title: "DeepSeek Introduces Peak-Hour Pricing That Quadruples Current Levels (PYMNTS)", url: "https://www.pymnts.com/news/artificial-intelligence/2026/deepseek-introduces-peak-hour-pricing-that-quadruples-current-levels/" },
+      { title: "三菱ＨＣキャピタルとShizen Connectが資本業務提携契約を締結 (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000049.000168657.html" },
+      { title: "三菱HCキャピタルとShizen Connect、資本業務提携契約を締結 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZRSP711121_U6A810C2000000/" },
+      { title: "東証大引け 日経平均が4日続伸 米株高支え TOPIXは連日高値 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOFL143YC0U6A810C2000000/" },
+      { title: "Apple Trained Own AI Model for China Market With Help From Alibaba (MacRumors)", url: "https://www.macrumors.com/2026/08/14/apple-trained-own-ai-model-for-china/" },
+      { title: "Google joins the AI model price war with the new Gemini 3.7 Flash (Neowin)", url: "https://www.neowin.net/news/google-joins-the-ai-model-price-war-with-the-new-gemini-37-flash/" }
+    ]
+  },
+  {
     date: "2026-08-14",
     pick: "Anthropicは8/14、Claude Codeの安全機能「オートモード」をPro・Max・Teamプランの新規セッションで既定オンにする展開を始めた。パーミッションプロンプトのたびに逐一承認を求める従来方式に代え、破壊的・不可逆な操作を検知する分類器がバックグラウンドでコマンドを審査する仕組みで、1053人の有料ユーザーによる検証では、人間のレビューが危険なコマンドを検知できたのは13.6%にとどまった一方、オートモードは89%を検知したというデータを公表した。同じ8/13、Anthropicはイスラエルの映像生成AIスタートアップDecartを約60億ドルで買収する方向で協議していると報じられた。実現すればAnthropic史上最大の買収となる見込みで、2026年5月時点の評価額（約40億ドル）から5割ほど高い水準という。OpenAIも8/13、年換算収益（ARR）が400億ドルを突破したと報じられ、2025年末からほぼ倍増するペースとなり、新規株式公開（IPO）に向けた収益基盤の強化を印象付けた。国内では8/13、Sakana AIが対話AIサービス「Sakana Chat」を刷新し、複数の最先端モデルを束ねるオーケストレーター型モデル「Sakana Fugu」を無料開放するとともに、日本語特化モデル「Sakana Namazu」のベースをMoonshot AIの中国製オープンモデル「Kimi K2.6」に切り替えたと発表した。市場では8/13、日経平均株価が3営業日続伸し前日比784円高の68,308円で取引を終え約1カ月ぶりの高値を更新、TOPIXも連日で最高値を更新した。",
     summary: [
