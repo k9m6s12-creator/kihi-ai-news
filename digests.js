@@ -4,6 +4,42 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-08-16",
+    pick: "OpenAIは8/2、非公開の実験用モデル「Astra」が数学・理論計算機科学の分野で10年以上（一部は数十年）未解決だった10件の問題について新たな結果を示したと発表し、249ページの論文と証明支援系Lean 4による形式検証済みの証明一式をGitHub上でApache 2.0ライセンスの下で公開した。数学者ミハイル・グロモフ氏が1999年に提示して以来未解決だった非可縮群（non-sofic group）の具体的構成問題や、球充填密度、算術回路の計算量などを扱い、証明群の未完了ステップを示す「sorry」の数はゼロ、総計算コストはGPT-5.6 SolのAPI料金換算で約2000ドルだったという。Googleのスンダー・ピチャイCEOも8/11、対話AI「Gemini」アプリの月間アクティブユーザー数（MAU）が10億人を突破したと発表し、2026年初めの7.5億人から7月に9.5億人、8月に10億人へと急拡大しGoogle史上最も成長が速い製品になったとした。イーロン・マスク氏率いるSpaceXAI（旧xAI）も8/12、新モデル「Grok 4.6」を投入し、価格を前バージョンから据え置きつつ第三者評価のArtificial Analysis Intelligence Indexのスコアを56から61に引き上げ、OpenAIの「GPT-5.6 Sol」最高性能版に並んだとしている。国内では8/14、エンタープライズIT企業のアジアクエストが、複数のAIエージェントと社内業務システムを安全に接続するアクセス基盤「GAIA Governed AI Access」の提供を開始したと発表し、Claude・ChatGPT・Gemini・Copilotなどが個別に社内システムへ接続することで生じる「野良AIエージェント」問題への対応を打ち出した。市場では8/14の週末を迎え、日経平均株価は2週連続で上昇し前週末比3107円高の68,713円で取引を終え、週中には一時69,500円を上回る場面もあったといい、株探は来週の想定レンジを6万3000円〜6万8000円程度とみている。",
+    summary: [
+      "OpenAIの非公開モデル「Astra」が10年以上未解決だった数学・理論計算機科学の10問に新たな結果を示したと8/2に発表。249ページの論文とLean 4による形式検証済み証明一式をGitHubで公開し、証明の未完了箇所「sorry」はゼロ、総計算コストはGPT-5.6 Sol換算で約2000ドルだったという。",
+      "Googleが8/11、対話AI「Gemini」アプリのMAUが10億人を突破したと発表。2026年初めの7.5億人から7月に9.5億人、8月に10億人へ急拡大し同社史上最も成長が速い製品になったとした。SpaceXAI（旧xAI）も8/12、新モデル「Grok 4.6」を投入し、第三者評価のスコアを56から61に引き上げOpenAIの最高性能版に並んだ。",
+      "（国内）アジアクエストが8/14、複数のAIエージェントと社内業務システムを安全に接続するアクセス基盤「GAIA Governed AI Access」の提供を開始したと発表。Claude・ChatGPT・Gemini・Copilotなどが個別に社内システムへ接続することで生じる「野良AIエージェント」問題に対応し、権限のパススルーや自動監査ログを備え、AnthropicのMCPに準拠しているという。"
+    ],
+    topics: [
+      { title: "OpenAIの非公開モデル「Astra」、10年以上未解決の数学・理論計算機科学10問に新結果——Lean形式証明をGitHub公開、計算コストは約2000ドル", why: "OpenAIは8/2、非公開の実験用モデル「Astra」が、数学・理論計算機科学の分野で10年以上未解決だった10件の問題について新たな結果を示したと発表し、249ページに及ぶ論文と、モデルの推論過程、証明支援系Lean 4による形式検証済みの証明一式をGitHub上でApache 2.0ライセンスの下で公開した。代表的な成果として、数学者ミハイル・グロモフ氏が1999年に「sofic性」の概念を提示して以来未解決だった非可縮群（non-sofic group）の具体的構成問題のほか、高次元の球充填密度、2値・球面符号、算術回路の計算量、量子並列反復、最近接ベクトル問題の困難性などを扱い、極値グラフ理論の未解決問題（Erdos予想）2件についても反例を示したという。公開された証明群は、未完了のステップを示す「sorry」の数がゼロで、Leanのカーネルが証明のコンパイル可否を機械的に判定するため、主張を鵜呑みにせず検証できる。総計算コストはGPT-5.6 SolのAPI料金換算で約2000ドルだったとしている。", idea: "「証明の正しさをLeanが機械的に保証する」という意味——Astraの数学的発見から考える、AIの研究成果をどう検証・信頼すべきか", tag: "海外" },
+      { title: "Google「Gemini」アプリ、月間アクティブユーザー10億人を突破——2026年初めの7.5億人から半年強で急拡大、Google史上最速の成長", why: "Googleのスンダー・ピチャイCEOは8/11、対話AI「Gemini」アプリの月間アクティブユーザー数（MAU）が10億人を突破したと発表した。2026年初めに7.5億人だったMAUは7月に9.5億人、8月に10億人へと急拡大し、Google史上最も成長が速い製品になったという。Apple製端末上でのMAUも1億人を超えたとしており、利用形態としては全体の63%がテキストではなく音声によるやり取りで、「Gemini Live」のセッションの5件に1件はカメラ・画面共有機能を伴っているとしている。生成AIアシスタント市場でOpenAIのChatGPTなどとの競争が激化する中、Googleが検索・Android・Apple端末など既存の巨大な配信網を生かして利用者基盤を急速に広げていることを示す発表となった。", idea: "「10億人」の内訳をどう読むか——Gemini MAU突破から考える、音声・カメラ機能がAIアシスタント利用をどう変えたか", tag: "海外" },
+      { title: "SpaceXAI（旧xAI）、新モデル「Grok 4.6」を投入——価格据え置きでスコアを56から61に引き上げ、GPT-5.6 Sol最高性能版に並ぶ", why: "イーロン・マスク氏が率いるSpaceX傘下のAI部門SpaceXAI（旧xAI）は8/12、大規模言語モデル「Grok 4.6」を投入したと発表し、同日中にコーディング支援ツールCursorや自社の「Grok Build」、APIを通じて提供を始めた。価格は前バージョン「Grok 4.5」から据え置き、100万トークンあたり入力2ドル・出力6ドルとしたが、コンテキストが20万トークンを超える長文脈のリクエストではその2倍の料金が全トークンに適用される仕組みとした。コンテキストウィンドウは50万トークンで、第三者評価のArtificial Analysis Intelligence Indexのスコアは前バージョンの56から61に上昇し、OpenAIの「GPT-5.6 Sol」の最高性能版（Max）と並んだという。実務データを模したベンチマーク「GDPval-AA v2」でも、前バージョンの1526から1753（Elo換算）に上昇するなど、エージェント型のコーディング・知識労働タスクでの性能向上を強調している。", idea: "「値段据え置きで性能だけ上げる」という選択——Grok 4.6投入から考える、フロンティアモデルの値付け競争をどう見るか", tag: "海外" },
+      { title: "（国内）アジアクエスト、AIエージェント向けアクセス基盤「GAIA Governed AI Access」を提供開始——「野良AIエージェント」問題に対応、AnthropicのMCPに準拠", why: "エンタープライズIT企業のアジアクエストは8/14、複数のAIエージェントと企業の業務システムを安全に接続・管理するアクセス基盤「GAIA Governed AI Access」の提供を開始したと発表した。Claude・ChatGPT・Gemini・Copilot・ChatGPT Enterpriseや自社開発のカスタムエージェントなど複数のAIエージェントが個別に社内システムへ接続することで、権限の見通しが悪化し、過剰な権限付与かAI利用の制限かという二択を迫られる「野良AIエージェント」問題に対応するという。利用者が本来持つ権限の範囲内でのみデータ参照を許す「権限パススルー」や、全アクセスを自動記録する監査ログ、Google WorkspaceやMicrosoft Entra IDと連携したユーザー・ロール管理、文書単位でアクセスを制御し自動マスキングするRAGエンジンなどを備え、Anthropicが主導するAI接続規格「MCP（Model Context Protocol）」に準拠したクラウド型サービスとして提供する。導入は要件定義からインフラ構築、データ接続、本番稼働まで4段階で最短6〜7週間を見込むという。", idea: "「AIエージェントごとに個別接続」のリスクをどう塞ぐか——GAIA提供開始から考える、複数のAIエージェントを社内システムに安全につなぐ設計", tag: "国内" },
+      { title: "日経平均、2週連続上昇で週間3107円高の68,713円——来週の想定レンジは6万3000円〜6万8000円、AI・半導体外にも資金波及", why: "東京株式市場では8/14の週末を迎え、日経平均株価は2週連続で上昇し、前週末比3107円高の68,713円で取引を終えた。週の半ばには一時69,500円を上回る場面もあったという。株探の週末コメントによると、AI・半導体関連株の戻りが強まったことが上昇の主因である一方、これまで物色が乏しかった銘柄にも資金が波及していることが株高を下支えしているといい、来週の想定レンジは6万3000円〜6万8000円程度とし、上値追い一辺倒ではなく高値圏での銘柄選別が進むとの見方を示した。米国では消費者物価指数（CPI）・生産者物価指数（PPI）の結果を受けインフレ再加速への警戒が後退しており、小売売上高など個人消費の底堅さが確認され米金利が落ち着いた状態が続けば、AI・半導体関連株への買いが継続しやすいとの見立てを示している。", idea: "「AI・半導体一辺倒」から広がる物色——日経平均の週間動向から考える、AI相場の裾野拡大をどう捉えるか", tag: "市場" }
+    ],
+    small: [
+      "音声認識サービスを手がけるHmcommは8/14、主力の音声認識製品事業から、AIエージェントを中核とする「Voice AI Agent Platform（VAAP）」を軸とした事業構造への転換を取締役会で決議したと発表。音声認識・合成、Voice LLM、RAG、ワークフロー、外部システム連携を共通基盤とし、OpenAI・Anthropic・Googleなど複数のAIモデルをユースケースごとに使い分けるマルチLLM運用を掲げ、個別製品販売からリカーリング収益型モデルへの転換を目指すという。",
+      "OpenAIは、ChatGPTから旧世代モデル「o3」を90日間の移行期間を経て8/26付で終了すると案内している。すでに「GPT-4.5」は6月に終了済みで、API経由での利用は引き続き可能。新世代のGPT-5.x系モデルへの移行を促す位置付けという。"
+    ],
+    sources: [
+      { title: "OpenAI's Astra Solved Decades-Old Math Problems For $2,000 (Forbes)", url: "https://www.forbes.com/sites/jonmarkman/2026/08/03/openais-astra-solved-10-decades-old-math-problems-for-just-2000/" },
+      { title: "OpenAI says its next model, Astra, has solved ten open problems in mathematics (TheNextWeb)", url: "https://thenextweb.com/news/openai-astra-model-ten-math-proofs-non-sofic-groups" },
+      { title: "OpenAI Astra model solves 10 open math problems for $2,000 (Yahoo Tech)", url: "https://tech.yahoo.com/ai/articles/openai-astra-model-solves-10-124919950.html" },
+      { title: "Google's Gemini app surges to one billion users (TechCrunch)", url: "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/" },
+      { title: "Gemini app reaches 1 billion monthly active users (Google Blog)", url: "https://blog.google/innovation-and-ai/products/gemini-app/one-billion-monthly-users/" },
+      { title: "Gemini Becomes Google's Fastest-Growing Product Ever After Hitting 1 Billion Monthly Users (Forbes)", url: "https://www.forbes.com/sites/antoniopequenoiv/2026/08/11/gemini-becomes-googles-fastest-growing-product-ever-after-hitting-1-billion-monthly-users/" },
+      { title: "Grok 4.6 (x.ai)", url: "https://x.ai/news/grok-4-6" },
+      { title: "SpaceXAI Releases Grok 4.6: A 500K-Context Frontier Model Tuned for Long-Running Agents, Coding, and Knowledge Work (MarkTechPost)", url: "https://www.marktechpost.com/2026/08/12/spacexai-releases-grok-4-6/" },
+      { title: "SpaceXAI releases Grok 4.6 (9to5Mac)", url: "https://9to5mac.com/2026/08/12/spacexai-releases-grok-4-6/" },
+      { title: "AIエージェントと業務システムをつなぐアクセス基盤「GAIA Governed AI Access」の提供を開始 (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000214.000019319.html" },
+      { title: "GAIA Governed AI Access (アジアクエスト株式会社)", url: "https://www.asia-quest.jp/information/20260814" },
+      { title: "＜週末コメント＞ ─ 来週の相場展望 ─ 2026年8月14日 (株探ニュース)", url: "https://s.kabutan.jp/news/n202608141229/" },
+      { title: "AIプラットフォーム企業への事業転換に向けた「Voice AI Agent Platform」戦略の策定について (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000209.000033941.html" },
+      { title: "OpenAI just quietly retired the final GPT-4 model from ChatGPT (TechRadar)", url: "https://www.techradar.com/ai-platforms-assistants/chatgpt/openai-just-quietly-retired-the-last-of-the-gpt-4-models-and-it-feels-like-the-end-of-an-ai-era" }
+    ]
+  },
+  {
     date: "2026-08-15",
     pick: "Anthropicの主要出資者6社が、同社が10月に計画する新規株式公開（IPO）で2兆ドル以上の評価額を目指せるとの見方を示していると8/13、英Financial Timesが報じた。実現すれば2026年6月に1兆7700億ドルの評価額で上場したSpaceXを上回り史上最大のIPOとなる見通しで、出資者らはAnthropicの年換算収益（ARR）が2026年末までに1000億〜1200億ドルに達すると見積もっているという。Fortuneは8/14、実際の事業はまだ黒字化にほど遠く、この評価額を正当化するにはアマゾン・ドット・コム並みの利益成長軌道が必要になると指摘した。同じ8/13、OpenAIは主力モデル「GPT-5.6 Sol」を通常処理より最大14倍高速化する新API階層「Ultrafast」のプレビューを開始したと発表し、半導体スタートアップCerebrasの基盤を用いて出力速度を毎秒最大750トークンまで引き上げたとした。中国のDeepSeekも8月、API「V4-Pro」「V4-Flash」にピーク・オフピーク制の時間帯別価格を導入し、8/16付でモデル・トークン種別によって最大1100%の値上げに踏み切ると発表、値下げ競争が続いてきた生成AI業界の転換点として注目されている。国内では8/14、三菱HCキャピタルがVPP（仮想発電所）プラットフォームを手がけるShizen Connectと資本業務提携を締結したと発表し、低圧発電所や蓄電池をIoT・AIで統合制御する開発を共同で進めるとした。市場では8/14、日経平均株価が4営業日続伸し前日比405円高の68,713円80銭で取引を終え、取引時間中には一時69,608円まで上昇し約1カ月ぶりに69,000円台を回復、TOPIXも連日で最高値を更新した。",
     summary: [
