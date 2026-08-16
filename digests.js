@@ -4,6 +4,42 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-08-17",
+    pick: "Meta最高経営責任者（CEO）のマーク・ザッカーバーグ氏は8/10、AI「個人向け超知能（パーソナルスーパーインテリジェンス）」の実現を掲げる6500語のマニフェスト『The Future Is for Everyone』を公表し、データセンターを受け入れる米国の地域社会向けに10億ドル規模の基金を新設すると発表した。2026年のインフラ投資額は約1450億ドルに達する見通しで、オープンウェイト路線への回帰も鮮明にしたが、児童安全問題で5億6700万ドルの制裁金を科されたばかりの同社への不信感から、理念先行だとの批判も相次いだ。同じ8/10、Anthropicは主力モデル「Claude Sonnet 5」の導入価格（100万トークンあたり入力2ドル・出力10ドル）を恒久化し、9/1に予定していた1.5倍への値上げを撤回すると発表した。OpenAIも8/11、ChatGPTの広告表示テストを米国・カナダ・オーストラリア・ニュージーランドに続き英国・メキシコ・ブラジル・日本・韓国の5カ国に拡大したと発表し、無料・Goプランのログイン済み成人利用者を対象に、会話内容などをもとに広告主から提供された広告を表示する仕組みを明らかにした。同社は8/13、サイバーセキュリティ企業Wizの元社長Dali Rajic氏を最高収益責任者（CRO）に迎えると発表し、週間アクティブ利用者10億人・導入企業200万社超まで拡大した事業の収益基盤強化を急ぐ姿勢を示した。国内では8/11、動画生成AI大手のオープンエイトが、自社サービス「Video BRAIN」で蓄積した3200万件超のビジネスコンテキストデータを基盤に、エンタープライズ向けAIオーケストレーション事業へ参入すると発表し、第一弾としてAX人材育成プラットフォーム「8AI Studio」の提供を始めた。市場では8/17週の日経平均株価について、株探や証券各社が6万6000円〜7万2000円の予想レンジを示し、13週移動平均線を突破した勢いを背景に約1カ月半ぶりの7万円回復を試す展開になるとの見方が広がっており、同日発表の4〜6月期GDP速報値や1ドル=160円を巡る為替動向が焦点となっている。",
+    summary: [
+      "Meta CEOのザッカーバーグ氏が8/10、AI「個人向け超知能」の実現を掲げるマニフェスト『The Future Is for Everyone』を公表し、データセンター受け入れ地域向けに10億ドル規模の基金創設と2026年のインフラ投資額約1450億ドルを表明。同日、Anthropicは主力モデル「Claude Sonnet 5」の導入価格を恒久化し、9/1に予定していた1.5倍の値上げを撤回すると発表した。",
+      "OpenAIが8/11、ChatGPTの広告表示テストを英国・メキシコ・ブラジル・日本・韓国の5カ国に拡大したと発表。無料・Goプランのログイン済み成人利用者を対象に、会話内容に基づく広告を表示する。同社は8/13、サイバーセキュリティ企業Wizの元社長Dali Rajic氏を新たな最高収益責任者（CRO）に起用したと発表し、IPOを見据え収益基盤の強化を急ぐ姿勢を示した。",
+      "（国内）動画生成AI大手のオープンエイトが8/11、「Video BRAIN」で蓄積した3200万件超のビジネスコンテキストデータを基盤にエンタープライズ向けAIオーケストレーション事業へ参入すると発表。第一弾としてAX人材育成プラットフォーム「8AI Studio」の提供を始めた。"
+    ],
+    topics: [
+      { title: "Meta CEOザッカーバーグ氏、AI「個人向け超知能」マニフェストを公表——データセンター地域向けに10億ドル基金、2026年インフラ投資は約1450億ドルへ", why: "Meta最高経営責任者のマーク・ザッカーバーグ氏は8/10、約6500語に及ぶマニフェスト『The Future Is for Everyone（未来はすべての人のために）』を公表した。あらゆる分野で博士号レベルの知識を持つ個人教師や、公正で効率的な司法制度を実現しうる超知能型弁護士など、AIを少数の企業・政府に集中させず個人に行き渡らせる「個人向け超知能」の構想を掲げ、数十億人が利用できる無料版の提供や、動的オークションの仕組みで最低価格を保証する方針を示した。あわせて、データセンターを受け入れる米国の地域社会向けに10億ドル規模の基金『Future is for Everyone Fund』を新設し、教員・救急隊員・エネルギー・水インフラなどへの投資に充てるとした。2026年のインフラ投資額は約1450億ドルに達する見通しで、オープンウェイトモデル路線への回帰も鮮明にしている。一方、Metaは児童安全問題を巡り5億6700万ドルの制裁金を科されたばかりで、AIのマイナス面への言及が乏しいことや「利害が対立する主体は自然にバランスが取れる」といった抽象的な主張にとどまっている点への批判も相次いだ。", idea: "「超知能を全員に」という理念をどう受け止めるか——Zuckerbergマニフェストから考える、AIインフラ拡大が地域社会に及ぼす影響とどう向き合うか", tag: "海外" },
+      { title: "OpenAI、ChatGPTの広告表示テストを日本含む5カ国に拡大——無料・Goプラン対象、会話内容に基づき広告主の広告を表示", why: "OpenAIは8/11、2026年2月に米国で始めたChatGPTの広告表示テストを、これまでのカナダ・オーストラリア・ニュージーランドに続き、英国・メキシコ・ブラジル・日本・韓国の5カ国に拡大したと発表した。対象はログイン済みの成人利用者のうち無料プランと低価格の「Go」プランの利用者に限られ、Plus・Pro・Business・Enterprise・Educationの各プランには広告を表示しない。広告主が提出した広告を、会話のテーマや過去のやり取り、広告への反応履歴などをもとに選んで表示する仕組みで、例えばレシピを検索した利用者にはミールキットや食料品配達の広告が表示されることがあるという。OpenAIは、広告主が会話内容や記憶、個人情報にアクセスすることはなく、表示回数やクリック数などの集計情報のみを受け取ると説明しており、広告は常に「スポンサー」表示で区別され、回答内容そのものには影響しないとしている。", idea: "「広告が出るChatGPT」にどう備えるか——テスト対象拡大から考える、自社のAI経由の集客・広告出稿の見直しどころ", tag: "海外" },
+      { title: "OpenAI、新最高収益責任者（CRO）にサイバーセキュリティ企業Wiz元社長のDali Rajic氏を起用——週間利用者10億人・導入企業200万社超の収益基盤強化へ", why: "OpenAIは8/13、新たな最高収益責任者（CRO）にDali Rajic氏を起用したと発表した。同氏はセキュリティ企業Wizで社長兼最高執行責任者（COO）を務めた後にOpenAIへ移籍し、Zscaler・AppDynamicsでも営業・事業部門の要職を歴任してきた。2025年12月に入社し企業顧客との関係強化を担ってきたDenise Dresser氏の後任で、Dresser氏は移行期間を経て退任する。OpenAIは、ChatGPTの週間アクティブ利用者が10億人を超え、導入企業数も1年前の2倍にあたる200万社超に達したとしており、新規株式公開（IPO）を見据える中で、急拡大する利用者基盤を収益に結び付ける営業組織の強化を急ぐ狙いがあるとみられる。", idea: "「利用者数」から「収益」へ——OpenAIのCRO起用から考える、生成AIサービスのマネタイズ体制をどう整えるか", tag: "海外" },
+      { title: "（国内）オープンエイト、3200万件のビジネスデータを基盤にAIオーケストレーション事業へ参入——第一弾「8AI Studio」でAX人材育成を支援", why: "動画生成AIサービス「Video BRAIN」を手がけるオープンエイトは8/11、エンタープライズ企業向けのAIオーケストレーション事業に参入すると発表した。同社が「Video BRAIN」を通じて手がけた50万本のビジネス動画から蓄積してきた3200万件超の国内屈指のビジネスコンテキストデータを基盤とし、独自AI「8AI」が業務の目的に応じて最適なAIやプロンプトを選び、資料構成などを提案する仕組みを構築するという。第一弾として、AI活用の実践を通じてAX（AIトランスフォーメーション）人材を育成するマネジメントプラットフォーム「8AI Studio」の提供を開始した。AIワークスペースの提供と利用状況の可視化を組み合わせ、「AIを使うスキル」ではなく「何を実現したいのかという目的を定義し、成果を設計する力」の育成を重視する姿勢を打ち出している。", idea: "「AIを使うスキル」ではなく「目的を定義する力」——8AI Studioの狙いから考える、自社のAI活用人材育成の設計", tag: "国内" },
+      { title: "日経平均、8/17週は7万円回復を試す展開に——予想レンジ6万6000〜7万2000円、GDP速報値や1ドル=160円の為替が焦点", why: "東京株式市場では8/17週の日経平均株価について、株探や証券各社が6万6000円〜7万2000円程度の予想レンジを示している。直近のリバウンドで13週移動平均線を突破しており、7万円回復が意識されるなか、押し目買い意欲の強い相場展開が期待されるという。AI・半導体関連株への物色が持続すれば上昇バイアスが強まる一方、7万円接近で膠着感が強まれば大型株から中小型株へ資金がシフトする可能性も指摘されている。8/17には内閣府が4〜6月期の国内総生産（GDP）速報値を発表する予定で、個人消費・設備投資の堅調さを背景に3四半期連続のプラス成長が見込まれているほか、介入警戒感が残るなか1ドル=160円が心理的節目とされる為替動向も注視されている。週後半にはFOMC議事要旨の公表やアナログ・デバイセズ、ウォルマートなどの決算発表も予定され、米金利動向とあわせてAI関連株の物色を左右する材料として注目されている。", idea: "「7万円」突破の条件をどう読むか——日経平均の週初見通しから考える、AI・半導体相場の次の関門", tag: "市場" }
+    ],
+    small: [
+      "Anthropicは8/10、主力モデル「Claude Sonnet 5」の導入価格（入力2ドル・出力10ドル/百万トークン）を恒久化すると発表し、9/1に予定していた入力3ドル・出力15ドルへの値上げは実施しないとした。8月末までの期間限定だった価格が事実上の標準価格となる。",
+      "アリババは8月、2.4兆パラメータの最新モデル「Qwen3.8-Max」のオープンウェイト版と、より軽量な「Qwen3.8-27B」をHugging Face・ModelScope上で公開。Maxクラスのモデルをオープン化するのはアリババとして初めてで、100万トークンのコンテキストウィンドウに対応する。"
+    ],
+    sources: [
+      { title: "Zuckerberg's manifesto says Meta's AI will make a future for everyone (The Washington Post)", url: "https://www.washingtonpost.com/technology/2026/08/10/zuckerberg-manifesto-says-meta-ai-will-make-future-everyone/" },
+      { title: "Mark Zuckerberg's AI manifesto is exactly why people don't like AI (TechCrunch)", url: "https://techcrunch.com/2026/08/10/mark-zuckerbergs-ai-manifesto-is-exactly-why-people-dont-like-ai/" },
+      { title: "Meta dangles $1 billion fund for customized investments and programs in its data center towns (Yahoo Finance)", url: "https://ca.finance.yahoo.com/news/meta-dangles-1-billion-fund-191500878.html" },
+      { title: "Introducing Claude Sonnet 5 (Anthropic)", url: "https://www.anthropic.com/news/claude-sonnet-5" },
+      { title: "Anthropic Maintains Claude Sonnet 5 Pricing Amid IPO Plans (GuruFocus)", url: "https://www.gurufocus.com/news/9022707/anthropic-maintains-claude-sonnet-5-pricing-amid-ipo-plans" },
+      { title: "Testing ads in ChatGPT (OpenAI)", url: "https://openai.com/index/testing-ads-in-chatgpt/" },
+      { title: "OpenAI Expands ChatGPT Ads Test to UK, Mexico, Brazil, Japan, and South Korea (gHacks)", url: "https://www.ghacks.net/2026/08/13/openai-expands-chatgpt-ads-test-to-uk-mexico-brazil-japan-and-south-korea/" },
+      { title: "OpenAI appoints Dali Rajic as Chief Revenue Officer (OpenAI)", url: "https://openai.com/index/dali-rajic-chief-revenue-officer/" },
+      { title: "OpenAI Appoints Former Wiz Executive Dali Rajic as Chief Revenue Officer (PYMNTS)", url: "https://www.pymnts.com/personnel/2026/openai-appoints-former-wiz-executive-dali-rajic-chief-revenue-officer/" },
+      { title: "オープンエイト、AIオーケストレーション事業へ参入 〜第一弾として、AXマネジメントプラットフォーム「8AI Studio」を提供開始〜 (OPEN8)", url: "https://open8.com/news/infomation/16248/" },
+      { title: "オープンエイト、3,200万件超の国内屈指のビジネスコンテキストデータを基盤に独自AIオーケストレーション事業を開始 (livedoor news)", url: "https://news.livedoor.com/pr_topics/detail/32040712/" },
+      { title: "日経平均7万円回復うかがう、円相場は160円が節目 今週の市場・予定 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQODL160HI0W6A810C2000000/" },
+      { title: "来週（8/17～8/21）の日経平均株価の予想レンジは6万6000～7万2000円 (ダイヤモンド・ザイ)", url: "https://diamond.jp/zai/articles/-/1071560" },
+      { title: "Alibaba Qwen Releases Qwen3.8-Max: A 2.4 Trillion Parameter MoE Model and the Most Capable One in the Qwen Family to Date (MarkTechPost)", url: "https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/" }
+    ]
+  },
+  {
     date: "2026-08-16",
     pick: "OpenAIは8/2、非公開の実験用モデル「Astra」が数学・理論計算機科学の分野で10年以上（一部は数十年）未解決だった10件の問題について新たな結果を示したと発表し、249ページの論文と証明支援系Lean 4による形式検証済みの証明一式をGitHub上でApache 2.0ライセンスの下で公開した。数学者ミハイル・グロモフ氏が1999年に提示して以来未解決だった非可縮群（non-sofic group）の具体的構成問題や、球充填密度、算術回路の計算量などを扱い、証明群の未完了ステップを示す「sorry」の数はゼロ、総計算コストはGPT-5.6 SolのAPI料金換算で約2000ドルだったという。Googleのスンダー・ピチャイCEOも8/11、対話AI「Gemini」アプリの月間アクティブユーザー数（MAU）が10億人を突破したと発表し、2026年初めの7.5億人から7月に9.5億人、8月に10億人へと急拡大しGoogle史上最も成長が速い製品になったとした。イーロン・マスク氏率いるSpaceXAI（旧xAI）も8/12、新モデル「Grok 4.6」を投入し、価格を前バージョンから据え置きつつ第三者評価のArtificial Analysis Intelligence Indexのスコアを56から61に引き上げ、OpenAIの「GPT-5.6 Sol」最高性能版に並んだとしている。国内では8/14、エンタープライズIT企業のアジアクエストが、複数のAIエージェントと社内業務システムを安全に接続するアクセス基盤「GAIA Governed AI Access」の提供を開始したと発表し、Claude・ChatGPT・Gemini・Copilotなどが個別に社内システムへ接続することで生じる「野良AIエージェント」問題への対応を打ち出した。市場では8/14の週末を迎え、日経平均株価は2週連続で上昇し前週末比3107円高の68,713円で取引を終え、週中には一時69,500円を上回る場面もあったといい、株探は来週の想定レンジを6万3000円〜6万8000円程度とみている。",
     summary: [
