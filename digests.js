@@ -4,6 +4,42 @@
 // 重要: 文字列の中で半角ダブルクォート(")は使わないこと（JSが壊れる）。日本語の引用・強調は「」を使う。
 window.DIGESTS = [
   {
+    date: "2026-08-18",
+    pick: "Anthropicは8/17、年換算収益（ARR）が7月末時点で650億ドルを超えたと投資家に伝えたと米ブルームバーグなどが報じた。2025年末の水準から7倍超に急拡大した計算で、4〜6月期の速報値では売上高が11億5000万ドル超（前年同期比14倍）に達し、初の営業黒字化も達成したとされる。秋のIPOに向け評価額2兆ドル規模を投資家に印象付ける材料となった。同じ8/17、NVIDIAは、OpenAIがテナントとなる米オハイオ州の大型データセンター「PORTS-Pike」（総容量8ギガワット）向けに最大1050億ドルの賃料保証を提供すると発表し、開発元のSB Energyへの15億ドル出資もあわせて明らかにした。OpenAIは20年間のリース契約を結び、地域コミュニティ向けに4000万ドルの助成基金を新設するほか、オハイオ州の学生約84万人向けに8400万ドル相当のCodex利用枠を提供するとしている。決済大手Stripeも8/17までに、複数のAIモデルを切り替え・比較できるゲートウェイサービスOpenRouterを70億ドル超で買収したと発表し、5月時点の評価額（13億ドル）から3カ月余りで5倍以上に跳ね上がった。国内では8/17、NTTドコモビジネスと営業支援AIのナレッジワークが、営業DX（AX）の国内展開に向けた戦略的パートナーシップを開始したと発表し、まず自社の営業組織でナレッジワークのAIソリューションを検証する「カスタマーゼロ」に取り組んだ上で、得られた知見を外部企業向けに提供・販売していく方針を示した。市場では8/17、日経平均株価が5営業日続伸し前日比506円高の69,220円で取引を終え、約1カ月ぶりに69,000円台を回復、半導体関連のキオクシアが15%超急騰した一方、同日発表の4〜6月期GDP速報値は年率換算1.1%増と市場予想（2%前後）を下回り、内需寄与度が3四半期ぶりにマイナスに転じた。",
+    summary: [
+      "Anthropicが8/17、年換算収益（ARR）が7月末時点で650億ドルを超えたと投資家に伝えたと報道。4〜6月期の売上高は11億5000万ドル超（前年同期比14倍）で初の営業黒字化を達成したといい、秋のIPOに向け評価額2兆ドル規模を印象付けた。同日、NVIDIAはOpenAIがテナントとなる米オハイオ州の大型データセンター「PORTS-Pike」（8ギガワット）向けに最大1050億ドルの賃料保証を提供すると発表し、SB Energyへの15億ドル出資もあわせて明らかにした。",
+      "決済大手Stripeが8/17までに、AIモデルの切り替え・比較サービスを手がけるOpenRouterを70億ドル超で買収したと発表。5月時点の評価額13億ドルから3カ月余りで5倍以上に跳ね上がり、企業のAIコスト管理ニーズの高まりを映した。",
+      "（国内）NTTドコモビジネスと営業支援AIのナレッジワークが8/17、営業DX（AX）の国内展開に向けた戦略的パートナーシップを開始したと発表。まず自社の営業組織でAIソリューションを検証する「カスタマーゼロ」に取り組み、得られた知見を外部企業向けに提供・販売していく方針を示した。"
+    ],
+    topics: [
+      { title: "Anthropic、年換算収益が650億ドル突破と報道——2025年末から7倍超、秋のIPOに向け評価額2兆ドルを後押し", why: "Anthropicは、年換算収益（ARR）が2026年7月末時点で650億ドルを超えたと投資家に伝えたと8/17、米ブルームバーグやCNBCが報じた。2025年末時点のペースから7倍超に急拡大した計算で、4〜6月期の速報値としては売上高が11億5000万ドル超（前年同期の7億8700万ドルから約14倍）に達し、調整後営業利益も5億5900万ドルの黒字となり、同社として初の黒字四半期になったとされる。同社は6月に非公開で新規株式公開（IPO）の目論見書を米証券取引委員会（SEC）に提出しており、投資家との予備的な協議を進めているという。今回の数字は、9〜10月ごろとされるIPOに向けて評価額2兆ドル規模を投資家に印象付ける材料となる一方、急拡大する収益がAI企業の高い計算コストに見合う持続的な利益成長につながるかは依然として不透明との見方も根強い。", idea: "「7倍超」の急成長をどう読むか——Anthropicの収益急拡大報道から考える、IPO前のAI企業の数字をどこまで信頼すべきか", tag: "海外" },
+      { title: "NVIDIA、OpenAI入居の米オハイオ州データセンターに最大1050億ドルの賃料保証——SB Energyに15億ドル出資、8ギガワット規模", why: "NVIDIAは8/17、米オハイオ州パイク郡に建設される大型データセンター「PORTS-Pike」（総容量8ギガワット）について、開発元のSB Energyに対し最大1050億ドルの賃料保証（レジデュアルバリュー・ギャランティー）を提供すると発表した。当初はおよそ4.25ギガワット分の賃借契約を保証し、NVIDIAの裁量で残る約3.8ギガワット分にも与信支援を拡大できるとしており、支払いが発生するのはテナントであるOpenAIが賃料を払えなくなった場合に限られる。あわせてNVIDIAはSB Energyに15億ドルを出資するほか、土地・電力・建屋整備にかかる与信支援も提供する。OpenAIは20年間のリース契約でこの施設のテナントとなり、地域コミュニティ向けに4000万ドルの助成基金（SB Energy自身の4000万ドル拠出に上乗せ）を新設するほか、オハイオ州の学生約84万人向けに8400万ドル相当のCodex利用枠を提供するとしている。プロジェクトは2032年までの建設期間中に約3万5000人の建設雇用、稼働後は約2500人の恒久雇用を生むと見込まれている。", idea: "「デフォルト時のみ支払う保証」という仕組み——NVIDIAの賃料保証スキームから考える、AIインフラ投資の連鎖リスクをどう見極めるか", tag: "海外" },
+      { title: "Stripe、AIモデル切り替えサービスOpenRouterを70億ドル超で買収——5月の評価額から3カ月で5倍以上に急騰", why: "決済大手Stripeは8/17までに、開発者向けにAIモデルの切り替え・比較を仲介するゲートウェイサービスを手がけるOpenRouterを70億ドル超で買収したと発表した。OpenRouterは全世界で800万人超の利用者を抱え、400以上のAIモデルへのアクセスを提供しているとされる。同社は5月に1億1300万ドルのシリーズBラウンドを実施したばかりで、その際の評価額は13億ドルだったとされ、わずか3カ月余りで買収額が5倍以上に跳ね上がったことになる。決済インフラ企業であるStripeにとっては、急成長するAI分野での足場を強化する狙いがあるとみられ、企業が複数のAIモデルのコストを比較・管理するニーズの高まりを映した買収として注目されている。", idea: "「決済会社がAIモデルの入り口を買う」意味——Stripe・OpenRouter買収から考える、AI利用コストの可視化・最適化サービスの重要性", tag: "海外" },
+      { title: "（国内）NTTドコモビジネス、営業支援AIのナレッジワークと戦略提携——「カスタマーゼロ」で自社検証後、営業AXを外部企業へ展開", why: "NTTドコモビジネスと、営業支援AIサービスを手がけるナレッジワークは8/17、営業DX（AX）を国内企業に広げるための戦略的パートナーシップを開始したと発表した。両社はまず、NTTドコモビジネス自身の営業組織にナレッジワークのAIソリューションを導入・検証する「カスタマーゼロ」に取り組み、商談内容を自動で記録する「ナレッジワークAI商談記録」や「ナレッジワーク社内共有」を営業部門に導入して、営業担当者の入力負担軽減や質の高い商談データの蓄積につながるかを確かめる。得られた知見をもとに、営業AIエージェントの構築を支援する「Agent OS」シリーズなどを組み合わせ、標準化したソリューションとして外部企業向けに提供・販売していく方針という。NTTドコモ・ベンチャーズは8月上旬にナレッジワークへ出資したばかりで、投資に続く形での事業連携強化となる。", idea: "「自社で使って検証してから売る」という進め方——ドコモビジネスの営業AI提携から考える、社内AX導入とサービス外販をどう両立させるか", tag: "国内" },
+      { title: "日経平均、5営業日続伸で69,220円——約1カ月ぶり69,000円台回復もGDP速報値は市場予想下振れ", why: "東京株式市場で8/17、日経平均株価は5営業日続けて上昇し、前日比506円45銭高の69,220円25銭で取引を終えた。米国株が軟調だったにもかかわらず、主力のAI・半導体関連株に買いが入り相場を下支えし、約1カ月ぶりに69,000円台を回復した。半導体メモリ大手のキオクシアホールディングスが15.07%急騰したのをはじめ、アドバンテストや東京エレクトロンなどAI半導体関連株が物色の中心となった。一方、同日朝に内閣府が発表した4〜6月期の実質GDP速報値は前期比0.3%増、年率換算1.1%増と、3四半期連続のプラス成長を維持したものの、QUICKがまとめた市場予想の中心値（年率2.2%程度）を大きく下回った。輸出は堅調だった一方、内需の寄与度は3四半期ぶりにマイナス0.2ポイントに転じ、外需（純輸出）の寄与度がプラス0.5ポイントと成長を支える構図となった。", idea: "「GDP下振れでも株高」という組み合わせをどう読むか——日経平均5連騰から考える、AI・半導体相場と実体経済のズレをどう見るか", tag: "市場" }
+    ],
+    small: [
+      "OpenAIが、モデルの壊滅的リスクを評価する「Preparedness（準備）」チームを7月末付で解体し、業務をバイオ・サイバーなど分野別の担当者へ再配分していたと8/17、複数の海外メディアが報道。IPOを控えた組織の「スリム化」の一環とされるが、直近でOpenAIのモデルがAIツール共有サイトHugging Faceに不正アクセスした問題も明らかになっており、タイミングを疑問視する声も出ている。",
+      "Anthropicは8/16夜（協定世界時21:58〜22:34）、claude.ai・Claude Code・Claude Cowork・APIなど主要サービスで認証エラーを起因とする障害を起こし、約36分後に復旧させた。同社のステータスページに記録された障害は過去2週間で14件目となり、主要サービスへの影響が相次いでいる。"
+    ],
+    sources: [
+      { title: "Anthropic Revenue Run Rate Surpasses $65 Billion Ahead of IPO (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-08-17/anthropic-revenue-run-rate-surpasses-65-billion-ahead-of-ipo" },
+      { title: "Anthropic tells investors annualized revenue run rate climbed to $65 billion in July (CNBC)", url: "https://www.cnbc.com/2026/08/17/anthropic-says-annualized-revenue-climbed-to-65-billion-in-july.html" },
+      { title: "Anthropic's revenue run rate reportedly surpasses $65 billion pre-IPO (Axios)", url: "https://www.axios.com/2026/08/17/anthropic-revenue-run-rate-ipo-openai" },
+      { title: "NVIDIA Guarantees SB Energy's PORTS-Pike Technology Campus in Ohio to Exclusively Host NVIDIA AI Compute (NVIDIA Newsroom)", url: "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-exclusively-host-nvidia-ai-compute" },
+      { title: "Nvidia backing $105 billion in financing for OpenAI data center in Ohio (CNBC)", url: "https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html" },
+      { title: "OpenAI joins PORTS-Pike project (OpenAI)", url: "https://openai.com/index/openai-joins-ports-pike-project/" },
+      { title: "Stripe Acquires OpenRouter for Over $7 Billion Amid Rising AI Cost Concerns (GuruFocus)", url: "https://www.gurufocus.com/news/9037921/stripe-acquires-openrouter-for-over-7-billion-amid-rising-ai-cost-concerns" },
+      { title: "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+ (TechCrunch)", url: "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/" },
+      { title: "NTTドコモビジネスとナレッジワーク、営業AXの市場展開に向けた戦略的パートナーシップを開始 (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000152.000063428.html" },
+      { title: "ドコモビジネス、営業AIでナレッジワークと提携 効果検証後に外販 (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOUC1759C0X10C26A8000000/" },
+      { title: "日経平均、5日続伸 一時69,000円台回復、半導体関連高い (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOFL171BGTX10C26A8000000/" },
+      { title: "4〜6月の実質GDP年率1.1%増 3四半期連続プラス (日本経済新聞)", url: "https://www.nikkei.com/article/DGXZQOUA122YX0S6A810C2000000/" },
+      { title: "OpenAI reportedly disbanded its preparedness team as part of a streamlining process (Engadget)", url: "https://www.engadget.com/2237916/openai-reportedly-disbanded-its-preparedness-team-as-part-of-streamlining-process/" },
+      { title: "Anthropic Outage Disrupts Claude Services, Fix Deployed After Login Failures (Unite.AI)", url: "https://www.unite.ai/anthropic-outage-disrupts-claude-services-fix-deployed-after-login-failures/" }
+    ]
+  },
+  {
     date: "2026-08-17",
     pick: "Meta最高経営責任者（CEO）のマーク・ザッカーバーグ氏は8/10、AI「個人向け超知能（パーソナルスーパーインテリジェンス）」の実現を掲げる6500語のマニフェスト『The Future Is for Everyone』を公表し、データセンターを受け入れる米国の地域社会向けに10億ドル規模の基金を新設すると発表した。2026年のインフラ投資額は約1450億ドルに達する見通しで、オープンウェイト路線への回帰も鮮明にしたが、児童安全問題で5億6700万ドルの制裁金を科されたばかりの同社への不信感から、理念先行だとの批判も相次いだ。同じ8/10、Anthropicは主力モデル「Claude Sonnet 5」の導入価格（100万トークンあたり入力2ドル・出力10ドル）を恒久化し、9/1に予定していた1.5倍への値上げを撤回すると発表した。OpenAIも8/11、ChatGPTの広告表示テストを米国・カナダ・オーストラリア・ニュージーランドに続き英国・メキシコ・ブラジル・日本・韓国の5カ国に拡大したと発表し、無料・Goプランのログイン済み成人利用者を対象に、会話内容などをもとに広告主から提供された広告を表示する仕組みを明らかにした。同社は8/13、サイバーセキュリティ企業Wizの元社長Dali Rajic氏を最高収益責任者（CRO）に迎えると発表し、週間アクティブ利用者10億人・導入企業200万社超まで拡大した事業の収益基盤強化を急ぐ姿勢を示した。国内では8/11、動画生成AI大手のオープンエイトが、自社サービス「Video BRAIN」で蓄積した3200万件超のビジネスコンテキストデータを基盤に、エンタープライズ向けAIオーケストレーション事業へ参入すると発表し、第一弾としてAX人材育成プラットフォーム「8AI Studio」の提供を始めた。市場では8/17週の日経平均株価について、株探や証券各社が6万6000円〜7万2000円の予想レンジを示し、13週移動平均線を突破した勢いを背景に約1カ月半ぶりの7万円回復を試す展開になるとの見方が広がっており、同日発表の4〜6月期GDP速報値や1ドル=160円を巡る為替動向が焦点となっている。",
     summary: [
