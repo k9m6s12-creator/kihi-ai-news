@@ -41,6 +41,7 @@ jobs:
             - The new entry's date field must be exactly "${{ env.TODAY }}".
             - Keep ALL existing entries unchanged. Insert the new entry immediately after `window.DIGESTS = [`, so newest is first.
             - Match the object shape from the header comment: { date, pick, summary (3 items), topics (each { title, why, idea, tag }), small, sources (each { title, url }) }.
+            - LENGTH LIMITS (strict, count the characters): pick <= 120 Japanese characters. Each summary item <= 150. Each topic why <= 400. The existing entries in the file are TOO LONG because they grew a little every day by copying the previous day; do NOT imitate their length. Always return to these limits even when the existing entries exceed them.
             - NEVER use a half-width double-quote (") inside any string value. Use Japanese kagikakko 「」 for quotes/emphasis. This is critical: a stray " breaks the whole site.
             - Do NOT duplicate topics that already appear in the most recent existing entries.
             - Include at least one Japan-domestic topic and set its tag to 国内. tag must be one of 海外 / 国内 / 市場.

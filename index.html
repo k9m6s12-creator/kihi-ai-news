@@ -45,6 +45,10 @@
   .pick{margin:14px 0 6px; padding:12px 14px; border-left:3px solid var(--green);
     background:rgba(95,240,138,.07); border-radius:0 10px 10px 0}
   .pick .lbl{color:var(--green); font-weight:700; font-size:.78rem; letter-spacing:.04em; display:block; margin-bottom:4px}
+  .morebtn{margin-left:6px; padding:1px 9px; font-size:.75rem; font-family:inherit; cursor:pointer;
+    color:var(--green); background:rgba(95,240,138,.1); border:1px solid rgba(95,240,138,.4);
+    border-radius:999px; white-space:nowrap}
+  .morebtn:hover{background:rgba(95,240,138,.2)}
   .sumtitle,.sectitle{color:var(--cyan); font-size:.82rem; font-weight:700; letter-spacing:.05em;
     margin:18px 0 6px; text-transform:none}
   ul{margin:6px 0 4px; padding-left:1.15em}
@@ -108,6 +112,33 @@
 
   if(!data.length){ list.innerHTML = '<p style="color:var(--muted)">まだダイジェストがありません。</p>'; }
 
+  // 長い「今日の一推し」は先頭だけ見せて畳む（過去分は最大1700字まで肥大しているため）
+  const PICK_LIMIT = 120;
+  function renderPick(text){
+    const t = String(text);
+    if(t.length <= PICK_LIMIT + 30) return esc(t);
+    let cut = PICK_LIMIT;
+    const tail = t.slice(PICK_LIMIT, PICK_LIMIT + 40);
+    const brk = tail.search(/[。、]/);          // 句読点で切れると読みやすい
+    if(brk >= 0) cut = PICK_LIMIT + brk + 1;
+    return esc(t.slice(0, cut))
+      + `<span class="rest" hidden>${esc(t.slice(cut))}</span>`
+      + `<span class="dots">…</span>`
+      + `<button type="button" class="morebtn">続きを読む</button>`;
+  }
+
+  // 「続きを読む」の開閉
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('.morebtn');
+    if(!btn) return;
+    const box  = btn.parentElement;
+    const rest = box.querySelector('.rest');
+    const dots = box.querySelector('.dots');
+    const open = rest.hasAttribute('hidden');
+    if(open){ rest.removeAttribute('hidden'); dots.style.display='none'; btn.textContent='閉じる'; }
+    else    { rest.setAttribute('hidden',''); dots.style.display='';     btn.textContent='続きを読む'; }
+  });
+
   data.forEach(d => {
     const topics = (d.topics||[]).map(t => `
       <div class="topic">
@@ -126,7 +157,7 @@
     list.insertAdjacentHTML('beforeend', `
       <article class="card">
         <span class="date">${esc(d.date)}</span>
-        ${d.pick?`<div class="pick"><span class="lbl">今日の一推し</span>${esc(d.pick)}</div>`:''}
+        ${d.pick?`<div class="pick"><span class="lbl">今日の一推し</span>${renderPick(d.pick)}</div>`:''}
         <div class="sumtitle">3行サマリー</div>
         <ul>${summary}</ul>
         <div class="sectitle">トピック</div>
