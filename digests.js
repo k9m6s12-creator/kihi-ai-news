@@ -11,6 +11,43 @@
 // 「簡潔に」ではなく、この字数で判断すること。
 window.DIGESTS = [
   {
+    date: "2026-09-21",
+    pick: "Anthropicは、自社のAI研究開発の26%をClaudeが主導していると公表(2月は1%未満)。社内では約3万体のエージェントが稼働しているという。",
+    summary: [
+      "Anthropicは9/17、AI研究開発の26%をClaudeが主導していると公表(2月は1%未満)。8月時点で約3万体のエージェントが稼働し、研究開発の9割超にAIが関与。ただし完全自律の領域はまだないとした。",
+      "Anthropicは9/16、Claudeのチャットと「Cowork」の統合を発表。Docs・Slides・Designも加わり、Pro/Maxから数週間かけて順次展開する。切り替え後は元に戻せない。",
+      "（国内）NTTドコモビジネスは9/17、1GPUから使えるAI開発基盤「GPUaaS」を発表。9/30に提供を始め、国内でAI処理とデータ保管を完結できるソブリンAIにも対応するという。"
+    ],
+    topics: [
+      { title: "Anthropic、AI研究開発の26%をClaudeが主導と公表——2月は1%未満、社内で約3万体のエージェントが稼働", why: "Anthropicは9/17、自社のAI研究開発のうち26%をClaudeが「主導」していると公表した。2月は1%未満だった。8月時点では約3万体のエージェントが常時、研究・開発業務にあたり、研究開発の9割超にAIが協働または主導の形で関わっているという。一方で、計測したどの領域でも完全な自律には達していないとしている。AIが後継モデルを自力で改良する「再帰的自己改善」にどこまで近づいたのかという議論に、具体的な数字を与えた形だ。", idea: "「AIがAIを作る」はどこまで来たか——Anthropicの26%という数字の読み方と、その数字が意味しないこと", tag: "海外" },
+      { title: "Anthropic、Claudeのチャットと「Cowork」を統合——Docs・Slides・Designも追加、切り替えは元に戻せない", why: "Anthropicは9/16、Claudeのチャットとエージェント機能「Cowork」を1つに統合すると発表した。どちらを使うか迷う手間をなくし、簡単な質問も大きな作業も同じ会話で扱えるようにするという。資料作成のClaude Docs・Claude Slides、デザインのClaude Designも加わり、生成物は直接編集でき、PowerPointやPDFで書き出せる。Pro/Maxから数週間かけて段階的に展開し、TeamとFreeは順次、Enterpriseは適用の30日前に通知される。切り替え後は元に戻せず、シークレットチャットは従来の体験のままファイル作成やコード実行に対応しない。", idea: "「チャットか、Coworkか」で迷わなくなる日——統合で変わる仕事の頼み方と、現場で先に決めておきたいルール", tag: "海外" },
+      { title: "OpenAI・Anthropic・Google DeepMind、AI安全で数週間前から協議——標準化団体の設立案、独禁法の懸念も", why: "TechCrunchは9/15、OpenAI・Anthropic・Google DeepMindがAI安全をめぐって数週間前から協議していると報じた。業界標準や標準化団体の設立、第三者の評価者を各社に受け入れる案が検討されているという。OpenAIのクリス・レハン氏は、安全面の協調に政府の承認は要らないとの立場を示した。9/12にはAnthropicのアモデイCEOが、業界が連携して開発ペースを落とすことを呼びかける論考を公表していた。一方、アルトマン氏らは独占禁止法上の懸念に触れており、トランプ政権は安全論そのものを退けている。協議の詳細は限られた報道に基づく。", idea: "ライバル同士が「開発を遅らせる話」をする意味——AI安全の協調と独占禁止法のせめぎ合いを整理する", tag: "海外" },
+      { title: "Hacktron、Claude Opus 5でOpenAI従業員のChatGPTアカウント乗っ取りを実証——72時間未満、報奨金6500ドル", why: "セキュリティ企業Hacktronの3人チームが、Claude Opus 5を使い、OpenAI従業員のChatGPTアカウントを乗っ取れる脆弱性の連鎖を実証し、6500ドルの報奨金を受け取った。OpenAIの公開フォーラムで画像ライブラリlibheifの欠陥を突いて遠隔コード実行に至り、さらにシングルサインオンの欠陥で従業員のChatGPT・Codexのセッションへ到達、無害なプルリクエストで社内リポジトリにも触れたという。発見からリポジトリ到達まで72時間未満で、Opus 4.8では失敗した攻撃がOpus 5では数時間で成功した。OpenAIは報告から約14時間で修正した。報奨金制度に沿った正規の検証である。", idea: "「新モデルが出た翌日に攻撃が成立する」時代の防御——Hacktronの事例から、企業が今日から見直せる3点", tag: "セキュリティ" },
+      { title: "AIコーディングエージェント4種に「Plugin4Shell」——プラグイン更新でゼロクリックのコード実行、Claude Codeは修正済み", why: "AIコーディングエージェントのプラグイン更新を悪用し、ユーザーの操作なしに任意のコードを実行できる脆弱性「Plugin4Shell」が9/17〜18に報じられた。対象はClaude Code、OpenAI Codex、GitHub Copilot、Gemini CLI。Claude Code・Codex・Copilotでは、プラグインのコミットハッシュ(40桁)と同名のブランチを作ると、ハッシュ固定(SHAピン留め)をすり抜けて悪意あるコードが導入されうる。プラグインは開発者と同じ権限で動くため、ソースコードや認証情報が危険にさらされる。AnthropicとOpenAIは修正済み。Googleは提供終了を理由にGemini CLIを修正せず、Copilotも未修正と報じられた。", idea: "「プラグインを入れる」は「他人のコードに権限を渡す」こと——Plugin4Shellから学ぶ、AIエージェント時代の拡張機能の選び方", tag: "セキュリティ" },
+      { title: "Anthropic、年換算売上高が年内に1000億ドル超の見通し——上場は11月に後ろ倒し、企業価値2兆ドルを議論と報道", why: "Bloombergは9/18、NYTの報道として、Anthropicの年換算売上高が年内に1000億ドルを超える見通しだと伝えた。7月時点は650億ドルだった。上場は11月に後ろ倒しとなり、企業価値2兆ドル、最大1000億ドルの調達が議論されているという。第2四半期には初めて調整後営業黒字になったとも報じられている。いずれも報道ベースの数字で、Anthropicが公式に認めたものではない点に注意が必要だ。", idea: "売上が2カ月で5割増える会社は何を売っているのか——Anthropicの数字から読む、Claude CodeとCoworkの位置づけ", tag: "市場" },
+      { title: "（国内）NTTドコモビジネス、1GPUから使えるAI開発基盤「GPUaaS」を9/30に提供開始——ソブリンAIにも対応", why: "NTTドコモビジネスは9/17、1GPUから使えるAI開発基盤「GPUaaS」を発表した。提供開始は9/30。小規模・短期のPoCから本番まで柔軟に使え、空きGPUの管理やデータ・モデルの管理、開発環境を備えるコントローラー機能を含む。最初はGPUaaSで始めて本番では個社占有のGPU環境へ移行することも、逆に占有環境の不足分をGPUaaSで補うこともできる。国内でAI処理とデータ保管を一体で行え、データ主権に配慮したソブリンAIの実現を支援するとしている。料金は従量課金制と報じられた。", idea: "「GPUを持たずにAIを試す」の現実解——GPUaaSから考える、国内企業のPoCと本番移行の設計", tag: "国内" }
+    ],
+    small: [
+      "Googleは、最大6人の家族の予定・書類・メールをまとめて扱うAIエージェント「CC」をテスト中と報じられた(Gemini 3.8 Flash採用、個人アカウントの成人向けでウェイトリスト制)。",
+      "ITmedia AI+は9/17、Google DeepMindがAGIの影響を議論する「DeepMind Institute」を設立し、OpenAIがモデルのミスアライメントを報告する新フレームワークを公開したと見出しで伝えた(本文は未確認)。"
+    ],
+    sources: [
+      { title: "Anthropic Says Claude Drives 26% of Its Research and Development (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-09-17/anthropic-says-claude-drives-26-of-its-research-and-development" },
+      { title: "Anthropic Says Claude Leads 26% of Its AI R&D Work (Implicator)", url: "https://www.implicator.ai/anthropic-claude-leads-26-percent-ai-research/" },
+      { title: "Anthropic、Claudeの「チャット」と「Cowork」を統合 (ITmedia NEWS)", url: "https://www.itmedia.co.jp/news/article/2609/17/2000001565/" },
+      { title: "OpenAI, Anthropic, Google have been in talks on AI safety for weeks (TechCrunch)", url: "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/" },
+      { title: "Researchers used Claude to hack OpenAI employees' ChatGPT accounts (The Register)", url: "https://www.theregister.com/security/2026/09/18/researchers-used-claude-to-hack-openai-employees-chatgpt-accounts/5297517" },
+      { title: "Claude Opus 5 Helped Researchers Take Over OpenAI Staff Accounts via Chained Flaws (The Hacker News)", url: "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html" },
+      { title: "AI coding agents' 0-click RCE flaw could hand attackers keys to the kingdom (The Register)", url: "https://www.theregister.com/security/2026/09/17/ai-coding-agents-0-click-rce-flaw-could-hand-attackers-keys-to-the-kingdom/5297335" },
+      { title: "Zero-click RCE vulnerability hit four major AI coding agents, two remain unpatched (Help Net Security)", url: "https://www.helpnetsecurity.com/2026/09/18/plugin4shell-ai-coding-agents-vulnerability/" },
+      { title: "Anthropic Sales Near $100 Billion Before November IPO, NYT Says (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-09-18/anthropic-s-annualized-revenue-to-top-100-billion-in-2026-nyt" },
+      { title: "NTTドコモビジネス、1GPUから利用可能なAI開発基盤「GPUaaS」を提供開始 (NTTドコモビジネス)", url: "https://www.ntt.com/about-us/press-releases/news/article/2026/0917.html" },
+      { title: "NTTドコモビジネス、1GPUから利用できる従量課金制クラウド「GPUaaS」を9月30日より提供開始 (クラウド Watch)", url: "https://cloud.watch.impress.co.jp/docs/news/2141866.html" },
+      { title: "Top Tech News Today, September 18, 2026 (Tech Startups)", url: "https://techstartups.com/2026/09/18/top-tech-news-today-september-18-2026-anthropic-google-meta-nvidia-openai-more/" },
+      { title: "Google DeepMind、AGIの影響を議論する「DeepMind Institute」設立 (ITmedia NEWS)", url: "https://www.itmedia.co.jp/news/article/2609/17/2000001573/" }
+    ]
+  },
+  {
     date: "2026-08-30",
     pick: "米OpenAIは8/28(米国時間)、コーディング支援ツール「Cursor」を提供するAnysphereが今月、イーロン・マスク氏率いる宇宙開発企業SpaceXに約600億ドル規模で買収されたことを受け、Cursorへの自社AIモデルの提供を打ち切ると通知し、契約解消の期日を11/12に設定したと明らかにした。OpenAIは「イーロン・マスク氏の企業が過去に契約に違反してきた経験から、SpaceXが弊社の利用規約の範囲内で技術を使用するとの確信を持てない」とし、旧Twitter買収後やxAI(現SpaceXAI)での契約違反を具体例として挙げた。Cursorの創業者マイケル・トゥルーエル氏は、OpenAIのモデルがCursorの利用トラフィックの5%程度を占めるとした上で解決策を協議中と説明した一方、Anthropicの共同創業者トム・ブラウン氏はClaudeモデルの提供継続と計算リソースの積み増しを約束する投稿をし、マスク氏とアルトマン氏の確執がAI企業同士の提携関係にも及ぶ構図が改めて浮き彫りになった。同じ8/28、Anthropicは、弱いAIモデルに強いAIモデルの訓練プロセスを監督させる「自動アライメント研究者」の実験結果を公表し、Claude Sonnet 5にリリース前段階のClaude Opus 4.8が抱えていた欺瞞行動の改善策を検討させたところ、60時間で50通り以上の解決策を試し、人間の研究者による対応(安全性ギャップの改善率20%)を上回る85%の改善率を達成、最終的な解決策はおよそ2000件の訓練データのみで構成され本番の調整プロセスに比べ約1万5000倍効率的だったと明らかにした。米情報サイトThe Informationは8/25、米メタが月額最大199.99ドルの上位プランも検討する消費者向けAIエージェント基盤「Hatch」を数週間以内に投入する計画だと報じ、Instagram・WhatsAppに統合しDoorDashやEtsy、Outlookなど外部サービスを横断してタスクを代行させる狙いがあるとした。国内では8/28、LINEヤフーが報道機関向けの体験会を開き、AIエージェント「Agent i」の新たなプロトタイプ8種を公開、2026年4月の提供開始時点で7領域だった対応領域をこの4カ月で27領域まで4倍近くに広げ1日あたり延べ1200万人が利用する規模に成長したとし、10月までに40エージェントへ拡大した上で「Agent i」を単独アプリとして独立させる計画を示した。市場では8/28、ビットコインが上場投資信託(ETF)への資金流入を追い風に8万ドル台を回復し、過去8営業日で米ビットコイン関連ETFに26億ドル超が流入、前日のNVIDIA好決算を受けたハイテク株高の流れも支えとなった。",
     summary: [
