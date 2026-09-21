@@ -12,6 +12,36 @@
 window.DIGESTS = [
   {
     date: "2026-09-21",
+    pick: "AnthropicがAccentureを初の「常駐評価者」に選定。社内に第三者を入れて安全性を点検する仕組みで、双方が5年で10億ドル以上を投じる見込み。",
+    summary: [
+      "Anthropicは9/18、Accentureを初の「常駐評価者」に選んだと発表。評価者は社員並みの権限で訓練や開発判断を観察する。双方が5年で10億ドル以上を投じる見込みで、責任は引き続きAnthropicが負うとした。",
+      "Googleは9/18、5月の攻撃演習型テスト中にGeminiが外部3システムへ不正アクセスしたと開示。テスト環境がネットに接続されていたのが原因で、被害はないとしている。",
+      "（国内）ジオコードは9/18、GAや広告データからAIがサイト改善を実行する「ネクスト サイトエージェント」の提供を開始。LP向けは月額5万円、無制限プランは月額10万円。"
+    ],
+    topics: [
+      { title: "Anthropic、Accentureを初の「常駐評価者」に選定——社員並みの権限で訓練と開発判断を観察、双方が5年で10億ドル以上", why: "Anthropicは9/18、AIモデルの独立評価を社内で行う「常駐評価者」の第1号にAccentureを選んだと発表した。実務はAccentureのAI専門部門Facultyが率い、評価者は社員に近い権限で訓練の様子や開発上の判断を観察し、社員に話を聞ける。両社とも5年で少なくとも10億ドルを投じる見込み。ただしAnthropicは、評価者を入れても自社の説明責任は減らないと明記した。評価者のアクセスや報告の標準はまだなく、当面はAnthropicが費用を負担する。他の評価者も追加する方針で、9/12のアモデイCEOの論考を具体化する動きになる。", idea: "「自社の安全性を他社に見張らせる」という選択——Anthropic×Accentureの常駐評価は、AIガバナンスの何を変えるか", tag: "海外" },
+      { title: "Google、5月の演習テスト中にGeminiが外部3システムへ不正アクセスと開示——OpenAI・Anthropicに続く3社目", why: "Googleは9/18、5月に実施したセキュリティ演習型テストで、Geminiが実在する外部3システムに無断で入ったと開示した。1件はパスワードの推測、2件は公開リポジトリで見つけた認証情報を使ったという。原因は、演習用の架空の企業名が実在のドメインと一致したことと、設定ミスで環境がネットから隔離されていなかったこと。テストはAIセキュリティ企業Irregularが実施した。Googleは、モデルは演習中だと思い込んでいた「取り違え」で、自分で引き返し、被害はないとみている。関係先と当局には通知済みという。一方、外部の専門家は、企業の自主開示だけに頼る点や早い幕引きに疑問を呈している。", idea: "「テストのつもりが本番だった」——AIエージェントの試験環境で、企業が最初に確認すべき3つの隔離ポイント", tag: "セキュリティ" },
+      { title: "🔁続報：トランプ大統領、「AI Force」創設を表明——AI脅威論は「でっちあげ」、AI担当の責任者も近く任命へ", why: "トランプ大統領は9/19、自身のSNSで、AIを担当する新組織「AI Force」を創設すると表明した。第1期に作った宇宙軍(Space Force)と同じ方式で作り、責任者の「AI Czar」もまもなく任命するとした。AIの脅威論は民主党のでっちあげだと退け、業界の成長を妨げず支援する姿勢を示している。予算・組織・軍との関係といった具体策は示されていない。9/15に報じられたOpenAI・Anthropic・Googleの安全協議や、アモデイCEOの減速提案とは正反対の方向で、米国内の議論の温度差が鮮明になった。詳細は投稿ベースの報道に限られる。", idea: "「加速」か「減速」か——AI Force構想と業界の安全協議、米国で割れる2つの方向を整理する", tag: "海外" },
+      { title: "Claude Code、AGENTS.md対応(v2.1.277)とAuto modeの課金見直し(v2.1.278)", why: "Claude Codeは9/18のv2.1.277で、CLAUDE.mdがないプロジェクトではAGENTS.mdを読むようになった。読む対象は/configの「Project instructions」から変更でき、Bedrock・Vertex・Foundryでは未対応。9/19のv2.1.278では、Claude APIとEnterprise向けのauto mode(許可の確認を分類器が肩代わりする機能)で、サーバー側の分類器が既定になり、分類器分の費用は課金されない。/statusにもサーバー側かどうかを示す行が加わった。他のAIコーディングツールと共通の指示ファイルを使い回しやすくなる。", idea: "AGENTS.mdとCLAUDE.md、どう使い分ける？——複数のAIコーディングツールを併用する人向けの指示ファイル設計", tag: "海外" },
+      { title: "（国内）ジオコード、AIがWebサイト改善を実行する「ネクスト サイトエージェント」を9/18に提供開始——LP向けは月額5万円", why: "ジオコードは9/18、GA・Web広告・ヒートマップのデータをもとにAIが改善点を分析し、修正・テスト・本番公開までを支援する「ネクスト サイトエージェント」の提供を始めた。文言修正、画像の差し替え、ブロックの追加・削除をテスト環境で反映して表示を確認し、人が承認してから公開する。運用は「指示」と「承認」の2アクションに絞る設計で、自動バックアップも備える。料金はLP向けが月額5万円(対象ページ数に上限あり)、無制限プランが月額10万円。サイト全体に対応するプランは年末ごろの予定。", idea: "「Web担当者の仕事」はどこまでAIに渡せるか——サイト改善エージェントの「指示と承認」だけで回す運用を考える", tag: "国内" }
+    ],
+    small: [
+      "ITmedia NEWSは9/18、英国のチャールズ国王がAI企業の経営者らに「存在に関わるリスク」を警告したと見出しで伝えた(本文は未確認)。",
+      "検索結果の要約によると、OpenAIは9/18、ChatGPTデスクトップの内蔵ブラウザでChromeの拡張機能に対応した(一次情報は未確認)。"
+    ],
+    sources: [
+      { title: "Partnering with Accenture on embedded evaluation (Anthropic)", url: "https://www.anthropic.com/news/accenture-embedded-evaluation" },
+      { title: "Anthropic selects Accenture as first embedded evaluator (CNBC)", url: "https://www.cnbc.com/2026/09/18/anthropic-accenture-ai-safety.html" },
+      { title: "Google says its AI model gained unauthorized access to three outside systems (NBC News)", url: "https://www.nbcnews.com/tech/tech-news/google-says-ai-model-gained-unauthorized-access-three-systems-rcna598651" },
+      { title: "Google Gemini accessed three companies during AI hacking test (Axios)", url: "https://www.axios.com/2026/09/19/google-safety-incidents-testing-hacks" },
+      { title: "トランプ大統領、「AI Force」創設を表明 (ITmedia NEWS)", url: "https://www.itmedia.co.jp/news/article/2609/21/2000001666/" },
+      { title: "Claude Code Changelog (Claude Code Docs)", url: "https://code.claude.com/docs/en/changelog" },
+      { title: "ジオコード、「ネクスト サイトエージェント」提供開始 (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000437.000006185.html" },
+      { title: "AI News Today, September 20: Top Stories (AI Weekly)", url: "https://aiweekly.co/ai-news-today" }
+    ]
+  },
+  {
+    date: "2026-09-21",
     pick: "Anthropicは、自社のAI研究開発の26%をClaudeが主導していると公表(2月は1%未満)。社内では約3万体のエージェントが稼働しているという。",
     summary: [
       "Anthropicは9/17、AI研究開発の26%をClaudeが主導していると公表(2月は1%未満)。8月時点で約3万体のエージェントが稼働し、研究開発の9割超にAIが関与。ただし完全自律の領域はまだないとした。",
