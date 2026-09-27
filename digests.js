@@ -11,6 +11,39 @@
 // 「簡潔に」ではなく、この字数で判断すること。
 window.DIGESTS = [
   {
+    date: "2026-09-27",
+    pick: "Anthropicが業務ソフトと直結する「Claude Marketplace」を公開。2000超のコネクタでAtlassianやSalesforceと連携でき、Claudeが導入の入口になる。",
+    summary: [
+      "Anthropicは9/23、プラグインや業務ソフトの連携先をまとめた「Claude Marketplace」を公開。2000超のコネクタが並び、Atlassianなどと直結できる。",
+      "Anthropicは9/22、新モデル「Claude Opus 5.5」を発表。処理速度は3割速く、費用は用途によって最大4割安いとしている。",
+      "総務省は9/21、自治体の業務にAIを使う「自治体AX」推進を発表。2027年度予算の概算要求に関連費7.2億円、地域企業支援に102億円を計上した。"
+    ],
+    topics: [
+      { title: "Anthropic、業務ソフトと直結する「Claude Marketplace」を公開——2000超のコネクタ、Salesforce・Atlassianなども", why: "Anthropicは9/23、プラグインやコネクタ、提携ソフト、導入を手伝うコンサル会社までを1か所にまとめた「Claude Marketplace」を公開した。すでにAtlassian・Google・Microsoft・Notion・Salesforceなど2000件超のコネクタが並び、ConfluenceやJiraの情報をClaudeに取り込むといった連携が可能になる。Salesforceとは「Claudeforce」という専用プラグインも用意され、商談情報を踏まえた提案やパイプライン更新を任せられるという。コネクタ・プラグインはAnthropicが提唱するオープンな規格(MCPとAgent Skills)を使っており、他社もこの規格に沿えば参入できる。自社で使っている業務ソフトがここに並べば、開発なしでClaudeと連携できる可能性がある。", idea: "自社の業務ソフトは「Claude Marketplace」に並んでいるか——まず自分の会社で使っているツール名で検索してみる", tag: "海外" },
+      { title: "Anthropic、新モデル「Claude Opus 5.5」を発表——処理速度3割増、費用は用途により最大4割減", why: "Anthropicは9/22、Claude 5.5系列の最初のモデル「Claude Opus 5.5」を発表した。上位モデルのClaude Fable 5.1に近い性能を保ちながら、一般的な使い方での費用は旧モデルのOpus 5より最大4割安く、出力速度は3割以上速いという。API料金も100万トークンあたり入力4ドル・出力20ドルとOpus 5から2割下がった。読み込んだ内容を一度に扱える範囲(コンテキストウィンドウ)は100万トークンに広がっている。Claude Codeなど社内でAIを使う際のコストが気になる企業にとって、同じ作業をより安く回せる選択肢が増えたことになる。", idea: "「同じ仕事がいくら安くなったか」を来週の会議で計算してみる——AIコストの見直しに使えるネタ", tag: "海外" },
+      { title: "（国内）総務省、自治体の業務にAIを活用する「自治体AX」推進を発表——2027年度予算の概算要求に7.2億円", why: "総務省は9/21、人手不足に対応するため自治体の業務全体でAIを活用する「自治体AX(AIトランスフォーメーション)」を推進すると発表した。2027年度予算の概算要求に、業務全体での活用に向けた調査研究などの関連経費として7.2億円を計上。別枠で、地域の中核企業がAIを使って業務改革や新規事業を立ち上げる支援に102億円を計上した。7月には有識者による研究会を設けており、来年3月末までに中間取りまとめを行う予定。自治体だけでなく、地域の中小企業支援にも予算がつく点が実務上の関心事になる。", idea: "国のAI予算がついた分野はどこか——自社の業界に関係する支援策がないか、概算要求の一覧を確認してみる", tag: "国内" },
+      { title: "（国内）東京都、中小企業向け「生成AI社内利用ガイドライン」のひな型を公開——A4で1〜2ページ、決めるのは実質2項目", why: "東京都産業労働局は9/7、中小企業がすぐ使える「生成AI社内利用ガイドライン」のひな型を公開した。A4用紙1〜2ページ程度のシンプルな構成で、AIを「支援ツール」と位置づけて最終判断は人が行うこと、入力してはいけない情報(個人情報や営業秘密など)、出力を使う際の著作権チェックといった項目を用意している。自社向けに実際に決めるべきなのは、許可するAIツール名と、トラブル時の連絡・相談窓口の2点にほぼ絞られる設計だという。社内ルールがまだない会社にとって、ゼロから作らずに済む出発点になる。", idea: "うちの会社に「生成AIを個人情報の入力先にしない」ルールは明文化されているか——ひな型を使って15分で確認してみる", tag: "国内" },
+      { title: "（国内）RIZAP、社員が私用の生成AIに顧客の個人情報を誤アップロード——「シャドーAI」による漏えいを9月に公表", why: "RIZAPグループは9月、社員が会社の許可を得ていない外部の生成AIサービスに、特定保健指導対象者の氏名・保険証記号番号・疾患情報などを誤ってアップロードしていたと公表した。対象は1月〜8月に登録されたデータの一部。データ集計作業中の出来事で、24時間以内に削除し、AI事業者に学習利用がなかったことを確認、個人情報保護委員会にも報告した。会社が契約した業務用AIではなく、社員が個人の判断で使う「シャドーAI」が原因だった点が特徴で、対象者への連絡や社内周知、AI利用を管理する仕組みの導入を進めている。", idea: "「会社が許可していないAI」を社員が使っていないか——シャドーAI対策は、禁止の一言より使ってよいAIを示すほうが効く", tag: "国内" },
+      { title: "🔁続報：LINEヤフー「Agent i」に、情報収集を継続的に代行し通知する「タスク機能」——ニュースや値下がりを自動チェック", why: "LINEヤフーは9/11、AIエージェント「Agent i」に、登録した情報を自動で調べて知らせる「タスク機能」を追加した。業界動向や気になる企業・人物などのキーワードを登録すると、毎日・毎週といった頻度で情報を集め、Yahoo!JAPANアプリやLINEアプリの通知で知らせる。ショッピング領域では、複数のECサイトの価格を比較し、指定した額まで値下がりしたら知らせる機能も備える。8月末に公開した新プロトタイプ群からの実装で、情報収集を「毎回自分で検索する」から「登録しておけば向こうから来る」に変える動きが、身近なアプリで進んでいる。", idea: "自分の仕事でも「毎回検索している情報」はないか——それを自動通知に変えられないか考えてみる", tag: "国内" }
+    ],
+    small: [
+      "画像制作会社「Sai」が、生成AI画像の著作権侵害を巡って提訴したと報じられた。国内で初めてのAI生成画像を巡る著作権訴訟とされる(本文は未確認)。",
+      "富士通は9/25、サイバー攻撃の兆候検知から社内リスクの調査・対処までを支援するセキュリティサービスの提供を始めたと報じられた(一次情報は未確認)。"
+    ],
+    sources: [
+      { title: "Claude Marketplace: plugins and connectors, products and agents, and service partners (Claude by Anthropic)", url: "https://claude.com/blog/claude-marketplace" },
+      { title: "Anthropic Launches Claude Marketplace, Letting Customers Use Committed Spend on Partner Software (Superpower Daily)", url: "https://superpowerdaily.com/posts/anthropic-opens-claude-marketplace-for-partner-software-and-services" },
+      { title: "Anthropic「Claude Opus 5.5」発表、Fable 5.1並みの性能 運用コストはOpus 5比40%減 (マイナビニュース)", url: "https://news.mynavi.jp/techplus/article/20260923-5012400/" },
+      { title: "Claude Opus 5.5 Overview (Claude Platform Docs)", url: "https://platform.claude.com/docs/en/models/opus-5-5/overview" },
+      { title: "自治体業務にAI導入推進 最適化へ調査研究、総務省 (共同通信/Yahoo!ニュース)", url: "https://news.yahoo.co.jp/articles/71c8ab84f74b976044ad3a3a1ef2ab1274f6496d" },
+      { title: "自治体業務にＡＩ導入推進 総務省、最適化へ調査研究 中核企業の活用も支援 (山陰中央新報デジタル)", url: "https://www.sanin-chuo.co.jp/articles/-/1084018" },
+      { title: "生成AI社内利用ガイドライン ひな型（中小企業向け） (東京都産業労働局サイバーセキュリティ対策ポータル)", url: "https://www.cybersecurity.metro.tokyo.lg.jp/links/783/index.html" },
+      { title: "RIZAP社員、私用AIに顧客の個人情報入力 氏名や疾患、保険証番号など……同社が謝罪 (ITmedia NEWS)", url: "https://www.itmedia.co.jp/news/article/2609/04/2000001161/" },
+      { title: "Agent i 、情報収集など日常の作業を自律的・継続的に代行し、通知する「タスク機能」を提供開始 (LINEヤフー株式会社)", url: "https://www.lycorp.co.jp/ja/news/release/020805/" },
+      { title: "生成AI関連ニュース ベスト5（2026-09-18〜2026-09-25） (gais.jp)", url: "https://gais.jp/news-2026-09-25/" }
+    ]
+  },
+  {
     date: "2026-09-21",
     pick: "AnthropicがAccentureを初の「常駐評価者」に選定。社内に第三者を入れて安全性を点検する仕組みで、双方が5年で10億ドル以上を投じる見込み。",
     summary: [
