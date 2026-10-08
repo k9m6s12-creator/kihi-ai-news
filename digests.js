@@ -11,6 +11,36 @@
 // 「簡潔に」ではなく、この字数で判断すること。
 window.DIGESTS = [
   {
+    date: "2026-10-08",
+    pick: "Anthropicが「Haiku 5.5」で価格を最大9割下げる一方、1億ドルを投じ導入人材1万人の育成に着手。AIの壁は技術より「使える人」に移っている。",
+    summary: [
+      "Anthropicは10/7、低価格・高速な小型モデル「Claude Haiku 5.5」を発表。価格は旧モデル比最大9割減、使う処理量を調整する新機能も備える。",
+      "Anthropicは10/2、1億ドルを投じ企業にAIを実装できるエンジニアを1万人育成する「Claude Frontier Academy」を始動。初期参加はアクセンチュアなど。",
+      "（国内）INDUSTRIAL-Xの調査で、全社的に生成AIを活用する企業が前年比7.7pt増の26.7%に。成果を分けたのは経営関与や推進体制という組織側の要因だった。"
+    ],
+    topics: [
+      { title: "Anthropic、小型モデル「Claude Haiku 5.5」を発表——価格は旧モデル比最大9割減、処理量を調整できる新機能も", why: "Anthropicは10/7、小型モデル「Claude Haiku 5.5」を発表した。100万トークンあたりの価格は、10万トークン以下のやり取りで入力0.10ドル・出力0.50ドルとなり、旧モデルのHaiku 4.5比で最大9割安い。Anthropicは平均で約75%のコスト減になるとしている。今回から、どこまで考えて答えるかという処理量(effort)を調整できる機能も初めて搭載し、既定は中程度に設定される。チャットボットやFAQ対応、社内の一次対応など、やり取りの件数が多く1件あたりのコストが積み上がりやすい業務ほど、効果を実感しやすい更新といえる。", idea: "「件数が多くて1件あたりは安い作業」が自社にもないか——AIコスト見直しの棚卸しをしてみる", tag: "海外" },
+      { title: "Anthropic、企業にAIを実装する人材を1万人育成する「Claude Frontier Academy」を始動——1億ドルを投じ2027年末までに", why: "Anthropicは10/2、企業にAIを実際に導入できる技術者「Frontier Deployed Engineer」を2027年末までに1万人育成する「Claude Frontier Academy」を発表した。1億ドルを投じ、数日間の集中研修と12週間の実地研修を組み合わせ、最終試験に合格した人だけが認定される。第1期にはアクセンチュア、ベイン、デロイト、マッキンゼー、モルガン・スタンレーなど大手コンサル・金融機関から100人が参加し、サンフランシスコ・ニューヨーク・ロンドンで研修が始まっている。AIモデル自体の性能より「現場に実装できる人材」が導入のボトルネックになっているという、業界側の認識を映した動きである。", idea: "「AIを使える人」ではなく「AIを現場に実装できる人」は自社に何人いるか——育成すべき人材像を分けて考える", tag: "海外" },
+      { title: "（国内・事例）日本製鉄、Microsoft 365 Copilotをグループ全体11,000席まで拡大——小さく始めて段階的に広げた結果", why: "日本製鉄グループは、Microsoft 365 Copilotを2024年4月に300席でパイロット導入し、4カ月の検証を経て2025年1月に4,400席へ本格展開、現在はグループ全体で11,000席まで拡大している。拡大後1カ月の利用実績では、Teams会議のAI議事録が約2万件、メールスレッドの要約が約4,500件、Copilot Chatでの社内ファイル検索が5万回超にのぼり、試算では年間数万時間の業務効率化が見込めるという。小さく始めて検証し、段階的に広げるという導入の順序が、全社展開の規模に直結した例といえる。", idea: "自社の導入は「パイロット→検証→全社展開」のどの段階にあるか——日本製鉄の順序と比べてみる", tag: "事例" },
+      { title: "（国内）INDUSTRIAL-X調査、生成AIの全社活用企業が前年比7.7pt増の26.7%に——成果を分けたのは経営関与と推進体制", why: "INDUSTRIAL-Xは10/8、企業就業者1,031人(大手・中堅・中小各約3分の1)を対象にした「AI/DX調査レポート2026」を発表した。生成AIを「全社的に活用」する企業は前年比7.7ポイント増の26.7%、「一部部署で活用」も含めると60.9%に達した一方、中小企業の約6割は活用に向けた取り組みが未着手という。成果を分けた要因は技術力ではなく「経営層の関与×推進体制×人材育成×活用の厚み」で、経営層が積極的に関与している企業は、関与がない企業に比べて「明確な成果」が出ている割合が約3.7倍高かった。AIを入れるかどうかより、入れたあとの体制づくりが成果を左右することを示すデータである。", idea: "「経営層の関与」は自社のAI活用にどう表れているか——号令だけで終わっていないか確認する", tag: "DX" },
+      { title: "（国内・事例）オリエンタルチエン工業、熟練者の「暗黙知」をAIで継承する全社プロジェクト「X-AI」を始動", why: "東証スタンダード上場の産業機械部品メーカー、オリエンタルチエン工業は10/7、製造現場のデータと知見をAIで循環させる全社プロジェクト「X-AI」を始動したと発表した。柱の一つが「技術保全」で、熟練者の作業映像や設備データをAIで蓄積・分析し、若手の教育や作業支援に活用するという。ほかに、設備データや検査結果から異常の兆候を早期に捉える品質・生産性向上、設計提案を速めて販売後のサービスも広げる顧客対応強化にも使う。資本金規模で見れば中堅クラスの製造業が、熟練者の「暗黙知」をAIで継承しようとしている点は、同じ悩みを持つ現場に参考になる。", idea: "自社で「ベテランしか分からない」業務はどこか——映像や作業データを残す仕組みが、継承の第一歩になる", tag: "事例" }
+    ],
+    small: [
+      "東京・九段下で10/5〜7、企業や制度への生成AI活用を議論する「生成AIサミット2026(GenAI/SUM)」が開催された。",
+      "Bloombergは10/6、Anthropicが米政府と連携し、重要インフラ防御に関わる一部のサイバーセキュリティ企業に最新モデルへのアクセスを拡大したと報じた(一次情報は未確認)。"
+    ],
+    sources: [
+      { title: "Introducing Claude Haiku 5.5 (Anthropic)", url: "https://www.anthropic.com/claude-haiku-5-5" },
+      { title: "Anthropic launches Claude Haiku 5.5 with 90% API price reduction, matching GPT-6 Luna (VentureBeat)", url: "https://venturebeat.com/technology/anthropic-launches-claude-haiku-5-5-with-90-api-price-reduction-matching-gpt-6-luna" },
+      { title: "Claude Frontier Academy: $100M to train 10,000 engineers (Anthropic)", url: "https://www.anthropic.com/news/claude-frontier-academy" },
+      { title: "Anthropic Is Training 10,000 Engineers to Install Claude Inside the World's Largest Enterprises (Yahoo Finance)", url: "https://finance.yahoo.com/technology/ai/articles/anthropic-training-10-000-engineers-232515047.html" },
+      { title: "日本製鉄、DXを加速。Microsoft 365 Copilotを戦略的導入し、段階的拡大で生産性と効率化の成果を最大化 (Microsoft Customer Stories)", url: "https://www.microsoft.com/ja-jp/customers/story/23624-nippon-steel-corporation-microsoft-365-copilot" },
+      { title: "【AI/DX調査レポート2026】AIの全社活用が+7.7pt急伸・活用企業は約6割に到達も、中小の6割は未着手と二極化 (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000181.000051016.html" },
+      { title: "製造業をAIの力でアップデートするX-AIプロジェクト始動 (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000013.000167502.html" },
+      { title: "Anthropic Grants US Cyber Firms Access to Latest Claude AI Models (Bloomberg)", url: "https://www.bloomberg.com/news/articles/2026-10-06/anthropic-expands-access-to-latest-ai-models-for-cyber-firms" }
+    ]
+  },
+  {
     date: "2026-09-30",
     pick: "Anthropicの非公開IPO資料がリーク。2025年売上46億ドルに対し純損失42億ドル、AIの「人類への破局的リスク」を自ら明記していたことが判明した。",
     summary: [
