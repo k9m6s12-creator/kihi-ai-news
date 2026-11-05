@@ -11,6 +11,73 @@
 // 「簡潔に」ではなく、この字数で判断すること。
 window.DIGESTS = [
   {
+    date: "2026-11-06",
+    pick: "プレミアグループが11/1、全社員向けの「グループAIポリシー」を施行した。最終判断は人間、という原則と5つの柱を公開しており、自社ルールの下敷きになる。",
+    summary: [
+      "（国内）プレミアグループ（東証プライム、自動車関連）が11/1にAIポリシーを施行。公平性・透明性・セキュリティ・プライバシー・知的財産の5原則で、9月にAIガバナンス分科会も設けた。",
+      "（国内）Anthropicが米国上場にあわせ、日本で最大約5,500億円分の株式を売り出す計画と、11/2にロイターが報じた。日本の担当はみずほ証券。",
+      "Claude Codeの製品責任者がAnthropicを退社し、OpenAIに移ると11/5に報じられた。AIの大手4社は、AI学習への利用を断る共通の合図の導入でも足並みをそろえた。"
+    ],
+    topics: [
+      { title: "（国内・DX）プレミアグループ、全社的なAI活用の「グループAIポリシー」を策定——最終判断は人間、5原則と推進体制を公開", why: "プレミアグループ（東証プライム、国内外20社以上）は11/2、11/1付で「グループAIポリシー」を施行したと発表した。基本は「人間中心」で、最終的な判断や意思決定は人間が行う。公平性、透明性と説明責任、情報セキュリティ、プライバシー保護、知的財産保護の5つを原則に置く。守りだけでなく、安全な環境でAIを使ったサービス開発を進める「攻め」も明記し、4段階の人財育成プログラムと連動させる。9月にはAIガバナンス分科会（ルールを見守る小さな会議体）を設け、ルールと実態のずれを早く直す方針だ。社内ガイドラインづくりで、項目立てと体制の例として使える。運用の中身や効果の数字は公表資料では確認できていない。", idea: "うちのAIルールは、禁止事項の一覧で止まっていないか——ルールと現場のずれを直す担当は決まっているか", tag: "DX" },
+      { title: "（国内・事例）中小企業向けの生成AI活用診断「AI業務活用ナビ」が提供開始——2〜4時間の聞き取りで「最初の一手」を整理", why: "DXクルーズ（ASTRO Siblingsと四拾萬堂の共同運営）が10/26、中小企業向けの診断サービスを始めた。業務の聞き取りをもとに、AIを使えそうな作業と、人が確認すべき点、試すために必要な資料や環境を整理して報告書にする。聞き取りは合計2〜4時間を1〜2回、結果の説明まで2週間〜1カ月が目安。製品や導入計画が決まっていなくても使える。料金は個別見積もりで公表されていない。社内で「どこから手をつけるか」が決まらないときの進め方として参考になる。効果を示す事例の数字は確認できていない。", idea: "うちの業務で、AIに任せる作業と人が確認する作業を分けて書き出すとしたら、最初の一覧に何が載るか", tag: "事例" },
+      { title: "（国内・市場）Anthropic、米国上場で日本の投資家向けに最大約5,500億円を売り出す計画——ロイター報道", why: "ロイターによると、Anthropicが提出した書類で、日本での株式の売り出しは最大35億ドル（約5,500億円）、日本の担当はみずほ証券とされる。資金は運転資金や設備投資に充てる。全体の規模や企業の評価額は書類に載っておらず、価格や時期も未定。なお、今回の数字は二次報道で、原文は未確認。普段の仕事に直接の変化はないが、Claudeの会社が上場すれば、経営状況が公開されて長く使うツールとして判断しやすくなる面はある。ただし、上場は決まっていない。", idea: "うちが使っているAIサービスの提供会社が、数年後もサービスを続けているかは、どうやって確かめるか", tag: "市場" },
+      { title: "OpenAI、Claude Codeの製品責任者Cat Wu氏を採用——Anthropicは上場を控える時期", why: "The Next Webによると、Claude Codeの製品責任者だったCat Wu氏がAnthropicを退社し、OpenAIのCore Productsチームで製品管理を率いる。2024年8月の入社で、退社理由は明らかにされていない。Anthropicはコメントを控えている。AIツールの開発体制は人の動きで変わりやすい、という例になる。Claude Codeを業務で試している人にとっては、今すぐ使えなくなる話ではなく、今後の更新方針を見守る材料にとどまる。", idea: "うちで使っているAIツールの方針が変わったとき、すぐ乗り換えられる準備はあるか", tag: "海外" },
+      { title: "Google・OpenAI・Microsoft・Anthropic、AI学習への利用を断る共通のrobots.txt合図を提案", why: "技術系の報道によると、4社は10/30、自社サイトの内容をAIの学習に使わせたくないときに、robots.txt（検索ロボットへの案内ファイル）に書く共通の合図をIETF（インターネットの標準を決める団体）に提案した。Anthropicは即日対応し、Microsoftは2027年2月1日から実装する予定とされる。自社サイトやブログを持つ会社は、AIに読ませるかどうかを自分で決める手段が1つにまとまる方向になる。まだ提案の段階で、他社の対応時期は未確認。", idea: "うちの公開サイトの情報は、AIに学習されてもよいか——誰が決める話か", tag: "海外" },
+      { title: "GitHub Copilot Fusion、一般提供へ——作業の難しさに応じてAIモデルを自動で選ぶ", why: "まとめ記事によると、GitHub Universe 2026（10/28）で、Copilot Fusionの一般提供が発表された。作業の難しさに応じて複数のAIモデルを自動で切り替え、全プランで使える。開発者向けの機能だが、モデルを人が選ばなくてよくなる流れは、社内でAIを配るときの「どれを使うか」という迷いを減らす方向の変化だ。公式発表は未確認で、料金への影響も不明。", idea: "うちの社員は、AIの種類を選ぶ手間で使うのをやめていないか", tag: "海外" }
+    ],
+    small: [
+      "Googleが学校向けにAI機能の管理者設定を発表したが、検索がAIと一体のため、AIを全面拒否すると検索も使えなくなるとAP通信が報じた（二次情報）。",
+      "AppleがSiriのAI開発者プレビューを公開。対応言語に日本語を含む。App Store申請は2027年春の予定（二次情報）。",
+      "米国の銀行監督当局が、銀行のAI利用についてはじめて指針を出したとロイターが報じた（二次情報・未確認）。"
+    ],
+    sources: [
+      { title: "プレミアグループ、「グループAIポリシー」を策定 (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000071.000154715.html" },
+      { title: "生成AI、自社のどこに使える？ 中小企業向け診断サービス「AI業務活用ナビ」を提供開始 (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000007.000134050.html" },
+      { title: "生成AI活用の最初の一手を診断。中小企業向けサービス「AI業務活用ナビ」 (AI Watch)", url: "https://ai.watch.impress.co.jp/docs/news/2151160.html" },
+      { title: "Anthropic plans to sell $3.5 billion of shares to Japan investors in IPO, filing shows (The Star / Reuters)", url: "https://www.thestar.com.my/tech/tech-news/2026/11/02/anthropic-plans-to-sell-35-billion-of-shares-to-japan-investors-in-ipo-filing-shows" },
+      { title: "Claude Code's product lead Cat Wu leaves Anthropic to join OpenAI (The Next Web)", url: "https://thenextweb.com/news/cat-wu-claude-code-anthropic-openai-core-products" },
+      { title: "生成AIニュースまとめ 先週【2026年10月26日〜11月1日】 (tech-noisy)", url: "https://tech-noisy.com/2026/11/02/ai-weekly-news-2026-10-26-2026-11-01/" },
+      { title: "生成AIニュース 昨日【2026年11月4日（水）】 (tech-noisy)", url: "https://tech-noisy.com/2026/11/05/ai-daily-news-2026-11-04/" },
+      { title: "3分でわかるAIニュース 2026年11月5日 (note)", url: "https://note.com/supikamurata/n/n54cbb3ab9e85" }
+    ]
+  },
+  {
+    date: "2026-10-24",
+    pick: "デジタル庁が10/20、政府職員約18万人向けのAI「源内」に、文章の指示で作業を任せられるAIエージェントを追加した。2027年2月頃に無償公開予定で、自治体や企業も使える見込み。",
+    summary: [
+      "（国内）デジタル庁は10/20、「源内」にAIエージェント（指示に沿って複数の作業をこなすAI）を追加し、各府省庁へ順次導入を始めた。安全ルール「源内基準」も作った。",
+      "（国内）NTT-ATは10/15、自治体の窓口で職員の回答づくりを助けるAIの提供を始めた。葛飾区の実証から生まれ、会話の文字起こしや個人情報の自動マスキングができる。",
+      "スウェーデン政府の本庁は10/26から、職員PCでChatGPTとClaudeを遮断する。Copilotは使える。理由は、契約のないAIサービスでは情報の扱いが保証されないため。"
+    ],
+    topics: [
+      { title: "（国内・DX）デジタル庁、政府職員約18万人向け「源内」にAIエージェントを追加——2027年2月頃に無償公開へ", why: "デジタル庁は10/20、政府職員向けAI基盤「源内」に、文章で指示すると複数の作業をまとめてこなす「エージェントチャット」を追加し、各府省庁へ順次導入を始めた。プログラミングなしでWebアプリの試作品を作れる「源内工房」も12月頃までに入れる予定。職員が作った使い方のコツ（スキル）を省庁をまたいで共有する仕組みもある。安全面では、利用者・管理者・開発者の責任を定めた53ページの「源内基準」を作った。2027年2月頃に商用利用できる形で無償公開する予定で、自治体や企業も想定している。社内ルールを一から作る前に、この基準を下敷きにできる可能性がある。2026年度は実証の段階で、全職員がもう使っているわけではない。", idea: "国が作った「源内基準」を、うちの社内AIルールと見比べたら、何が足りないと分かるか", tag: "国内" },
+      { title: "（国内・事例）NTT-AT、自治体窓口の職員を助けるAIを提供開始——葛飾区の実証から製品化", why: "NTT-ATは10/15、自治体の窓口向けAI「RelAi 窓口アシスタント」の提供を始めた。住民との会話をその場で文字にして要約し、マニュアルやFAQ、条例をもとに回答案を、根拠の箇所つきで示す。文字起こしでは氏名や住所を自動で隠し、入力したデータはAIの学習に使わない。カスタマーハラスメントの恐れがあるとき管理者に知らせるボタンもある。葛飾区での実証がもとになっている。社内の問い合わせ窓口やコールセンターでも、「根拠を示す」「個人情報を隠す」は同じように必要になる。実証の効果を示す数字と価格は確認できておらず未確認。", idea: "うちの問い合わせ対応で、AIに回答案を出させるなら、根拠にできる手順書は今そろっているか", tag: "事例" },
+      { title: "（海外・DX）スウェーデン政府本庁、職員PCでChatGPTとClaudeを遮断——Copilotは使える、理由は「契約の有無」", why: "スウェーデン公共放送の報道によると、首相府や各省を含む政府本庁は10/26から、職員の業務PCでChatGPTとClaudeを遮断する。Microsoft Copilotは引き続き使える。担当者は、契約を結ばずにAIサービスを使うと情報セキュリティに影響しうると説明した。Copilotは企業向け契約の中でデータの扱いが決まっているが、個人アカウントは提供元の標準の規約に従うだけになる、という整理だ。税務庁などは既に遮断済み。どのAIが賢いかではなく、どの契約で使っているかで線を引く考え方は、日本の会社で使ってよいツールを決めるときにもそのまま使える。", idea: "うちの社員は、会社の契約ではない個人アカウントのAIを業務に使っていないか——実態を誰が把握しているか", tag: "DX" },
+      { title: "Microsoft 365 Copilot、10月の更新——SharePointでのCopilotが一般提供、Claude Sonnet 5.5も選べるように", why: "Microsoftの更新情報をまとめた解説ブログによると、10月はSharePoint（社内の文書共有サイト）でのCopilotが一般提供になり、Copilotで作るメモ（Copilot Pages）がOneDriveに保存されるようになる。WordやExcelなどでは、OpenAIのGPT-6.1 SolとAnthropicのClaude Sonnet 5.5が順次使えるようになっている。一方、長い作業を任せる機能や、アプリを作るCode機能は早期利用者向けの段階で、使った分だけ課金される機能もある。ライセンスがあれば全部使えるわけではない点は、社内で導入を説明するときに押さえておきたい。各機能の時期は解説ブログに基づき、詳細はMicrosoftの公式通知で確認が必要。", idea: "うちのCopilotで、今月から追加料金なしで使える機能はどれか——管理者に一度確認してみる", tag: "海外" },
+      { title: "（国内・市場）生成AI主要サービスの料金早見表・10月版——中位プランは据え置き、上位と開発者向けは動きあり", why: "ビジネスインサイダー・ジャパンが10/15時点の個人向け料金をまとめた。ChatGPT Plusは月3,000円、Claude Proは約3,200円、Google AI Proは2,900円、Microsoft 365 Personalは2,130円。入門と中位のプランは料金が変わっていない。一方、ChatGPTには月84,000円の最上位プランが加わり、GoogleのGemini 3.8 Flashは開発者向けの利用料が2027年1月に倍になる。社内で「まず数人で有料版を試したい」と稟議を出すときの相場として使える。ただし法人向けプランの料金は記事の対象外。", idea: "うちで有料版を試すなら、何人で何カ月、いくらまでなら説明がつくか", tag: "市場" },
+      { title: "Claude Code、時間のかかる作業を裏で進められる「MCP Tasks」に対応——公開ベータ", why: "解説記事によると、10/19公開のClaude Code 2.1.304以降で、MCP（AIと外部ツールをつなぐ共通の仕組み）の「Tasks」に試験的に対応した。報告書の書き出しのような時間のかかる作業を外部ツール側で進めている間も、待たずに会話を続けられ、終わると結果が届く。今はターミナル版のみで、つなぐ相手のツールも対応している必要がある。社内でAIに定型作業を任せる場面で、待ち時間が減る方向の変化といえる。開発者以外がすぐ使える段階ではない。情報は解説記事ベースで、公式の更新履歴は未確認。", idea: "うちで「AIに頼んで、終わるまで画面の前で待っている作業」は何か——裏で回せたら何が変わるか", tag: "海外" }
+    ],
+    small: [
+      "（国内）川口弘行合同会社は10/19、源内をもとにした自治体職員向けAI「Open GENAI」の個人契約を始めた。無断で使われるAI（シャドーAI）を減らす狙いという。",
+      "（国内）Ragateは10/22、生成AIの全社導入を、業務の棚卸しからルールづくり、2カ月の現場伴走まで一括で支援するサービスを発表した。",
+      "Googleが、GmailとGoogleフォトのデータを広告の個人向け表示に使えるようにしたと報じられた（二次情報・未確認）。"
+    ],
+    sources: [
+      { title: "政府職員18万人がAIエージェントを自作へ、デジタル庁「源内」は何ができる？ (マイナビニュース)", url: "https://news.mynavi.jp/techplus/article/20261021-5167444/" },
+      { title: "自治体窓口の生成AIアシスタント、NTT-ATが提供開始 葛飾区の実証実験から誕生 (キーマンズネット)", url: "https://kn.itmedia.co.jp/kn/article/2610/20/2000002393/" },
+      { title: "Chat GPT och Claude förbjuds i Regeringskansliet (Sveriges Radio Ekot)", url: "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet" },
+      { title: "Sweden Blocks ChatGPT and Claude in Government Offices, Copilot Stays", url: "https://pasqualepillitteri.it/en/news/26746/sweden-blocks-chatgpt-claude-government-copilot" },
+      { title: "Microsoft 365 Copilot October 2026 updates (A Guide to Cloud)", url: "https://www.aguidetocloud.com/blog/microsoft-365-copilot-october-2026-updates/" },
+      { title: "Microsoft 365 Copilot release notes (Microsoft Learn)", url: "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes" },
+      { title: "【2026年10月版】生成AI主要8サービス料金早見表 (Business Insider Japan)", url: "https://www.businessinsider.jp/article/2610-how-much-did-major-generative-ai-service-fees/" },
+      { title: "MCP Tasks arrives in Claude Code, long jobs now run in the background", url: "https://pasqualepillitteri.it/en/news/26723/mcp-tasks-claude-code-long-jobs-run-in-background" },
+      { title: "自治体職員個人向け生成AI「Open GENAI」 (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000017.000068645.html" },
+      { title: "Ragate株式会社、「生成AIの全社導入支援」を提供開始 (PR TIMES)", url: "https://prtimes.jp/main/html/rd/p/000000111.000119123.html" },
+      { title: "Google Confirms Gmail and Photos Data Can Now Shape Your Ads", url: "https://pasqualepillitteri.it/en/news/26768/google-gmail-photos-personalized-ads-privacy-policy" }
+    ]
+  },
+  {
     date: "2026-10-15",
     pick: "日本経営データ・センターが、役員を含む全社員88名に生成AIの資格取得を義務づけた。3カ月で約3分の1が合格。全員の底上げを選んだ事例。",
     summary: [
